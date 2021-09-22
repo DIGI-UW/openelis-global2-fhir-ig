@@ -3,7 +3,7 @@
 
 err = 0, warn = 1, info = 0
 IG Publisher Version: 1.1.80
-Generated Wed Sep 22 16:53:41 UTC 2021. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
+Generated Wed Sep 22 17:23:31 UTC 2021. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
 
  Build Errors : 12 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-openelis : 0 / 0 / 1

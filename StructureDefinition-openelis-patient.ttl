@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OpenlisPatient"];
   fhir:StructureDefinition.title [ fhir:value "OpenElis Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-22T16:53:33+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-22T17:23:21+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
