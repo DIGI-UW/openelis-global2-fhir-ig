@@ -1,0 +1,16 @@
+[
+  {
+    "id": "openelis",
+    "type": "ImplementationGuide",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
+    "version": "0.1.0",
+    "name": "OpenELISImplementationGuide"
+  },
+  {
+    "id": "openelis-patient",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
+    "version": "0.1.0",
+    "name": "OpenlisPatient"
+  }
+]
