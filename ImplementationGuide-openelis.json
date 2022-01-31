@@ -10,7 +10,7 @@
   "name": "OpenELISImplementationGuide",
   "title": "OpenELIS GLOBAL2 Implementation Guide",
   "status": "draft",
-  "date": "2021-09-22T17:23:21+00:00",
+  "date": "2022-01-31T19:49:37+00:00",
   "contact": [
     {
       "name": "I-TECH-UW",
@@ -300,10 +300,80 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/openelis-diagnostic-report"
+        },
+        "name": "OpenELIS Diagnostic Report",
+        "description": "DiagnosticReport resource created by a LIS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/openelis-patient"
         },
         "name": "OpenElis Patient",
         "description": "A patient used for OpenELIS FHIR Exchange",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/openelis-service-request"
+        },
+        "name": "OpenELIS Service Request",
+        "description": "OpenELIS service request",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/openelis-task"
+        },
+        "name": "A Task used for OpenELIS FHIR Exchange",
+        "description": "A Task resource for tracking order state",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenELISTaskIntentVS"
+        },
+        "name": "Task Intent Valueset",
+        "description": "Task Intent Valueset",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/OpenELISTaskStatusVS"
+        },
+        "name": "Task Status Valueset",
+        "description": "Task Status Valueset",
         "exampleBoolean": false
       }
     ],

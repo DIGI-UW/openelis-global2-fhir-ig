@@ -4,10 +4,28 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
+        "title": "OpenELIS Diagnostic Report"
+      }
+    ],
     "Patient": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
         "title": "OpenElis Patient"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
+        "title": "OpenELIS Service Request"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
+        "title": "A Task used for OpenELIS FHIR Exchange"
       }
     ]
   },
@@ -26,6 +44,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

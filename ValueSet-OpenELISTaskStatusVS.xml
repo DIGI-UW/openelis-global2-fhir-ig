@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OpenELISTaskStatusVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ready</td><td>The task is ready to be performed, but no action has yet been taken</td></tr><tr><td>in-progress</td><td>The task has been started but is not yet complete.</td></tr><tr><td>completed</td><td>The task has been completed.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS"/>
+  <version value="0.1.0"/>
+  <name value="OpenELISTaskStatusVS"/>
+  <title value="Task Status Valueset"/>
+  <status value="active"/>
+  <date value="2022-01-31T19:49:37+00:00"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+  </contact>
+  <description value="Task Status Valueset"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/task-status"/>
+      <concept>
+        <code value="ready"/>
+        <display value="The task is ready to be performed, but no action has yet been taken"/>
+      </concept>
+      <concept>
+        <code value="in-progress"/>
+        <display value="The task has been started but is not yet complete."/>
+      </concept>
+      <concept>
+        <code value="completed"/>
+        <display value="The task has been completed."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

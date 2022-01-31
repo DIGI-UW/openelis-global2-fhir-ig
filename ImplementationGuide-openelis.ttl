@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OpenELISImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenELIS GLOBAL2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-09-22T17:23:21+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-01-31T19:49:37+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
@@ -284,11 +284,81 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-diagnostic-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenELIS Diagnostic Report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport resource created by a LIS" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenElis Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient used for OpenELIS FHIR Exchange" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-service-request" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenELIS Service Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "OpenELIS service request" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "A Task used for OpenELIS FHIR Exchange" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Task resource for tracking order state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/OpenELISTaskIntentVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Task Intent Valueset" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Task Intent Valueset" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS>;
+         fhir:Reference.reference [ fhir:value "ValueSet/OpenELISTaskStatusVS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Task Status Valueset" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Task Status Valueset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

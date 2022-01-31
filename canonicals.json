@@ -7,10 +7,45 @@
     "name": "OpenELISImplementationGuide"
   },
   {
+    "id": "openelis-diagnostic-report",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
+    "version": "0.1.0",
+    "name": "OpenELISDiagnosticReport"
+  },
+  {
     "id": "openelis-patient",
     "type": "StructureDefinition",
     "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
     "version": "0.1.0",
-    "name": "OpenlisPatient"
+    "name": "OpenELISPatient"
+  },
+  {
+    "id": "openelis-service-request",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
+    "version": "0.1.0",
+    "name": "OpenELISServiceRequest"
+  },
+  {
+    "id": "openelis-task",
+    "type": "StructureDefinition",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
+    "version": "0.1.0",
+    "name": "OpenELISTask"
+  },
+  {
+    "id": "OpenELISTaskIntentVS",
+    "type": "ValueSet",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS",
+    "version": "0.1.0",
+    "name": "OpenELISTaskIntentVS"
+  },
+  {
+    "id": "OpenELISTaskStatusVS",
+    "type": "ValueSet",
+    "url": "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS",
+    "version": "0.1.0",
+    "name": "OpenELISTaskStatusVS"
   }
 ]

@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-09-22T17:23:21+00:00"/>
+  <date value="2022-01-31T19:49:37+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -189,10 +189,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/openelis-diagnostic-report"/>
+      </reference>
+      <name value="OpenELIS Diagnostic Report"/>
+      <description value="DiagnosticReport resource created by a LIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/openelis-patient"/>
       </reference>
       <name value="OpenElis Patient"/>
       <description value="A patient used for OpenELIS FHIR Exchange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-service-request"/>
+      </reference>
+      <name value="OpenELIS Service Request"/>
+      <description value="OpenELIS service request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-task"/>
+      </reference>
+      <name value="A Task used for OpenELIS FHIR Exchange"/>
+      <description value="A Task resource for tracking order state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenELISTaskIntentVS"/>
+      </reference>
+      <name value="Task Intent Valueset"/>
+      <description value="Task Intent Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenELISTaskStatusVS"/>
+      </reference>
+      <name value="Task Status Valueset"/>
+      <description value="Task Status Valueset"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

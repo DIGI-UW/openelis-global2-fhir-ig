@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "OpenELISTaskIntentVS",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-status</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>order</td><td>The request represents a request/demand and authorization for action by a Practitioner.</td></tr><tr><td>original-order</td><td>The request represents an original authorization for action.</td></tr></table></li></ul></div>"
+  },
+  "url": "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS",
+  "version": "0.1.0",
+  "name": "OpenELISTaskIntentVS",
+  "title": "Task Intent Valueset",
+  "status": "active",
+  "date": "2022-01-31T19:49:37+00:00",
+  "contact": [
+    {
+      "name": "I-TECH-UW",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "www.github.com/i-tech-uw"
+        }
+      ]
+    }
+  ],
+  "description": "Task Intent Valueset",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/task-status",
+        "concept": [
+          {
+            "code": "order",
+            "display": "The request represents a request/demand and authorization for action by a Practitioner."
+          },
+          {
+            "code": "original-order",
+            "display": "The request represents an original authorization for action."
+          }
+        ]
+      }
+    ]
+  }
+}
