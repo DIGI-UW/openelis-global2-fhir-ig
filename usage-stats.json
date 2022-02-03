@@ -13,7 +13,7 @@
     "Patient": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
-        "title": "OpenElis Patient"
+        "title": "OpenELIS Patient"
       }
     ],
     "ServiceRequest": [

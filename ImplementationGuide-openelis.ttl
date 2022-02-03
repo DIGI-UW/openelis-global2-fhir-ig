@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "OpenELISImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "OpenELIS GLOBAL2 Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-01-31T19:49:37+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-02-03T09:57:16+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
@@ -301,7 +301,7 @@
          fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-patient" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenElis Patient" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenELIS Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient used for OpenELIS FHIR Exchange" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -360,6 +360,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Task Status Valueset" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Task Status Valueset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A>;
+         fhir:Reference.reference [ fhir:value "Patient/329f09da-0fc9-419d-9575-ace68954426A" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example OpenELIS Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example OpenELIS Patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient";
+         fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

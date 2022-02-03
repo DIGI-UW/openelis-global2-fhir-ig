@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-01-31T19:49:37+00:00"/>
+  <date value="2022-02-03T09:57:16+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -202,7 +202,7 @@
       <reference>
         <reference value="StructureDefinition/openelis-patient"/>
       </reference>
-      <name value="OpenElis Patient"/>
+      <name value="OpenELIS Patient"/>
       <description value="A patient used for OpenELIS FHIR Exchange"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -249,6 +249,17 @@
       <name value="Task Status Valueset"/>
       <description value="Task Status Valueset"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/329f09da-0fc9-419d-9575-ace68954426A"/>
+      </reference>
+      <name value="Example OpenELIS Patient"/>
+      <description value="Example OpenELIS Patient"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

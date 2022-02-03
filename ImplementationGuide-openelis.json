@@ -10,7 +10,7 @@
   "name": "OpenELISImplementationGuide",
   "title": "OpenELIS GLOBAL2 Implementation Guide",
   "status": "draft",
-  "date": "2022-01-31T19:49:37+00:00",
+  "date": "2022-02-03T09:57:16+00:00",
   "contact": [
     {
       "name": "I-TECH-UW",
@@ -316,7 +316,7 @@
         "reference": {
           "reference": "StructureDefinition/openelis-patient"
         },
-        "name": "OpenElis Patient",
+        "name": "OpenELIS Patient",
         "description": "A patient used for OpenELIS FHIR Exchange",
         "exampleBoolean": false
       },
@@ -375,6 +375,20 @@
         "name": "Task Status Valueset",
         "description": "Task Status Valueset",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/329f09da-0fc9-419d-9575-ace68954426A"
+        },
+        "name": "Example OpenELIS Patient",
+        "description": "Example OpenELIS Patient",
+        "exampleCanonical": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"
       }
     ],
     "page": {

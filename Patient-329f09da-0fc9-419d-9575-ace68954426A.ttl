@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "329f09da-0fc9-419d-9575-ace68954426A"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient";
+       fhir:index 0;
+       fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"329f09da-0fc9-419d-9575-ace68954426A\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-patient.html\">OpenELIS Patient</a></p></div><p><b>identifier</b>: id: NA121212, id: 121213, id: 121214, id: 329f09da-0fc9-419d-9575-ace689544229, id: 329f09da-0fc9-419d-9575-ace689544269</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_nationalId" ];
+     fhir:Identifier.value [ fhir:value "NA121212" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_subjectNumber" ];
+     fhir:Identifier.value [ fhir:value "121213" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_stNumber" ];
+     fhir:Identifier.value [ fhir:value "121214" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_guid" ];
+     fhir:Identifier.value [ fhir:value "329f09da-0fc9-419d-9575-ace689544229" ]
+  ], [
+     fhir:index 4;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_uuid" ];
+     fhir:Identifier.value [ fhir:value "329f09da-0fc9-419d-9575-ace689544269" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Mutesa" ];
+     fhir:HumanName.given [
+       fhir:value "moses";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1988-03-02"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
