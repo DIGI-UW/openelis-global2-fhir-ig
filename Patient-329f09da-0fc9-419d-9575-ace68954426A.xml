@@ -6,7 +6,7 @@
     <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "329f09da-0fc9-419d-9575-ace68954426A" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-patient.html">OpenELIS Patient</a></p></div><p><b>identifier</b>: id: NA121212, id: 121213, id: 121214, id: 329f09da-0fc9-419d-9575-ace689544229, id: 329f09da-0fc9-419d-9575-ace689544269</p><p><b>active</b>: true</p><p><b>name</b>: moses Mutesa </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>moses Mutesa </b> female, DoB: 1988-03-02 ( id: NA121212)</p></div>
   </text>
   <identifier>
     <system value="http://openelis-global.org/pat_nationalId"/>
