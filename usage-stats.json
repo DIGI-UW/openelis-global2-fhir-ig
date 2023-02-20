@@ -49,7 +49,7 @@
     "Task": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
-        "title": "A Task used for OpenELIS FHIR Exchange"
+        "title": "OpenElis Task"
       }
     ]
   },

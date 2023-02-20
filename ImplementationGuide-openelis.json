@@ -10,7 +10,7 @@
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-02-20T02:21:28+00:00",
+  "date" : "2023-02-20T12:30:13+00:00",
   "contact" : [{
     "name" : "I-TECH-UW",
     "telecom" : [{
@@ -641,7 +641,7 @@
       "reference" : {
         "reference" : "StructureDefinition/openelis-task"
       },
-      "name" : "A Task used for OpenELIS FHIR Exchange",
+      "name" : "OpenElis Task",
       "description" : "A Task resource for tracking order state",
       "exampleBoolean" : false
     },
@@ -696,6 +696,66 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/open-elis-diagnostic-report--status-vs"
+      },
+      "name" : "Diagnostic Report Status Valueset",
+      "description" : "OpenElis Diagnostic Report Status Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/open-elis-service-request-intent-vs"
+      },
+      "name" : "Service Request Intent Valueset",
+      "description" : "OpenElis Service Request Intent Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/open-elis-service-request-priority-vs"
+      },
+      "name" : "Service Request priority Valueset",
+      "description" : "OpenElis Service Request Priority Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/open-elis-service-request-status-vs"
+      },
+      "name" : "Service Request Status Valueset",
+      "description" : "OpenElis Service Request Status Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/diagnostic-report--status-code-system"
+      },
+      "name" : "Diagnostic Report Status",
+      "description" : "DiagnosticReport Status Code System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -703,6 +763,30 @@
       },
       "name" : "ObservationStatus",
       "description" : "Observation Status Code system",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/service-request-priority-code-system"
+      },
+      "name" : "Service Request priority",
+      "description" : "ServiceRequest Priority Code System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/service-request-status-code-system"
+      },
+      "name" : "Service Request Status",
+      "description" : "ServiceRequest Status Code System",
       "exampleBoolean" : false
     },
     {
@@ -761,8 +845,8 @@
       "reference" : {
         "reference" : "Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"
       },
-      "name" : "Open ELIS Practitioner",
-      "description" : "Open ELIS Practitioner Example",
+      "name" : "OpenELIS Practitioner Example",
+      "description" : "OpenELIS Practitioner Example",
       "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"
     }],
     "page" : {

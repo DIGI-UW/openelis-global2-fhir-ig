@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "OpenELISObservationVS"]; # 
   fhir:ValueSet.title [ fhir:value "Observation Intent Valueset"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-20T02:21:28+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-20T12:30:13+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];

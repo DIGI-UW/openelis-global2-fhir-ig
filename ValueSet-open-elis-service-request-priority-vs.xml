@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="open-elis-service-request-priority-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-service-request-priority-code-system.html"><code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-service-request-priority-code-system.html#service-request-priority-code-system-routine">routine</a></td><td>Routine</td><td>The request has normal priority.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs"/>
+  <version value="0.1.0"/>
+  <name value="OpenElisServiceRequestPriorityVs"/>
+  <title value="Service Request priority Valueset"/>
+  <status value="active"/>
+  <date value="2023-02-20T12:30:13+00:00"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+  </contact>
+  <description value="OpenElis Service Request Priority Valueset"/>
+  <compose>
+    <include>
+      <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority"/>
+      <concept>
+        <code value="routine"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -197,7 +197,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
 "Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
-"Patient.address","Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
+"Patient.address","Patient.address","","","",1,1,"","","Y","Address {[]} {[]}
 ","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","addr",".addr","PID-11"
 "Patient.maritalStatus","Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -212,7 +212,7 @@ integer {[]} {[]}","Whether patient is part of a multiple birth","Indicates whet
 * Limit dimensions to thumbnail.
 * Keep byte count low to ease resource updates.","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/desc","n/a","OBX-5 - needs a profile"
-"Patient.contact","Patient.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Patient.contact","Patient.contact","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 pat-1:SHALL at least contain a contact's details or a reference to an organization {name.exists() or telecom.exists() or address.exists() or organization.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/scopedRole[classCode=CON]","n/a"
 "Patient.contact.id","Patient.contact.id","","","",0,1,"","","","string {[]} {[]}

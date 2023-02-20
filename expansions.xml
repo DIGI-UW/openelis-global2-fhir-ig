@@ -1,11 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c9494966-d944-4c5b-aaf7-87af70b881da"/>
+  <id value="21400f7e-2b33-441a-8637-3aa847ee2abe"/>
   <meta>
-    <lastUpdated value="2023-02-20T02:21:28.835+00:00"/>
+    <lastUpdated value="2023-02-20T12:30:13.267+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="open-elis-service-request-priority-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-service-request-priority-code-system.html">Service Request priority v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-service-request-priority-routine"> </a>  
+                  <a href="CodeSystem-service-request-priority-code-system.html#service-request-priority-code-system-routine">routine</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority</td>
+                <td>Routine</td>
+                <td>
+                  <div>
+                    <p>The request has normal priority.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs"/>
+        <version value="0.1.0"/>
+        <name value="OpenElisServiceRequestPriorityVs"/>
+        <title value="Service Request priority Valueset"/>
+        <status value="active"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+        </contact>
+        <description value="OpenElis Service Request Priority Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:1fdce5e6-71b2-4538-9780-e2c3794d6db4"/>
+          <timestamp value="2023-02-20T12:30:34+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority"/>
+            <code value="routine"/>
+            <display value="Routine"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="open-elis-service-request-status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-service-request-status-code-system.html">Service Request Status v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-service-request-status-active"> </a>  
+                  <a href="CodeSystem-service-request-status-code-system.html#service-request-status-code-system-active">active</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status</td>
+                <td>Active</td>
+                <td>
+                  <div>
+                    <p>The request is in force and ready to be acted upon.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-service-request-status-completed"> </a>  
+                  <a href="CodeSystem-service-request-status-code-system.html#service-request-status-code-system-completed">completed</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status</td>
+                <td>Completed</td>
+                <td>
+                  <div>
+                    <pre>
+                      <code>The activity described by the request has been fully performed. No further activity will occur.
+</code>
+                    </pre>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-service-request-status-revoked"> </a>  
+                  <a href="CodeSystem-service-request-status-code-system.html#service-request-status-code-system-revoked">revoked</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status</td>
+                <td>Revoked</td>
+                <td>
+                  <div>
+                    <p>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-status-vs"/>
+        <version value="0.1.0"/>
+        <name value="OpenElisServiceRequestStatusVs"/>
+        <title value="Service Request Status Valueset"/>
+        <status value="active"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+        </contact>
+        <description value="OpenElis Service Request Status Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:fd9a4301-1a96-4fb9-9330-a9bc00ebc65f"/>
+          <timestamp value="2023-02-20T12:30:34+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status"/>
+            <code value="revoked"/>
+            <display value="Revoked"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS"/>
     <resource>
@@ -83,7 +282,7 @@
         <name value="OpenELISTaskStatusVS"/>
         <title value="Task Status Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T02:21:28+00:00"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -93,8 +292,8 @@
         </contact>
         <description value="Task Status Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:a1d7d2ae-3fb5-421c-8da6-3e072bfac4b7"/>
-          <timestamp value="2023-02-20T02:21:50+00:00"/>
+          <identifier value="urn:uuid:3608960a-e4f6-4d71-b3ae-a6f37a8017a3"/>
+          <timestamp value="2023-02-20T12:30:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -204,7 +403,7 @@
         <name value="OpenELISObservationVS"/>
         <title value="Observation Intent Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T02:21:28+00:00"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -214,8 +413,8 @@
         </contact>
         <description value="Observation Intent Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:625a6560-8577-40c4-b354-771cc9725ca7"/>
-          <timestamp value="2023-02-20T02:21:50+00:00"/>
+          <identifier value="urn:uuid:176d0927-6eab-4585-a907-56d98c4a50f0"/>
+          <timestamp value="2023-02-20T12:30:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -239,6 +438,104 @@
             <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status"/>
             <code value="preliminary"/>
             <display value="Preliminary"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-intent-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="open-elis-service-request-intent-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-task-intent-code-system.html">Task Intent v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-intent-order"> </a>  
+                  <a href="CodeSystem-task-intent-code-system.html#task-intent-code-system-order">order</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent</td>
+                <td>Order</td>
+                <td>
+                  <div>
+                    <p>The request represents a request/demand and authorization for action by a Practitioner.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-intent-original-order"> </a>  
+                  <a href="CodeSystem-task-intent-code-system.html#task-intent-code-system-original-order">original-order</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent</td>
+                <td>Original-Order</td>
+                <td>
+                  <div>
+                    <p>The request represents an original authorization for action.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-intent-vs"/>
+        <version value="0.1.0"/>
+        <name value="OpenElisServiceRequestIntentVs"/>
+        <title value="Service Request Intent Valueset"/>
+        <status value="active"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+        </contact>
+        <description value="OpenElis Service Request Intent Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:667b0e55-7a7f-4e4a-b843-6cb6ed50c97a"/>
+          <timestamp value="2023-02-20T12:30:35+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent"/>
+            <code value="order"/>
+            <display value="Order"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent"/>
+            <code value="original-order"/>
+            <display value="Original-Order"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -307,7 +604,7 @@
         <name value="OpenELISTaskIntentVS"/>
         <title value="Task Intent Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T02:21:28+00:00"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -317,8 +614,8 @@
         </contact>
         <description value="Task Intent Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:386cd279-9eae-40bf-baf5-89c1f8c0aefe"/>
-          <timestamp value="2023-02-20T02:21:51+00:00"/>
+          <identifier value="urn:uuid:c6dcdb2e-3bbe-4bde-83c1-1688ecf24176"/>
+          <timestamp value="2023-02-20T12:30:36+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -337,6 +634,142 @@
             <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent"/>
             <code value="original-order"/>
             <display value="Original-Order"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="open-elis-diagnostic-report--status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-diagnostic-report--status-code-system.html">Diagnostic Report Status v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-final"> </a>  
+                  <a href="CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-final">final</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td>
+                <td>Final</td>
+                <td>
+                  <div>
+                    <p>The report is complete and verified by an authorized person.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-preliminary"> </a>  
+                  <a href="CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-preliminary">preliminary</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td>
+                <td>Preliminary</td>
+                <td>
+                  <div>
+                    <p>Verified early results are available, but not all results are final.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-registered"> </a>  
+                  <a href="CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-registered">registered</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td>
+                <td>Registered</td>
+                <td>
+                  <div>
+                    <p>The existence of the report is registered, but there is nothing yet available.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-unknown"> </a>  
+                  <a href="CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-unknown">unknown</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td>
+                <td>Unknown</td>
+                <td>
+                  <div>
+                    <p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs"/>
+        <version value="0.1.0"/>
+        <name value="OpenElisDiagnosticReportStatusVs"/>
+        <title value="Diagnostic Report Status Valueset"/>
+        <status value="active"/>
+        <date value="2023-02-20T12:30:13+00:00"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+        </contact>
+        <description value="OpenElis Diagnostic Report Status Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:9e2dc78f-87b3-4bba-b036-d8e03a75a21d"/>
+          <timestamp value="2023-02-20T12:30:36+00:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"/>
+            <code value="final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"/>
+            <code value="preliminary"/>
+            <display value="Preliminary"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"/>
+            <code value="registered"/>
+            <display value="Registered"/>
+          </contains>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>

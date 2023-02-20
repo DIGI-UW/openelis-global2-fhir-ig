@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OPENELIS\A Task used for OpenELIS FHIR Exchange - Mappings - FHIR v4.0.1</title>
+    <title>OPENELIS\OpenElis Task - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -134,7 +134,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>A Task used for OpenELIS FHIR Exchange</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>OpenElis Task</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -351,6 +351,18 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
 </table>
+<a name="eo-task-mapping"> </a><h3>Mappings for OpenELIS Vs FHIR (http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-task)</h3><p>Task Mapping shows how attributes of FHIR Task Resource maps to and from the attributes of OpenElis Sample Object.</p><table class="grid">
+ <tr><td colspan="3"><b>OpenELISTask</b></td></tr>
+ <tr><td>Task</td><td>OE Specimen</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>Sample.fhirUuid</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Sample.accessionNumber</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Analysis</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Sample.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>intent</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>priority</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;for</td><td>Patient</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;authoredOn</td><td>Sample.enteredDate</td> </tr>
+</table>
 
 
     <!-- insert notes if present -->
@@ -404,8 +416,8 @@
 
            
       <div class="inner-wrapper">
-        <p><a name="l1149">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 02:21+0000">2023-02-20</span>
+        <p><a name="l1226">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 12:30+0000">2023-02-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

@@ -84,11 +84,60 @@
     "name" : "OpenELISTaskStatusVS"
   },
   {
+    "id" : "open-elis-diagnostic-report--status-vs",
+    "type" : "ValueSet",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs",
+    "version" : "0.1.0",
+    "name" : "OpenElisDiagnosticReportStatusVs"
+  },
+  {
+    "id" : "open-elis-service-request-intent-vs",
+    "type" : "ValueSet",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-intent-vs",
+    "version" : "0.1.0",
+    "name" : "OpenElisServiceRequestIntentVs"
+  },
+  {
+    "id" : "open-elis-service-request-priority-vs",
+    "type" : "ValueSet",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs",
+    "version" : "0.1.0",
+    "name" : "OpenElisServiceRequestPriorityVs"
+  },
+  {
+    "id" : "open-elis-service-request-status-vs",
+    "type" : "ValueSet",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-status-vs",
+    "version" : "0.1.0",
+    "name" : "OpenElisServiceRequestStatusVs"
+  },
+  {
+    "id" : "diagnostic-report--status-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status",
+    "version" : "0.1.0",
+    "name" : "DiagnosticReportStatusCodeSystem"
+  },
+  {
     "id" : "obs-status-cs",
     "type" : "CodeSystem",
     "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
     "version" : "0.1.0",
     "name" : "ObsStatusCS"
+  },
+  {
+    "id" : "service-request-priority-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestPriorityCodeSystem"
+  },
+  {
+    "id" : "service-request-status-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestStatusCodeSystem"
   },
   {
     "id" : "task-intent-code-system",

@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/service-request-status-code-system> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "service-request-status-code-system"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"service-request-status-code-system-active\"> </a></td><td>Active</td><td>The request is in force and ready to be acted upon.</td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"service-request-status-code-system-completed\"> </a></td><td>Completed</td><td>	The activity described by the request has been fully performed. No further activity will occur.</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"service-request-status-code-system-revoked\"> </a></td><td>Revoked</td><td>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "ServiceRequestStatusCodeSystem"]; # 
+  fhir:CodeSystem.title [ fhir:value "Service Request Status"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-20T12:30:13+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "ServiceRequest Status Code System"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "active" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The request is in force and ready to be acted upon." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "completed" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Completed" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "	The activity described by the request has been fully performed. No further activity will occur." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "revoked" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Revoked" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur." ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/service-request-status-code-system.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

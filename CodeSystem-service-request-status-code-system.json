@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "service-request-status-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"service-request-status-code-system-active\"> </a></td><td>Active</td><td>The request is in force and ready to be acted upon.</td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"service-request-status-code-system-completed\"> </a></td><td>Completed</td><td>\tThe activity described by the request has been fully performed. No further activity will occur.</td></tr><tr><td style=\"white-space:nowrap\">revoked<a name=\"service-request-status-code-system-revoked\"> </a></td><td>Revoked</td><td>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</td></tr></table></div>"
+  },
+  "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status",
+  "version" : "0.1.0",
+  "name" : "ServiceRequestStatusCodeSystem",
+  "title" : "Service Request Status",
+  "status" : "active",
+  "date" : "2023-02-20T12:30:13+00:00",
+  "contact" : [{
+    "name" : "I-TECH-UW",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "www.github.com/i-tech-uw"
+    }]
+  }],
+  "description" : "ServiceRequest Status Code System",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Active",
+    "definition" : "The request is in force and ready to be acted upon."
+  },
+  {
+    "code" : "completed",
+    "display" : "Completed",
+    "definition" : "\tThe activity described by the request has been fully performed. No further activity will occur."
+  },
+  {
+    "code" : "revoked",
+    "display" : "Revoked",
+    "definition" : "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur."
+  }]
+}

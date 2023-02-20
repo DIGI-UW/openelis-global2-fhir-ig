@@ -3,10 +3,10 @@
   "name" : "OpenELISImplementationGuide",
   "package-id" : "openelis",
   "ig-ver" : "0.1.0",
-  "date" : "Mon, 20 Feb, 2023 02:21:28 +0000",
-  "errs" : 13,
-  "warnings" : 19,
-  "hints" : 3,
+  "date" : "Mon, 20 Feb, 2023 12:30:13 +0000",
+  "errs" : 27,
+  "warnings" : 30,
+  "hints" : 6,
   "version" : "4.0.1",
   "tool" : "5.0.0-snapshot2 (3)"
 }

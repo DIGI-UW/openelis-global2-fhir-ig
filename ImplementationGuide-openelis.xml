@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-02-20T02:21:28+00:00"/>
+  <date value="2023-02-20T12:30:13+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -489,7 +489,7 @@
       <reference>
         <reference value="StructureDefinition/openelis-task"/>
       </reference>
-      <name value="A Task used for OpenELIS FHIR Exchange"/>
+      <name value="OpenElis Task"/>
       <description value="A Task resource for tracking order state"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -539,6 +539,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/open-elis-diagnostic-report--status-vs"/>
+      </reference>
+      <name value="Diagnostic Report Status Valueset"/>
+      <description value="OpenElis Diagnostic Report Status Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/open-elis-service-request-intent-vs"/>
+      </reference>
+      <name value="Service Request Intent Valueset"/>
+      <description value="OpenElis Service Request Intent Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/open-elis-service-request-priority-vs"/>
+      </reference>
+      <name value="Service Request priority Valueset"/>
+      <description value="OpenElis Service Request Priority Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/open-elis-service-request-status-vs"/>
+      </reference>
+      <name value="Service Request Status Valueset"/>
+      <description value="OpenElis Service Request Status Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/diagnostic-report--status-code-system"/>
+      </reference>
+      <name value="Diagnostic Report Status"/>
+      <description value="DiagnosticReport Status Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -546,6 +601,28 @@
       </reference>
       <name value="ObservationStatus"/>
       <description value="Observation Status Code system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/service-request-priority-code-system"/>
+      </reference>
+      <name value="Service Request priority"/>
+      <description value="ServiceRequest Priority Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/service-request-status-code-system"/>
+      </reference>
+      <name value="Service Request Status"/>
+      <description value="ServiceRequest Status Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -599,8 +676,8 @@
       <reference>
         <reference value="Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"/>
       </reference>
-      <name value="Open ELIS Practitioner"/>
-      <description value="Open ELIS Practitioner Example"/>
+      <name value="OpenELIS Practitioner Example"/>
+      <description value="OpenELIS Practitioner Example"/>
       <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
     </resource>
     <page>
