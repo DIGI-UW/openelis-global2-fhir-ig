@@ -23,3 +23,31 @@ Description: "Task Intent Code System"
 * ^url = https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent 
 * #order "Order" "The request represents a request/demand and authorization for action by a Practitioner."
 * #original-order "Original-Order" "The request represents an original authorization for action."
+
+
+CodeSystem: ServiceRequestStatusCodeSystem
+Id: service-request-status-code-system
+Title: "Service Request Status"
+Description: "ServiceRequest Status Code System"
+* ^url = https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status 
+* #active "Active" "The request is in force and ready to be acted upon."
+* #completed "Completed" "	The activity described by the request has been fully performed. No further activity will occur."
+* #revoked "Revoked" "The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur."
+
+CodeSystem: ServiceRequestPriorityCodeSystem
+Id: service-request-priority-code-system
+Title: "Service Request priority"
+Description: "ServiceRequest Priority Code System"
+* ^url = https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority 
+* #routine "Routine" "The request has normal priority."
+
+
+CodeSystem: DiagnosticReportStatusCodeSystem
+Id: diagnostic-report--status-code-system
+Title: "Diagnostic Report Status"
+Description: "DiagnosticReport Status Code System"
+* ^url = https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status
+* #final "Final" "The report is complete and verified by an authorized person."
+* #preliminary "Preliminary" "Verified early results are available, but not all results are final."
+* #registered "Registered" "The existence of the report is registered, but there is nothing yet available."
+* #unknown "Unknown" "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which."

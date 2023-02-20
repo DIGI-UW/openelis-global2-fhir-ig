@@ -17,6 +17,8 @@ Description:    "A patient used for OpenELIS FHIR Exchange"
 * name 1..1
 * gender 1..1
 * birthDate 1..1
+* contact 0..1
+* address 1..1
 
 Instance: example-openelis-patient
 InstanceOf: OpenELISPatient 
@@ -34,3 +36,7 @@ Title:   "Example OpenELIS Patient"
 * active = true
 * name.family = "Mutesa"
 * name.given = "moses"
+* address[+].line = "KING"
+* address[=].state = "WASHINGTON"
+* address[=].city = "GREENWOOD"
+* address[=].postalCode = "98103"
