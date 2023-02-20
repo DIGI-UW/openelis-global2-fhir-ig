@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "task-status-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ready<a name=\"task-status-code-system-ready\"> </a></td><td>Ready</td><td>The task is ready to be performed, but no action has yet been taken</td></tr><tr><td style=\"white-space:nowrap\">in-progress<a name=\"task-status-code-system-in-progress\"> </a></td><td>In Pregress</td><td>The task has been started but is not yet complete.</td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"task-status-code-system-completed\"> </a></td><td>Completed</td><td>The task has been completed.</td></tr></table></div>"
+  },
+  "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status",
+  "version" : "0.1.0",
+  "name" : "TaskStatusCodeSystem",
+  "title" : "Task Status",
+  "status" : "active",
+  "date" : "2023-02-20T00:55:10+00:00",
+  "contact" : [{
+    "name" : "I-TECH-UW",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "www.github.com/i-tech-uw"
+    }]
+  }],
+  "description" : "Task Status Code System",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "ready",
+    "display" : "Ready",
+    "definition" : "The task is ready to be performed, but no action has yet been taken"
+  },
+  {
+    "code" : "in-progress",
+    "display" : "In Pregress",
+    "definition" : "The task has been started but is not yet complete."
+  },
+  {
+    "code" : "completed",
+    "display" : "Completed",
+    "definition" : "The task has been completed."
+  }]
+}

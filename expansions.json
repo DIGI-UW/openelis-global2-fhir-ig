@@ -1,8 +1,162 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9b6f1fdd-8b0d-49e7-98de-e313478c039f",
+  "id" : "d6d6977d-13bb-4f42-a60a-319b64f16bdc",
   "meta" : {
-    "lastUpdated" : "2022-07-25T16:53:30.926+00:00"
+    "lastUpdated" : "2023-02-20T00:55:10.954+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OpenELISTaskStatusVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-task-status-code-system.html\">Task Status v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-status-ready\"> </a>  <a href=\"CodeSystem-task-status-code-system.html#task-status-code-system-ready\">ready</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status</td><td>Ready</td><td><div><p>The task is ready to be performed, but no action has yet been taken</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-status-in-progress\"> </a>  <a href=\"CodeSystem-task-status-code-system.html#task-status-code-system-in-progress\">in-progress</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status</td><td>In Pregress</td><td><div><p>The task has been started but is not yet complete.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-status-completed\"> </a>  <a href=\"CodeSystem-task-status-code-system.html#task-status-code-system-completed\">completed</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status</td><td>The task has been completed.</td><td><div><p>The task has been completed.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS",
+      "version" : "0.1.0",
+      "name" : "OpenELISTaskStatusVS",
+      "title" : "Task Status Valueset",
+      "status" : "active",
+      "date" : "2023-02-20T00:55:10+00:00",
+      "contact" : [{
+        "name" : "I-TECH-UW",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "www.github.com/i-tech-uw"
+        }]
+      }],
+      "description" : "Task Status Valueset",
+      "expansion" : {
+        "identifier" : "urn:uuid:04165104-d83f-4be6-b932-b2248aa7fbef",
+        "timestamp" : "2023-02-20T00:55:30+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status",
+          "code" : "ready",
+          "display" : "Ready"
+        },
+        {
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status",
+          "code" : "in-progress",
+          "display" : "In Pregress"
+        },
+        {
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status",
+          "code" : "completed",
+          "display" : "The task has been completed."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OpenELISObservationVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-obs-status-cs.html\">ObservationStatus v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-unknown\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-unknown\">unknown</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Unknown</td><td><div><p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \\u0022other\\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-final\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-final\">final</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Final</td><td><div><p>The observation is complete and there are no further actions needed. Additional information such \\u0022released\\u0022, \\u0022signed\\u0022, etc would be represented using <a href=\"provenance.html\">Provenance</a> which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of <code>preliminary</code> until they are all completed and then a status of <code>final</code> would be applied.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-preliminary\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-preliminary\">preliminary</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Preliminary</td><td><div><p>This is an initial or interim observation: data may be incomplete or unverified.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS",
+      "version" : "0.1.0",
+      "name" : "OpenELISObservationVS",
+      "title" : "Observation Intent Valueset",
+      "status" : "active",
+      "date" : "2023-02-20T00:55:10+00:00",
+      "contact" : [{
+        "name" : "I-TECH-UW",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "www.github.com/i-tech-uw"
+        }]
+      }],
+      "description" : "Observation Intent Valueset",
+      "expansion" : {
+        "identifier" : "urn:uuid:0ff76830-eba6-4949-8390-27a6f6f43fec",
+        "timestamp" : "2023-02-20T00:55:31+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
+          "code" : "unknown",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
+          "code" : "final",
+          "display" : "Final"
+        },
+        {
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
+          "code" : "preliminary",
+          "display" : "Preliminary"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OpenELISTaskIntentVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-task-intent-code-system.html\">Task Intent v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-intent-order\"> </a>  <a href=\"CodeSystem-task-intent-code-system.html#task-intent-code-system-order\">order</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent</td><td>Order</td><td><div><p>The request represents a request/demand and authorization for action by a Practitioner.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-task-intent-original-order\"> </a>  <a href=\"CodeSystem-task-intent-code-system.html#task-intent-code-system-original-order\">original-order</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent</td><td>Original-Order</td><td><div><p>The request represents an original authorization for action.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS",
+      "version" : "0.1.0",
+      "name" : "OpenELISTaskIntentVS",
+      "title" : "Task Intent Valueset",
+      "status" : "active",
+      "date" : "2023-02-20T00:55:10+00:00",
+      "contact" : [{
+        "name" : "I-TECH-UW",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "www.github.com/i-tech-uw"
+        }]
+      }],
+      "description" : "Task Intent Valueset",
+      "expansion" : {
+        "identifier" : "urn:uuid:7f05c696-bdbb-4137-9243-bec4106c4240",
+        "timestamp" : "2023-02-20T00:55:32+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent",
+          "code" : "order",
+          "display" : "Order"
+        },
+        {
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent",
+          "code" : "original-order",
+          "display" : "Original-Order"
+        }]
+      }
+    }
+  }]
 }

@@ -4,6 +4,12 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
+        "title": "Open ELIS Observation"
+      }
+    ],
     "DiagnosticReport": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
@@ -51,6 +57,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -63,8 +72,18 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

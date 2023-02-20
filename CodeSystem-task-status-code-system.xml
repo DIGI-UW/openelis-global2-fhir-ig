@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="task-status-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ready<a name="task-status-code-system-ready"> </a></td><td>Ready</td><td>The task is ready to be performed, but no action has yet been taken</td></tr><tr><td style="white-space:nowrap">in-progress<a name="task-status-code-system-in-progress"> </a></td><td>In Pregress</td><td>The task has been started but is not yet complete.</td></tr><tr><td style="white-space:nowrap">completed<a name="task-status-code-system-completed"> </a></td><td>Completed</td><td>The task has been completed.</td></tr></table></div>
+  </text>
+  <url value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status"/>
+  <version value="0.1.0"/>
+  <name value="TaskStatusCodeSystem"/>
+  <title value="Task Status"/>
+  <status value="active"/>
+  <date value="2023-02-20T00:55:10+00:00"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+  </contact>
+  <description value="Task Status Code System"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="ready"/>
+    <display value="Ready"/>
+    <definition value="The task is ready to be performed, but no action has yet been taken"/>
+  </concept>
+  <concept>
+    <code value="in-progress"/>
+    <display value="In Pregress"/>
+    <definition value="The task has been started but is not yet complete."/>
+  </concept>
+  <concept>
+    <code value="completed"/>
+    <display value="Completed"/>
+    <definition value="The task has been completed."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "OpenELISObservationVS"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-obs-status-cs.html\"><code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-unknown\">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr><tr><td><a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-final\">final</a></td><td>Final</td><td>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.</td></tr><tr><td><a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-preliminary\">preliminary</a></td><td>Preliminary</td><td>This is an initial or interim observation: data may be incomplete or unverified.</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS"]; # 
+  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
+  fhir:ValueSet.name [ fhir:value "OpenELISObservationVS"]; # 
+  fhir:ValueSet.title [ fhir:value "Observation Intent Valueset"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-20T00:55:10+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Observation Intent Valueset"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "unknown" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "final" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "preliminary" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

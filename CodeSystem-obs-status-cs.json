@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "obs-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"obs-status-cs-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr><tr><td style=\"white-space:nowrap\">final<a name=\"obs-status-cs-final\"> </a></td><td>Final</td><td>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.</td></tr><tr><td style=\"white-space:nowrap\">preliminary<a name=\"obs-status-cs-preliminary\"> </a></td><td>Preliminary</td><td>This is an initial or interim observation: data may be incomplete or unverified.</td></tr></table></div>"
+  },
+  "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
+  "version" : "0.1.0",
+  "name" : "ObsStatusCS",
+  "title" : "ObservationStatus",
+  "status" : "active",
+  "date" : "2023-02-20T00:55:10+00:00",
+  "contact" : [{
+    "name" : "I-TECH-UW",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "www.github.com/i-tech-uw"
+    }]
+  }],
+  "description" : "Observation Status Code system",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "unknown",
+    "display" : "Unknown",
+    "definition" : "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which."
+  },
+  {
+    "code" : "final",
+    "display" : "Final",
+    "definition" : "The observation is complete and there are no further actions needed. Additional information such \"released\", \"signed\", etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied."
+  },
+  {
+    "code" : "preliminary",
+    "display" : "Preliminary",
+    "definition" : "This is an initial or interim observation: data may be incomplete or unverified."
+  }]
+}

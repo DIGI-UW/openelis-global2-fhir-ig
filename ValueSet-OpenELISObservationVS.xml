@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OpenELISObservationVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-obs-status-cs.html"><code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-obs-status-cs.html#obs-status-cs-unknown">unknown</a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr><tr><td><a href="CodeSystem-obs-status-cs.html#obs-status-cs-final">final</a></td><td>Final</td><td>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.</td></tr><tr><td><a href="CodeSystem-obs-status-cs.html#obs-status-cs-preliminary">preliminary</a></td><td>Preliminary</td><td>This is an initial or interim observation: data may be incomplete or unverified.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS"/>
+  <version value="0.1.0"/>
+  <name value="OpenELISObservationVS"/>
+  <title value="Observation Intent Valueset"/>
+  <status value="active"/>
+  <date value="2023-02-20T00:55:10+00:00"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+  </contact>
+  <description value="Observation Intent Valueset"/>
+  <compose>
+    <include>
+      <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status"/>
+      <concept>
+        <code value="unknown"/>
+      </concept>
+      <concept>
+        <code value="final"/>
+      </concept>
+      <concept>
+        <code value="preliminary"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

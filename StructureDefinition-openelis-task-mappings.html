@@ -20,15 +20,12 @@
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/openhie.css"/>
+<link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
   <!-- Placeholder for child template CSS declarations -->
 <link rel="stylesheet" href="assets/css/colors.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
-  <!-- Questionnaire: -->
-    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
-
-
-
 
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- [if lt IE 9]>
@@ -47,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.4"}
-    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.5"}
+    h3,h4,h5,h6{--heading-prefix:"3.5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -73,7 +70,13 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenELIS GLOBAL2 Implementation Guide</span><br/>0.1.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">OpenELIS GLOBAL2 Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -127,12 +130,12 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
-    
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>A Task used for OpenELIS FHIR Exchange</b></li>
-          
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -146,7 +149,6 @@
 <div style="counter-reset: section 5" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">OpenELIS GLOBAL2 Implementation Guide - Local Development build (v0.1.0). See the <a href="http://i-tech-uw.github.io/openelis-global-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
-
 
 
 
@@ -177,6 +179,8 @@
       <a href="#">Mappings</a>
     </li>
   
+
+
 
 
 
@@ -215,7 +219,7 @@
         
           Active
           
-            as of 2022-07-25
+            as of 2023-02-20
           
         
       </td>
@@ -272,8 +276,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>.inboundRelationship[typeCode=COMP].source[moodCode=INT].id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.inboundRelationship[typeCode=COMP].source[moodCode=INT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code="status change"].reasonCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;businessStatus</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code="business status"]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code=\u0022status change\u0022].reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;businessStatus</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\u0022business status\u0022]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>.moodCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
@@ -291,7 +295,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ, ].source[classCode=OBS, moodCode=EVN, code="annotation"].value(string)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ, ].source[classCode=OBS, moodCode=EVN, code=\u0022annotation\u0022].value(string)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;restriction</td><td>Instead of pointing to request, would point to component of request, having these characteristics</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -314,7 +318,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code="text/plain"]/data</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=\u0022text/plain\u0022]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>???</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
@@ -400,8 +404,8 @@
 
            
       <div class="inner-wrapper">
-        <p><a name="l1147">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 25, 2022 16:53+0000">2022-07-25</span>
+        <p><a name="l1149">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 00:55+0000">2023-02-20</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

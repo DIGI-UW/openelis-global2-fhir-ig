@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/task-intent-code-system> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "task-intent-code-system"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">order<a name=\"task-intent-code-system-order\"> </a></td><td>Order</td><td>The request represents a request/demand and authorization for action by a Practitioner.</td></tr><tr><td style=\"white-space:nowrap\">original-order<a name=\"task-intent-code-system-original-order\"> </a></td><td>Original-Order</td><td>The request represents an original authorization for action.</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "TaskIntentCodeSystem"]; # 
+  fhir:CodeSystem.title [ fhir:value "Task Intent"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-20T00:55:10+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Task Intent Code System"]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "order" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Order" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The request represents a request/demand and authorization for action by a Practitioner." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "original-order" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Original-Order" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The request represents an original authorization for action." ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/task-intent-code-system.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
