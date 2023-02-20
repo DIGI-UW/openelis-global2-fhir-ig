@@ -16,9 +16,9 @@
   "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
   "version" : "0.1.0",
   "name" : "OpenELISObservation",
-  "title" : "Open ELIS Observation",
+  "title" : "OpenELIS Observation",
   "status" : "active",
-  "date" : "2023-02-20T00:55:10+00:00",
+  "date" : "2023-02-20T01:40:12+00:00",
   "contact" : [{
     "name" : "I-TECH-UW",
     "telecom" : [{

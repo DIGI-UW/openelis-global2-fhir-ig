@@ -1,16 +1,18 @@
 ﻿OpenELISImplementationGuide : Validation Results
 =========================================
 
-err = 12, warn = 17, info = 3
+err = 12, warn = 18, info = 3
 IG Publisher Version: 1.2.37
-Generated Mon Feb 20 00:55:48 UTC 2023. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
- Build Errors : 91 / 4 / 0
+Generated Mon Feb 20 01:40:57 UTC 2023. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
+ Build Errors : 105 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-obs-status-cs : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-task-intent-code-system : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-task-status-code-system : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-openelis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-observation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-open-elisorganisation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-openelis-diagnostic-report : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-openelis-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-openelis-service-request : 0 / 1 / 1
@@ -38,6 +40,11 @@ ERROR: /github/workspace/output/CodeSystem-task-status-code-system.html#/html/bo
 ERROR: /github/workspace/output/CodeSystem-task-status-code-system.json.html#/html/body/div/div/div/p/a at Line 303, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-task-status-code-system.ttl.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-task-status-code-system.xml.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.change.history.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.ttl.html#/html/body/div/div/div/p/a at Line 318, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.xml.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/Patient-329f09da-0fc9-419d-9575-ace68954426A.change.history.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/Patient-329f09da-0fc9-419d-9575-ace68954426A.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/Patient-329f09da-0fc9-419d-9575-ace68954426A.json.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
@@ -52,6 +59,15 @@ ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profil
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.json.html#/html/body/div/div/div/p/a at Line 3149, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 2788, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 2957, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-definitions.html#/html/body/div/div/div/p/a at Line 1371, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-examples.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-mappings.html#/html/body/div/div/div/p/a at Line 457, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-testing.html#/html/body/div/div/div/p/a at Line 307, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation.html#/html/body/div/div/div/p/a at Line 1073, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation.profile.history.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation.profile.json.html#/html/body/div/div/div/p/a at Line 3513, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3042, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation.profile.xml.html#/html/body/div/div/div/p/a at Line 3213, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-openelis-diagnostic-report-definitions.html#/html/body/div/div/div/p/a at Line 825, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-openelis-diagnostic-report-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-openelis-diagnostic-report-mappings.html#/html/body/div/div/div/p/a at Line 386, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
@@ -107,7 +123,7 @@ ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.html#/html/body/di
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.json.html#/html/body/div/div/div/p/a at Line 303, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.ttl.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.xml.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 371, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 389, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
@@ -134,11 +150,14 @@ WARNING: CodeSystem/task-status-code-system: CodeSystem: The ShareableCodeSystem
 WARNING: CodeSystem/task-status-code-system: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-task-status-code-system: URL Mismatch http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/task-status-code-system vs https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status
 == fsh-generated/resources/ImplementationGuide-openelis.json ==
+== fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json ==
+WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json ==
 == fsh-generated/resources/StructureDefinition-open-elis-observation.json ==
-ERROR: Open ELIS Observation.Observation.status: Binding http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS is not a subset of binding http://hl7.org/fhir/ValueSet/observation-status|4.0.1
+ERROR: OpenELIS Observation.Observation.status: Binding http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS is not a subset of binding http://hl7.org/fhir/ValueSet/observation-status|4.0.1
 ERROR: StructureDefinition/open-elis-observation: StructureDefinition: Binding http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS is not a subset of binding http://hl7.org/fhir/ValueSet/observation-status|4.0.1
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-open-elisorganisation.json ==
 == fsh-generated/resources/StructureDefinition-openelis-diagnostic-report.json ==
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-openelis-patient.json ==

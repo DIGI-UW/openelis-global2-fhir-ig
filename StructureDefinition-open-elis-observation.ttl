@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"]; # 
   fhir:StructureDefinition.version [ fhir:value "0.1.0"]; # 
   fhir:StructureDefinition.name [ fhir:value "OpenELISObservation"]; # 
-  fhir:StructureDefinition.title [ fhir:value "Open ELIS Observation"]; # 
+  fhir:StructureDefinition.title [ fhir:value "OpenELIS Observation"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-20T00:55:10+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-20T01:40:12+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];

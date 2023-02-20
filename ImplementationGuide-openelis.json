@@ -10,7 +10,7 @@
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-02-20T00:55:10+00:00",
+  "date" : "2023-02-20T01:40:12+00:00",
   "contact" : [{
     "name" : "I-TECH-UW",
     "telecom" : [{
@@ -581,8 +581,20 @@
       "reference" : {
         "reference" : "StructureDefinition/open-elis-observation"
       },
-      "name" : "Open ELIS Observation",
+      "name" : "OpenELIS Observation",
       "description" : "A Observation Resource used for FHIR Exchange",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/open-elisorganisation"
+      },
+      "name" : "OpenELIS Organization",
+      "description" : "A Organization Resource used for FHIR Exchange",
       "exampleBoolean" : false
     },
     {
@@ -704,6 +716,18 @@
       "name" : "Example OpenELIS Patient",
       "description" : "Example OpenELIS Patient",
       "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"
+      },
+      "name" : "OpenELIS Organization Example",
+      "description" : "OpenELIS Organization Example",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"
     }],
     "page" : {
       "extension" : [{

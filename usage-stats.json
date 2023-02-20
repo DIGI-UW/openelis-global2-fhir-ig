@@ -7,7 +7,13 @@
     "Observation": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
-        "title": "Open ELIS Observation"
+        "title": "OpenELIS Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
+        "title": "OpenELIS Organization"
       }
     ],
     "DiagnosticReport": [

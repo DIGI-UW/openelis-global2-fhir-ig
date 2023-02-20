@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-02-20T00:55:10+00:00"/>
+  <date value="2023-02-20T01:40:12+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -434,8 +434,19 @@
       <reference>
         <reference value="StructureDefinition/open-elis-observation"/>
       </reference>
-      <name value="Open ELIS Observation"/>
+      <name value="OpenELIS Observation"/>
       <description value="A Observation Resource used for FHIR Exchange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/open-elisorganisation"/>
+      </reference>
+      <name value="OpenELIS Organization"/>
+      <description value="A Organization Resource used for FHIR Exchange"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -547,6 +558,17 @@
       <name value="Example OpenELIS Patient"/>
       <description value="Example OpenELIS Patient"/>
       <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"/>
+      </reference>
+      <name value="OpenELIS Organization Example"/>
+      <description value="OpenELIS Organization Example"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
