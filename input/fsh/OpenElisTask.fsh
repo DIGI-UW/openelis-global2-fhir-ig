@@ -1,7 +1,7 @@
 Profile: OpenELISTask
 Parent: Task
 Id:  openelis-task
-Title: "A Task used for OpenELIS FHIR Exchange"
+Title: "OpenElis Task"
 Description: "A Task resource for tracking order state"
 * identifier 1..*
 * basedOn 1..*
@@ -14,3 +14,21 @@ Description: "A Task resource for tracking order state"
 * intent from OpenELISTaskIntentVS
 * output.type.text = "DiagnosticReport"
 * output.value[x] only Reference(OpenELISDiagnosticReport)
+
+
+
+Mapping: OpenElisTaskMapping
+Source: OpenELISTask
+Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-task"
+Id: eo-task-mapping
+Title: "OpenELIS Vs FHIR"
+Description: "Task Mapping shows how attributes of FHIR Task Resource maps to and from the attributes of OpenElis Sample Object."
+* -> "OE Specimen" "This profile maps FHIR Task to OE DataExchange."
+* id -> "Sample.fhirUuid"
+* intent -> "intent"
+* status -> "Sample.status"
+* authoredOn -> "Sample.enteredDate"
+* priority -> "priority"
+* identifier -> "Sample.accessionNumber"
+* basedOn -> "Analysis"
+* for -> "Patient"

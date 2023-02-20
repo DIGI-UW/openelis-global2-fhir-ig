@@ -11,8 +11,8 @@ Description: "A Practitioner Resource used for FHIR Exchange"
 Instance: OpenELISPractitionerExample
 InstanceOf: OpenELISPractitioner
 Usage: #example
-Title: "Open ELIS Practitioner"
-Description: "Open ELIS Practitioner Example"
+Title: "OpenELIS Practitioner Example"
+Description: "OpenELIS Practitioner Example"
 * id = "f185bb76-c298-4671-9be3-ccc94c0a9868"
 * name.family = "Mutesasira"
 * name.given = "Moses"
