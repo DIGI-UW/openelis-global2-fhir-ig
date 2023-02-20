@@ -1,7 +1,7 @@
 Profile: OpenELISObservation
 Parent: Observation
 Id: open-elis-observation
-Title: "Open ELIS Observation"
+Title: "OpenELIS Observation"
 Description: "A Observation Resource used for FHIR Exchange"
 * identifier 1..*
 * status 1..1
