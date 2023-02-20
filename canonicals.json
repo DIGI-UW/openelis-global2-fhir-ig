@@ -14,6 +14,13 @@
     "name" : "OpenELISObservation"
   },
   {
+    "id" : "open-elis-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
+    "version" : "0.1.0",
+    "name" : "OpenElisSpecimen"
+  },
+  {
     "id" : "open-elisorganisation",
     "type" : "StructureDefinition",
     "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",

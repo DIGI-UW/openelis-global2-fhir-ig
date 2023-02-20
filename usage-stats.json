@@ -10,6 +10,12 @@
         "title": "OpenELIS Observation"
       }
     ],
+    "Specimen": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
+        "title": "OpenElis Specimen"
+      }
+    ],
     "Organization": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",

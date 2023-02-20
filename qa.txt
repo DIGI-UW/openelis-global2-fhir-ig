@@ -1,10 +1,10 @@
 ﻿OpenELISImplementationGuide : Validation Results
 =========================================
 
-err = 13, warn = 18, info = 3
+err = 13, warn = 19, info = 3
 IG Publisher Version: 1.2.37
-Generated Mon Feb 20 01:58:58 UTC 2023. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
- Build Errors : 119 / 4 / 0
+Generated Mon Feb 20 02:22:10 UTC 2023. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://i-tech-uw.github.io/openelis-global-ig)
+ Build Errors : 128 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-obs-status-cs : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-task-intent-code-system : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-task-status-code-system : 2 / 2 / 2
@@ -13,6 +13,7 @@ Generated Mon Feb 20 01:58:58 UTC 2023. FHIR version 4.0.1 for openelis#0.1.0 (c
  /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868 : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-observation : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-specimen : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elisorganisation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elispractitioner : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-openelis-diagnostic-report : 0 / 1 / 1
@@ -66,6 +67,15 @@ ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profil
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.json.html#/html/body/div/div/div/p/a at Line 3149, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 2788, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elis-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 2957, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen-definitions.html#/html/body/div/div/div/p/a at Line 1564, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen-examples.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen-mappings.html#/html/body/div/div/div/p/a at Line 470, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen-testing.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen.html#/html/body/div/div/div/p/a at Line 1243, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen.profile.history.html#/html/body/div/div/div/p/a at Line 291, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen.profile.json.html#/html/body/div/div/div/p/a at Line 4620, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen.profile.ttl.html#/html/body/div/div/div/p/a at Line 3962, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-open-elis-specimen.profile.xml.html#/html/body/div/div/div/p/a at Line 4160, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-definitions.html#/html/body/div/div/div/p/a at Line 1371, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-examples.html#/html/body/div/div/div/p/a at Line 323, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-open-elisorganisation-mappings.html#/html/body/div/div/div/p/a at Line 457, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
@@ -139,7 +149,7 @@ ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.html#/html/body/di
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.json.html#/html/body/div/div/div/p/a at Line 303, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.ttl.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-OpenELISTaskStatusVS.xml.html#/html/body/div/div/div/p/a at Line 297, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 407, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 416, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 215, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'www.github.com/i-tech-uw' for "" cannot be resolved
@@ -175,6 +185,8 @@ ERROR: Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868: Practitioner.telecom[0
 ERROR: OpenELIS Observation.Observation.status: Binding http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS is not a subset of binding http://hl7.org/fhir/ValueSet/observation-status|4.0.1
 ERROR: StructureDefinition/open-elis-observation: StructureDefinition: Binding http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS is not a subset of binding http://hl7.org/fhir/ValueSet/observation-status|4.0.1
 WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-open-elis-specimen.json ==
+WARNING: StructureDefinition.where(url = 'http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-open-elisorganisation.json ==
 == fsh-generated/resources/StructureDefinition-open-elispractitioner.json ==
 == fsh-generated/resources/StructureDefinition-openelis-diagnostic-report.json ==
