@@ -16,6 +16,12 @@
         "title": "OpenELIS Organization"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
+        "title": "OpenELIS Practitioner"
+      }
+    ],
     "DiagnosticReport": [
       {
         "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",

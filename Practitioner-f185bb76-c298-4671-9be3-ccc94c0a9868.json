@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "f185bb76-c298-4671-9be3-ccc94c0a9868",
+  "meta" : {
+    "profile" : ["http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f185bb76-c298-4671-9be3-ccc94c0a9868\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f185bb76-c298-4671-9be3-ccc94c0a9868&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elispractitioner.html\">OpenELIS Practitioner</a></p></div><p><b>name</b>: Moses Mutesasira </p><p><b>telecom</b>: +256-83434121</p></div>"
+  },
+  "name" : [{
+    "family" : "Mutesasira",
+    "given" : ["Moses"]
+  }],
+  "telecom" : [{
+    "value" : "+256-83434121"
+  }]
+}

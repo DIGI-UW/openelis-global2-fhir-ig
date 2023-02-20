@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-02-20T01:40:12+00:00"/>
+  <date value="2023-02-20T01:58:23+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -465,6 +465,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/open-elispractitioner"/>
+      </reference>
+      <name value="OpenELIS Practitioner"/>
+      <description value="A Practitioner Resource used for FHIR Exchange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/openelis-service-request"/>
       </reference>
       <name value="OpenELIS Service Request"/>
@@ -569,6 +580,17 @@
       <name value="OpenELIS Organization Example"/>
       <description value="OpenELIS Organization Example"/>
       <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"/>
+      </reference>
+      <name value="Open ELIS Practitioner"/>
+      <description value="Open ELIS Practitioner Example"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
