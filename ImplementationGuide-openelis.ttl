@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OpenELISImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenELIS GLOBAL2 Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-03T05:49:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T05:49:15+00:00"^^xsd:dateTime] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "I-TECH-UW" ] ;
      fhir:telecom ( [
