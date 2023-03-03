@@ -49,3 +49,9 @@ Description: "OpenElis Diagnostic Report Status Valueset"
 * DiagnosticReportStatusCodeSystem#preliminary 
 * DiagnosticReportStatusCodeSystem#registered 
 * DiagnosticReportStatusCodeSystem#unknown 
+
+
+ValueSet: OpenElisSpecimenStatusVS
+Title: "Specimen status Valueset"
+Description: "Specimen status Valueset"
+* SpecimenStatusCodeSystem#available 

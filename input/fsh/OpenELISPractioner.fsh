@@ -25,7 +25,7 @@ Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-
 Id: open-elispractitioner-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Practitioner Mapping shows how attributes of FHIR Practitioner Resource maps to and from the attributes of OpenElis Provider Object."
-* -> "OE Practitioner" "This profile maps FHIR Observation to OE DataExchange."
+* -> "OE Practitioner" "This profile maps FHIR Practitioner to OE DataExchange."
 * id -> "Provider.fhirUuid"
 * name.given -> "Provider.person.firstName"
 * name.family -> "Provider.person.lastName"
