@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-02-20T12:30:13+00:00"/>
+  <date value="2023-03-03T05:49:08+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -583,6 +583,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenElisSpecimenStatusVS"/>
+      </reference>
+      <name value="Specimen status Valueset"/>
+      <description value="Specimen status Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -630,6 +641,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/specimen-status-code-system"/>
+      </reference>
+      <name value="Specimen Status"/>
+      <description value="Specimen Status Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/task-intent-code-system"/>
       </reference>
       <name value="Task Intent"/>
@@ -654,9 +676,64 @@
       <reference>
         <reference value="Patient/329f09da-0fc9-419d-9575-ace68954426A"/>
       </reference>
-      <name value="Example OpenELIS Patient"/>
-      <description value="Example OpenELIS Patient"/>
+      <name value="OpenELIS Patient Example Resource"/>
+      <description value="OpenELIS Patient Example"/>
       <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"/>
+      </reference>
+      <name value="OpenElis Task Example"/>
+      <description value="OpenElis Task Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/OpenElisDiagnosticReportExample"/>
+      </reference>
+      <name value="OpenElis DiagnosticReport Example"/>
+      <description value="OpenElis DiagnosticReport Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OpenElisObservationExample"/>
+      </reference>
+      <name value="OpenElis Observation Example"/>
+      <description value="OpenElis Observation Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/OpenElisServiceRequestExample"/>
+      </reference>
+      <name value="OpenElis Service Request Example"/>
+      <description value="OpenElis ServiceRequest Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/OpenElisSpecimenExample"/>
+      </reference>
+      <name value="OpenElis Specimen Example"/>
+      <description value="OpenElis Specimen Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

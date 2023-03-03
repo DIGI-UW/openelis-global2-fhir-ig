@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://i-tech-uw.github.io/openelis-global-ig/DiagnosticReport/OpenElisDiagnosticReportExample> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OpenElisDiagnosticReportExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"^^xsd:anyURI ;
+       fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2><span title=\"Codes: {http://loinc.org 58410-2}\">Complete blood count (hemogram) panel - Blood by Automated count</span> </h2><table class=\"grid\"><tr><td>Subject</td><td><b>moses Mutesa </b> female, DoB: 1988-03-02 ( id: NA121212)</td></tr><tr><td>Identifier:</td><td> id: f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href=\"Observation-OpenElisObservationExample.html\"><span title=\"Codes: {http://loinc.org 15074-8}\">Glucose [Moles/volume] in Blood</span></a></td><td>55 UI/L</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openelis-global.org/analysisResult_uuid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/ServiceRequest/OpenElisServiceRequestExample> ;
+     fhir:reference [ fhir:v "ServiceRequest/OpenElisServiceRequestExample" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:58410-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58410-2" ] ;
+       fhir:display [ fhir:v "Complete blood count (hemogram) panel - Blood by Automated count" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> ;
+     fhir:reference [ fhir:v "Patient/329f09da-0fc9-419d-9575-ace68954426A" ]
+  ] ; # 
+  fhir:specimen ( [
+     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Specimen/OpenElisSpecimenExample> ;
+     fhir:reference [ fhir:v "Specimen/OpenElisSpecimenExample" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Observation/OpenElisObservationExample> ;
+     fhir:reference [ fhir:v "Observation/OpenElisObservationExample" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

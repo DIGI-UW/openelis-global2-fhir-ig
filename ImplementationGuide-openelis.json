@@ -10,7 +10,7 @@
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-02-20T12:30:13+00:00",
+  "date" : "2023-03-03T05:49:08+00:00",
   "contact" : [{
     "name" : "I-TECH-UW",
     "telecom" : [{
@@ -744,6 +744,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/OpenElisSpecimenStatusVS"
+      },
+      "name" : "Specimen status Valueset",
+      "description" : "Specimen status Valueset",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -795,6 +807,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/specimen-status-code-system"
+      },
+      "name" : "Specimen Status",
+      "description" : "Specimen Status Code System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/task-intent-code-system"
       },
       "name" : "Task Intent",
@@ -821,9 +845,69 @@
       "reference" : {
         "reference" : "Patient/329f09da-0fc9-419d-9575-ace68954426A"
       },
-      "name" : "Example OpenELIS Patient",
-      "description" : "Example OpenELIS Patient",
+      "name" : "OpenELIS Patient Example Resource",
+      "description" : "OpenELIS Patient Example",
       "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"
+      },
+      "name" : "OpenElis Task Example",
+      "description" : "OpenElis Task Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/OpenElisDiagnosticReportExample"
+      },
+      "name" : "OpenElis DiagnosticReport Example",
+      "description" : "OpenElis DiagnosticReport Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/OpenElisObservationExample"
+      },
+      "name" : "OpenElis Observation Example",
+      "description" : "OpenElis Observation Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/OpenElisServiceRequestExample"
+      },
+      "name" : "OpenElis Service Request Example",
+      "description" : "OpenElis ServiceRequest Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/OpenElisSpecimenExample"
+      },
+      "name" : "OpenElis Specimen Example",
+      "description" : "OpenElis Specimen Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"
     },
     {
       "extension" : [{

@@ -84,6 +84,13 @@
     "name" : "OpenELISTaskStatusVS"
   },
   {
+    "id" : "OpenElisSpecimenStatusVS",
+    "type" : "ValueSet",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS",
+    "version" : "0.1.0",
+    "name" : "OpenElisSpecimenStatusVS"
+  },
+  {
     "id" : "open-elis-diagnostic-report--status-vs",
     "type" : "ValueSet",
     "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs",
@@ -138,6 +145,13 @@
     "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status",
     "version" : "0.1.0",
     "name" : "ServiceRequestStatusCodeSystem"
+  },
+  {
+    "id" : "specimen-status-code-system",
+    "type" : "CodeSystem",
+    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status",
+    "version" : "0.1.0",
+    "name" : "SpecimenStatusCodeSystem"
   },
   {
     "id" : "task-intent-code-system",

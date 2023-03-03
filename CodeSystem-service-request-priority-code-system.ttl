@@ -5,42 +5,34 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/service-request-priority-code-system> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "service-request-priority-code-system"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"service-request-priority-code-system-routine\"> </a></td><td>Routine</td><td>The request has normal priority.</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "ServiceRequestPriorityCodeSystem"]; # 
-  fhir:CodeSystem.title [ fhir:value "Service Request priority"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-20T12:30:13+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "ServiceRequest Priority Code System"]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "routine" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Routine" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The request has normal priority." ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/service-request-priority-code-system.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/service-request-priority-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "service-request-priority-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">routine<a name=\"service-request-priority-code-system-routine\"> </a></td><td>Routine</td><td>The request has normal priority.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ServiceRequestPriorityCodeSystem"] ; # 
+  fhir:title [ fhir:v "Service Request priority"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-03T05:49:08+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "I-TECH-UW" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "www.github.com/i-tech-uw" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ServiceRequest Priority Code System"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "routine" ] ;
+     fhir:display [ fhir:v "Routine" ] ;
+     fhir:definition [ fhir:v "The request has normal priority." ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

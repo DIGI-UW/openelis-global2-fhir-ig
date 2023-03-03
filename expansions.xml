@@ -1,11 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="21400f7e-2b33-441a-8637-3aa847ee2abe"/>
+  <id value="ec578e60-5ba2-4c5e-b0ad-36b9b2ea4e2e"/>
   <meta>
-    <lastUpdated value="2023-02-20T12:30:13.267+00:00"/>
+    <lastUpdated value="2023-03-03T05:49:08.389+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS"/>
+    <resource>
+      <ValueSet>
+        <id value="OpenElisSpecimenStatusVS"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-specimen-status-code-system.html">Specimen Status v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-specimen-status-available"> </a>  
+                  <a href="CodeSystem-specimen-status-code-system.html#specimen-status-code-system-available">available</a>
+                </td>
+                <td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status</td>
+                <td>Available</td>
+                <td>
+                  <div>
+                    <p>The physical specimen is present and in good condition.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS"/>
+        <version value="0.1.0"/>
+        <name value="OpenElisSpecimenStatusVS"/>
+        <title value="Specimen status Valueset"/>
+        <status value="active"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
+        <contact>
+          <name value="I-TECH-UW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/i-tech-uw"/>
+          </telecom>
+        </contact>
+        <description value="Specimen status Valueset"/>
+        <expansion>
+          <identifier value="urn:uuid:e1d2428a-7991-4668-a1bb-645d216cc447"/>
+          <timestamp value="2023-03-03T05:49:33+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status"/>
+            <code value="available"/>
+            <display value="Available"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs"/>
     <resource>
@@ -55,7 +134,7 @@
         <name value="OpenElisServiceRequestPriorityVs"/>
         <title value="Service Request priority Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -65,8 +144,8 @@
         </contact>
         <description value="OpenElis Service Request Priority Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:1fdce5e6-71b2-4538-9780-e2c3794d6db4"/>
-          <timestamp value="2023-02-20T12:30:34+00:00"/>
+          <identifier value="urn:uuid:e48e19ff-866e-409f-90fb-9a15a1e1e68f"/>
+          <timestamp value="2023-03-03T05:49:35+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -165,7 +244,7 @@
         <name value="OpenElisServiceRequestStatusVs"/>
         <title value="Service Request Status Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -175,8 +254,8 @@
         </contact>
         <description value="OpenElis Service Request Status Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:fd9a4301-1a96-4fb9-9330-a9bc00ebc65f"/>
-          <timestamp value="2023-02-20T12:30:34+00:00"/>
+          <identifier value="urn:uuid:466a1dc9-cb64-498f-ae8b-c2996f54f8c0"/>
+          <timestamp value="2023-03-03T05:49:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -282,7 +361,7 @@
         <name value="OpenELISTaskStatusVS"/>
         <title value="Task Status Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -292,8 +371,8 @@
         </contact>
         <description value="Task Status Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:3608960a-e4f6-4d71-b3ae-a6f37a8017a3"/>
-          <timestamp value="2023-02-20T12:30:35+00:00"/>
+          <identifier value="urn:uuid:4d4df76e-630b-4388-b006-be495df9ebe1"/>
+          <timestamp value="2023-03-03T05:49:36+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -358,7 +437,7 @@
                 <td>Unknown</td>
                 <td>
                   <div>
-                    <p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>
+                    <p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>
 
                   </div>
                 </td>
@@ -372,7 +451,7 @@
                 <td>Final</td>
                 <td>
                   <div>
-                    <p>The observation is complete and there are no further actions needed. Additional information such \u0022released\u0022, \u0022signed\u0022, etc would be represented using 
+                    <p>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using 
                       <a href="provenance.html">Provenance</a> which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of 
                       <code>preliminary</code> until they are all completed and then a status of 
                       <code>final</code> would be applied.
@@ -403,7 +482,7 @@
         <name value="OpenELISObservationVS"/>
         <title value="Observation Intent Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -413,8 +492,8 @@
         </contact>
         <description value="Observation Intent Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:176d0927-6eab-4585-a907-56d98c4a50f0"/>
-          <timestamp value="2023-02-20T12:30:35+00:00"/>
+          <identifier value="urn:uuid:671474e7-ad84-4527-b7d2-47d960642b76"/>
+          <timestamp value="2023-03-03T05:49:36+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -506,7 +585,7 @@
         <name value="OpenElisServiceRequestIntentVs"/>
         <title value="Service Request Intent Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -516,8 +595,8 @@
         </contact>
         <description value="OpenElis Service Request Intent Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:667b0e55-7a7f-4e4a-b843-6cb6ed50c97a"/>
-          <timestamp value="2023-02-20T12:30:35+00:00"/>
+          <identifier value="urn:uuid:73388638-5e6c-474a-8db7-05c6a9587bd3"/>
+          <timestamp value="2023-03-03T05:49:36+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -604,7 +683,7 @@
         <name value="OpenELISTaskIntentVS"/>
         <title value="Task Intent Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -614,8 +693,8 @@
         </contact>
         <description value="Task Intent Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:c6dcdb2e-3bbe-4bde-83c1-1688ecf24176"/>
-          <timestamp value="2023-02-20T12:30:36+00:00"/>
+          <identifier value="urn:uuid:a4b3425b-f33c-4a8b-be2b-d7d2e6ede140"/>
+          <timestamp value="2023-03-03T05:49:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -717,7 +796,7 @@
                 <td>Unknown</td>
                 <td>
                   <div>
-                    <p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \u0022other\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>
+                    <p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>
 
                   </div>
                 </td>
@@ -730,7 +809,7 @@
         <name value="OpenElisDiagnosticReportStatusVs"/>
         <title value="Diagnostic Report Status Valueset"/>
         <status value="active"/>
-        <date value="2023-02-20T12:30:13+00:00"/>
+        <date value="2023-03-03T05:49:08+00:00"/>
         <contact>
           <name value="I-TECH-UW"/>
           <telecom>
@@ -740,8 +819,8 @@
         </contact>
         <description value="OpenElis Diagnostic Report Status Valueset"/>
         <expansion>
-          <identifier value="urn:uuid:9e2dc78f-87b3-4bba-b036-d8e03a75a21d"/>
-          <timestamp value="2023-02-20T12:30:36+00:00"/>
+          <identifier value="urn:uuid:7634b46b-f67b-44c1-82a9-73cb5edb6bf2"/>
+          <timestamp value="2023-03-03T05:49:38+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

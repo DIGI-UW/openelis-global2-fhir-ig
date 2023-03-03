@@ -5,61 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/Organization/bc8479a5-b34b-4578-9d38-a351bc92e614> a fhir:Organization;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "bc8479a5-b34b-4578-9d38-a351bc92e614"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation";
-       fhir:index 0;
+<http://i-tech-uw.github.io/openelis-global-ig/Organization/bc8479a5-b34b-4578-9d38-a351bc92e614> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bc8479a5-b34b-4578-9d38-a351bc92e614"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"^^xsd:anyURI ;
        fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;bc8479a5-b34b-4578-9d38-a351bc92e614&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elisorganisation.html\">OpenELIS Organization</a></p></div><p><b>identifier</b>: id: DEPT, id: EID ICAP, id: UG1001, id: a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: referralLab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#prov)</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_cliaNum" ];
-     fhir:Identifier.value [ fhir:value "DEPT" ]
-  ], [
-     fhir:index 1;
-     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_shortName" ];
-     fhir:Identifier.value [ fhir:value "EID ICAP" ]
-  ], [
-     fhir:index 2;
-     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_code" ];
-     fhir:Identifier.value [ fhir:value "UG1001" ]
-  ], [
-     fhir:index 3;
-     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_uuid" ];
-     fhir:Identifier.value [ fhir:value "a1313f63-29b4-498d-ba12-0e960c683ec0" ]
-  ]; # 
-  fhir:Organization.type [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "prov" ];
-       fhir:Coding.display [ fhir:value "referralLab" ]
-     ]
-  ]; # 
-  fhir:Organization.name [ fhir:value "Minity Of Health"]; # 
-  fhir:Organization.address [
-     fhir:index 0;
-     fhir:Address.line [
-       fhir:value "KING";
-       fhir:index 0
-     ];
-     fhir:Address.city [ fhir:value "GREENWOOD" ];
-     fhir:Address.state [ fhir:value "WASHINGTON" ];
-     fhir:Address.postalCode [ fhir:value "98103" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://i-tech-uw.github.io/openelis-global-ig/Organization/bc8479a5-b34b-4578-9d38-a351bc92e614.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;bc8479a5-b34b-4578-9d38-a351bc92e614&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elisorganisation.html\">OpenELIS Organization</a></p></div><p><b>identifier</b>: id: DEPT, id: EID ICAP, id: UG1001, id: a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: referralLab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#prov)</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openelis-global.org/org_cliaNum"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DEPT" ]
+  ] [
+     fhir:system [ fhir:v "http://openelis-global.org/org_shortName"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "EID ICAP" ]
+  ] [
+     fhir:system [ fhir:v "http://openelis-global.org/org_code"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "UG1001" ]
+  ] [
+     fhir:system [ fhir:v "http://openelis-global.org/org_uuid"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "a1313f63-29b4-498d-ba12-0e960c683ec0" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "prov" ] ;
+       fhir:display [ fhir:v "referralLab" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Minity Of Health"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "KING" ] ) ;
+     fhir:city [ fhir:v "GREENWOOD" ] ;
+     fhir:state [ fhir:v "WASHINGTON" ] ;
+     fhir:postalCode [ fhir:v "98103" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

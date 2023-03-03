@@ -5,37 +5,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868> a fhir:Practitioner;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "f185bb76-c298-4671-9be3-ccc94c0a9868"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner";
-       fhir:index 0;
+<http://i-tech-uw.github.io/openelis-global-ig/Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "f185bb76-c298-4671-9be3-ccc94c0a9868"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"^^xsd:anyURI ;
        fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f185bb76-c298-4671-9be3-ccc94c0a9868\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f185bb76-c298-4671-9be3-ccc94c0a9868&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elispractitioner.html\">OpenELIS Practitioner</a></p></div><p><b>name</b>: Moses Mutesasira </p><p><b>telecom</b>: +256-83434121</p></div>"
-  ]; # 
-  fhir:Practitioner.name [
-     fhir:index 0;
-     fhir:HumanName.family [ fhir:value "Mutesasira" ];
-     fhir:HumanName.given [
-       fhir:value "Moses";
-       fhir:index 0
-     ]
-  ]; # 
-  fhir:Practitioner.telecom [
-     fhir:index 0;
-     fhir:ContactPoint.value [ fhir:value "+256-83434121" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://i-tech-uw.github.io/openelis-global-ig/Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"f185bb76-c298-4671-9be3-ccc94c0a9868\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;f185bb76-c298-4671-9be3-ccc94c0a9868&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elispractitioner.html\">OpenELIS Practitioner</a></p></div><p><b>name</b>: Moses Mutesasira </p><p><b>telecom</b>: +256-83434121</p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Mutesasira" ] ;
+     fhir:given ( [ fhir:v "Moses" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:value [ fhir:v "+256-83434121" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

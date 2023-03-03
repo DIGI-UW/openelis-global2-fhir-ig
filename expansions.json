@@ -1,11 +1,54 @@
 {
   "resourceType" : "Bundle",
-  "id" : "21400f7e-2b33-441a-8637-3aa847ee2abe",
+  "id" : "ec578e60-5ba2-4c5e-b0ad-36b9b2ea4e2e",
   "meta" : {
-    "lastUpdated" : "2023-02-20T12:30:13.267+00:00"
+    "lastUpdated" : "2023-03-03T05:49:08.389+00:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "OpenElisSpecimenStatusVS",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-specimen-status-code-system.html\">Specimen Status v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-specimen-status-available\"> </a>  <a href=\"CodeSystem-specimen-status-code-system.html#specimen-status-code-system-available\">available</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status</td><td>Available</td><td><div><p>The physical specimen is present and in good condition.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS",
+      "version" : "0.1.0",
+      "name" : "OpenElisSpecimenStatusVS",
+      "title" : "Specimen status Valueset",
+      "status" : "active",
+      "date" : "2023-03-03T05:49:08+00:00",
+      "contact" : [{
+        "name" : "I-TECH-UW",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "www.github.com/i-tech-uw"
+        }]
+      }],
+      "description" : "Specimen status Valueset",
+      "expansion" : {
+        "identifier" : "urn:uuid:e1d2428a-7991-4668-a1bb-645d216cc447",
+        "timestamp" : "2023-03-03T05:49:33+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status",
+          "code" : "available",
+          "display" : "Available"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -19,7 +62,7 @@
       "name" : "OpenElisServiceRequestPriorityVs",
       "title" : "Service Request priority Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -29,8 +72,8 @@
       }],
       "description" : "OpenElis Service Request Priority Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:1fdce5e6-71b2-4538-9780-e2c3794d6db4",
-        "timestamp" : "2023-02-20T12:30:34+00:00",
+        "identifier" : "urn:uuid:e48e19ff-866e-409f-90fb-9a15a1e1e68f",
+        "timestamp" : "2023-03-03T05:49:35+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -62,7 +105,7 @@
       "name" : "OpenElisServiceRequestStatusVs",
       "title" : "Service Request Status Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -72,8 +115,8 @@
       }],
       "description" : "OpenElis Service Request Status Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:fd9a4301-1a96-4fb9-9330-a9bc00ebc65f",
-        "timestamp" : "2023-02-20T12:30:34+00:00",
+        "identifier" : "urn:uuid:466a1dc9-cb64-498f-ae8b-c2996f54f8c0",
+        "timestamp" : "2023-03-03T05:49:35+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -115,7 +158,7 @@
       "name" : "OpenELISTaskStatusVS",
       "title" : "Task Status Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -125,8 +168,8 @@
       }],
       "description" : "Task Status Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:3608960a-e4f6-4d71-b3ae-a6f37a8017a3",
-        "timestamp" : "2023-02-20T12:30:35+00:00",
+        "identifier" : "urn:uuid:4d4df76e-630b-4388-b006-be495df9ebe1",
+        "timestamp" : "2023-03-03T05:49:36+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -161,14 +204,14 @@
       "id" : "OpenELISObservationVS",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-obs-status-cs.html\">ObservationStatus v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-unknown\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-unknown\">unknown</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Unknown</td><td><div><p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \\u0022other\\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-final\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-final\">final</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Final</td><td><div><p>The observation is complete and there are no further actions needed. Additional information such \\u0022released\\u0022, \\u0022signed\\u0022, etc would be represented using <a href=\"provenance.html\">Provenance</a> which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of <code>preliminary</code> until they are all completed and then a status of <code>final</code> would be applied.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-preliminary\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-preliminary\">preliminary</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Preliminary</td><td><div><p>This is an initial or interim observation: data may be incomplete or unverified.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-obs-status-cs.html\">ObservationStatus v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-unknown\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-unknown\">unknown</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Unknown</td><td><div><p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-final\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-final\">final</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Final</td><td><div><p>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using <a href=\"provenance.html\">Provenance</a> which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of <code>preliminary</code> until they are all completed and then a status of <code>final</code> would be applied.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-observation-status-preliminary\"> </a>  <a href=\"CodeSystem-obs-status-cs.html#obs-status-cs-preliminary\">preliminary</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status</td><td>Preliminary</td><td><div><p>This is an initial or interim observation: data may be incomplete or unverified.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS",
       "version" : "0.1.0",
       "name" : "OpenELISObservationVS",
       "title" : "Observation Intent Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -178,8 +221,8 @@
       }],
       "description" : "Observation Intent Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:176d0927-6eab-4585-a907-56d98c4a50f0",
-        "timestamp" : "2023-02-20T12:30:35+00:00",
+        "identifier" : "urn:uuid:671474e7-ad84-4527-b7d2-47d960642b76",
+        "timestamp" : "2023-03-03T05:49:36+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -221,7 +264,7 @@
       "name" : "OpenElisServiceRequestIntentVs",
       "title" : "Service Request Intent Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -231,8 +274,8 @@
       }],
       "description" : "OpenElis Service Request Intent Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:667b0e55-7a7f-4e4a-b843-6cb6ed50c97a",
-        "timestamp" : "2023-02-20T12:30:35+00:00",
+        "identifier" : "urn:uuid:73388638-5e6c-474a-8db7-05c6a9587bd3",
+        "timestamp" : "2023-03-03T05:49:36+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -269,7 +312,7 @@
       "name" : "OpenELISTaskIntentVS",
       "title" : "Task Intent Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -279,8 +322,8 @@
       }],
       "description" : "Task Intent Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:c6dcdb2e-3bbe-4bde-83c1-1688ecf24176",
-        "timestamp" : "2023-02-20T12:30:36+00:00",
+        "identifier" : "urn:uuid:a4b3425b-f33c-4a8b-be2b-d7d2e6ede140",
+        "timestamp" : "2023-03-03T05:49:37+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -310,14 +353,14 @@
       "id" : "open-elis-diagnostic-report--status-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-diagnostic-report--status-code-system.html\">Diagnostic Report Status v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-final\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-final\">final</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Final</td><td><div><p>The report is complete and verified by an authorized person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-preliminary\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-preliminary\">preliminary</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Preliminary</td><td><div><p>Verified early results are available, but not all results are final.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-registered\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-registered\">registered</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Registered</td><td><div><p>The existence of the report is registered, but there is nothing yet available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-unknown\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-unknown\">unknown</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Unknown</td><td><div><p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \\u0022other\\u0022 - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-diagnostic-report--status-code-system.html\">Diagnostic Report Status v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-final\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-final\">final</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Final</td><td><div><p>The report is complete and verified by an authorized person.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-preliminary\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-preliminary\">preliminary</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Preliminary</td><td><div><p>Verified early results are available, but not all results are final.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-registered\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-registered\">registered</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Registered</td><td><div><p>The existence of the report is registered, but there is nothing yet available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---i-tech-uw.github.io-openelis-global2-fhir-ig-codesystem-diagnostic-report-status-unknown\"> </a>  <a href=\"CodeSystem-diagnostic-report--status-code-system.html#diagnostic-report--status-code-system-unknown\">unknown</a></td><td>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</td><td>Unknown</td><td><div><p>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</p>\n</div></td></tr></table></div>"
       },
       "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs",
       "version" : "0.1.0",
       "name" : "OpenElisDiagnosticReportStatusVs",
       "title" : "Diagnostic Report Status Valueset",
       "status" : "active",
-      "date" : "2023-02-20T12:30:13+00:00",
+      "date" : "2023-03-03T05:49:08+00:00",
       "contact" : [{
         "name" : "I-TECH-UW",
         "telecom" : [{
@@ -327,8 +370,8 @@
       }],
       "description" : "OpenElis Diagnostic Report Status Valueset",
       "expansion" : {
-        "identifier" : "urn:uuid:9e2dc78f-87b3-4bba-b036-d8e03a75a21d",
-        "timestamp" : "2023-02-20T12:30:36+00:00",
+        "identifier" : "urn:uuid:7634b46b-f67b-44c1-82a9-73cb5edb6bf2",
+        "timestamp" : "2023-03-03T05:49:38+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",

@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OpenElisSpecimenStatusVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-specimen-status-code-system.html\"><code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-specimen-status-code-system.html#specimen-status-code-system-available\">available</a></td><td>Available</td><td>The physical specimen is present and in good condition.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS",
+  "version" : "0.1.0",
+  "name" : "OpenElisSpecimenStatusVS",
+  "title" : "Specimen status Valueset",
+  "status" : "active",
+  "date" : "2023-03-03T05:49:08+00:00",
+  "contact" : [{
+    "name" : "I-TECH-UW",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "www.github.com/i-tech-uw"
+    }]
+  }],
+  "description" : "Specimen status Valueset",
+  "compose" : {
+    "include" : [{
+      "system" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status",
+      "concept" : [{
+        "code" : "available"
+      }]
+    }]
+  }
+}

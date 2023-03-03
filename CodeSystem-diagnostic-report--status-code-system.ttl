@@ -5,57 +5,46 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/diagnostic-report--status-code-system> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "diagnostic-report--status-code-system"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">final<a name=\"diagnostic-report--status-code-system-final\"> </a></td><td>Final</td><td>The report is complete and verified by an authorized person.</td></tr><tr><td style=\"white-space:nowrap\">preliminary<a name=\"diagnostic-report--status-code-system-preliminary\"> </a></td><td>Preliminary</td><td>Verified early results are available, but not all results are final.</td></tr><tr><td style=\"white-space:nowrap\">registered<a name=\"diagnostic-report--status-code-system-registered\"> </a></td><td>Registered</td><td>The existence of the report is registered, but there is nothing yet available.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"diagnostic-report--status-code-system-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
-  fhir:CodeSystem.name [ fhir:value "DiagnosticReportStatusCodeSystem"]; # 
-  fhir:CodeSystem.title [ fhir:value "Diagnostic Report Status"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-20T12:30:13+00:00"^^xsd:dateTime]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "www.github.com/i-tech-uw" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "DiagnosticReport Status Code System"]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "final" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Final" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The report is complete and verified by an authorized person." ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "preliminary" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Preliminary" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Verified early results are available, but not all results are final." ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "registered" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Registered" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The existence of the report is registered, but there is nothing yet available." ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which." ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/diagnostic-report--status-code-system.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://i-tech-uw.github.io/openelis-global-ig/CodeSystem/diagnostic-report--status-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diagnostic-report--status-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">final<a name=\"diagnostic-report--status-code-system-final\"> </a></td><td>Final</td><td>The report is complete and verified by an authorized person.</td></tr><tr><td style=\"white-space:nowrap\">preliminary<a name=\"diagnostic-report--status-code-system-preliminary\"> </a></td><td>Preliminary</td><td>Verified early results are available, but not all results are final.</td></tr><tr><td style=\"white-space:nowrap\">registered<a name=\"diagnostic-report--status-code-system-registered\"> </a></td><td>Registered</td><td>The existence of the report is registered, but there is nothing yet available.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"diagnostic-report--status-code-system-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DiagnosticReportStatusCodeSystem"] ; # 
+  fhir:title [ fhir:v "Diagnostic Report Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-03-03T05:49:08+00:00"^^xsd:dateTime] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "I-TECH-UW" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "www.github.com/i-tech-uw" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DiagnosticReport Status Code System"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "final" ] ;
+     fhir:display [ fhir:v "Final" ] ;
+     fhir:definition [ fhir:v "The report is complete and verified by an authorized person." ]
+  ] [
+     fhir:code [ fhir:v "preliminary" ] ;
+     fhir:display [ fhir:v "Preliminary" ] ;
+     fhir:definition [ fhir:v "Verified early results are available, but not all results are final." ]
+  ] [
+     fhir:code [ fhir:v "registered" ] ;
+     fhir:display [ fhir:v "Registered" ] ;
+     fhir:definition [ fhir:v "The existence of the report is registered, but there is nothing yet available." ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which." ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

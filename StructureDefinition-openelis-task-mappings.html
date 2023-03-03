@@ -185,6 +185,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-openelis-task-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -219,7 +229,7 @@
         
           Active
           
-            as of 2023-02-20
+            as of 2023-03-03
           
         
       </td>
@@ -276,8 +286,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;groupIdentifier</td><td>.inboundRelationship[typeCode=COMP].source[moodCode=INT].id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partOf</td><td>.inboundRelationship[typeCode=COMP].source[moodCode=INT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code=\u0022status change\u0022].reasonCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;businessStatus</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\u0022business status\u0022]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN, code="status change"].reasonCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;businessStatus</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code="business status"]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>.moodCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
@@ -295,7 +305,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ, ].source[classCode=OBS, moodCode=EVN, code=\u0022annotation\u0022].value(string)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship[typeCode=SUBJ, ].source[classCode=OBS, moodCode=EVN, code="annotation"].value(string)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=CACT, moodCode=EVN]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;restriction</td><td>Instead of pointing to request, would point to component of request, having these characteristics</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -318,7 +328,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=\u0022text/plain\u0022]/data</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code="text/plain"]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>???</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
@@ -416,8 +426,8 @@
 
            
       <div class="inner-wrapper">
-        <p><a name="l1226">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 12:30+0000">2023-02-20</span>
+        <p><a name="l1232">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="www.github.com/i-tech-uw"></a>.  Package openelis#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 3, 2023 05:49+0000">2023-03-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

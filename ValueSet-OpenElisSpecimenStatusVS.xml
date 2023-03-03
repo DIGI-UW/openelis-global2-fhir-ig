@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="OpenElisSpecimenStatusVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-specimen-status-code-system.html"><code>https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-specimen-status-code-system.html#specimen-status-code-system-available">available</a></td><td>Available</td><td>The physical specimen is present and in good condition.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS"/>
+  <version value="0.1.0"/>
+  <name value="OpenElisSpecimenStatusVS"/>
+  <title value="Specimen status Valueset"/>
+  <status value="active"/>
+  <date value="2023-03-03T05:49:08+00:00"/>
+  <contact>
+    <name value="I-TECH-UW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/i-tech-uw"/>
+    </telecom>
+  </contact>
+  <description value="Specimen status Valueset"/>
+  <compose>
+    <include>
+      <system value="https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status"/>
+      <concept>
+        <code value="available"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

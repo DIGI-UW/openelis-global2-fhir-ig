@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="OpenElisServiceRequestExample"/>
+  <meta>
+    <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="OpenElisServiceRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;OpenElisServiceRequestExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-service-request.html">OpenELIS Service Request</a></p></div><p><b>identifier</b>: id: 0a65ab46-179e-4506-9fa3-09d342268576, id: TESTA230000000001749</p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: null <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (sample_program)</span></p><p><b>priority</b>: routine</p><p><b>code</b>: CT Chest <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#24627-2)</span></p><p><b>subject</b>: <a href="Patient-329f09da-0fc9-419d-9575-ace68954426A.html">Patient/329f09da-0fc9-419d-9575-ace68954426A</a> &quot; MUTESA&quot;</p><p><b>authoredOn</b>: 2023-02-03</p><p><b>requester</b>: <a href="Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.html">Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868</a> &quot; MUTESASIRA&quot;</p><p><b>locationReference</b>: <a href="Location">Location</a> &quot;Location&quot;</p><p><b>specimen</b>: <a href="Specimen-OpenElisSpecimenExample.html">Specimen/OpenElisSpecimenExample</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://openelis-global.org/analysis_uuid"/>
+    <value value="0a65ab46-179e-4506-9fa3-09d342268576"/>
+  </identifier>
+  <identifier>
+    <system value="http://openelis-global.org/samp_labNo"/>
+    <value value="TESTA230000000001749"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="original-order"/>
+  <category>
+    <coding>
+      <system value="http://openelis-global.org/sample_program"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24627-2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/329f09da-0fc9-419d-9575-ace68954426A"/>
+  </subject>
+  <authoredOn value="2023-02-03"/>
+  <requester>
+    <reference value="Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"/>
+  </requester>
+  <locationReference>
+    <reference value="Location"/>
+  </locationReference>
+  <specimen>
+    <reference value="Specimen/OpenElisSpecimenExample"/>
+  </specimen>
+</ServiceRequest>

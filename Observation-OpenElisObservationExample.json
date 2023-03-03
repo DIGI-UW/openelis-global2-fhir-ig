@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "OpenElisObservationExample",
+  "meta" : {
+    "profile" : ["http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"OpenElisObservationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;OpenElisObservationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-observation.html\">OpenELIS Observation</a></p></div><p><b>identifier</b>: id: 158999b0-b295-4dfd-a5b0-81ed58733b5f</p><p><b>basedOn</b>: <a href=\"ServiceRequest-OpenElisServiceRequestExample.html\">ServiceRequest/OpenElisServiceRequestExample</a></p><p><b>status</b>: final</p><p><b>code</b>: Glucose [Moles/volume] in Blood <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#15074-8)</span></p><p><b>subject</b>: <a href=\"Patient-329f09da-0fc9-419d-9575-ace68954426A.html\">Patient/329f09da-0fc9-419d-9575-ace68954426A</a> &quot; MUTESA&quot;</p><p><b>value</b>: 55 UI/L</p><p><b>specimen</b>: <a href=\"Specimen-OpenElisSpecimenExample.html\">Specimen/OpenElisSpecimenExample</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://openelis-global.org/result_uuid",
+    "value" : "158999b0-b295-4dfd-a5b0-81ed58733b5f"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/OpenElisServiceRequestExample"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "15074-8",
+      "display" : "Glucose [Moles/volume] in Blood"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/329f09da-0fc9-419d-9575-ace68954426A"
+  },
+  "valueQuantity" : {
+    "value" : 55,
+    "unit" : "UI/L"
+  },
+  "specimen" : {
+    "reference" : "Specimen/OpenElisSpecimenExample"
+  }
+}
