@@ -51,3 +51,11 @@ Description: "DiagnosticReport Status Code System"
 * #preliminary "Preliminary" "Verified early results are available, but not all results are final."
 * #registered "Registered" "The existence of the report is registered, but there is nothing yet available."
 * #unknown "Unknown" "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which."
+
+
+CodeSystem: SpecimenStatusCodeSystem
+Id: specimen-status-code-system
+Title: "Specimen Status"
+Description: "Specimen Status Code System"
+* ^url = https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status
+* #available "Available" "The physical specimen is present and in good condition."

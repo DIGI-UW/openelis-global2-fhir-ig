@@ -20,3 +20,18 @@ Description: "DiagnosticReport resource created by a LIS"
 * result 1..1
 * result only Reference(OpenELISObservation)
 
+Instance: OpenElisDiagnosticReportExample  
+InstanceOf: OpenELISDiagnosticReport
+Usage: #example
+Title: "OpenElis DiagnosticReport Example"
+Description: "OpenElis DiagnosticReport Example Resource"
+* identifier[uuid].system = "http://openelis-global.org/analysisResult_uuid"
+* identifier[uuid].value = "f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd"
+* status = DiagnosticReportStatusCodeSystem#final
+* code.coding[0].system = "http://loinc.org"
+* code.coding[0].code = #58410-2
+* code.coding[0].display = "Complete blood count (hemogram) panel - Blood by Automated count"
+* basedOn = Reference(OpenElisServiceRequestExample)
+* specimen = Reference(OpenElisSpecimenExample)
+* subject = Reference(example-openelis-patient)
+* result = Reference(OpenElisObservationExample)
