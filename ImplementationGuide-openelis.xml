@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-03T05:49:15+00:00"/>
+  <date value="2023-03-05T22:47:16+00:00"/>
   <contact>
     <name value="I-TECH-UW"/>
     <telecom>
@@ -778,6 +778,14 @@
         </extension>
         <nameUrl value="changes.html"/>
         <title value="Changes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="workflows.html"/>
+        </extension>
+        <nameUrl value="workflows.html"/>
+        <title value="Workflows"/>
         <generation value="markdown"/>
       </page>
     </page>

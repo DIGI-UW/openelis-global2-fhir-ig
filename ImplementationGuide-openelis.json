@@ -10,7 +10,7 @@
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-03T05:49:15+00:00",
+  "date" : "2023-03-05T22:47:16+00:00",
   "contact" : [{
     "name" : "I-TECH-UW",
     "telecom" : [{
@@ -957,6 +957,15 @@
         }],
         "nameUrl" : "changes.html",
         "title" : "Changes",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "workflows.html"
+        }],
+        "nameUrl" : "workflows.html",
+        "title" : "Workflows",
         "generation" : "markdown"
       }]
     },
