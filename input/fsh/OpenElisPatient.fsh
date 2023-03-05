@@ -37,7 +37,7 @@ Title:   "OpenELIS Patient Example Resource"
 * identifier[uuid].system = "http://openelis-global.org/pat_uuid"
 * identifier[uuid].value = "329f09da-0fc9-419d-9575-ace689544269"
 * birthDate = "1988-03-02"
-* gender = #female
+* gender = #male
 * active = true
 * name.family = "Mutesa"
 * name.given = "moses"

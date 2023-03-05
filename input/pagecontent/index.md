@@ -14,7 +14,8 @@ This is the Implementation Guide covering the OpenELIS GLOBAL2 implementation of
 
 ### About this IG
  The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).
-
+### FHir Exchange Workflow Diagram
+![workflow](assets/images/exchange_workflow.png)
 ### Supported Resources
 
 [OpenELIS Global2 Exchange](https://github.com/I-TECH-UW/dataexport/tree/4e7785d077a7f319c4b192d7465317b2da3ada2e) supports the export of the following FHIR Resources

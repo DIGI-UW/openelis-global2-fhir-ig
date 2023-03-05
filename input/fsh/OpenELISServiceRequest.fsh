@@ -49,3 +49,23 @@ Description: "OpenElis ServiceRequest Example Resource"
 * category[0].coding.system = "http://openelis-global.org/sample_program"
 * authoredOn =  2023-02-03
 * requester = Reference(OpenELISPractitionerExample)
+
+Mapping: OpenELISServiceRequestMapping
+Source: OpenELISServiceRequest
+Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-service-request"
+Id: oe-service-request-mapping
+Title: "OpenELIS Vs FHIR"
+Description: "ServiceRequest Mapping shows how attributes of FHIR ServiceRequest Resource maps to and from the attributes of OpenElis SampleItem Object."
+* -> "OE ServiceRequest" "This profile maps FHIR ServiceRequest to OE DataExchange."
+* id -> "Analysis.fhirUuid"
+* locationReference -> "Organisation"
+* intent -> "Analysis.intent"
+* status -> "Analysis.status"
+* category -> "ObservationHistory.value"
+* priority -> "Analysis.priority"
+* code.coding.code -> "Analysis.test.loinc"
+* code.coding.display -> "Analysis.test.localizedTestName"
+* note -> "note"
+* specimen -> "SampleItem"
+* subject -> "Patient"
+* requester -> "Provider"
