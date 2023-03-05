@@ -19,9 +19,12 @@
 	</li>
 -->
 	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Technical Specifications<b class="caret"></b>
 		</a>
 		<ul class="dropdown-menu">
+			<li>
+				<a href="workflows.html">WorkFlows</a>
+			</li>
 			<li>
 				<a href="artifacts.html">Artifact Index</a>
 			</li>

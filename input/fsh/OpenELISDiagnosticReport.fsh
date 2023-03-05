@@ -35,3 +35,18 @@ Description: "OpenElis DiagnosticReport Example Resource"
 * specimen = Reference(OpenElisSpecimenExample)
 * subject = Reference(example-openelis-patient)
 * result = Reference(OpenElisObservationExample)
+
+Mapping: OpenELISDiagnosticReportMapping
+Source: OpenELISDiagnosticReport
+Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report"
+Id: oe-diagnostic-report-mapping
+Title: "OpenELIS Vs FHIR"
+Description: "DiagnosticReport Mapping shows how attributes of FHIR DiagnosticReport Resource maps to and from the attributes of OpenElis SampleItem Object."
+* -> "OE DiagnosticReport" "This profile maps FHIR DiagnosticReport to OE DataExchange."
+* id -> "Analysis.fhirUuid"
+* status -> "status"
+* basedOn -> "Analysis"
+* specimen -> "SampleItem"
+* subject -> "patient"
+* result -> "Result"
+
