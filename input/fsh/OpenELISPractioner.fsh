@@ -17,6 +17,7 @@ Description: "OpenELIS Practitioner Example"
 * name.family = "Mutesasira"
 * name.given = "Moses"
 * telecom[0].value = "+256-83434121"
+* telecom[0].system = #phone
 
 
 Mapping: OpenELISPractitionerMapping

@@ -3,14 +3,16 @@ Parent: Observation
 Id: open-elis-observation
 Title: "OpenELIS Observation"
 Description: "A Observation Resource used for FHIR Exchange"
-* identifier 1..*
+* identifier 0..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains uuid 1..1
+* identifier[uuid] ^sliceName = "uuid"
+* identifier[uuid].system = "https://demo.openelis-global.org/result_uuid"
 * status 1..1
 * code 1..1
-* status from OpenELISObservationVS
+* status 1..1
 * value[x] 1..1
 * basedOn 1..1
 * basedOn only Reference(OpenELISServiceRequest)
@@ -41,9 +43,9 @@ InstanceOf: OpenELISObservation
 Usage: #example
 Title: "OpenElis Observation Example"
 Description: "OpenElis Observation Example Resource"
-* identifier[uuid].system = "http://openelis-global.org/result_uuid"
+* identifier[uuid].system = "https://demo.openelis-global.org/result_uuid"
 * identifier[uuid].value = "158999b0-b295-4dfd-a5b0-81ed58733b5f"
-* status = ObsStatusCS#final
+* status = #final
 * valueQuantity.value = 55
 * valueQuantity.unit = "UI/L"
 * basedOn = Reference(OpenElisServiceRequestExample)
