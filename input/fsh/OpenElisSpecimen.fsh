@@ -8,11 +8,11 @@ Description: "A Specimen Resource used for FHIR Exchange"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains uuid 1..1
-* identifier[uuid].system = "http://openelis-global.org/sampleItem_uuid"
+* identifier[uuid].system = "https://demo.openelis-global.org/sampleItem_uuid"
 * accessionIdentifier 1..1
 * type 1..1
 * status 1..1
-* status from OpenElisSpecimenStatusVS
+* status 1..1
 * receivedTime 1..1
 * collection 1..1
 * collection.collectedDateTime 1..1
@@ -42,13 +42,13 @@ InstanceOf: OpenElisSpecimen
 Usage: #example
 Title: "OpenElis Specimen Example"
 Description: "OpenElis Specimen Example Resource"
-* accessionIdentifier[0].system = "http://openelis-global.org/sampleItem_labNo"
+* accessionIdentifier[0].system = "https://demo.openelis-global.org/sampleItem_labNo"
 * accessionIdentifier[0].value = "TESTA230000000001751"
-* identifier[uuid].system = "http://openelis-global.org/sampleItem_uuid"
+* identifier[uuid].system = "https://demo.openelis-global.org/sampleItem_uuid"
 * identifier[uuid].value = "9df49e2d-57f7-4e7b-abb1-54d0a1933253"
-* type.coding.system = "http://openelis-global.org/sampleType"
+* type.coding.system = "http://loinc.org"
 * type.coding.display = "Plasma"
-* status = SpecimenStatusCodeSystem#available 
+* status = #available 
 * receivedTime = "2023-03-03T07:03:00Z"
 * collection.collectedDateTime = 2023-02-03
 * request = Reference(OpenElisServiceRequestExample)

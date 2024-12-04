@@ -9,11 +9,11 @@ Description:    "A patient used for OpenELIS FHIR Exchange"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains nationalid 1..1  and subjectnumber 1..1 and stnumber 1..1 and guid 1..1 and uuid 1..1
-* identifier[nationalid].system = "http://openelis-global.org/pat_nationalId" 
-* identifier[subjectnumber].system = "http://openelis-global.org/pat_subjectNumber"
-* identifier[stnumber].system = "http://openelis-global.org/pat_stNumber"
-* identifier[guid].system = "http://openelis-global.org/pat_guid"
-* identifier[uuid].system = "http://openelis-global.org/pat_uuid"
+* identifier[nationalid].system = "https://demo.openelis-global.org/pat_nationalId" 
+* identifier[subjectnumber].system = "https://demo.openelis-global.org/pat_subjectNumber"
+* identifier[stnumber].system = "https://demo.openelis-global.org/pat_stNumber"
+* identifier[guid].system = "https://demo.openelis-global.org/pat_guid"
+* identifier[uuid].system = "https://demo.openelis-global.org/pat_uuid"
 * name 1..1
 * gender 1..1
 * birthDate 1..1
@@ -26,15 +26,15 @@ Usage: #example
 Description: "OpenELIS Patient Example"
 Title:   "OpenELIS Patient Example Resource"
 * id  = "329f09da-0fc9-419d-9575-ace68954426A"
-* identifier[nationalid].system = "http://openelis-global.org/pat_nationalId"
+* identifier[nationalid].system = "https://demo.openelis-global.org/pat_nationalId"
 * identifier[nationalid].value = "NA121212"
-* identifier[subjectnumber].system = "http://openelis-global.org/pat_subjectNumber"
+* identifier[subjectnumber].system = "https://demo.openelis-global.org/pat_subjectNumber"
 * identifier[subjectnumber].value = "121213"
-* identifier[stnumber].system = "http://openelis-global.org/pat_stNumber"
+* identifier[stnumber].system = "https://demo.openelis-global.org/pat_stNumber"
 * identifier[stnumber].value = "121214"
-* identifier[guid].system = "http://openelis-global.org/pat_guid"
+* identifier[guid].system = "https://demo.openelis-global.org/pat_guid"
 * identifier[guid].value = "329f09da-0fc9-419d-9575-ace689544229"
-* identifier[uuid].system = "http://openelis-global.org/pat_uuid"
+* identifier[uuid].system = "https://demo.openelis-global.org/pat_uuid"
 * identifier[uuid].value = "329f09da-0fc9-419d-9575-ace689544269"
 * birthDate = "1988-03-02"
 * gender = #male
