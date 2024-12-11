@@ -2,22 +2,15 @@
   "resourceType" : "ImplementationGuide",
   "id" : "openelis",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><a name=\"openelis-en-US\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
   },
   "url" : "http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
   "version" : "0.1.0",
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2023-03-05T22:47:16+00:00",
-  "contact" : [{
-    "name" : "I-TECH-UW",
-    "telecom" : [{
-      "system" : "url",
-      "value" : "www.github.com/i-tech-uw"
-    }]
-  }],
+  "date" : "2024-12-11T16:37:57+00:00",
   "description" : "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR",
   "packageId" : "openelis",
   "license" : "CC-BY-SA-4.0",
@@ -30,7 +23,17 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.0.0"
+    "version" : "6.1.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -245,6 +248,17 @@
     {
       "extension" : [{
         "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueString" : "active-tables"
       },
       {
@@ -298,9 +312,13 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+    },
+    {
       "extension" : [{
         "url" : "code",
-        "valueString" : "copyrightyear"
+        "valueCode" : "copyrightyear"
       },
       {
         "url" : "value",
@@ -311,7 +329,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "releaselabel"
+        "valueCode" : "releaselabel"
       },
       {
         "url" : "value",
@@ -322,7 +340,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
+        "valueCode" : "apply-publisher"
       },
       {
         "url" : "value",
@@ -333,7 +351,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-license"
+        "valueCode" : "apply-license"
       },
       {
         "url" : "value",
@@ -344,7 +362,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-contact"
+        "valueCode" : "apply-contact"
       },
       {
         "url" : "value",
@@ -355,7 +373,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "autoload-resources"
+        "valueCode" : "autoload-resources"
       },
       {
         "url" : "value",
@@ -366,7 +384,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -377,7 +395,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -388,7 +406,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-qa"
+        "valueCode" : "path-qa"
       },
       {
         "url" : "value",
@@ -399,7 +417,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-temp"
+        "valueCode" : "path-temp"
       },
       {
         "url" : "value",
@@ -410,7 +428,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-output"
+        "valueCode" : "path-output"
       },
       {
         "url" : "value",
@@ -421,7 +439,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-suppressed-warnings"
+        "valueCode" : "path-suppressed-warnings"
       },
       {
         "url" : "value",
@@ -432,7 +450,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
@@ -443,7 +461,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-html"
+        "valueCode" : "template-html"
       },
       {
         "url" : "value",
@@ -454,7 +472,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-md"
+        "valueCode" : "template-md"
       },
       {
         "url" : "value",
@@ -465,7 +483,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-context"
+        "valueCode" : "apply-context"
       },
       {
         "url" : "value",
@@ -476,7 +494,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-copyright"
+        "valueCode" : "apply-copyright"
       },
       {
         "url" : "value",
@@ -487,7 +505,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -498,7 +516,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -509,7 +527,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "active-tables"
+        "valueCode" : "apply-wg"
       },
       {
         "url" : "value",
@@ -520,7 +538,18 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "fmm-definition"
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
       },
       {
         "url" : "value",
@@ -531,7 +560,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "propagate-status"
+        "valueCode" : "propagate-status"
       },
       {
         "url" : "value",
@@ -542,7 +571,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludelogbinaryformat"
+        "valueCode" : "excludelogbinaryformat"
       },
       {
         "url" : "value",
@@ -553,7 +582,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "tabbed-snapshots"
+        "valueCode" : "tabbed-snapshots"
       },
       {
         "url" : "value",
@@ -564,6 +593,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LocationExample"
+      },
+      "name" : "Location Example",
+      "description" : "Health Facility Location example resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -571,6 +612,30 @@
       },
       "name" : "OpenELIS Diagnostic Report",
       "description" : "DiagnosticReport resource created by a LIS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/OpenElisDiagnosticReportExample"
+      },
+      "name" : "OpenElis DiagnosticReport Example",
+      "description" : "OpenElis DiagnosticReport Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/open-elis-location"
+      },
+      "name" : "OpenELIS Facility Location",
+      "description" : "A Location Resource used for FHIR Exchange",
       "exampleBoolean" : false
     },
     {
@@ -588,6 +653,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/OpenElisObservationExample"
+      },
+      "name" : "OpenElis Observation Example",
+      "description" : "OpenElis Observation Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -600,6 +677,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"
+      },
+      "name" : "OpenELIS Organization Example",
+      "description" : "OpenELIS Organization Example",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -607,234 +696,6 @@
       },
       "name" : "OpenELIS Patient",
       "description" : "A patient used for OpenELIS FHIR Exchange",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/open-elispractitioner"
-      },
-      "name" : "OpenELIS Practitioner",
-      "description" : "A Practitioner Resource used for FHIR Exchange",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/openelis-service-request"
-      },
-      "name" : "OpenELIS Service Request",
-      "description" : "OpenELIS service request",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/openelis-task"
-      },
-      "name" : "OpenElis Task",
-      "description" : "A Task resource for tracking order state",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/open-elis-specimen"
-      },
-      "name" : "OpenElis Specimen",
-      "description" : "A Specimen Resource used for FHIR Exchange",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenELISObservationVS"
-      },
-      "name" : "Observation Intent Valueset",
-      "description" : "Observation Intent Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenELISTaskIntentVS"
-      },
-      "name" : "Task Intent Valueset",
-      "description" : "Task Intent Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenELISTaskStatusVS"
-      },
-      "name" : "Task Status Valueset",
-      "description" : "Task Status Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/open-elis-diagnostic-report--status-vs"
-      },
-      "name" : "Diagnostic Report Status Valueset",
-      "description" : "OpenElis Diagnostic Report Status Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/open-elis-service-request-intent-vs"
-      },
-      "name" : "Service Request Intent Valueset",
-      "description" : "OpenElis Service Request Intent Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/open-elis-service-request-priority-vs"
-      },
-      "name" : "Service Request priority Valueset",
-      "description" : "OpenElis Service Request Priority Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/open-elis-service-request-status-vs"
-      },
-      "name" : "Service Request Status Valueset",
-      "description" : "OpenElis Service Request Status Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/OpenElisSpecimenStatusVS"
-      },
-      "name" : "Specimen status Valueset",
-      "description" : "Specimen status Valueset",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/diagnostic-report--status-code-system"
-      },
-      "name" : "Diagnostic Report Status",
-      "description" : "DiagnosticReport Status Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/obs-status-cs"
-      },
-      "name" : "ObservationStatus",
-      "description" : "Observation Status Code system",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/service-request-priority-code-system"
-      },
-      "name" : "Service Request priority",
-      "description" : "ServiceRequest Priority Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/service-request-status-code-system"
-      },
-      "name" : "Service Request Status",
-      "description" : "ServiceRequest Status Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/specimen-status-code-system"
-      },
-      "name" : "Specimen Status",
-      "description" : "Specimen Status Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/task-intent-code-system"
-      },
-      "name" : "Task Intent",
-      "description" : "Task Intent Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/task-status-code-system"
-      },
-      "name" : "Task Status",
-      "description" : "Task Status Code System",
       "exampleBoolean" : false
     },
     {
@@ -852,38 +713,38 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"
+        "reference" : "StructureDefinition/open-elispractitioner"
       },
-      "name" : "OpenElis Task Example",
-      "description" : "OpenElis Task Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
+      "name" : "OpenELIS Practitioner",
+      "description" : "A Practitioner Resource used for FHIR Exchange",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DiagnosticReport"
+        "valueString" : "Practitioner"
       }],
       "reference" : {
-        "reference" : "DiagnosticReport/OpenElisDiagnosticReportExample"
+        "reference" : "Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"
       },
-      "name" : "OpenElis DiagnosticReport Example",
-      "description" : "OpenElis DiagnosticReport Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"
+      "name" : "OpenELIS Practitioner Example",
+      "description" : "OpenELIS Practitioner Example",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Observation/OpenElisObservationExample"
+        "reference" : "StructureDefinition/openelis-service-request"
       },
-      "name" : "OpenElis Observation Example",
-      "description" : "OpenElis Observation Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+      "name" : "OpenELIS Service Request",
+      "description" : "OpenELIS service request",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -900,6 +761,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/open-elis-specimen"
+      },
+      "name" : "OpenElis Specimen",
+      "description" : "A Specimen Resource used for FHIR Exchange",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Specimen"
       }],
       "reference" : {
@@ -912,26 +785,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"
+        "reference" : "StructureDefinition/openelis-task"
       },
-      "name" : "OpenELIS Organization Example",
-      "description" : "OpenELIS Organization Example",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"
+      "name" : "OpenElis Task",
+      "description" : "A Task resource for tracking order state",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
+        "valueString" : "Task"
       }],
       "reference" : {
-        "reference" : "Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"
+        "reference" : "Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"
       },
-      "name" : "OpenELIS Practitioner Example",
-      "description" : "OpenELIS Practitioner Example",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"
+      "name" : "OpenElis Task Example",
+      "description" : "OpenElis Task Example Resource",
+      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
     }],
     "page" : {
       "extension" : [{

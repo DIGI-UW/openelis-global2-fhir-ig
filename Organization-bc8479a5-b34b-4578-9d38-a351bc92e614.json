@@ -6,22 +6,22 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;bc8479a5-b34b-4578-9d38-a351bc92e614&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elisorganisation.html\">OpenELIS Organization</a></p></div><p><b>identifier</b>: id: DEPT, id: EID ICAP, id: UG1001, id: a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: referralLab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#prov)</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"hcbc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614-en-US\"> </a><p><b>identifier</b>: <code>https://demo.openelis-global.org/org_cliaNum</code>/DEPT, <code>https://demo.openelis-global.org/org_shortName</code>/EID ICAP, <code>https://demo.openelis-global.org/org_code</code>/UG1001, <code>https://demo.openelis-global.org/org_uuid</code>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title=\"Codes:\">referralLab</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"
   },
   "identifier" : [{
-    "system" : "http://openelis-global.org/org_cliaNum",
+    "system" : "https://demo.openelis-global.org/org_cliaNum",
     "value" : "DEPT"
   },
   {
-    "system" : "http://openelis-global.org/org_shortName",
+    "system" : "https://demo.openelis-global.org/org_shortName",
     "value" : "EID ICAP"
   },
   {
-    "system" : "http://openelis-global.org/org_code",
+    "system" : "https://demo.openelis-global.org/org_code",
     "value" : "UG1001"
   },
   {
-    "system" : "http://openelis-global.org/org_uuid",
+    "system" : "https://demo.openelis-global.org/org_uuid",
     "value" : "a1313f63-29b4-498d-ba12-0e960c683ec0"
   }],
   "type" : [{

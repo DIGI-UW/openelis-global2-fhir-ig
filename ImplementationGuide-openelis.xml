@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="openelis"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name="openelis"> </a><a name="hcopenelis"> </a><a name="openelis-en-US"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
 </div></div>
   </text>
   <url value="http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis"/>
@@ -11,14 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-03-05T22:47:16+00:00"/>
-  <contact>
-    <name value="I-TECH-UW"/>
-    <telecom>
-      <system value="url"/>
-      <value value="www.github.com/i-tech-uw"/>
-    </telecom>
-  </contact>
+  <date value="2024-12-11T16:37:57+00:00"/>
   <description value="An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"/>
   <packageId value="openelis"/>
   <license value="CC-BY-SA-4.0"/>
@@ -29,7 +22,15 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.0.0"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -186,6 +187,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="active-tables"/>
       </extension>
       <extension url="value">
@@ -224,9 +233,12 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="copyrightyear"/>
+        <valueCode value="copyrightyear"/>
       </extension>
       <extension url="value">
         <valueString value="2021+"/>
@@ -234,7 +246,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="releaselabel"/>
+        <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
@@ -242,7 +254,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-publisher"/>
+        <valueCode value="apply-publisher"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -250,7 +262,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-license"/>
+        <valueCode value="apply-license"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -258,7 +270,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-contact"/>
+        <valueCode value="apply-contact"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -266,7 +278,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="autoload-resources"/>
+        <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -274,7 +286,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="template/liquid"/>
@@ -282,7 +294,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-liquid"/>
+        <valueCode value="path-liquid"/>
       </extension>
       <extension url="value">
         <valueString value="input/liquid"/>
@@ -290,7 +302,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-qa"/>
+        <valueCode value="path-qa"/>
       </extension>
       <extension url="value">
         <valueString value="temp/qa"/>
@@ -298,7 +310,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-temp"/>
+        <valueCode value="path-temp"/>
       </extension>
       <extension url="value">
         <valueString value="temp/pages"/>
@@ -306,7 +318,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-output"/>
+        <valueCode value="path-output"/>
       </extension>
       <extension url="value">
         <valueString value="output"/>
@@ -314,7 +326,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
+        <valueCode value="path-suppressed-warnings"/>
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
@@ -322,7 +334,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="path-history"/>
+        <valueCode value="path-history"/>
       </extension>
       <extension url="value">
         <valueString value="http://i-tech-uw.github.io/openelis-global-ig/history.html"/>
@@ -330,7 +342,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-html"/>
+        <valueCode value="template-html"/>
       </extension>
       <extension url="value">
         <valueString value="template-page.html"/>
@@ -338,7 +350,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="template-md"/>
+        <valueCode value="template-md"/>
       </extension>
       <extension url="value">
         <valueString value="template-page-md.html"/>
@@ -346,7 +358,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-context"/>
+        <valueCode value="apply-context"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -354,7 +366,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-copyright"/>
+        <valueCode value="apply-copyright"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -362,7 +374,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-jurisdiction"/>
+        <valueCode value="apply-jurisdiction"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -370,7 +382,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="apply-version"/>
+        <valueCode value="apply-version"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -378,7 +390,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="active-tables"/>
+        <valueCode value="apply-wg"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -386,7 +398,15 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="fmm-definition"/>
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
       </extension>
       <extension url="value">
         <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
@@ -394,7 +414,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="propagate-status"/>
+        <valueCode value="propagate-status"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -402,7 +422,7 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="excludelogbinaryformat"/>
+        <valueCode value="excludelogbinaryformat"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
@@ -410,12 +430,23 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueString value="tabbed-snapshots"/>
+        <valueCode value="tabbed-snapshots"/>
       </extension>
       <extension url="value">
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LocationExample"/>
+      </reference>
+      <name value="Location Example"/>
+      <description value="Health Facility Location example resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -425,6 +456,28 @@
       </reference>
       <name value="OpenELIS Diagnostic Report"/>
       <description value="DiagnosticReport resource created by a LIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/OpenElisDiagnosticReportExample"/>
+      </reference>
+      <name value="OpenElis DiagnosticReport Example"/>
+      <description value="OpenElis DiagnosticReport Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/open-elis-location"/>
+      </reference>
+      <name value="OpenELIS Facility Location"/>
+      <description value="A Location Resource used for FHIR Exchange"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -440,6 +493,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/OpenElisObservationExample"/>
+      </reference>
+      <name value="OpenElis Observation Example"/>
+      <description value="OpenElis Observation Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -451,6 +515,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"/>
+      </reference>
+      <name value="OpenELIS Organization Example"/>
+      <description value="OpenELIS Organization Example"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -458,215 +533,6 @@
       </reference>
       <name value="OpenELIS Patient"/>
       <description value="A patient used for OpenELIS FHIR Exchange"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/open-elispractitioner"/>
-      </reference>
-      <name value="OpenELIS Practitioner"/>
-      <description value="A Practitioner Resource used for FHIR Exchange"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/openelis-service-request"/>
-      </reference>
-      <name value="OpenELIS Service Request"/>
-      <description value="OpenELIS service request"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/openelis-task"/>
-      </reference>
-      <name value="OpenElis Task"/>
-      <description value="A Task resource for tracking order state"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/open-elis-specimen"/>
-      </reference>
-      <name value="OpenElis Specimen"/>
-      <description value="A Specimen Resource used for FHIR Exchange"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenELISObservationVS"/>
-      </reference>
-      <name value="Observation Intent Valueset"/>
-      <description value="Observation Intent Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenELISTaskIntentVS"/>
-      </reference>
-      <name value="Task Intent Valueset"/>
-      <description value="Task Intent Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenELISTaskStatusVS"/>
-      </reference>
-      <name value="Task Status Valueset"/>
-      <description value="Task Status Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/open-elis-diagnostic-report--status-vs"/>
-      </reference>
-      <name value="Diagnostic Report Status Valueset"/>
-      <description value="OpenElis Diagnostic Report Status Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/open-elis-service-request-intent-vs"/>
-      </reference>
-      <name value="Service Request Intent Valueset"/>
-      <description value="OpenElis Service Request Intent Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/open-elis-service-request-priority-vs"/>
-      </reference>
-      <name value="Service Request priority Valueset"/>
-      <description value="OpenElis Service Request Priority Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/open-elis-service-request-status-vs"/>
-      </reference>
-      <name value="Service Request Status Valueset"/>
-      <description value="OpenElis Service Request Status Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/OpenElisSpecimenStatusVS"/>
-      </reference>
-      <name value="Specimen status Valueset"/>
-      <description value="Specimen status Valueset"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/diagnostic-report--status-code-system"/>
-      </reference>
-      <name value="Diagnostic Report Status"/>
-      <description value="DiagnosticReport Status Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/obs-status-cs"/>
-      </reference>
-      <name value="ObservationStatus"/>
-      <description value="Observation Status Code system"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/service-request-priority-code-system"/>
-      </reference>
-      <name value="Service Request priority"/>
-      <description value="ServiceRequest Priority Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/service-request-status-code-system"/>
-      </reference>
-      <name value="Service Request Status"/>
-      <description value="ServiceRequest Status Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/specimen-status-code-system"/>
-      </reference>
-      <name value="Specimen Status"/>
-      <description value="Specimen Status Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/task-intent-code-system"/>
-      </reference>
-      <name value="Task Intent"/>
-      <description value="Task Intent Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/task-status-code-system"/>
-      </reference>
-      <name value="Task Status"/>
-      <description value="Task Status Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -682,36 +548,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"/>
+        <reference value="StructureDefinition/open-elispractitioner"/>
       </reference>
-      <name value="OpenElis Task Example"/>
-      <description value="OpenElis Task Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
+      <name value="OpenELIS Practitioner"/>
+      <description value="A Practitioner Resource used for FHIR Exchange"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DiagnosticReport"/>
+        <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="DiagnosticReport/OpenElisDiagnosticReportExample"/>
+        <reference value="Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"/>
       </reference>
-      <name value="OpenElis DiagnosticReport Example"/>
-      <description value="OpenElis DiagnosticReport Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
+      <name value="OpenELIS Practitioner Example"/>
+      <description value="OpenELIS Practitioner Example"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Observation/OpenElisObservationExample"/>
+        <reference value="StructureDefinition/openelis-service-request"/>
       </reference>
-      <name value="OpenElis Observation Example"/>
-      <description value="OpenElis Observation Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"/>
+      <name value="OpenELIS Service Request"/>
+      <description value="OpenELIS service request"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -726,6 +592,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/open-elis-specimen"/>
+      </reference>
+      <name value="OpenElis Specimen"/>
+      <description value="A Specimen Resource used for FHIR Exchange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Specimen"/>
       </extension>
       <reference>
@@ -737,25 +614,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Organization/bc8479a5-b34b-4578-9d38-a351bc92e614"/>
+        <reference value="StructureDefinition/openelis-task"/>
       </reference>
-      <name value="OpenELIS Organization Example"/>
-      <description value="OpenELIS Organization Example"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
+      <name value="OpenElis Task"/>
+      <description value="A Task resource for tracking order state"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
+        <valueString value="Task"/>
       </extension>
       <reference>
-        <reference value="Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868"/>
+        <reference value="Task/49ef249a-3a8b-49e3-9e16-7e56e92d0c77"/>
       </reference>
-      <name value="OpenELIS Practitioner Example"/>
-      <description value="OpenELIS Practitioner Example"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
+      <name value="OpenElis Task Example"/>
+      <description value="OpenElis Task Example Resource"/>
+      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -13,10 +13,9 @@
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:priority) &gt;= 1">priority: minimum cardinality of 'priority' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:requester) &gt;= 1">requester: minimum cardinality of 'requester' is 1</sch:assert>
-      <sch:assert test="count(f:locationReference) &gt;= 1">locationReference: minimum cardinality of 'locationReference' is 1</sch:assert>
-      <sch:assert test="count(f:locationReference) &lt;= 1">locationReference: maximum cardinality of 'locationReference' is 1</sch:assert>
       <sch:assert test="count(f:specimen) &gt;= 1">specimen: minimum cardinality of 'specimen' is 1</sch:assert>
       <sch:assert test="count(f:specimen) &lt;= 1">specimen: maximum cardinality of 'specimen' is 1</sch:assert>
       <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
@@ -47,7 +46,6 @@
     <sch:title>f:ServiceRequest/f:code</sch:title>
     <sch:rule context="f:ServiceRequest/f:code">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -7,6 +7,13 @@
     "name" : "OpenELISImplementationGuide"
   },
   {
+    "id" : "open-elis-location",
+    "type" : "StructureDefinition",
+    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
+    "version" : "0.1.0",
+    "name" : "OpenELISLocation"
+  },
+  {
     "id" : "open-elis-observation",
     "type" : "StructureDefinition",
     "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
@@ -61,110 +68,5 @@
     "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
     "version" : "0.1.0",
     "name" : "OpenELISTask"
-  },
-  {
-    "id" : "OpenELISObservationVS",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISObservationVS",
-    "version" : "0.1.0",
-    "name" : "OpenELISObservationVS"
-  },
-  {
-    "id" : "OpenELISTaskIntentVS",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskIntentVS",
-    "version" : "0.1.0",
-    "name" : "OpenELISTaskIntentVS"
-  },
-  {
-    "id" : "OpenELISTaskStatusVS",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenELISTaskStatusVS",
-    "version" : "0.1.0",
-    "name" : "OpenELISTaskStatusVS"
-  },
-  {
-    "id" : "OpenElisSpecimenStatusVS",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/OpenElisSpecimenStatusVS",
-    "version" : "0.1.0",
-    "name" : "OpenElisSpecimenStatusVS"
-  },
-  {
-    "id" : "open-elis-diagnostic-report--status-vs",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-diagnostic-report--status-vs",
-    "version" : "0.1.0",
-    "name" : "OpenElisDiagnosticReportStatusVs"
-  },
-  {
-    "id" : "open-elis-service-request-intent-vs",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-intent-vs",
-    "version" : "0.1.0",
-    "name" : "OpenElisServiceRequestIntentVs"
-  },
-  {
-    "id" : "open-elis-service-request-priority-vs",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-priority-vs",
-    "version" : "0.1.0",
-    "name" : "OpenElisServiceRequestPriorityVs"
-  },
-  {
-    "id" : "open-elis-service-request-status-vs",
-    "type" : "ValueSet",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ValueSet/open-elis-service-request-status-vs",
-    "version" : "0.1.0",
-    "name" : "OpenElisServiceRequestStatusVs"
-  },
-  {
-    "id" : "diagnostic-report--status-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-diagnostic-report-status",
-    "version" : "0.1.0",
-    "name" : "DiagnosticReportStatusCodeSystem"
-  },
-  {
-    "id" : "obs-status-cs",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-observation-status",
-    "version" : "0.1.0",
-    "name" : "ObsStatusCS"
-  },
-  {
-    "id" : "service-request-priority-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-priority",
-    "version" : "0.1.0",
-    "name" : "ServiceRequestPriorityCodeSystem"
-  },
-  {
-    "id" : "service-request-status-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-service-request-status",
-    "version" : "0.1.0",
-    "name" : "ServiceRequestStatusCodeSystem"
-  },
-  {
-    "id" : "specimen-status-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-specimen-status",
-    "version" : "0.1.0",
-    "name" : "SpecimenStatusCodeSystem"
-  },
-  {
-    "id" : "task-intent-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-intent",
-    "version" : "0.1.0",
-    "name" : "TaskIntentCodeSystem"
-  },
-  {
-    "id" : "task-status-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://i-tech-uw.github.io/openelis-global2-fhir-ig/codesystem-task-status",
-    "version" : "0.1.0",
-    "name" : "TaskStatusCodeSystem"
   }
 ]

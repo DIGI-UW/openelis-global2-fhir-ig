@@ -17,22 +17,17 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"OpenElisServiceRequestExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;OpenElisServiceRequestExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-service-request.html\">OpenELIS Service Request</a></p></div><p><b>identifier</b>: id: 0a65ab46-179e-4506-9fa3-09d342268576, id: TESTA230000000001749</p><p><b>status</b>: active</p><p><b>intent</b>: original-order</p><p><b>category</b>: null <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (sample_program)</span></p><p><b>priority</b>: routine</p><p><b>code</b>: CT Chest <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24627-2)</span></p><p><b>subject</b>: <a href=\"Patient-329f09da-0fc9-419d-9575-ace68954426A.html\">Patient/329f09da-0fc9-419d-9575-ace68954426A</a> &quot; MUTESA&quot;</p><p><b>authoredOn</b>: 2023-02-03</p><p><b>requester</b>: <a href=\"Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.html\">Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868</a> &quot; MUTESASIRA&quot;</p><p><b>locationReference</b>: <a href=\"Location\">Location</a> &quot;Location&quot;</p><p><b>specimen</b>: <a href=\"Specimen-OpenElisSpecimenExample.html\">Specimen/OpenElisSpecimenExample</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest OpenElisServiceRequestExample</b></p><a name=\"OpenElisServiceRequestExample\"> </a><a name=\"hcOpenElisServiceRequestExample\"> </a><a name=\"OpenElisServiceRequestExample-en-US\"> </a><p><b>identifier</b>: <code>https://demo.openelis-global.org/analysis_uuid</code>/0a65ab46-179e-4506-9fa3-09d342268576, <code>https://demo.openelis-global.org/samp_labNo</code>/TESTA230000000001749</p><p><b>status</b>: Active</p><p><b>intent</b>: Original Order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 24627-2}\">CT Chest</span></p><p><b>subject</b>: <a href=\"Patient-329f09da-0fc9-419d-9575-ace68954426A.html\">moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#NA121212)</a></p><p><b>authoredOn</b>: 2023-02-03</p><p><b>requester</b>: <a href=\"Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.html\">Practitioner Moses Mutesasira </a></p><p><b>locationReference</b>: <a href=\"Location-LocationExample.html\">Location Outpatient Clinic</a></p><p><b>specimen</b>: <a href=\"Specimen-OpenElisSpecimenExample.html\">Specimen: identifier = https://demo.openelis-global.org/sampleItem_uuid#9df49e2d-57f7-4e7b-abb1-54d0a1933253; accessionIdentifier = https://demo.openelis-global.org/sampleItem_labNo#TESTA230000000001751; status = available; type = Plasma; receivedTime = 2023-03-03 07:03:00+0000</a></p></div>"
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "http://openelis-global.org/analysis_uuid"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "https://demo.openelis-global.org/analysis_uuid"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "0a65ab46-179e-4506-9fa3-09d342268576" ]
   ] [
-     fhir:system [ fhir:v "http://openelis-global.org/samp_labNo"^^xsd:anyURI ] ;
+     fhir:system [ fhir:v "https://demo.openelis-global.org/samp_labNo"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "TESTA230000000001749" ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "original-order"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://openelis-global.org/sample_program"^^xsd:anyURI ]
-     ] )
-  ] ) ; # 
   fhir:priority [ fhir:v "routine"] ; # 
   fhir:code [
      fhir:coding ( [
@@ -51,7 +46,8 @@
      fhir:reference [ fhir:v "Practitioner/f185bb76-c298-4671-9be3-ccc94c0a9868" ]
   ] ; # 
   fhir:locationReference ( [
-     fhir:reference [ fhir:v "Location" ]
+     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
   ] ) ; # 
   fhir:specimen ( [
      fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Specimen/OpenElisSpecimenExample> ;

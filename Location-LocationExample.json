@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Location",
+  "id" : "LocationExample",
+  "meta" : {
+    "profile" : ["http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p></div>"
+  },
+  "name" : "Outpatient Clinic",
+  "description" : "Outpatient Clinic"
+}

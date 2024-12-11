@@ -6,20 +6,20 @@
     <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Specimen</b><a name="OpenElisSpecimenExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Specimen &quot;OpenElisSpecimenExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-open-elis-specimen.html">OpenElis Specimen</a></p></div><p><b>identifier</b>: id: 9df49e2d-57f7-4e7b-abb1-54d0a1933253</p><p><b>accessionIdentifier</b>: id: TESTA230000000001751</p><p><b>status</b>: available</p><p><b>type</b>: Plasma <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (sampleType)</span></p><p><b>subject</b>: <a href="Patient-329f09da-0fc9-419d-9575-ace68954426A.html">Patient/329f09da-0fc9-419d-9575-ace68954426A</a> &quot; MUTESA&quot;</p><p><b>receivedTime</b>: 2023-03-03 07:03:00+0000</p><p><b>request</b>: <a href="ServiceRequest-OpenElisServiceRequestExample.html">ServiceRequest/OpenElisServiceRequestExample</a></p><h3>Collections</h3><table class="grid"><tr><td>-</td><td><b>Collected[x]</b></td></tr><tr><td>*</td><td>2023-02-03</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen OpenElisSpecimenExample</b></p><a name="OpenElisSpecimenExample"> </a><a name="hcOpenElisSpecimenExample"> </a><a name="OpenElisSpecimenExample-en-US"> </a><p><b>identifier</b>: <code>https://demo.openelis-global.org/sampleItem_uuid</code>/9df49e2d-57f7-4e7b-abb1-54d0a1933253</p><p><b>accessionIdentifier</b>: <code>https://demo.openelis-global.org/sampleItem_labNo</code>/TESTA230000000001751</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:">Plasma</span></p><p><b>subject</b>: <a href="Patient-329f09da-0fc9-419d-9575-ace68954426A.html">moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#NA121212)</a></p><p><b>receivedTime</b>: 2023-03-03 07:03:00+0000</p><p><b>request</b>: <a href="ServiceRequest-OpenElisServiceRequestExample.html">ServiceRequest CT Chest</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td></tr><tr><td style="display: none">*</td><td>2023-02-03</td></tr></table></div>
   </text>
   <identifier>
-    <system value="http://openelis-global.org/sampleItem_uuid"/>
+    <system value="https://demo.openelis-global.org/sampleItem_uuid"/>
     <value value="9df49e2d-57f7-4e7b-abb1-54d0a1933253"/>
   </identifier>
   <accessionIdentifier>
-    <system value="http://openelis-global.org/sampleItem_labNo"/>
+    <system value="https://demo.openelis-global.org/sampleItem_labNo"/>
     <value value="TESTA230000000001751"/>
   </accessionIdentifier>
   <status value="available"/>
   <type>
     <coding>
-      <system value="http://openelis-global.org/sampleType"/>
+      <system value="http://loinc.org"/>
       <display value="Plasma"/>
     </coding>
   </type>

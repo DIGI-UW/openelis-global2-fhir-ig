@@ -6,10 +6,10 @@
     <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://loinc.org 58410-2}">Complete blood count (hemogram) panel - Blood by Automated count</span> </h2><table class="grid"><tr><td>Subject</td><td><b>moses Mutesa </b> male, DoB: 1988-03-02 ( id: NA121212)</td></tr><tr><td>Identifier:</td><td> id: f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td><a href="Observation-OpenElisObservationExample.html"><span title="Codes: {http://loinc.org 15074-8}">Glucose [Moles/volume] in Blood</span></a></td><td>55 UI/L</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport OpenElisDiagnosticReportExample</b></p><a name="OpenElisDiagnosticReportExample"> </a><a name="hcOpenElisDiagnosticReportExample"> </a><a name="OpenElisDiagnosticReportExample-en-US"> </a><h2><span title="Codes:{http://loinc.org 58410-2}">CBC panel - Blood by Automated count</span> </h2><table class="grid"><tr><td>Subject</td><td>moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#NA121212)</td></tr><tr><td>Identifier</td><td> <code>https://demo.openelis-global.org/analysisResult_uuid</code>/f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href="Observation-OpenElisObservationExample.html"><span title="Codes:{http://loinc.org 15074-8}">Glucose [Moles/volume] in Blood</span></a></td><td>55 UI/L</td><td>Final</td></tr></table></div>
   </text>
   <identifier>
-    <system value="http://openelis-global.org/analysisResult_uuid"/>
+    <system value="https://demo.openelis-global.org/analysisResult_uuid"/>
     <value value="f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd"/>
   </identifier>
   <basedOn>
@@ -20,7 +20,7 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="58410-2"/>
-      <display value="Complete blood count (hemogram) panel - Blood by Automated count"/>
+      <display value="CBC panel - Blood by Automated count"/>
     </coding>
   </code>
   <subject>
