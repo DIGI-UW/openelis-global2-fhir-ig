@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "OpenELISObservation"] ; # 
   fhir:title [ fhir:v "OpenELIS Observation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-14T18:24:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-14T18:31:44+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "A Observation Resource used for FHIR Exchange"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [

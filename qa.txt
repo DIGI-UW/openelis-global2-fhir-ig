@@ -3,7 +3,7 @@ OpenELISImplementationGuide : Validation Results
 
 err = 0, warn = 23, info = 1
 IG Publisher Version: 1.8.26
-Generated Wed May 14 18:25:15 UTC 2025. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://digi-uw.github.io/openelis-global-ig)
+Generated Wed May 14 18:33:02 UTC 2025. FHIR version 4.0.1 for openelis#0.1.0 (canonical = http://digi-uw.github.io/openelis-global-ig)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-openelis : 0 / 0 / 1
