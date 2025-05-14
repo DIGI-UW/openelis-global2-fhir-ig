@@ -8,7 +8,7 @@ Description: "OpenELIS service request"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains uuid 1..1 and labNo 1..1
-* identifier[uuid].system = "https://demo.openelis-global.org/analysis_uuid" 
+* identifier[uuid].system = "https://demo.openelis-global.org/analysis_uuid"
 * identifier[labNo].system = "https://demo.openelis-global.org/samp_labNo"
 * intent 1..1
 * status 1..1
@@ -51,7 +51,7 @@ Description: "OpenElis ServiceRequest Example Resource"
 
 Mapping: OpenELISServiceRequestMapping
 Source: OpenELISServiceRequest
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-service-request"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-service-request"
 Id: oe-service-request-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "ServiceRequest Mapping shows how attributes of FHIR ServiceRequest Resource maps to and from the attributes of OpenElis SampleItem Object."

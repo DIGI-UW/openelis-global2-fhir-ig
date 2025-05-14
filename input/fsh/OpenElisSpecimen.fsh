@@ -23,7 +23,7 @@ Description: "A Specimen Resource used for FHIR Exchange"
 
 Mapping: OpenElisSpecimenMapping
 Source: OpenElisSpecimen
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"
 Id: oe-specimen-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Specimen Mapping shows how attributes of FHIR Specimen Resource maps to and from the attributes of OpenElis SampleItem Object."
@@ -48,7 +48,7 @@ Description: "OpenElis Specimen Example Resource"
 * identifier[uuid].value = "9df49e2d-57f7-4e7b-abb1-54d0a1933253"
 * type.coding.system = "http://loinc.org"
 * type.coding.display = "Plasma"
-* status = #available 
+* status = #available
 * receivedTime = "2023-03-03T07:03:00Z"
 * collection.collectedDateTime = 2023-02-03
 * request = Reference(OpenElisServiceRequestExample)

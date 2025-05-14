@@ -9,7 +9,7 @@ Description: "A Organization Resource used for FHIR Exchange"
 * identifier ^slicing.rules = #open
 * identifier contains cliaNum 1..1  and shortName 1..1  and code 1..1 and uuid 1..1
 * identifier[cliaNum].system = "https://demo.openelis-global.org/org_cliaNum"
-* identifier[shortName].system = "https://demo.openelis-global.org/org_shortName" 
+* identifier[shortName].system = "https://demo.openelis-global.org/org_shortName"
 * identifier[code].system = "https://demo.openelis-global.org/org_code"
 * identifier[uuid].system = "https://demo.openelis-global.org/org_uuid"
 * name 1..1
@@ -40,7 +40,7 @@ Description: "OpenELIS Organization Example"
 
 Mapping: OpenELISOrganizationMapping
 Source: OpenELISOrganisation
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization"
 Id: open-elis-organization-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Organisation Mapping shows how attributes of FHIR Organisation Resource maps to and from the attributes of OpenElis Organisation Object."

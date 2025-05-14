@@ -9,7 +9,7 @@ Description:    "A patient used for OpenELIS FHIR Exchange"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains nationalid 1..1  and subjectnumber 1..1 and stnumber 1..1 and guid 1..1 and uuid 1..1
-* identifier[nationalid].system = "https://demo.openelis-global.org/pat_nationalId" 
+* identifier[nationalid].system = "https://demo.openelis-global.org/pat_nationalId"
 * identifier[subjectnumber].system = "https://demo.openelis-global.org/pat_subjectNumber"
 * identifier[stnumber].system = "https://demo.openelis-global.org/pat_stNumber"
 * identifier[guid].system = "https://demo.openelis-global.org/pat_guid"
@@ -21,8 +21,8 @@ Description:    "A patient used for OpenELIS FHIR Exchange"
 * address 1..1
 
 Instance: example-openelis-patient
-InstanceOf: OpenELISPatient 
-Usage: #example 
+InstanceOf: OpenELISPatient
+Usage: #example
 Description: "OpenELIS Patient Example"
 Title:   "OpenELIS Patient Example Resource"
 * id  = "329f09da-0fc9-419d-9575-ace68954426A"
@@ -46,9 +46,9 @@ Title:   "OpenELIS Patient Example Resource"
 * address[=].city = "GREENWOOD"
 * address[=].postalCode = "98103"
 
-Mapping: OpenELISPatientMapping 
+Mapping: OpenELISPatientMapping
 Source: OpenELISPatient
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-patient"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-patient"
 Id: open-elis-patient-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Patient Mapping shows how attributes of FHIR Patient Resource maps to and from the attributes of OpenElis Patient Object."

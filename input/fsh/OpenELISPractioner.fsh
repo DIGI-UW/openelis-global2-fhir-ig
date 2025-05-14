@@ -22,7 +22,7 @@ Description: "OpenELIS Practitioner Example"
 
 Mapping: OpenELISPractitionerMapping
 Source: OpenELISPractitioner
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-practitioner"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-practitioner"
 Id: open-elispractitioner-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Practitioner Mapping shows how attributes of FHIR Practitioner Resource maps to and from the attributes of OpenElis Provider Object."

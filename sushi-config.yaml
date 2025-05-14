@@ -1,15 +1,15 @@
 id: openelis
-canonical: http://i-tech-uw.github.io/openelis-global-ig
+canonical: http://digi-uw.github.io/openelis-global-ig
 version: 0.1.0
 name: OpenELISImplementationGuide
 title: OpenELIS GLOBAL2 Implementation Guide
 status: draft
-publisher: I-TECH-UW
+publisher: DIGI-UW
 # contact:
-  # - name: I-TECH-UW
+  # - name: DIGI-UW
     # telecom:
       # - system: url
-        # value:  https://i-tech-uw.github.io/openelis-global2-fhir-ig
+        # value:  https://digi-uw.github.io/openelis-global2-fhir-ig
 description: An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR
 license: CC-BY-SA-4.0
 fhirVersion: 4.0.1

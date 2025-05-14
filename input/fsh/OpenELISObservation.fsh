@@ -18,13 +18,13 @@ Description: "A Observation Resource used for FHIR Exchange"
 * basedOn only Reference(OpenELISServiceRequest)
 * specimen 1..1
 * specimen only Reference(Specimen)
-* subject 1..1 
+* subject 1..1
 * subject only Reference(OpenELISPatient)
 
 
-Mapping: ObservationMapping 
+Mapping: ObservationMapping
 Source: OpenELISObservation
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
 Id: oe-observation-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Observation Mapping shows how attributes of FHIR Observation Resource maps to and from the attributes of OpenElis Results Object."

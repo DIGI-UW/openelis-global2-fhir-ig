@@ -8,7 +8,7 @@ Description: "DiagnosticReport resource created by a LIS"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains uuid 1..1
-* identifier[uuid].system = "https://demo.openelis-global.org/analysisResult_uuid" 
+* identifier[uuid].system = "https://demo.openelis-global.org/analysisResult_uuid"
 * status 1..1
 * code.coding 1..*
 * basedOn 1..1
@@ -20,7 +20,7 @@ Description: "DiagnosticReport resource created by a LIS"
 * result 1..1
 * result only Reference(OpenELISObservation)
 
-Instance: OpenElisDiagnosticReportExample  
+Instance: OpenElisDiagnosticReportExample
 InstanceOf: OpenELISDiagnosticReport
 Usage: #example
 Title: "OpenElis DiagnosticReport Example"
@@ -38,7 +38,7 @@ Description: "OpenElis DiagnosticReport Example Resource"
 
 Mapping: OpenELISDiagnosticReportMapping
 Source: OpenELISDiagnosticReport
-Target: "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report"
+Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report"
 Id: oe-diagnostic-report-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "DiagnosticReport Mapping shows how attributes of FHIR DiagnosticReport Resource maps to and from the attributes of OpenElis SampleItem Object."
@@ -49,4 +49,3 @@ Description: "DiagnosticReport Mapping shows how attributes of FHIR DiagnosticRe
 * specimen -> "SampleItem"
 * subject -> "patient"
 * result -> "Result"
-
