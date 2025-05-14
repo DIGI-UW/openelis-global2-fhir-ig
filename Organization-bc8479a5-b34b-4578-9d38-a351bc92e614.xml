@@ -3,10 +3,10 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="bc8479a5-b34b-4578-9d38-a351bc92e614"/>
   <meta>
-    <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
+    <profile value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name="bc8479a5-b34b-4578-9d38-a351bc92e614"> </a><a name="hcbc8479a5-b34b-4578-9d38-a351bc92e614"> </a><a name="bc8479a5-b34b-4578-9d38-a351bc92e614-en-US"> </a><p><b>identifier</b>: <code>https://demo.openelis-global.org/org_cliaNum</code>/DEPT, <code>https://demo.openelis-global.org/org_shortName</code>/EID ICAP, <code>https://demo.openelis-global.org/org_code</code>/UG1001, <code>https://demo.openelis-global.org/org_uuid</code>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title="Codes:">referralLab</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name="bc8479a5-b34b-4578-9d38-a351bc92e614"> </a><a name="hcbc8479a5-b34b-4578-9d38-a351bc92e614"> </a><a name="bc8479a5-b34b-4578-9d38-a351bc92e614-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-open-elisorganisation.html">OpenELIS Organization</a></p></div><p><b>identifier</b>: <code>https://demo.openelis-global.org/org_cliaNum</code>/DEPT, <code>https://demo.openelis-global.org/org_shortName</code>/EID ICAP, <code>https://demo.openelis-global.org/org_code</code>/UG1001, <code>https://demo.openelis-global.org/org_uuid</code>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title="Codes:">referralLab</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>
   </text>
   <identifier>
     <system value="https://demo.openelis-global.org/org_cliaNum"/>

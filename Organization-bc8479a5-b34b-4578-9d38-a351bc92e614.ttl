@@ -1,22 +1,23 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/Organization/bc8479a5-b34b-4578-9d38-a351bc92e614> a fhir:Organization ;
+<http://digi-uw.github.io/openelis-global-ig/Organization/bc8479a5-b34b-4578-9d38-a351bc92e614> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "bc8479a5-b34b-4578-9d38-a351bc92e614"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"^^xsd:anyURI ;
-       fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation>
+       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"^^xsd:anyURI ;
+       fhir:link <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"hcbc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614-en-US\"> </a><p><b>identifier</b>: <code>https://demo.openelis-global.org/org_cliaNum</code>/DEPT, <code>https://demo.openelis-global.org/org_shortName</code>/EID ICAP, <code>https://demo.openelis-global.org/org_code</code>/UG1001, <code>https://demo.openelis-global.org/org_uuid</code>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title=\"Codes:\">referralLab</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"hcbc8479a5-b34b-4578-9d38-a351bc92e614\"> </a><a name=\"bc8479a5-b34b-4578-9d38-a351bc92e614-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elisorganisation.html\">OpenELIS Organization</a></p></div><p><b>identifier</b>: <code>https://demo.openelis-global.org/org_cliaNum</code>/DEPT, <code>https://demo.openelis-global.org/org_shortName</code>/EID ICAP, <code>https://demo.openelis-global.org/org_code</code>/UG1001, <code>https://demo.openelis-global.org/org_uuid</code>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title=\"Codes:\">referralLab</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "https://demo.openelis-global.org/org_cliaNum"^^xsd:anyURI ] ;

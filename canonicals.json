@@ -2,70 +2,70 @@
   {
     "id" : "openelis",
     "type" : "ImplementationGuide",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
     "version" : "0.1.0",
     "name" : "OpenELISImplementationGuide"
   },
   {
     "id" : "open-elis-location",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
     "version" : "0.1.0",
     "name" : "OpenELISLocation"
   },
   {
     "id" : "open-elis-observation",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
     "version" : "0.1.0",
     "name" : "OpenELISObservation"
   },
   {
     "id" : "open-elis-specimen",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
     "version" : "0.1.0",
     "name" : "OpenElisSpecimen"
   },
   {
     "id" : "open-elisorganisation",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
     "version" : "0.1.0",
     "name" : "OpenELISOrganisation"
   },
   {
     "id" : "open-elispractitioner",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
     "version" : "0.1.0",
     "name" : "OpenELISPractitioner"
   },
   {
     "id" : "openelis-diagnostic-report",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
     "version" : "0.1.0",
     "name" : "OpenELISDiagnosticReport"
   },
   {
     "id" : "openelis-patient",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
     "version" : "0.1.0",
     "name" : "OpenELISPatient"
   },
   {
     "id" : "openelis-service-request",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
     "version" : "0.1.0",
     "name" : "OpenELISServiceRequest"
   },
   {
     "id" : "openelis-task",
     "type" : "StructureDefinition",
-    "url" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
     "version" : "0.1.0",
     "name" : "OpenELISTask"
   }

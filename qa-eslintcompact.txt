@@ -1,21 +1,30 @@
 OpenELISImplementationGuide
 =========================================
 
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Warning - The html source has duplicate anchor Ids: disclaimer,ip,scope,summary (BUSINESSRULE)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/github/workspace/fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample.json: line 11, col 71, Warning - URL value 'https://demo.openelis-global.org/analysisResult_uuid' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample.json: line 11, col 63, Warning - URL value 'https://demo.openelis-global.org/result_uuid' does not resolve (INVALID)
 /github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have a performer (INVALID)
 /github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample.json: line 1, col 2, Warning - Best Practice Recommendation: In general, all observations should have an effective[x] () (INVALID)
+/github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json: line 11, col 63, Warning - URL value 'https://demo.openelis-global.org/org_cliaNum' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json: line 15, col 65, Warning - URL value 'https://demo.openelis-global.org/org_shortName' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json: line 19, col 60, Warning - URL value 'https://demo.openelis-global.org/org_code' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json: line 23, col 60, Warning - URL value 'https://demo.openelis-global.org/org_uuid' does not resolve (INVALID)
 /github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json: line 39, col 6, Warning - Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided (INVALID)
+/github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json: line 11, col 66, Warning - URL value 'https://demo.openelis-global.org/pat_nationalId' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json: line 15, col 69, Warning - URL value 'https://demo.openelis-global.org/pat_subjectNumber' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json: line 19, col 64, Warning - URL value 'https://demo.openelis-global.org/pat_stNumber' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json: line 23, col 60, Warning - URL value 'https://demo.openelis-global.org/pat_guid' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json: line 27, col 60, Warning - URL value 'https://demo.openelis-global.org/pat_uuid' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample.json: line 11, col 65, Warning - URL value 'https://demo.openelis-global.org/analysis_uuid' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample.json: line 15, col 62, Warning - URL value 'https://demo.openelis-global.org/samp_labNo' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample.json: line 11, col 67, Warning - URL value 'https://demo.openelis-global.org/sampleItem_uuid' does not resolve (INVALID)
+/github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample.json: line 16, col 66, Warning - URL value 'https://demo.openelis-global.org/sampleItem_labNo' does not resolve (INVALID)
 /github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample.json: line 19, col 4, Warning - Cannot validate display Name 'Plasma' for http://loinc.org#: No displays are known (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-open-elis-location.json: line 1, col 14568, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
 
-err = 0, warn = 9, info = 0
-IG Publisher Version: 1.8.1
+err = 0, warn = 23, info = 1
+IG Publisher Version: 1.8.26

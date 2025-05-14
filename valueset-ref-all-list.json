@@ -55,9 +55,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
       "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -155,12 +155,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
       "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
       "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
       "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
-      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -174,12 +174,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
       "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
       "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
       "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
-      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -194,14 +194,14 @@
       "uses" : {
       },
       "StructureDefinition-open-elispractitioner.html" : "OpenELIS Practitioner",
-      "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
       "StructureDefinition-open-elis-location.html" : "OpenELIS Facility Location",
+      "StructureDefinition-openelis-task.html" : "OpenElis Task",
+      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
+      "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
       "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
       "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
-      "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-      "StructureDefinition-openelis-task.html" : "OpenElis Task",
-      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -535,8 +535,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-openelis-task.html" : "OpenElis Task",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+      "StructureDefinition-openelis-task.html" : "OpenElis Task"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -775,8 +775,8 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-open-elis-location.html" : "OpenELIS Facility Location",
-      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+      "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+      "StructureDefinition-open-elis-location.html" : "OpenELIS Facility Location"
     }
   ]
 }

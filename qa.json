@@ -1,19 +1,19 @@
 {
-  "url" : "http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
+  "url" : "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "description" : "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR",
   "status" : "draft",
   "package-id" : "openelis",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 11 Dec, 2024 16:37:57 +0000",
-  "dateISO8601" : "2024-12-11T16:37:57+00:00",
+  "date" : "Wed, 14 May, 2025 18:24:38 +0000",
+  "dateISO8601" : "2025-05-14T18:24:38+00:00",
   "errs" : 0,
-  "warnings" : 9,
-  "hints" : 0,
+  "warnings" : 23,
+  "hints" : 1,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1963266024
+  "maxMemory" : 871957136
 }

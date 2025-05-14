@@ -3,10 +3,10 @@
 <Location xmlns="http://hl7.org/fhir">
   <id value="LocationExample"/>
   <meta>
-    <profile value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"/>
+    <profile value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location LocationExample</b></p><a name="LocationExample"> </a><a name="hcLocationExample"> </a><a name="LocationExample-en-US"> </a><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location LocationExample</b></p><a name="LocationExample"> </a><a name="hcLocationExample"> </a><a name="LocationExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-open-elis-location.html">OpenELIS Facility Location</a></p></div><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p></div>
   </text>
   <name value="Outpatient Clinic"/>
   <description value="Outpatient Clinic"/>

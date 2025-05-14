@@ -6,55 +6,55 @@
   "profiles": {
     "Location": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
         "title": "OpenELIS Facility Location"
       }
     ],
     "Observation": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
         "title": "OpenELIS Observation"
       }
     ],
     "Specimen": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
         "title": "OpenElis Specimen"
       }
     ],
     "Organization": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
         "title": "OpenELIS Organization"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
         "title": "OpenELIS Practitioner"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
         "title": "OpenELIS Diagnostic Report"
       }
     ],
     "Patient": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
         "title": "OpenELIS Patient"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
         "title": "OpenELIS Service Request"
       }
     ],
     "Task": [
       {
-        "url": "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
+        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
         "title": "OpenElis Task"
       }
     ]
@@ -99,6 +99,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }

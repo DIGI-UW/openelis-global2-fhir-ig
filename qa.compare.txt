@@ -1,20 +1,20 @@
 OpenELISImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 9, info = 0
+err = 0, warn = 23, info = 1
 $--
-Generated $--. FHIR version $-- for openelis#$-- (canonical = http://i-tech-uw.github.io/openelis-global-ig)
- Build Errors : 6 / 5 / 0
- /github/workspace/fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample : 0 / 0 / 1
+Generated $--. FHIR version $-- for openelis#$-- (canonical = http://digi-uw.github.io/openelis-global-ig)
+ Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-openelis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Location-LocationExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614 : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614 : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 0 / 5 / 1
  /github/workspace/fsh-generated/resources/Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-location : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-specimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-open-elisorganisation : 0 / 0 / 1
@@ -26,31 +26,40 @@ Generated $--. FHIR version $-- for openelis#$-- (canonical = http://i-tech-uw.g
  /github/workspace/fsh-generated/resources/Task-49ef249a-3a8b-49e3-9e16-7e56e92d0c77 : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request-definitions.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/table/tr/td/p/a at Line 435, column 1211: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request-definitions.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/table/tr/td/p/a at Line 633, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 619, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 930, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1631, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-openelis-service-request.html#/html/body/div/div/div/a/img/div/a/img/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1942, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
-WARNING: /github/workspace/output/index.html: The html source has duplicate anchor Ids: disclaimer,ip,scope,summary
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample.json ==
+WARNING: DiagnosticReport/OpenElisDiagnosticReportExample: DiagnosticReport.identifier[0].system: URL value 'https://demo.openelis-global.org/analysisResult_uuid' does not resolve
 == fsh-generated/resources/ImplementationGuide-openelis.json ==
 == fsh-generated/resources/Location-LocationExample.json ==
 == fsh-generated/resources/Observation-OpenElisObservationExample.json ==
+WARNING: Observation/OpenElisObservationExample: Observation.identifier[0].system: URL value 'https://demo.openelis-global.org/result_uuid' does not resolve
 WARNING: Observation/OpenElisObservationExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Observation/OpenElisObservationExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json ==
+WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.identifier[0].system: URL value 'https://demo.openelis-global.org/org_cliaNum' does not resolve
+WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.identifier[1].system: URL value 'https://demo.openelis-global.org/org_shortName' does not resolve
+WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.identifier[2].system: URL value 'https://demo.openelis-global.org/org_code' does not resolve
+WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.identifier[3].system: URL value 'https://demo.openelis-global.org/org_uuid' does not resolve
 WARNING: Organization/bc8479a5-b34b-4578-9d38-a351bc92e614: Organization.type[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json ==
+WARNING: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[0].system: URL value 'https://demo.openelis-global.org/pat_nationalId' does not resolve
+WARNING: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[1].system: URL value 'https://demo.openelis-global.org/pat_subjectNumber' does not resolve
+WARNING: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[2].system: URL value 'https://demo.openelis-global.org/pat_stNumber' does not resolve
+WARNING: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[3].system: URL value 'https://demo.openelis-global.org/pat_guid' does not resolve
+WARNING: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[4].system: URL value 'https://demo.openelis-global.org/pat_uuid' does not resolve
 == fsh-generated/resources/Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.json ==
 == fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample.json ==
+WARNING: ServiceRequest/OpenElisServiceRequestExample: ServiceRequest.identifier[0].system: URL value 'https://demo.openelis-global.org/analysis_uuid' does not resolve
+WARNING: ServiceRequest/OpenElisServiceRequestExample: ServiceRequest.identifier[1].system: URL value 'https://demo.openelis-global.org/samp_labNo' does not resolve
 == fsh-generated/resources/Specimen-OpenElisSpecimenExample.json ==
+WARNING: Specimen/OpenElisSpecimenExample: Specimen.identifier[0].system: URL value 'https://demo.openelis-global.org/sampleItem_uuid' does not resolve
+WARNING: Specimen/OpenElisSpecimenExample: Specimen.accessionIdentifier.system: URL value 'https://demo.openelis-global.org/sampleItem_labNo' does not resolve
 WARNING: Specimen/OpenElisSpecimenExample: Specimen.type.coding[0].display: Cannot validate display Name 'Plasma' for http://loinc.org#: No displays are known
 == fsh-generated/resources/StructureDefinition-open-elis-location.json ==
+INFORMATION: StructureDefinition/open-elis-location: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated/resources/StructureDefinition-open-elis-observation.json ==
 == fsh-generated/resources/StructureDefinition-open-elis-specimen.json ==
 == fsh-generated/resources/StructureDefinition-open-elisorganisation.json ==

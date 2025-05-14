@@ -1,30 +1,31 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<http://i-tech-uw.github.io/openelis-global-ig/DiagnosticReport/OpenElisDiagnosticReportExample> a fhir:DiagnosticReport ;
+<http://digi-uw.github.io/openelis-global-ig/DiagnosticReport/OpenElisDiagnosticReportExample> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "OpenElisDiagnosticReportExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"^^xsd:anyURI ;
-       fhir:link <http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report>
+       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"^^xsd:anyURI ;
+       fhir:link <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport OpenElisDiagnosticReportExample</b></p><a name=\"OpenElisDiagnosticReportExample\"> </a><a name=\"hcOpenElisDiagnosticReportExample\"> </a><a name=\"OpenElisDiagnosticReportExample-en-US\"> </a><h2><span title=\"Codes:{http://loinc.org 58410-2}\">CBC panel - Blood by Automated count</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#NA121212)</td></tr><tr><td>Identifier</td><td> <code>https://demo.openelis-global.org/analysisResult_uuid</code>/f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-OpenElisObservationExample.html\"><span title=\"Codes:{http://loinc.org 15074-8}\">Glucose [Moles/volume] in Blood</span></a></td><td>55 UI/L</td><td>Final</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport OpenElisDiagnosticReportExample</b></p><a name=\"OpenElisDiagnosticReportExample\"> </a><a name=\"hcOpenElisDiagnosticReportExample\"> </a><a name=\"OpenElisDiagnosticReportExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-diagnostic-report.html\">OpenELIS Diagnostic Report</a></p></div><h2><span title=\"Codes:{http://loinc.org 58410-2}\">CBC panel - Blood by Automated count</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#NA121212)</td></tr><tr><td>Identifier</td><td> <code>https://demo.openelis-global.org/analysisResult_uuid</code>/f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-OpenElisObservationExample.html\"><span title=\"Codes:{http://loinc.org 15074-8}\">Glucose [Moles/volume] in Blood</span></a></td><td>55 UI/L</td><td>Final</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "https://demo.openelis-global.org/analysisResult_uuid"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "f3c9cf5e-7d41-4a7d-a77b-8c0f4323a0bd" ]
   ] ) ; # 
   fhir:basedOn ( [
-     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/ServiceRequest/OpenElisServiceRequestExample> ;
+     fhir:link <http://digi-uw.github.io/openelis-global-ig/ServiceRequest/OpenElisServiceRequestExample> ;
      fhir:reference [ fhir:v "ServiceRequest/OpenElisServiceRequestExample" ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -37,15 +38,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> ;
+     fhir:link <http://digi-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> ;
      fhir:reference [ fhir:v "Patient/329f09da-0fc9-419d-9575-ace68954426A" ]
   ] ; # 
   fhir:specimen ( [
-     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Specimen/OpenElisSpecimenExample> ;
+     fhir:link <http://digi-uw.github.io/openelis-global-ig/Specimen/OpenElisSpecimenExample> ;
      fhir:reference [ fhir:v "Specimen/OpenElisSpecimenExample" ]
   ] ) ; # 
   fhir:result ( [
-     fhir:link <http://i-tech-uw.github.io/openelis-global-ig/Observation/OpenElisObservationExample> ;
+     fhir:link <http://digi-uw.github.io/openelis-global-ig/Observation/OpenElisObservationExample> ;
      fhir:reference [ fhir:v "Observation/OpenElisObservationExample" ]
   ] ) . # 
 

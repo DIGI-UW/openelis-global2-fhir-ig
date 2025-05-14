@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="openelis"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name="openelis"> </a><a name="hcopenelis"> </a><a name="openelis-en-US"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name="openelis"> </a><a name="hcopenelis"> </a><a name="openelis-en-US"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
 </div></div>
   </text>
-  <url value="http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis"/>
+  <url value="http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis"/>
   <version value="0.1.0"/>
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-12-11T16:37:57+00:00"/>
+  <date value="2025-05-14T18:24:04+00:00"/>
   <description value="An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"/>
   <packageId value="openelis"/>
   <license value="CC-BY-SA-4.0"/>
@@ -22,7 +22,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.1.0"/>
+    <version value="6.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -30,7 +30,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -134,7 +134,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://i-tech-uw.github.io/openelis-global-ig/history.html"/>
+        <valueString value="http://digi-uw.github.io/openelis-global-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -234,7 +234,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -337,7 +337,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://i-tech-uw.github.io/openelis-global-ig/history.html"/>
+        <valueString value="http://digi-uw.github.io/openelis-global-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -445,7 +445,7 @@
       </reference>
       <name value="Location Example"/>
       <description value="Health Facility Location example resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -467,7 +467,7 @@
       </reference>
       <name value="OpenElis DiagnosticReport Example"/>
       <description value="OpenElis DiagnosticReport Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -500,7 +500,7 @@
       </reference>
       <name value="OpenElis Observation Example"/>
       <description value="OpenElis Observation Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -522,7 +522,7 @@
       </reference>
       <name value="OpenELIS Organization Example"/>
       <description value="OpenELIS Organization Example"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -544,7 +544,7 @@
       </reference>
       <name value="OpenELIS Patient Example Resource"/>
       <description value="OpenELIS Patient Example"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -566,7 +566,7 @@
       </reference>
       <name value="OpenELIS Practitioner Example"/>
       <description value="OpenELIS Practitioner Example"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -588,7 +588,7 @@
       </reference>
       <name value="OpenElis Service Request Example"/>
       <description value="OpenElis ServiceRequest Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -610,7 +610,7 @@
       </reference>
       <name value="OpenElis Specimen Example"/>
       <description value="OpenElis Specimen Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -632,7 +632,7 @@
       </reference>
       <name value="OpenElis Task Example"/>
       <description value="OpenElis Task Example Resource"/>
-      <exampleCanonical value="http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

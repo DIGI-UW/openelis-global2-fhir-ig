@@ -3,14 +3,14 @@
   "id" : "openelis",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><a name=\"openelis-en-US\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><a name=\"openelis-en-US\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
   },
-  "url" : "http://i-tech-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
+  "url" : "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
   "version" : "0.1.0",
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-11T16:37:57+00:00",
+  "date" : "2025-05-14T18:24:04+00:00",
   "description" : "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR",
   "packageId" : "openelis",
   "license" : "CC-BY-SA-4.0",
@@ -23,7 +23,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.1.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -33,7 +33,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -175,7 +175,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://i-tech-uw.github.io/openelis-global-ig/history.html"
+        "valueString" : "http://digi-uw.github.io/openelis-global-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -313,7 +313,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{
@@ -454,7 +454,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://i-tech-uw.github.io/openelis-global-ig/history.html"
+        "valueString" : "http://digi-uw.github.io/openelis-global-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -600,7 +600,7 @@
       },
       "name" : "Location Example",
       "description" : "Health Facility Location example resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location"
     },
     {
       "extension" : [{
@@ -624,7 +624,7 @@
       },
       "name" : "OpenElis DiagnosticReport Example",
       "description" : "OpenElis DiagnosticReport Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report"
     },
     {
       "extension" : [{
@@ -660,7 +660,7 @@
       },
       "name" : "OpenElis Observation Example",
       "description" : "OpenElis Observation Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
     },
     {
       "extension" : [{
@@ -684,7 +684,7 @@
       },
       "name" : "OpenELIS Organization Example",
       "description" : "OpenELIS Organization Example",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation"
     },
     {
       "extension" : [{
@@ -708,7 +708,7 @@
       },
       "name" : "OpenELIS Patient Example Resource",
       "description" : "OpenELIS Patient Example",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient"
     },
     {
       "extension" : [{
@@ -732,7 +732,7 @@
       },
       "name" : "OpenELIS Practitioner Example",
       "description" : "OpenELIS Practitioner Example",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner"
     },
     {
       "extension" : [{
@@ -756,7 +756,7 @@
       },
       "name" : "OpenElis Service Request Example",
       "description" : "OpenElis ServiceRequest Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request"
     },
     {
       "extension" : [{
@@ -780,7 +780,7 @@
       },
       "name" : "OpenElis Specimen Example",
       "description" : "OpenElis Specimen Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"
     },
     {
       "extension" : [{
@@ -804,7 +804,7 @@
       },
       "name" : "OpenElis Task Example",
       "description" : "OpenElis Task Example Resource",
-      "exampleCanonical" : "http://i-tech-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
     }],
     "page" : {
       "extension" : [{
