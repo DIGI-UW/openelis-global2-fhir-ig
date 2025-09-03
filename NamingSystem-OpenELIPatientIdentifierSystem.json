@@ -1,0 +1,42 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "OpenELIPatientIdentifierSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELIPatientIdentifierSystem</b></p><a name=\"OpenELIPatientIdentifierSystem\"> </a><a name=\"hcOpenELIPatientIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELIPatientIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for OpenELISPatient identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_nationalId</td><td>true</td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_subjectNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_stNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_guid</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_uuid</td><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.0"
+  }],
+  "name" : "OpenELIPatientIdentifierSystem",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2025-09-03",
+  "description" : "Defined url for OpenELISPatient identifier system url ",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/pat_nationalId",
+    "preferred" : true
+  },
+  {
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/pat_subjectNumber"
+  },
+  {
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/pat_stNumber"
+  },
+  {
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/pat_guid"
+  },
+  {
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/pat_uuid"
+  }]
+}

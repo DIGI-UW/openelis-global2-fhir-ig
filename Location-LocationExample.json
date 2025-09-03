@@ -6,8 +6,16 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><a name=\"LocationExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-location.html\">OpenELIS Facility Location</a></p></div><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationExample</b></p><a name=\"LocationExample\"> </a><a name=\"hcLocationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-location.html\">OpenELIS Facility Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Outpatient Clinic</p><p><b>description</b>: Outpatient Clinic</p><p><b>type</b>: <span title=\"Codes:\">Clinic</span></p><p><b>address</b>: Washington US </p></div>"
   },
+  "status" : "active",
   "name" : "Outpatient Clinic",
-  "description" : "Outpatient Clinic"
+  "description" : "Outpatient Clinic",
+  "type" : [{
+    "text" : "Clinic"
+  }],
+  "address" : {
+    "city" : "Washington",
+    "country" : "US"
+  }
 }

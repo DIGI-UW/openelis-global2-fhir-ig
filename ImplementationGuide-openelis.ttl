@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "openelis"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><a name=\"openelis-en-US\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OpenELISImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenELIS GLOBAL2 Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-14T18:31:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-03T10:18:48+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"] ; # 
   fhir:packageId [ fhir:v "openelis"] ; # 
   fhir:license [ fhir:v "CC-BY-SA-4.0"] ; # 
@@ -37,7 +37,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -434,7 +434,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
        ]
      ] [
        fhir:extension ( [
@@ -836,6 +836,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELIPatientIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELIPatientIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for OpenELISPatient identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -899,7 +917,7 @@
          fhir:reference [ fhir:v "StructureDefinition/open-elis-observation" ]
        ] ;
        fhir:name [ fhir:v "OpenELIS Observation" ] ;
-       fhir:description [ fhir:v "A Observation Resource used for FHIR Exchange" ] ;
+       fhir:description [ fhir:v "An Observation Resource used for FHIR Exchange" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1144,6 +1162,96 @@
          a fhir:canonical ;
          fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"^^xsd:anyURI ;
          fhir:link <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISDiagnosticReportIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELISDiagnosticReportIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISDiagnosticReportIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for OpenElisDiagnosticReport identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISObservationIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELISObservationIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISObservationIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for OpenELISObservation identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISOrgIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELISOrgIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISOrgIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for OpenELISOrganization identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISServiceRequestIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELISServiceRequestIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISServiceRequestIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for OpenELISServiceRequest identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISSpecimenIdentifierSystem> ;
+         fhir:reference [ fhir:v "NamingSystem/OpenELISSpecimenIdentifierSystem" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISSpecimenIdentifierSystem" ] ;
+       fhir:description [ fhir:v "Defined url for Specimen identifier system url" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
        ]
      ] ) ;
      fhir:page [

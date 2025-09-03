@@ -1,0 +1,30 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "OpenELISServiceRequestIdentifierSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELISServiceRequestIdentifierSystem</b></p><a name=\"OpenELISServiceRequestIdentifierSystem\"> </a><a name=\"hcOpenELISServiceRequestIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISServiceRequestIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELISServiceRequestIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for OpenELISServiceRequest identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/analysis_uuid</td><td>true</td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/samp_labNo</td><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISServiceRequestIdentifierSystem"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.0"
+  }],
+  "name" : "OpenELISServiceRequestIdentifierSystem",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2025-09-03",
+  "description" : "Defined url for OpenELISServiceRequest identifier system url ",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/analysis_uuid",
+    "preferred" : true
+  },
+  {
+    "type" : "uri",
+    "value" : "https://demo.openelis-global.org/samp_labNo"
+  }]
+}

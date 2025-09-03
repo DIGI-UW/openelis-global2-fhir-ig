@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="openelis"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name="openelis"> </a><a name="hcopenelis"> </a><a name="openelis-en-US"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name="openelis"> </a><a name="hcopenelis"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>
 </div></div>
   </text>
   <url value="http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis"/>
@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-05-14T18:31:44+00:00"/>
+  <date value="2025-09-03T10:18:48+00:00"/>
   <description value="An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"/>
   <packageId value="openelis"/>
   <license value="CC-BY-SA-4.0"/>
@@ -22,7 +22,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.3.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -234,7 +234,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -449,6 +449,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELIPatientIdentifierSystem"/>
+      </reference>
+      <name value="OpenELIPatientIdentifierSystem"/>
+      <description value="Defined url for OpenELISPatient identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -488,7 +499,7 @@
         <reference value="StructureDefinition/open-elis-observation"/>
       </reference>
       <name value="OpenELIS Observation"/>
-      <description value="A Observation Resource used for FHIR Exchange"/>
+      <description value="An Observation Resource used for FHIR Exchange"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -633,6 +644,61 @@
       <name value="OpenElis Task Example"/>
       <description value="OpenElis Task Example Resource"/>
       <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELISDiagnosticReportIdentifierSystem"/>
+      </reference>
+      <name value="OpenELISDiagnosticReportIdentifierSystem"/>
+      <description value="Defined url for OpenElisDiagnosticReport identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELISObservationIdentifierSystem"/>
+      </reference>
+      <name value="OpenELISObservationIdentifierSystem"/>
+      <description value="Defined url for OpenELISObservation identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELISOrgIdentifierSystem"/>
+      </reference>
+      <name value="OpenELISOrgIdentifierSystem"/>
+      <description value="Defined url for OpenELISOrganization identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELISServiceRequestIdentifierSystem"/>
+      </reference>
+      <name value="OpenELISServiceRequestIdentifierSystem"/>
+      <description value="Defined url for OpenELISServiceRequest identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/OpenELISSpecimenIdentifierSystem"/>
+      </reference>
+      <name value="OpenELISSpecimenIdentifierSystem"/>
+      <description value="Defined url for Specimen identifier system url"/>
+      <exampleBoolean value="false"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

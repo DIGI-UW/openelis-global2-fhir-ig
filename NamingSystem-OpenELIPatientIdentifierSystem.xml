@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="OpenELIPatientIdentifierSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: NamingSystem OpenELIPatientIdentifierSystem</b></p><a name="OpenELIPatientIdentifierSystem"> </a><a name="hcOpenELIPatientIdentifierSystem"> </a><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELIPatientIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for OpenELISPatient identifier system url</p>
+</div></td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_nationalId</td><td>true</td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_subjectNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_stNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_guid</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_uuid</td><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="0.1.0"/>
+  </extension>
+  <name value="OpenELIPatientIdentifierSystem"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2025-09-03"/>
+  <description value="Defined url for OpenELISPatient identifier system url "/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://demo.openelis-global.org/pat_nationalId"/>
+    <preferred value="true"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://demo.openelis-global.org/pat_subjectNumber"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://demo.openelis-global.org/pat_stNumber"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://demo.openelis-global.org/pat_guid"/>
+  </uniqueId>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://demo.openelis-global.org/pat_uuid"/>
+  </uniqueId>
+</NamingSystem>

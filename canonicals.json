@@ -7,6 +7,48 @@
     "name" : "OpenELISImplementationGuide"
   },
   {
+    "id" : "OpenELIPatientIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELIPatientIdentifierSystem"
+  },
+  {
+    "id" : "OpenELISDiagnosticReportIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISDiagnosticReportIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELISDiagnosticReportIdentifierSystem"
+  },
+  {
+    "id" : "OpenELISObservationIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISObservationIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELISObservationIdentifierSystem"
+  },
+  {
+    "id" : "OpenELISOrgIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISOrgIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELISOrgIdentifierSystem"
+  },
+  {
+    "id" : "OpenELISServiceRequestIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISServiceRequestIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELISServiceRequestIdentifierSystem"
+  },
+  {
+    "id" : "OpenELISSpecimenIdentifierSystem",
+    "type" : "NamingSystem",
+    "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISSpecimenIdentifierSystem",
+    "version" : "0.1.0",
+    "name" : "OpenELISSpecimenIdentifierSystem"
+  },
+  {
     "id" : "open-elis-location",
     "type" : "StructureDefinition",
     "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",

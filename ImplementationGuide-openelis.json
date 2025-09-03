@@ -3,14 +3,14 @@
   "id" : "openelis",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><a name=\"openelis-en-US\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openelis</b></p><a name=\"openelis\"> </a><a name=\"hcopenelis\"> </a><h2>OpenELISImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis</pre><div><p>An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR</p>\n</div></div>"
   },
   "url" : "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
   "version" : "0.1.0",
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2025-05-14T18:31:44+00:00",
+  "date" : "2025-09-03T10:18:48+00:00",
   "description" : "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR",
   "packageId" : "openelis",
   "license" : "CC-BY-SA-4.0",
@@ -23,7 +23,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.3.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -313,7 +313,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -605,6 +605,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELIPatientIdentifierSystem"
+      },
+      "name" : "OpenELIPatientIdentifierSystem",
+      "description" : "Defined url for OpenELISPatient identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -647,7 +659,7 @@
         "reference" : "StructureDefinition/open-elis-observation"
       },
       "name" : "OpenELIS Observation",
-      "description" : "A Observation Resource used for FHIR Exchange",
+      "description" : "An Observation Resource used for FHIR Exchange",
       "exampleBoolean" : false
     },
     {
@@ -805,6 +817,66 @@
       "name" : "OpenElis Task Example",
       "description" : "OpenElis Task Example Resource",
       "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELISDiagnosticReportIdentifierSystem"
+      },
+      "name" : "OpenELISDiagnosticReportIdentifierSystem",
+      "description" : "Defined url for OpenElisDiagnosticReport identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELISObservationIdentifierSystem"
+      },
+      "name" : "OpenELISObservationIdentifierSystem",
+      "description" : "Defined url for OpenELISObservation identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELISOrgIdentifierSystem"
+      },
+      "name" : "OpenELISOrgIdentifierSystem",
+      "description" : "Defined url for OpenELISOrganization identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELISServiceRequestIdentifierSystem"
+      },
+      "name" : "OpenELISServiceRequestIdentifierSystem",
+      "description" : "Defined url for OpenELISServiceRequest identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/OpenELISSpecimenIdentifierSystem"
+      },
+      "name" : "OpenELISSpecimenIdentifierSystem",
+      "description" : "Defined url for Specimen identifier system url",
+      "exampleBoolean" : false
     }],
     "page" : {
       "extension" : [{
