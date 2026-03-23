@@ -10,7 +10,7 @@
   "name" : "OpenELISTask",
   "title" : "OpenElis Task",
   "status" : "draft",
-  "date" : "2025-09-03T10:18:48+00:00",
+  "date" : "2026-03-23T16:02:58+00:00",
   "description" : "A Task resource for tracking order state",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -255,7 +255,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -460,7 +460,7 @@
       },
       "type" : [{
         "code" : "canonical",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ActivityDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ActivityDefinition|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -606,7 +606,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Task"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Task|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -896,7 +896,7 @@
         }],
         "strength" : "example",
         "description" : "Codes to identify what the task involves.  These will typically be specific to a particular workflow.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/task-code"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/task-code|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -957,7 +957,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1042,7 +1042,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1198,12 +1198,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1261,7 +1261,7 @@
         }],
         "strength" : "preferred",
         "description" : "The type(s) of task performers allowed.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/performer-role|4.0.1"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1336,7 +1336,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1427,7 +1427,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1466,8 +1466,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Coverage",
-        "http://hl7.org/fhir/StructureDefinition/ClaimResponse"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Coverage|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/ClaimResponse|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1542,7 +1542,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Provenance|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1783,12 +1783,12 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
-        "http://hl7.org/fhir/StructureDefinition/Group",
-        "http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Group|4.0.1",
+        "http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

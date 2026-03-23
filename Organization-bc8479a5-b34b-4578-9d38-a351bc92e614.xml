@@ -9,19 +9,19 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization bc8479a5-b34b-4578-9d38-a351bc92e614</b></p><a name="bc8479a5-b34b-4578-9d38-a351bc92e614"> </a><a name="hcbc8479a5-b34b-4578-9d38-a351bc92e614"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-open-elisorganisation.html">OpenELIS Organization</a></p></div><p><b>identifier</b>: <a href="NamingSystem-OpenELISOrgIdentifierSystem.html" title="Defined url for OpenELISOrganization identifier system url ">OpenELISOrgIdentifierSystem</a>/DEPT, <a href="NamingSystem-OpenELISOrgIdentifierSystem.html" title="Defined url for OpenELISOrganization identifier system url ">OpenELISOrgIdentifierSystem</a>/EID ICAP, <a href="NamingSystem-OpenELISOrgIdentifierSystem.html" title="Defined url for OpenELISOrganization identifier system url ">OpenELISOrgIdentifierSystem</a>/UG1001, <a href="NamingSystem-OpenELISOrgIdentifierSystem.html" title="Defined url for OpenELISOrganization identifier system url ">OpenELISOrgIdentifierSystem</a>/a1313f63-29b4-498d-ba12-0e960c683ec0</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: Minity Of Health</p><p><b>address</b>: KING GREENWOOD WASHINGTON 98103 </p></div>
   </text>
   <identifier>
-    <system value="https://demo.openelis-global.org/org_cliaNum"/>
+    <system value="http://openelis-global.org/org_cliaNum"/>
     <value value="DEPT"/>
   </identifier>
   <identifier>
-    <system value="https://demo.openelis-global.org/org_shortName"/>
+    <system value="http://openelis-global.org/org_shortName"/>
     <value value="EID ICAP"/>
   </identifier>
   <identifier>
-    <system value="https://demo.openelis-global.org/org_code"/>
+    <system value="http://openelis-global.org/org_code"/>
     <value value="UG1001"/>
   </identifier>
   <identifier>
-    <system value="https://demo.openelis-global.org/org_uuid"/>
+    <system value="http://openelis-global.org/org_uuid"/>
     <value value="a1313f63-29b4-498d-ba12-0e960c683ec0"/>
   </identifier>
   <type>

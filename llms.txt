@@ -1,0 +1,47 @@
+# openelis#0.1.0: OpenELIS GLOBAL2 Implementation Guide
+
+## Pages
+
+* [Home](index.md)
+* [Workflows](workflows.md)
+* [Artifacts Summary](artifacts.md)
+* [Changes](changes.md)
+
+## Resources
+
+### Resource Profiles
+
+* [OpenELIS Facility Location](StructureDefinition-open-elis-location.md)
+* [OpenELIS Observation](StructureDefinition-open-elis-observation.md)
+* [OpenElis Specimen](StructureDefinition-open-elis-specimen.md)
+* [OpenELIS Organization](StructureDefinition-open-elisorganisation.md)
+* [OpenELIS Practitioner](StructureDefinition-open-elispractitioner.md)
+* [OpenELIS Diagnostic Report](StructureDefinition-openelis-diagnostic-report.md)
+* [OpenELIS Patient](StructureDefinition-openelis-patient.md)
+* [OpenELIS Service Request](StructureDefinition-openelis-service-request.md)
+* [OpenElis Task](StructureDefinition-openelis-task.md)
+
+### ImplementationGuides
+
+* [OpenELIS GLOBAL2 Implementation Guide](index.md)
+
+### NamingSystems
+
+* [OpenELIPatientIdentifierSystem](NamingSystem-OpenELIPatientIdentifierSystem.md)
+* [OpenELISDiagnosticReportIdentifierSystem](NamingSystem-OpenELISDiagnosticReportIdentifierSystem.md)
+* [OpenELISObservationIdentifierSystem](NamingSystem-OpenELISObservationIdentifierSystem.md)
+* [OpenELISOrgIdentifierSystem](NamingSystem-OpenELISOrgIdentifierSystem.md)
+* [OpenELISServiceRequestIdentifierSystem](NamingSystem-OpenELISServiceRequestIdentifierSystem.md)
+* [OpenELISSpecimenIdentifierSystem](NamingSystem-OpenELISSpecimenIdentifierSystem.md)
+
+### Examples
+
+* [OpenElisDiagnosticReportExample (DiagnosticReport)](DiagnosticReport-OpenElisDiagnosticReportExample.md)
+* [Outpatient Clinic (Location)](Location-LocationExample.md)
+* [OpenElisObservationExample (Observation)](Observation-OpenElisObservationExample.md)
+* [Minity Of Health (Organization)](Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.md)
+* [329f09da-0fc9-419d-9575-ace68954426A (Patient)](Patient-329f09da-0fc9-419d-9575-ace68954426A.md)
+* [f185bb76-c298-4671-9be3-ccc94c0a9868 (Practitioner)](Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.md)
+* [OpenElisServiceRequestExample (ServiceRequest)](ServiceRequest-OpenElisServiceRequestExample.md)
+* [OpenElisSpecimenExample (Specimen)](Specimen-OpenElisSpecimenExample.md)
+* [49ef249a-3a8b-49e3-9e16-7e56e92d0c77 (Task)](Task-49ef249a-3a8b-49e3-9e16-7e56e92d0c77.md)

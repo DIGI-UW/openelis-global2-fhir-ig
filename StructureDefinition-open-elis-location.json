@@ -10,7 +10,7 @@
   "name" : "OpenELISLocation",
   "title" : "OpenELIS Facility Location",
   "status" : "draft",
-  "date" : "2025-09-03T10:18:48+00:00",
+  "date" : "2026-03-23T16:02:58+00:00",
   "description" : "A Location Resource used for FHIR Exchange",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -218,7 +218,7 @@
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -765,7 +765,7 @@
         }],
         "strength" : "example",
         "description" : "Physical form of the location.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/location-physical-type"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/location-physical-type|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1025,7 +1025,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1061,7 +1061,7 @@
           "valueBoolean" : true
         }],
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1395,7 +1395,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

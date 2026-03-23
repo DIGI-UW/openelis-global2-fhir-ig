@@ -3,7 +3,7 @@
   "id" : "OpenELISSpecimenIdentifierSystem",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELISSpecimenIdentifierSystem</b></p><a name=\"OpenELISSpecimenIdentifierSystem\"> </a><a name=\"hcOpenELISSpecimenIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISSpecimenIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELISSpecimenIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for Specimen identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/sampleItem_uuid</td><td>true</td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/sampleItem_labNo</td><td/></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELISSpecimenIdentifierSystem</b></p><a name=\"OpenELISSpecimenIdentifierSystem\"> </a><a name=\"hcOpenELISSpecimenIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISSpecimenIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELISSpecimenIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for Specimen identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/sampleItem_uuid</td><td>true</td></tr><tr><td>URI</td><td>http://openelis-global.org/sampleItem_labNo</td><td/></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
@@ -20,11 +20,11 @@
   "description" : "Defined url for Specimen identifier system url ",
   "uniqueId" : [{
     "type" : "uri",
-    "value" : "https://demo.openelis-global.org/sampleItem_uuid",
+    "value" : "http://openelis-global.org/sampleItem_uuid",
     "preferred" : true
   },
   {
     "type" : "uri",
-    "value" : "https://demo.openelis-global.org/sampleItem_labNo"
+    "value" : "http://openelis-global.org/sampleItem_labNo"
   }]
 }

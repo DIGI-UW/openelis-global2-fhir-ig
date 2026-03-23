@@ -13,42 +13,51 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"^^xsd:anyURI ;
-       fhir:link <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen>
+       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen OpenElisSpecimenExample</b></p><a name=\"OpenElisSpecimenExample\"> </a><a name=\"hcOpenElisSpecimenExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-specimen.html\">OpenElis Specimen</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-OpenELISSpecimenIdentifierSystem.html\" title=\"Defined url for Specimen identifier system url \">OpenELISSpecimenIdentifierSystem</a>/9df49e2d-57f7-4e7b-abb1-54d0a1933253</p><p><b>accessionIdentifier</b>: <a href=\"NamingSystem-OpenELISSpecimenIdentifierSystem.html\" title=\"Defined url for Specimen identifier system url \">OpenELISSpecimenIdentifierSystem</a>/TESTA230000000001751</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 119361006}\">Plasma specimen</span></p><p><b>subject</b>: <a href=\"Patient-329f09da-0fc9-419d-9575-ace68954426A.html\">moses Mutesa  Male, DoB: 1988-03-02 ( https://demo.openelis-global.org/pat_nationalId#OpenELIPatientIdentifierSystem#NA121212)</a></p><p><b>receivedTime</b>: 2023-03-03 07:03:00+0000</p><p><b>request</b>: <a href=\"ServiceRequest-OpenElisServiceRequestExample.html\">ServiceRequest CT Chest</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-02-03</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen OpenElisSpecimenExample</b></p><a name=\"OpenElisSpecimenExample\"> </a><a name=\"hcOpenElisSpecimenExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-specimen.html\">OpenElis Specimen</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-OpenELISSpecimenIdentifierSystem.html\" title=\"Defined url for Specimen identifier system url \">OpenELISSpecimenIdentifierSystem</a>/9df49e2d-57f7-4e7b-abb1-54d0a1933253</p><p><b>accessionIdentifier</b>: <a href=\"NamingSystem-OpenELISSpecimenIdentifierSystem.html\" title=\"Defined url for Specimen identifier system url \">OpenELISSpecimenIdentifierSystem</a>/TESTA230000000001751</p><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 119361006}\">Plasma specimen</span></p><p><b>subject</b>: <a href=\"Patient-329f09da-0fc9-419d-9575-ace68954426A.html\">moses Mutesa  Male, DoB: 1988-03-02 ( http://openelis-global.org/pat_nationalId#OpenELIPatientIdentifierSystem#NA121212)</a></p><p><b>receivedTime</b>: 2023-03-03 07:03:00+0000</p><p><b>request</b>: <a href=\"ServiceRequest-OpenElisServiceRequestExample.html\">ServiceRequest CT Chest</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-02-03</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "https://demo.openelis-global.org/sampleItem_uuid"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://openelis-global.org/sampleItem_uuid"^^xsd:anyURI ;
+       fhir:l <http://openelis-global.org/sampleItem_uuid>
+     ] ;
      fhir:value [ fhir:v "9df49e2d-57f7-4e7b-abb1-54d0a1933253" ]
   ] ) ; # 
   fhir:accessionIdentifier [
-     fhir:system [ fhir:v "https://demo.openelis-global.org/sampleItem_labNo"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://openelis-global.org/sampleItem_labNo"^^xsd:anyURI ;
+       fhir:l <http://openelis-global.org/sampleItem_labNo>
+     ] ;
      fhir:value [ fhir:v "TESTA230000000001751" ]
   ] ; # 
   fhir:status [ fhir:v "available"] ; # 
   fhir:type [
      fhir:coding ( [
        a sct:119361006 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:code [ fhir:v "119361006" ] ;
        fhir:display [ fhir:v "Plasma specimen" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://digi-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> ;
+     fhir:l <http://digi-uw.github.io/openelis-global-ig/Patient/329f09da-0fc9-419d-9575-ace68954426A> ;
      fhir:reference [ fhir:v "Patient/329f09da-0fc9-419d-9575-ace68954426A" ]
   ] ; # 
   fhir:receivedTime [ fhir:v "2023-03-03T07:03:00Z"^^xsd:dateTime] ; # 
   fhir:request ( [
-     fhir:link <http://digi-uw.github.io/openelis-global-ig/ServiceRequest/OpenElisServiceRequestExample> ;
+     fhir:l <http://digi-uw.github.io/openelis-global-ig/ServiceRequest/OpenElisServiceRequestExample> ;
      fhir:reference [ fhir:v "ServiceRequest/OpenElisServiceRequestExample" ]
   ] ) ; # 
   fhir:collection [
      fhir:collected [
-       a fhir:dateTime ;
+       a fhir:DateTime ;
        fhir:v "2023-02-03"^^xsd:date
      ]
   ] . # 

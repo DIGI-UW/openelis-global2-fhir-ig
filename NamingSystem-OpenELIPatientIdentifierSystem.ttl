@@ -11,18 +11,25 @@
   fhir:id [ fhir:v "OpenELIPatientIdentifierSystem"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELIPatientIdentifierSystem</b></p><a name=\"OpenELIPatientIdentifierSystem\"> </a><a name=\"hcOpenELIPatientIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELIPatientIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for OpenELISPatient identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_nationalId</td><td>true</td></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_subjectNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_stNumber</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_guid</td><td/></tr><tr><td>URI</td><td>https://demo.openelis-global.org/pat_uuid</td><td/></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem OpenELIPatientIdentifierSystem</b></p><a name=\"OpenELIPatientIdentifierSystem\"> </a><a name=\"hcOpenELIPatientIdentifierSystem\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>OpenELIPatientIdentifierSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Defined url for OpenELISPatient identifier system url</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/pat_nationalId</td><td>true</td></tr><tr><td>URI</td><td>http://openelis-global.org/pat_subjectNumber</td><td/></tr><tr><td>URI</td><td>http://openelis-global.org/pat_stNumber</td><td/></tr><tr><td>URI</td><td>http://openelis-global.org/pat_guid</td><td/></tr><tr><td>URI</td><td>http://openelis-global.org/pat_uuid</td><td/></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url>
+     ] ;
      fhir:value [
-       a fhir:uri ;
-       fhir:v "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem"^^xsd:anyURI
+       a fhir:Uri ;
+       fhir:v "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem"^^xsd:anyURI ;
+       fhir:l <http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem>
      ]
   ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version>
+     ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "0.1.0"
      ]
   ] ) ; # 
@@ -33,20 +40,20 @@
   fhir:description [ fhir:v "Defined url for OpenELISPatient identifier system url "] ; # 
   fhir:uniqueId ( [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://demo.openelis-global.org/pat_nationalId" ] ;
+     fhir:value [ fhir:v "http://openelis-global.org/pat_nationalId" ] ;
      fhir:preferred [ fhir:v true ]
   ] [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://demo.openelis-global.org/pat_subjectNumber" ]
+     fhir:value [ fhir:v "http://openelis-global.org/pat_subjectNumber" ]
   ] [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://demo.openelis-global.org/pat_stNumber" ]
+     fhir:value [ fhir:v "http://openelis-global.org/pat_stNumber" ]
   ] [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://demo.openelis-global.org/pat_guid" ]
+     fhir:value [ fhir:v "http://openelis-global.org/pat_guid" ]
   ] [
      fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "https://demo.openelis-global.org/pat_uuid" ]
+     fhir:value [ fhir:v "http://openelis-global.org/pat_uuid" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

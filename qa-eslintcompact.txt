@@ -10,4 +10,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-location.json: line 1, col 14832, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
 
 err = 0, warn = 6, info = 1
-IG Publisher Version: 2.0.16
+IG Publisher Version: 2.2.1

@@ -11,7 +11,7 @@
   <name value="OpenELISLocation"/>
   <title value="OpenELIS Facility Location"/>
   <status value="draft"/>
-  <date value="2025-09-03T10:18:48+00:00"/>
+  <date value="2026-03-23T16:02:58+00:00"/>
   <description value="A Location Resource used for FHIR Exchange"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
@@ -208,7 +208,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
     </element>
     <element id="Location.text">
@@ -735,7 +735,7 @@
         </extension>
         <strength value="example"/>
         <description value="Physical form of the location."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/location-physical-type"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/location-physical-type|4.0.1"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -986,7 +986,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1020,7 +1020,7 @@
           <valueBoolean value="true"/>
         </extension>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1342,7 +1342,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
