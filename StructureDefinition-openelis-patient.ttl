@@ -21,14 +21,14 @@
   fhir:name [ fhir:v "OpenELISPatient"] ; # 
   fhir:title [ fhir:v "OpenELIS Patient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-23T16:02:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-11T11:15:58+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "A patient used for OpenELIS FHIR Exchange"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "open-elis-patient-mapping" ] ;
      fhir:uri [
-       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-patient"^^xsd:anyURI ;
-       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-patient>
+       fhir:v "Patient"^^xsd:anyURI ;
+       fhir:l fhir:Patient
      ] ;
      fhir:name [ fhir:v "OpenELIS Vs FHIR" ] ;
      fhir:comment [ fhir:v "Patient Mapping shows how attributes of FHIR Patient Resource maps to and from the attributes of OpenElis Patient Object." ]

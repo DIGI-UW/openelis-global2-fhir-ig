@@ -55,8 +55,8 @@
     "uses" : {
     },
     "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
-    "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+    "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -154,12 +154,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
-    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
     "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
     "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -173,12 +173,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
-    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
     "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
+    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
     "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request"
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -193,14 +193,14 @@
     "uses" : {
     },
     "StructureDefinition-openelis-task.html" : "OpenElis Task",
-    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report",
-    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
     "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-open-elis-specimen.html" : "OpenElis Specimen",
     "StructureDefinition-open-elis-location.html" : "OpenELIS Facility Location",
-    "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
     "StructureDefinition-openelis-service-request.html" : "OpenELIS Service Request",
-    "StructureDefinition-open-elispractitioner.html" : "OpenELIS Practitioner"
+    "StructureDefinition-open-elisorganisation.html" : "OpenELIS Organization",
+    "StructureDefinition-open-elispractitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-open-elis-observation.html" : "OpenELIS Observation",
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS Diagnostic Report"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",

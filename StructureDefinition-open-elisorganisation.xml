@@ -30,12 +30,12 @@
   <name value="OpenELISOrganisation"/>
   <title value="OpenELIS Organization"/>
   <status value="draft"/>
-  <date value="2026-03-23T16:02:58+00:00"/>
+  <date value="2026-05-11T11:15:58+00:00"/>
   <description value="A Organization Resource used for FHIR Exchange"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="open-elis-organization-mapping"/>
-    <uri value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization"/>
+    <uri value="Organization"/>
     <name value="OpenELIS Vs FHIR"/>
     <comment value="Organisation Mapping shows how attributes of FHIR Organisation Resource maps to and from the attributes of OpenElis Organisation Object."/>
   </mapping>

@@ -13,12 +13,12 @@
   "name" : "OpenELISServiceRequest",
   "title" : "OpenELIS Service Request",
   "status" : "draft",
-  "date" : "2026-03-23T16:02:58+00:00",
+  "date" : "2026-05-11T11:15:58+00:00",
   "description" : "OpenELIS service request",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "oe-service-request-mapping",
-    "uri" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-service-request",
+    "uri" : "ServiceRequest",
     "name" : "OpenELIS Vs FHIR",
     "comment" : "ServiceRequest Mapping shows how attributes of FHIR ServiceRequest Resource maps to and from the attributes of OpenElis SampleItem Object."
   },

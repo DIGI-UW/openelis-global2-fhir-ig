@@ -21,14 +21,14 @@
   fhir:name [ fhir:v "OpenELISDiagnosticReport"] ; # 
   fhir:title [ fhir:v "OpenELIS Diagnostic Report"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-23T16:02:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-11T11:15:58+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "DiagnosticReport resource created by a LIS"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "oe-diagnostic-report-mapping" ] ;
      fhir:uri [
-       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report"^^xsd:anyURI ;
-       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report>
+       fhir:v "DiagnosticReport"^^xsd:anyURI ;
+       fhir:l fhir:DiagnosticReport
      ] ;
      fhir:name [ fhir:v "OpenELIS Vs FHIR" ] ;
      fhir:comment [ fhir:v "DiagnosticReport Mapping shows how attributes of FHIR DiagnosticReport Resource maps to and from the attributes of OpenElis SampleItem Object." ]

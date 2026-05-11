@@ -21,14 +21,14 @@
   fhir:name [ fhir:v "OpenELISOrganisation"] ; # 
   fhir:title [ fhir:v "OpenELIS Organization"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-23T16:02:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-11T11:15:58+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "A Organization Resource used for FHIR Exchange"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "open-elis-organization-mapping" ] ;
      fhir:uri [
-       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization"^^xsd:anyURI ;
-       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization>
+       fhir:v "Organization"^^xsd:anyURI ;
+       fhir:l fhir:Organization
      ] ;
      fhir:name [ fhir:v "OpenELIS Vs FHIR" ] ;
      fhir:comment [ fhir:v "Organisation Mapping shows how attributes of FHIR Organisation Resource maps to and from the attributes of OpenElis Organisation Object." ]

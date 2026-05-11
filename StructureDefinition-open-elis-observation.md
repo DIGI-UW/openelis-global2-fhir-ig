@@ -13,12 +13,12 @@
   "name" : "OpenELISObservation",
   "title" : "OpenELIS Observation",
   "status" : "draft",
-  "date" : "2026-03-23T16:02:58+00:00",
+  "date" : "2026-05-11T11:15:58+00:00",
   "description" : "An Observation Resource used for FHIR Exchange",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "oe-observation-mapping",
-    "uri" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
+    "uri" : "Observation",
     "name" : "OpenELIS Vs FHIR",
     "comment" : "Observation Mapping shows how attributes of FHIR Observation Resource maps to and from the attributes of OpenElis Results Object."
   },

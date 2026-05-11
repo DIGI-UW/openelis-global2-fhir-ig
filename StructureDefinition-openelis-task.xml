@@ -24,12 +24,12 @@
   <name value="OpenELISTask"/>
   <title value="OpenElis Task"/>
   <status value="draft"/>
-  <date value="2026-03-23T16:02:58+00:00"/>
+  <date value="2026-05-11T11:15:58+00:00"/>
   <description value="A Task resource for tracking order state"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="eo-task-mapping"/>
-    <uri value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-task"/>
+    <uri value="Task"/>
     <name value="OpenELIS Vs FHIR"/>
     <comment value="Task Mapping shows how attributes of FHIR Task Resource maps to and from the attributes of OpenElis Sample Object."/>
   </mapping>

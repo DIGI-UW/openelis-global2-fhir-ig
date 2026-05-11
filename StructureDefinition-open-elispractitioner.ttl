@@ -21,14 +21,14 @@
   fhir:name [ fhir:v "OpenELISPractitioner"] ; # 
   fhir:title [ fhir:v "OpenELIS Practitioner"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-23T16:02:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-11T11:15:58+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "A Practitioner Resource used for FHIR Exchange"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "open-elispractitioner-mapping" ] ;
      fhir:uri [
-       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-practitioner"^^xsd:anyURI ;
-       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-practitioner>
+       fhir:v "Practitioner"^^xsd:anyURI ;
+       fhir:l fhir:Practitioner
      ] ;
      fhir:name [ fhir:v "OpenELIS Vs FHIR" ] ;
      fhir:comment [ fhir:v "Practitioner Mapping shows how attributes of FHIR Practitioner Resource maps to and from the attributes of OpenElis Provider Object." ]

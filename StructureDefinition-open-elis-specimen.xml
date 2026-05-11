@@ -28,12 +28,12 @@
   <name value="OpenElisSpecimen"/>
   <title value="OpenElis Specimen"/>
   <status value="draft"/>
-  <date value="2026-03-23T16:02:58+00:00"/>
+  <date value="2026-05-11T11:15:58+00:00"/>
   <description value="A Specimen Resource used for FHIR Exchange"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="oe-specimen-mapping"/>
-    <uri value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen"/>
+    <uri value="Specimen"/>
     <name value="OpenELIS Vs FHIR"/>
     <comment value="Specimen Mapping shows how attributes of FHIR Specimen Resource maps to and from the attributes of OpenElis SampleItem Object."/>
   </mapping>

@@ -3,9 +3,9 @@
 ## Pages
 
 * [Home](index.md)
-* [Workflows](workflows.md)
-* [Artifacts Summary](artifacts.md)
 * [Changes](changes.md)
+* [Artifacts Summary](artifacts.md)
+* [Workflows](workflows.md)
 
 ## Resources
 
