@@ -48,7 +48,7 @@ Title:   "OpenELIS Patient Example Resource"
 
 Mapping: OpenELISPatientMapping
 Source: OpenELISPatient
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-patient"
+Target: "Patient"
 Id: open-elis-patient-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Patient Mapping shows how attributes of FHIR Patient Resource maps to and from the attributes of OpenElis Patient Object."

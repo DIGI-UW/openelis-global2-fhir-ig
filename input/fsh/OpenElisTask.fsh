@@ -17,7 +17,7 @@ Description: "A Task resource for tracking order state"
 
 Mapping: OpenElisTaskMapping
 Source: OpenELISTask
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-task"
+Target: "Task"
 Id: eo-task-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Task Mapping shows how attributes of FHIR Task Resource maps to and from the attributes of OpenElis Sample Object."

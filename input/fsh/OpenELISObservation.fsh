@@ -30,7 +30,7 @@ Description: "An Observation Resource used for FHIR Exchange"
 
 Mapping: ObservationMapping
 Source: OpenELISObservation
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation"
+Target: "Observation"
 Id: oe-observation-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Observation Mapping shows how attributes of FHIR Observation Resource maps to and from the attributes of OpenElis Results Object."

@@ -38,7 +38,7 @@ Description: "OpenElis DiagnosticReport Example Resource"
 
 Mapping: OpenELISDiagnosticReportMapping
 Source: OpenELISDiagnosticReport
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-diagnostic-report"
+Target: "DiagnosticReport"
 Id: oe-diagnostic-report-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "DiagnosticReport Mapping shows how attributes of FHIR DiagnosticReport Resource maps to and from the attributes of OpenElis SampleItem Object."

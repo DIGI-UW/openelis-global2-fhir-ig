@@ -41,7 +41,7 @@ Description: "OpenELIS Organization Example"
 
 Mapping: OpenELISOrganizationMapping
 Source: OpenELISOrganisation
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-organization"
+Target: "Organization"
 Id: open-elis-organization-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "Organisation Mapping shows how attributes of FHIR Organisation Resource maps to and from the attributes of OpenElis Organisation Object."

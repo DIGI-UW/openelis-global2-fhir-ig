@@ -51,7 +51,7 @@ Description: "OpenElis ServiceRequest Example Resource"
 
 Mapping: OpenELISServiceRequestMapping
 Source: OpenELISServiceRequest
-Target: "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-service-request"
+Target: "ServiceRequest"
 Id: oe-service-request-mapping
 Title: "OpenELIS Vs FHIR"
 Description: "ServiceRequest Mapping shows how attributes of FHIR ServiceRequest Resource maps to and from the attributes of OpenElis SampleItem Object."
