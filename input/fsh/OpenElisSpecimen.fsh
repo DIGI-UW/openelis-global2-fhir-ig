@@ -16,6 +16,10 @@ Description: "A Specimen Resource used for FHIR Exchange"
 * receivedTime 1..1
 * collection 1..1
 * collection.collectedDateTime 1..1
+* collection.bodySite 0..1
+* collection.collector 0..1
+* container 1..1
+* container.specimenQuantity 1..1
 * request 1..1
 * request only Reference(OpenELISServiceRequest)
 * subject 1..1
@@ -33,6 +37,9 @@ Description: "Specimen Mapping shows how attributes of FHIR Specimen Resource ma
 * type.coding.code -> "SampleItem.typeOfSample.localAbbreviation"
 * type.coding.display -> "SampleItem.typeOfSample.localizedName"
 * collection -> "SampleItem.collectionDate"
+* collection.collector -> "SampleItem.collector"
+* collection.bodySite -> "SampleItem.sourceOfSample"
+*  container.specimenQuantity -> "SampleItem.quantity"
 * request -> "Analysis"
 * subject -> "Patient"
 
@@ -52,5 +59,9 @@ Description: "OpenElis Specimen Example Resource"
 * status = #available
 * receivedTime = "2023-03-03T07:03:00Z"
 * collection.collectedDateTime = 2023-02-03
+* collection.bodySite.text = "Ankle"
+* container.specimenQuantity.value = 5
+* container.specimenQuantity.system = "http://unitsofmeasure.org"
+* container.specimenQuantity.code = #mm3
 * request = Reference(OpenElisServiceRequestExample)
 * subject = Reference(example-openelis-patient)
