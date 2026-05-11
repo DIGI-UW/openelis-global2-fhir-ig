@@ -35,8 +35,18 @@
     "reference" : "ServiceRequest/OpenElisServiceRequestExample"
   }],
   "collection" : {
-    "collectedDateTime" : "2023-02-03"
-  }
+    "collectedDateTime" : "2023-02-03",
+    "bodySite" : {
+      "text" : "Ankle"
+    }
+  },
+  "container" : [{
+    "specimenQuantity" : {
+      "value" : 5,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm3"
+    }
+  }]
 }
 
 ```

@@ -13,7 +13,7 @@
   "name" : "OpenElisSpecimen",
   "title" : "OpenElis Specimen",
   "status" : "draft",
-  "date" : "2026-05-11T11:15:58+00:00",
+  "date" : "2026-05-11T15:58:07+00:00",
   "description" : "A Specimen Resource used for FHIR Exchange",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
@@ -166,6 +166,14 @@
       }]
     },
     {
+      "id" : "Specimen.collection.collector",
+      "path" : "Specimen.collection.collector",
+      "mapping" : [{
+        "identity" : "oe-specimen-mapping",
+        "map" : "SampleItem.collector"
+      }]
+    },
+    {
       "id" : "Specimen.collection.collected[x]",
       "path" : "Specimen.collection.collected[x]",
       "slicing" : {
@@ -186,6 +194,29 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "Specimen.collection.bodySite",
+      "path" : "Specimen.collection.bodySite",
+      "mapping" : [{
+        "identity" : "oe-specimen-mapping",
+        "map" : "SampleItem.sourceOfSample"
+      }]
+    },
+    {
+      "id" : "Specimen.container",
+      "path" : "Specimen.container",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Specimen.container.specimenQuantity",
+      "path" : "Specimen.container.specimenQuantity",
+      "min" : 1,
+      "mapping" : [{
+        "identity" : "oe-specimen-mapping",
+        "map" : "SampleItem.quantity"
       }]
     }]
   }

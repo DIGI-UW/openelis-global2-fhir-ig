@@ -20,6 +20,8 @@
       <sch:assert test="count(f:request) &gt;= 1">request: minimum cardinality of 'request' is 1</sch:assert>
       <sch:assert test="count(f:request) &lt;= 1">request: maximum cardinality of 'request' is 1</sch:assert>
       <sch:assert test="count(f:collection) &gt;= 1">collection: minimum cardinality of 'collection' is 1</sch:assert>
+      <sch:assert test="count(f:container) &gt;= 1">container: minimum cardinality of 'container' is 1</sch:assert>
+      <sch:assert test="count(f:container) &lt;= 1">container: maximum cardinality of 'container' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -63,6 +65,12 @@
       <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Specimen/f:container</sch:title>
+    <sch:rule context="f:Specimen/f:container">
+      <sch:assert test="count(f:specimenQuantity) &gt;= 1">specimenQuantity: minimum cardinality of 'specimenQuantity' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

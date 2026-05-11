@@ -13,7 +13,7 @@
   "name" : "OpenELISDiagnosticReport",
   "title" : "OpenELIS Diagnostic Report",
   "status" : "draft",
-  "date" : "2026-05-11T11:15:58+00:00",
+  "date" : "2026-05-11T15:58:07+00:00",
   "description" : "DiagnosticReport resource created by a LIS",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

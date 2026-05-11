@@ -160,7 +160,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Specimen.collection.collector","Specimen.collection.collector","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1]]}
 ","Who collected the specimen","Person who collected the specimen.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collector",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".participation[typeCode=PFM].role","FiveWs.actor","PRT"
+","SampleItem.collector",".participation[typeCode=PFM].role","FiveWs.actor","PRT"
 "Specimen.collection.collected[x]","Specimen.collection.collected[x]","","","",1,1,"","","Y","dateTime {[]} {[]}
 ","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"","type:$this}
 ","",,"closed","Specimen.collection.collected[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -179,7 +179,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".methodCode","SPM-7"
 "Specimen.collection.bodySite","Specimen.collection.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Anatomical collection site","Anatomical location from which the specimen was collected (if subject is a patient). This is the target site.  This element is not used for environmental specimens.","If the use case requires  BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [bodySite](http://hl7.org/fhir/R4/extension-bodysite.html).","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site|4.0.1","",,,,"Specimen.collection.bodySite",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".targetSiteCode","SPM-8 and SPM-9"
+","SampleItem.sourceOfSample",".targetSiteCode","SPM-8 and SPM-9"
 "Specimen.collection.fastingStatus[x]","Specimen.collection.fastingStatus[x]","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 Duration {[]} {[]}","Whether or how long patient abstained from food and/or drink","Abstinence or reduction from some or all food, drink, or both, for a period of time prior to sample collection.","Representing fasting status using this element is preferred to representing it with an observation using a 'pre-coordinated code'  such as  LOINC 2005-7 (Calcium [Moles/​time] in 2 hour Urine --12 hours fasting), or  using  a component observation ` such as `Observation.component code`  = LOINC 49541-6 (Fasting status - Reported).","Many diagnostic tests require fasting  to facilitate accurate interpretation.","","","","","","","",,"extensible","Codes describing the fasting status of the patient.","http://terminology.hl7.org/ValueSet/v2-0916","",,,,"Specimen.collection.fastingStatus[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","OBR-"
@@ -210,7 +210,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Specimen.processing.time[x]","Specimen.processing.time[x]","","","",0,1,"","","","dateTime {[]} {[]}
 Period {[]} {[]}","Date and time of specimen processing","A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin.","","","","","","","","","",,,,,"",,,,"Specimen.processing.time[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".effectiveTime"
-"Specimen.container","Specimen.container","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Specimen.container","Specimen.container","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Direct container of specimen (tube/slide, etc.)","The container holding the specimen.  The recursive nature of containers; i.e. blood in tube in tray in rack is not addressed here.","","","","","","","","","",,,,,"",,,,"Specimen.container",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".player.scopingRole[classCode=CONT].scoper"
 "Specimen.container.id","Specimen.container.id","","","",0,1,"","","","string {[]} {[]}
@@ -237,9 +237,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Specimen.container.capacity","Specimen.container.capacity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","Container volume or size","The capacity (volume or other measure) the container may contain.","","","","","","","","","",,,,,"",,,,"Specimen.container.capacity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".quantity","one of: SAC 16, SAC17 and SAC 20, or SAC 21 and SAC 20"
-"Specimen.container.specimenQuantity","Specimen.container.specimenQuantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
+"Specimen.container.specimenQuantity","Specimen.container.specimenQuantity","","","",1,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","Quantity of specimen within container","The quantity of specimen in the container; may be volume, dimensions, or other appropriate measurements, depending on the specimen type.","","","","","","","","","",,,,,"",,,,"Specimen.container.specimenQuantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-",".playedRole[classCode=CONT].quantity","SAC-23 (value) SAC-24 (units"
+","SampleItem.quantity",".playedRole[classCode=CONT].quantity","SAC-23 (value) SAC-24 (units"
 "Specimen.container.additive[x]","Specimen.container.additive[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance|4.0.1]]}","Additive associated with container","Introduced substance to preserve, maintain or enhance the specimen. Examples: Formalin, Citrate, EDTA.","","","","","","","","","",,"example","Substance added to specimen container.","http://terminology.hl7.org/ValueSet/v2-0371","",,,,"Specimen.container.additive[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scopesRole[classCode=ADTV].player","SAC-27"
