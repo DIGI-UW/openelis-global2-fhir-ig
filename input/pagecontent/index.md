@@ -33,6 +33,8 @@ This IG contains the technical artifacts describing how to implement this workfl
   6. [Specimen](StructureDefinition-open-elis-specimen.html)
   7. [Task](StructureDefinition-openelis-task.html)
   8. [Organization](StructureDefinition-open-elisorganisation.html)
+ 10. [Device](StructureDefinition-open-elis-device.html)
+ 
 
 ### Intellectual Property Considerations
 While this implementation guide and the underlying FHIR are licensed as
