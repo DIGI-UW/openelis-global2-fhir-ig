@@ -11,7 +11,7 @@
   <name value="OpenELISImplementationGuide"/>
   <title value="OpenELIS GLOBAL2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-05-11T15:58:07+00:00"/>
+  <date value="2026-05-12T16:33:42+00:00"/>
   <description value="An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"/>
   <packageId value="openelis"/>
   <license value="CC-BY-SA-4.0"/>
@@ -438,6 +438,76 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-communication-mode"/>
+      </reference>
+      <name value="Analyzer Communication Mode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-protocol-version"/>
+      </reference>
+      <name value="Analyzer Protocol Version"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-transport-details"/>
+      </reference>
+      <name value="Analyzer Transport Details"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-identifier-pattern"/>
+      </reference>
+      <name value="AnalyzerIdentifierPattern"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-last-activated"/>
+      </reference>
+      <name value="AnalyzerLastActivated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-location"/>
+      </reference>
+      <name value="AnalyzerLocation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-test-units"/>
+      </reference>
+      <name value="AnalyzerTestUnits"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -456,6 +526,17 @@
       </reference>
       <name value="OpenELIPatientIdentifierSystem"/>
       <description value="Defined url for OpenELISPatient identifier system url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/open-elis-device"/>
+      </reference>
+      <name value="OpenELIS Device"/>
+      <description value="FHIR Device representing OpenELIS Analyzer"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -644,6 +725,16 @@
       <name value="OpenElis Task Example"/>
       <description value="OpenElis Task Example Resource"/>
       <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/OpenELISDeviceExample"/>
+      </reference>
+      <name value="OpenELISDeviceExample"/>
+      <exampleCanonical value="http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

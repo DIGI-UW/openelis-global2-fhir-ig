@@ -24,7 +24,7 @@
   <name value="OpenELISTask"/>
   <title value="OpenElis Task"/>
   <status value="draft"/>
-  <date value="2026-05-11T15:58:07+00:00"/>
+  <date value="2026-05-12T16:33:42+00:00"/>
   <description value="A Task resource for tracking order state"/>
   <fhirVersion value="4.0.1"/>
   <mapping>

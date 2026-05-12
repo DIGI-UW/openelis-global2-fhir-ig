@@ -13,7 +13,7 @@
   "name" : "OpenElisSpecimen",
   "title" : "OpenElis Specimen",
   "status" : "draft",
-  "date" : "2026-05-11T15:58:07+00:00",
+  "date" : "2026-05-12T16:33:42+00:00",
   "description" : "A Specimen Resource used for FHIR Exchange",
   "fhirVersion" : "4.0.1",
   "mapping" : [{

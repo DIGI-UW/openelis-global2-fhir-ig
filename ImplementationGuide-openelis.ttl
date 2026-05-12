@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "OpenELISImplementationGuide"] ; # 
   fhir:title [ fhir:v "OpenELIS GLOBAL2 Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-11T15:58:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-12T16:33:42+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR"] ; # 
   fhir:packageId [ fhir:v "openelis"] ; # 
   fhir:license [ fhir:v "CC-BY-SA-4.0"] ; # 
@@ -1282,6 +1282,146 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-communication-mode> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-communication-mode" ]
+       ] ;
+       fhir:name [ fhir:v "Analyzer Communication Mode" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-protocol-version> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-protocol-version" ]
+       ] ;
+       fhir:name [ fhir:v "Analyzer Protocol Version" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-transport-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-transport-details" ]
+       ] ;
+       fhir:name [ fhir:v "Analyzer Transport Details" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-identifier-pattern> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-identifier-pattern" ]
+       ] ;
+       fhir:name [ fhir:v "AnalyzerIdentifierPattern" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-last-activated> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-last-activated" ]
+       ] ;
+       fhir:name [ fhir:v "AnalyzerLastActivated" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-location" ]
+       ] ;
+       fhir:name [ fhir:v "AnalyzerLocation" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-test-units> ;
+         fhir:reference [ fhir:v "StructureDefinition/analyzer-test-units" ]
+       ] ;
+       fhir:name [ fhir:v "AnalyzerTestUnits" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -1313,6 +1453,27 @@
        ] ;
        fhir:name [ fhir:v "OpenELIPatientIdentifierSystem" ] ;
        fhir:description [ fhir:v "Defined url for OpenELISPatient identifier system url" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device> ;
+         fhir:reference [ fhir:v "StructureDefinition/open-elis-device" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELIS Device" ] ;
+       fhir:description [ fhir:v "FHIR Device representing OpenELIS Analyzer" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1681,6 +1842,27 @@
          a fhir:Canonical ;
          fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"^^xsd:anyURI ;
          fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/Device/OpenELISDeviceExample> ;
+         fhir:reference [ fhir:v "Device/OpenELISDeviceExample" ]
+       ] ;
+       fhir:name [ fhir:v "OpenELISDeviceExample" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device"^^xsd:anyURI ;
+         fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device>
        ]
      ] [
        fhir:extension ( [

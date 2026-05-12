@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://digi-uw.github.io/openelis-global-ig/Device/OpenELISDeviceExample> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OpenELISDeviceExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device"^^xsd:anyURI ;
+       fhir:l <http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device OpenELISDeviceExample</b></p><a name=\"OpenELISDeviceExample\"> </a><a name=\"hcOpenELISDeviceExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-open-elis-device.html\">OpenELIS Device</a></p></div><p><b>identifier</b>: <code>http://openelis-global.org/analyzer_uuid</code>/6f5f7a6b-89b2-4a7d-a2c2-77ef66a9f1b2, <code>http://openelis-global.org/analyzer_machineId</code>/XN-1000-4589, <code>http://openelis-global.org/analyzer_sourceId</code>/DISCOVERY-192.168.1.10</p><p><b>status</b>: Active</p><p><b>serialNumber</b>: XN-1000-4589</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Sysmex XN-1000</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">Hematology Analyzer</span></p><p><b>owner</b>: Identifier: <code>http://openelis-global.org/facility</code>/TEST LIMS</p><p><b>note</b>: </p><blockquote><div><p>Primary hematology analyzer</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://openelis-global.org/analyzer_uuid"^^xsd:anyURI ;
+       fhir:l <http://openelis-global.org/analyzer_uuid>
+     ] ;
+     fhir:value [ fhir:v "6f5f7a6b-89b2-4a7d-a2c2-77ef66a9f1b2" ]
+  ] [
+     fhir:system [
+       fhir:v "http://openelis-global.org/analyzer_machineId"^^xsd:anyURI ;
+       fhir:l <http://openelis-global.org/analyzer_machineId>
+     ] ;
+     fhir:value [ fhir:v "XN-1000-4589" ]
+  ] [
+     fhir:system [
+       fhir:v "http://openelis-global.org/analyzer_sourceId"^^xsd:anyURI ;
+       fhir:l <http://openelis-global.org/analyzer_sourceId>
+     ] ;
+     fhir:value [ fhir:v "DISCOVERY-192.168.1.10" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:serialNumber [ fhir:v "XN-1000-4589"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Sysmex XN-1000" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Hematology Analyzer" ]
+  ] ; # 
+  fhir:owner [
+     fhir:identifier [
+       fhir:system [
+         fhir:v "http://openelis-global.org/facility"^^xsd:anyURI ;
+         fhir:l <http://openelis-global.org/facility>
+       ] ;
+       fhir:value [ fhir:v "TEST LIMS" ]
+     ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Primary hematology analyzer" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

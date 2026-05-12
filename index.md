@@ -13,7 +13,7 @@
   "name" : "OpenELISImplementationGuide",
   "title" : "OpenELIS GLOBAL2 Implementation Guide",
   "status" : "draft",
-  "date" : "2026-05-11T15:58:07+00:00",
+  "date" : "2026-05-12T16:33:42+00:00",
   "description" : "An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR",
   "packageId" : "openelis",
   "license" : "CC-BY-SA-4.0",
@@ -596,6 +596,83 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-communication-mode"
+      },
+      "name" : "Analyzer Communication Mode",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-protocol-version"
+      },
+      "name" : "Analyzer Protocol Version",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-transport-details"
+      },
+      "name" : "Analyzer Transport Details",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-identifier-pattern"
+      },
+      "name" : "AnalyzerIdentifierPattern",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-last-activated"
+      },
+      "name" : "AnalyzerLastActivated",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-location"
+      },
+      "name" : "AnalyzerLocation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/analyzer-test-units"
+      },
+      "name" : "AnalyzerTestUnits",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -615,6 +692,18 @@
       },
       "name" : "OpenELIPatientIdentifierSystem",
       "description" : "Defined url for OpenELISPatient identifier system url",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/open-elis-device"
+      },
+      "name" : "OpenELIS Device",
+      "description" : "FHIR Device representing OpenELIS Analyzer",
       "exampleBoolean" : false
     },
     {
@@ -820,6 +909,17 @@
       "name" : "OpenElis Task Example",
       "description" : "OpenElis Task Example Resource",
       "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/OpenELISDeviceExample"
+      },
+      "name" : "OpenELISDeviceExample",
+      "exampleCanonical" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device"
     },
     {
       "extension" : [{

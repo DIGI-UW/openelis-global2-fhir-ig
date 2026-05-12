@@ -11,6 +11,7 @@
 
 ### Resource Profiles
 
+* [OpenELIS Device](StructureDefinition-open-elis-device.md)
 * [OpenELIS Facility Location](StructureDefinition-open-elis-location.md)
 * [OpenELIS Observation](StructureDefinition-open-elis-observation.md)
 * [OpenElis Specimen](StructureDefinition-open-elis-specimen.md)
@@ -20,6 +21,16 @@
 * [OpenELIS Patient](StructureDefinition-openelis-patient.md)
 * [OpenELIS Service Request](StructureDefinition-openelis-service-request.md)
 * [OpenElis Task](StructureDefinition-openelis-task.md)
+
+### Extensions
+
+* [Analyzer Communication Mode](StructureDefinition-analyzer-communication-mode.md)
+* [AnalyzerIdentifierPattern](StructureDefinition-analyzer-identifier-pattern.md)
+* [AnalyzerLastActivated](StructureDefinition-analyzer-last-activated.md)
+* [AnalyzerLocation](StructureDefinition-analyzer-location.md)
+* [Analyzer Protocol Version](StructureDefinition-analyzer-protocol-version.md)
+* [AnalyzerTestUnits](StructureDefinition-analyzer-test-units.md)
+* [Analyzer Transport Details](StructureDefinition-analyzer-transport-details.md)
 
 ### ImplementationGuides
 
@@ -36,6 +47,7 @@
 
 ### Examples
 
+* [OpenELISDeviceExample (Device)](Device-OpenELISDeviceExample.md)
 * [OpenElisDiagnosticReportExample (DiagnosticReport)](DiagnosticReport-OpenElisDiagnosticReportExample.md)
 * [Outpatient Clinic (Location)](Location-LocationExample.md)
 * [OpenElisObservationExample (Observation)](Observation-OpenElisObservationExample.md)
