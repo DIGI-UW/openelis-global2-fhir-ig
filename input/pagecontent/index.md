@@ -1,44 +1,99 @@
-### Scope
-This is the Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR Exchange between OpenELIS Global and other FHIR-enabled health information systems For example OpenMRS EMR
+### About this guide
 
-### Summary
- This Implementation Guide contains standards-compliant, open specifications for the transmission of OpenELIS Global2 data between various health systems that  do support HL7 FHIR.The contained specifications cover, for example, the following scenario:
-<ol>
-    <li>A Lab Test Order is made using an Electronic Medical Record (EMR) system</li>
-    <li>The order is sent to a Lab Information System (LIS)</li>
-    <li>The Lab Test is performed and resulted</li>
-    <li>The results are sent back to the EMR for review by the medical team and patients</li>
-</ol>
+This Implementation Guide (IG) describes the HL7® FHIR® R4 interfaces of
+[OpenELIS Global](https://openelis-global.org), the open-source laboratory information system
+maintained by the Digital Initiatives Group (DIGI) at the University of Washington and the OpenELIS
+Global community.
 
- This IG is based on guidance from the FHIR documentation on the <a href="{{site.data.fhir.path}}resourcelist.html">HL7 FHIR Resources</a>
+It is written for teams connecting another system to OpenELIS: EMRs such as OpenMRS, national shared
+health records and lab data repositories, facility and client registries, other OpenELIS laboratories,
+and analyzer middleware.
 
-### About this IG
- The top menu allows quick navigation to the different sections, and a <a href="toc.html">Table of Contents</a> is provided with the entire content of this Implementation Guide. (Be aware that some pages have multiple tabs).
+**What the profiles describe.** Every profile, extension and identifier system in this guide describes
+what OpenELIS Global 3.x reads and writes today. They were checked against the
+[OpenELIS-Global-2](https://github.com/DIGI-UW/OpenELIS-Global-2) `develop` branch at commit
+`889166b` (29 September 2026). Where OpenELIS does something that is not ideal FHIR, the guide
+documents the current behaviour and lists the gap on the [Known Issues](known-issues.html) page. It does
+not describe the behaviour we would like instead.
 
-### FHIR Exchange Workflow Diagram
+### Where to find the rest of the documentation
 
-This IG contains the technical artifacts describing how to implement this workflow using FHIR Resources.
+This guide covers the FHIR contract only. Installation, configuration and user documentation live in
+the OpenELIS Global documentation space on Confluence:
 
-![workflow](assets/images/exchange_workflow.png)
+* [FHIR Implementation Guide](https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide): the Confluence landing page for this guide
+* [OpenELIS Global documentation home](https://uwdigi.atlassian.net/wiki/spaces/oeg/overview)
+* [Interoperability Roadmap](https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/645136385/Interoperability+Roadmap): systems OpenELIS has been tested with
+* [OpenMRS Interoperability](https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/239992838/Medical+Records+System+OpenMRS+Interoperability): configuring OpenMRS and OpenELIS for FHIR lab orders and results
+* [Interacting with the co-resident FHIR store](https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/246382619/Interacting+with+Co-resident+FHIR+Store)
+* [Examples of FHIR messages used](https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/240386061/Examples+of+FHIR+messages+used) between referring and reference labs
 
-### Supported Resources
+### How OpenELIS uses FHIR
 
-[OpenELIS Global2 Exchange](https://github.com/DIGI-UW/dataexport) supports the export of the following FHIR Resources
+OpenELIS has three FHIR surfaces. Most integration problems come from mixing them up.
 
-  1. [Patient](StructureDefinition-openelis-patient.html)
-  2. [Observation](StructureDefinition-open-elis-observation.html)
-  3. [Practitioner](StructureDefinition-open-elispractitioner.html)
-  4. [DiagnosticReport](StructureDefinition-openelis-diagnostic-report.html)
-  5. [ServiceRequest](StructureDefinition-openelis-service-request.html)
-  6. [Specimen](StructureDefinition-open-elis-specimen.html)
-  7. [Task](StructureDefinition-openelis-task.html)
-  8. [Organization](StructureDefinition-open-elisorganisation.html)
- 10. [Device](StructureDefinition-open-elis-device.html)
- 
+| Surface | What it is | Used for |
+|---|---|---|
+| **OpenELIS FHIR REST API** | A FHIR R4 server inside OpenELIS, at `https://{host}/api/OpenELIS-Global/fhir`. It reads and writes the OpenELIS database directly. | Querying and managing patients, orders, specimens, results, organizations, practitioners, storage locations and analyzers. See [OpenELIS FHIR REST API](api.html). |
+| **Co-resident FHIR store** | A HAPI FHIR JPA server deployed next to every OpenELIS instance (`org.openelisglobal.fhirstore.uri`). OpenELIS writes transaction bundles to it after order entry, result entry and validation. | The copy of OpenELIS data that other systems subscribe to, and the store other OpenELIS instances poll for referrals and shipments. |
+| **Remote FHIR servers** | Servers OpenELIS polls (`org.openelisglobal.remote.source.uri`) and pushes to (`org.openelisglobal.fhir.subscriber`). | Receiving lab orders from EMRs, lab-to-lab referral, specimen shipment, and pushing data to a shared health record or lab data repository. See [Exchange Workflows](workflows.html). |
 
-### Intellectual Property Considerations
-While this implementation guide and the underlying FHIR are licensed as
-public domain, this guide includes examples making use of terminologies such as LOINC, SNOMED CT and others which have more restrictive licensing requirements. Implementers should make themselves familiar with licensing and any other constraints of terminologies questionnaires, and other components used as part of their implementation process. In some cases,licensing requirements may limit the systems that data captured using certain questionnaires may be shared with.
+![An EMR and OpenELIS exchanging lab orders and results through an interoperability layer and a central lab repository](assets/images/exchange_workflow.png)
 
-### Disclaimer
-The specification herewith documented is a demo working specification, and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification, or its consequences.
+*Typical deployment: an EMR and OpenELIS exchange orders and results through a shared FHIR server, optionally behind an interoperability layer such as OpenHIM.*
+
+### Profiles in this guide
+
+| Area | Profile | Base | Produced or consumed by OpenELIS |
+|---|---|---|---|
+| People and places | [OpenELIS Patient](StructureDefinition-openelis-patient.html) | Patient | Produced |
+| | [OpenELIS Practitioner](StructureDefinition-openelis-practitioner.html) | Practitioner | Produced |
+| | [OpenELIS Organization](StructureDefinition-openelis-organization.html) | Organization | Produced and consumed |
+| Incoming orders | [Lab Order Request Task](StructureDefinition-openelis-lab-order-request-task.html) | Task | Consumed (from EMRs) |
+| | [Lab Order Request ServiceRequest](StructureDefinition-openelis-lab-order-request-service-request.html) | ServiceRequest | Consumed (from EMRs) |
+| Orders | [OpenELIS Order Task](StructureDefinition-openelis-order-task.html) | Task | Produced |
+| | [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.html) | ServiceRequest | Produced |
+| | [OpenELIS Specimen](StructureDefinition-openelis-specimen.html) | Specimen | Produced |
+| | [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.html) | Task | Produced and consumed (lab to lab) |
+| Results | [OpenELIS Observation](StructureDefinition-openelis-observation.html) | Observation | Produced |
+| | [OpenELIS DiagnosticReport](StructureDefinition-openelis-diagnostic-report.html) | DiagnosticReport | Produced |
+| Instruments | [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.html) | Device | Produced and consumed |
+| Storage | [OpenELIS Storage Location](StructureDefinition-openelis-storage-location.html) | Location | Produced and consumed |
+| Shipment | [OpenELIS Shipment Box](StructureDefinition-openelis-shipment-box.html) | SupplyDelivery | Produced and consumed (lab to lab) |
+{:.grid}
+
+The [CapabilityStatement](CapabilityStatement-OpenELISFhirServer.html) describes the REST API. The
+[Identifiers, Code Systems and URLs](identifiers.html) page lists every identifier system, local code system
+and extension URL OpenELIS uses. The [Artifacts](artifacts.html) page lists everything, including the
+worked examples.
+
+### Conventions
+
+* **Identifier and code system base.** OpenELIS builds most identifier systems and local code systems as
+  `{base}/{suffix}`, where `{base}` is the `org.openelisglobal.oe.fhir.system` property. It defaults to
+  `http://openelis-global.org`. The profiles in this guide assume the default. A site that changes the property
+  sends different system URLs, and those will not match the slices in these profiles.
+* **Must Support.** An element flagged Must Support is one OpenELIS populates whenever it holds the data.
+  Receivers should store or display it. On incoming profiles, Must Support marks elements OpenELIS reads.
+* **Resource ids** are the OpenELIS FHIR UUIDs of the underlying records. A ServiceRequest and the
+  DiagnosticReport for the same test share one id, the Analysis UUID.
+* **Environmental and vector samples** have no patient. Resources for them omit `subject` / `for`.
+* **Mappings.** Each profile has a mapping to the OpenELIS data model (the `Mappings` tab), naming the
+  table or class each element comes from.
+
+### Contributing
+
+The source is at [DIGI-UW/openelis-global2-fhir-ig](https://github.com/DIGI-UW/openelis-global2-fhir-ig),
+written in FHIR Shorthand. Pull requests are built by the HL7 IG Publisher in CI, and merges to `main`
+publish to this site. When OpenELIS changes what it sends, update the matching profile in the same release.
+Report problems as GitHub issues or in the OpenELIS Global community channels.
+
+### Intellectual property
+
+This guide and its examples may use terminologies such as LOINC® and SNOMED CT®, which have their own
+licence terms. Implementers are responsible for complying with them.
+
+### Status
+
+This is a **draft** (0.2.0, continuous integration build). It documents the behaviour of the current
+development branch and may change with each OpenELIS release.

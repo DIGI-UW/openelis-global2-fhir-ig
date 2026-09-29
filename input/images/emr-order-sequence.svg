@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 686" width="1060" height="686" font-family="Helvetica,Arial,sans-serif" font-size="13">
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f3a5f"/></marker></defs>
+<rect width="1060" height="686" fill="#ffffff"/>
+<text x="530.0" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f3a5f">EMR lab order and results (Task polling)</text>
+<line x1="120" y1="94" x2="120" y2="656" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="40" y="60" width="160" height="50" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="120" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">EMR</text>
+<text x="120" y="98" text-anchor="middle" font-weight="bold" fill="#1f3a5f">(e.g. OpenMRS)</text>
+<line x1="370" y1="94" x2="370" y2="656" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="290" y="60" width="160" height="34" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="370" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">Shared FHIR server</text>
+<line x1="620" y1="94" x2="620" y2="656" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="540" y="60" width="160" height="34" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="620" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">OpenELIS</text>
+<line x1="870" y1="94" x2="870" y2="656" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="790" y="60" width="160" height="50" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="870" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">OpenELIS</text>
+<text x="870" y="98" text-anchor="middle" font-weight="bold" fill="#1f3a5f">FHIR store</text>
+<line x1="120" y1="176" x2="370" y2="176" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="76.0" y="155" width="338.0" height="17" fill="#fff" opacity="0.92"/>
+<text x="245.0" y="169" text-anchor="middle" fill="#222">1. PUT Task (requested) + ServiceRequest + Patient</text>
+<line x1="620" y1="222" x2="370" y2="222" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="365.6" y="201" width="258.79999999999995" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="215" text-anchor="middle" fill="#222">2. GET Task?status=requested&amp;owner=...</text>
+<line x1="370" y1="268" x2="620" y2="268" stroke="#1f3a5f" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<rect x="352.4" y="247" width="285.2" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="261" text-anchor="middle" fill="#222">3. (Bundle: Task, ServiceRequest, Patient)</text>
+<rect x="664" y="303" width="318.2" height="17" fill="#fff" opacity="0.92"/>
+<path d="M620,304 h40 v18 h-38" fill="none" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="668" y="316" fill="#222">4. Match tests by LOINC; queue electronic order</text>
+<line x1="620" y1="360" x2="870" y2="360" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="519.9" y="339" width="450.2" height="17" fill="#fff" opacity="0.92"/>
+<text x="745.0" y="353" text-anchor="middle" fill="#222">5. Save copies (EMR Task, ServiceRequests, Patient) + OpenELIS Task</text>
+<line x1="620" y1="406" x2="370" y2="406" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="299.6" y="385" width="390.79999999999995" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="399" text-anchor="middle" fill="#222">6. PUT EMR Task accepted / rejected (if updateStatus=true)</text>
+<rect x="664" y="441" width="192.79999999999998" height="17" fill="#fff" opacity="0.92"/>
+<path d="M620,442 h40 v18 h-38" fill="none" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="668" y="454" fill="#222">7. Accession, test, validate</text>
+<line x1="620" y1="498" x2="870" y2="498" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="533.1" y="477" width="423.79999999999995" height="17" fill="#fff" opacity="0.92"/>
+<text x="745.0" y="491" text-anchor="middle" fill="#222">8. Transaction: Specimen, Observation, DiagnosticReport, Device</text>
+<line x1="620" y1="544" x2="870" y2="544" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="562.8" y="523" width="364.4" height="17" fill="#fff" opacity="0.92"/>
+<text x="745.0" y="537" text-anchor="middle" fill="#222">9. Tasks completed, output = DiagnosticReport per test</text>
+<line x1="870" y1="590" x2="370" y2="590" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="345.40000000000003" y="569" width="549.1999999999999" height="17" fill="#fff" opacity="0.92"/>
+<text x="620.0" y="583" text-anchor="middle" fill="#222">10. Subscription push to fhir.subscriber: Task, DiagnosticReport, Observation, ...</text>
+<line x1="120" y1="636" x2="370" y2="636" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="36.400000000000006" y="615" width="417.2" height="17" fill="#fff" opacity="0.92"/>
+<text x="245.0" y="629" text-anchor="middle" fill="#222">11. EMR reads completed Task + DiagnosticReport + Observations</text>
+</svg>
