@@ -49,7 +49,7 @@ Instance: ExampleStorageFreezer
 InstanceOf: OpenELISStorageLocation
 Usage: #example
 Title: "Storage level: device (freezer)"
-Description: "A monitored -80 freezer in the room."
+Description: "A monitored -80 freezer in the room. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends ve (Vehicle)."
 * id = "3d2a1373-14d8-5bef-ae7e-817917e5a4fd"
 * meta.profile = "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"
 * meta.tag[level] = http://openelis.org/fhir/tag/storage-hierarchy#device "Device"
@@ -58,7 +58,7 @@ Description: "A monitored -80 freezer in the room."
 * status = #active
 * name = "Freezer 01 (-80)"
 * mode = #instance
-* physicalType = $LocPhysType#ve "Vehicle"
+* physicalType = $LocPhysType#ca "Cabinet"
 * physicalType.text = "Storage Equipment"
 * type = http://openelis.org/fhir/CodeSystem/storage-device-type#freezer "Freezer"
 * partOf = Reference(ExampleStorageRoom)
@@ -72,7 +72,7 @@ Instance: ExampleStorageShelf
 InstanceOf: OpenELISStorageLocation
 Usage: #example
 Title: "Storage level: shelf"
-Description: "A shelf in the freezer."
+Description: "A shelf in the freezer. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."
 * id = "8264f454-03c2-597b-996d-b9ea0998f326"
 * meta.profile = "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"
 * meta.tag[level] = http://openelis.org/fhir/tag/storage-hierarchy#shelf "Shelf"
@@ -81,7 +81,6 @@ Description: "A shelf in the freezer."
 * status = #active
 * name = "Shelf 1"
 * mode = #instance
-* physicalType = $LocPhysType#co "Container"
 * physicalType.text = "Storage Shelf"
 * partOf = Reference(ExampleStorageFreezer)
 * extension[capacity].valueInteger = 4
@@ -90,7 +89,7 @@ Instance: ExampleStorageRack
 InstanceOf: OpenELISStorageLocation
 Usage: #example
 Title: "Storage level: rack"
-Description: "A rack on the shelf."
+Description: "A rack on the shelf. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."
 * id = "5a9cc354-9495-5090-91d7-b67b0d2ef5dc"
 * meta.profile = "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"
 * meta.tag[level] = http://openelis.org/fhir/tag/storage-hierarchy#rack "Rack"
@@ -99,7 +98,6 @@ Description: "A rack on the shelf."
 * status = #active
 * name = "Rack 2"
 * mode = #instance
-* physicalType = $LocPhysType#co "Container"
 * physicalType.text = "Storage Rack"
 * partOf = Reference(ExampleStorageShelf)
 
@@ -107,7 +105,7 @@ Instance: ExampleStorageBox
 InstanceOf: OpenELISStorageLocation
 Usage: #example
 Title: "Storage level: box"
-Description: "A 9 x 9 cryobox in the rack."
+Description: "A 9 x 9 cryobox in the rack. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."
 * id = "613ff118-ceeb-5472-9793-dc241d0d032c"
 * meta.profile = "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"
 * meta.tag[level] = http://openelis.org/fhir/tag/storage-hierarchy#box "Box"
@@ -116,7 +114,6 @@ Description: "A 9 x 9 cryobox in the rack."
 * status = #active
 * name = "B3"
 * mode = #instance
-* physicalType = $LocPhysType#co "Container"
 * physicalType.text = "Storage Box"
 * type = http://openelis.org/fhir/CodeSystem/storage-box-type#cryobox
 * type.text = "cryobox"
@@ -141,14 +138,12 @@ Instance: ExampleShipmentBox
 InstanceOf: OpenELISShipmentBox
 Usage: #example
 Title: "Shipment box (sent)"
-Description: "A box with one specimen sent to the reference laboratory."
+Description: "A box with one specimen sent to the reference laboratory. type is omitted, the recommended fix for Known Issue 4. OpenELIS currently sends supply-item-type#medication with the display Specimen Shipment, which fails the required binding."
 * id = "0e8e2c05-d198-51b0-8fa2-ac80c118c73e"
 * contained[0] = ExampleDestinationLocation
 * identifier[boxId].system = "http://openelis.org/shipment/box-id"
 * identifier[boxId].value = "BOX-2026-0091"
 * status = #in-progress
-* type = $SupplyItemType#medication "Specimen Shipment"
-* type.text = "Specimen Shipment Box"
 * suppliedItem.quantity.value = 1
 * suppliedItem.quantity.unit = "specimens"
 * suppliedItem.quantity.system = $UCUM

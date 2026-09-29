@@ -143,7 +143,7 @@ Description: "A box of specimens shipped from one OpenELIS site to another (Ship
 * status 1..1 MS
 * status ^comment = "Draft, ready to send, sent and in transit = in-progress. Received, partially received and reconciled = completed. Cancelled and lost in transit = abandoned. On reception the receiver sets the sender's copy to completed when org.openelisglobal.remote.source.updateStatus=true."
 * type 0..1 MS
-* type ^comment = "Currently http://terminology.hl7.org/CodeSystem/supply-item-type#medication with display 'Specimen Shipment' and text 'Specimen Shipment Box' (see Known Issues)."
+* type ^comment = "Recommended: omit (see Known Issues). Currently http://terminology.hl7.org/CodeSystem/supply-item-type#medication with display 'Specimen Shipment' and text 'Specimen Shipment Box' (see Known Issues)."
 * suppliedItem 1..1 MS
 * suppliedItem.quantity 1..1 MS
 * suppliedItem.quantity ^comment = "Number of items in the box, as {specimens} (UCUM)."
