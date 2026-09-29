@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "cc90c222-c1fa-5cb0-bb01-a2b35ac26244",
+  "meta" : {
+    "profile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner cc90c222-c1fa-5cb0-bb01-a2b35ac26244</b></p><a name=\"cc90c222-c1fa-5cb0-bb01-a2b35ac26244\"> </a><a name=\"hccc90c222-c1fa-5cb0-bb01-a2b35ac26244\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-practitioner.html\">OpenELIS Practitioner</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-provider-uuid.html\" title=\"UUID of the OpenELIS provider. Carried on Practitioner.\">OEProviderUUID</a>/cc90c222-c1fa-5cb0-bb01-a2b35ac26244\u00a0(use:\u00a0usual,\u00a0), <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB\u00a0(use:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: Kofi Mensah </p><p><b>telecom</b>: <a href=\"tel:+0005550101\">+000 555 0101</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://openelis-global.org/provider_uuid",
+    "value" : "cc90c222-c1fa-5cb0-bb01-a2b35ac26244"
+  },
+  {
+    "use" : "official",
+    "system" : "http://openelis-global.org/facility_id",
+    "value" : "EDH-LAB",
+    "assigner" : {
+      "reference" : "Organization/a845f2db-10e5-5117-ac75-553f615e301a"
+    }
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Mensah",
+    "given" : ["Kofi"],
+    "prefix" : ["Dr"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+000 555 0101",
+    "use" : "mobile"
+  }]
+}

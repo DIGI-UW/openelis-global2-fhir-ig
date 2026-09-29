@@ -1,9 +1,485 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="db1d9152-cebd-41c6-8ee0-d4774a16f5c2"/>
+  <id value="9fc5a67c-3b8c-40a2-a6ad-a3eb03a468fe"/>
   <meta>
-    <lastUpdated value="2026-05-12T16:33:42.962+00:00"/>
+    <lastUpdated value="2026-09-29T02:24:20.084+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-oe-analyzer-operational-status.html">codesystem OpenELIS Analyzer Operational Status v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-SETUP"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-SETUP">SETUP</a>
+                </td>
+                <td>Setup</td>
+                <td>Being configured. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;SETUP&quot;, &quot;display&quot;: &quot;Setup&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;SETUP&quot;&gt;&lt;display value=&quot;Setup&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-VALIDATION"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-VALIDATION">VALIDATION</a>
+                </td>
+                <td>Validation</td>
+                <td>Under validation. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;VALIDATION&quot;, &quot;display&quot;: &quot;Validation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;VALIDATION&quot;&gt;&lt;display value=&quot;Validation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-ACTIVE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-ACTIVE">ACTIVE</a>
+                </td>
+                <td>Active</td>
+                <td>In routine use. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ACTIVE&quot;, &quot;display&quot;: &quot;Active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ACTIVE&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-ERROR_PENDING"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-ERROR_PENDING">ERROR_PENDING</a>
+                </td>
+                <td>Error pending</td>
+                <td>Has an unresolved error. Device.status = entered-in-error.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ERROR_PENDING&quot;, &quot;display&quot;: &quot;Error pending&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ERROR_PENDING&quot;&gt;&lt;display value=&quot;Error pending&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-OFFLINE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-OFFLINE">OFFLINE</a>
+                </td>
+                <td>Offline</td>
+                <td>Not reachable. Device.status = unknown.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;OFFLINE&quot;, &quot;display&quot;: &quot;Offline&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;OFFLINE&quot;&gt;&lt;display value=&quot;Offline&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-INACTIVE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-INACTIVE">INACTIVE</a>
+                </td>
+                <td>Inactive</td>
+                <td>Retired or disabled. Device.status = inactive.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;INACTIVE&quot;, &quot;display&quot;: &quot;Inactive&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;INACTIVE&quot;&gt;&lt;display value=&quot;Inactive&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status"/>
+        <version value="0.2.0"/>
+        <name value="OEAnalyzerOperationalStatusVS"/>
+        <title value="OpenELIS Analyzer Operational Statuses"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-29T02:24:20+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3673ebf1-a6e2-4582-9429-75fb79ab88c2"/>
+          <timestamp value="2026-09-29T02:25:33+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="SETUP"/>
+            <display value="Setup"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="VALIDATION"/>
+            <display value="Validation"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="ACTIVE"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="ERROR_PENDING"/>
+            <display value="Error pending"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="OFFLINE"/>
+            <display value="Offline"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="INACTIVE"/>
+            <display value="Inactive"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-oe-analyzer-operational-status.html">codesystem OpenELIS Analyzer Operational Status v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-SETUP"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-SETUP">SETUP</a>
+                </td>
+                <td>Setup</td>
+                <td>Being configured. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;SETUP&quot;, &quot;display&quot;: &quot;Setup&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;SETUP&quot;&gt;&lt;display value=&quot;Setup&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-VALIDATION"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-VALIDATION">VALIDATION</a>
+                </td>
+                <td>Validation</td>
+                <td>Under validation. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;VALIDATION&quot;, &quot;display&quot;: &quot;Validation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;VALIDATION&quot;&gt;&lt;display value=&quot;Validation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-ACTIVE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-ACTIVE">ACTIVE</a>
+                </td>
+                <td>Active</td>
+                <td>In routine use. Device.status = active.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ACTIVE&quot;, &quot;display&quot;: &quot;Active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ACTIVE&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-ERROR_PENDING"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-ERROR_PENDING">ERROR_PENDING</a>
+                </td>
+                <td>Error pending</td>
+                <td>Has an unresolved error. Device.status = entered-in-error.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ERROR_PENDING&quot;, &quot;display&quot;: &quot;Error pending&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ERROR_PENDING&quot;&gt;&lt;display value=&quot;Error pending&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-OFFLINE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-OFFLINE">OFFLINE</a>
+                </td>
+                <td>Offline</td>
+                <td>Not reachable. Device.status = unknown.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;OFFLINE&quot;, &quot;display&quot;: &quot;Offline&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;OFFLINE&quot;&gt;&lt;display value=&quot;Offline&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status-INACTIVE"> </a>
+                  <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-oe-analyzer-operational-status.html#oe-analyzer-operational-status-INACTIVE">INACTIVE</a>
+                </td>
+                <td>Inactive</td>
+                <td>Retired or disabled. Device.status = inactive.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;INACTIVE&quot;, &quot;display&quot;: &quot;Inactive&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;INACTIVE&quot;&gt;&lt;display value=&quot;Inactive&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status"/>
+        <version value="0.2.0"/>
+        <name value="OEAnalyzerOperationalStatusVS"/>
+        <title value="OpenELIS Analyzer Operational Statuses"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-29T02:24:20+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:02e8dcfc-7665-445c-9cef-614a69b868cf"/>
+          <timestamp value="2026-09-29T02:25:33+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="SETUP"/>
+            <display value="Setup"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="VALIDATION"/>
+            <display value="Validation"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="ACTIVE"/>
+            <display value="Active"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="ERROR_PENDING"/>
+            <display value="Error pending"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="OFFLINE"/>
+            <display value="Offline"/>
+          </contains>
+          <contains>
+            <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+            <code value="INACTIVE"/>
+            <display value="Inactive"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

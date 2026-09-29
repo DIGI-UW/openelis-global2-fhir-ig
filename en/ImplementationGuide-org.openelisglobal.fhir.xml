@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="org.openelisglobal.fhir"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide org.openelisglobal.fhir</b></p><a name="org.openelisglobal.fhir"> </a><a name="hcorg.openelisglobal.fhir"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>OpenELISGlobalImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir</pre><div><p>Profiles, extensions, identifier systems and exchange workflows for the HL7 FHIR R4 interfaces of OpenELIS Global, an open-source laboratory information system: lab orders and results with EMRs such as OpenMRS, lab-to-lab referral, specimen shipment, sample storage, analyzers, and the OpenELIS FHIR REST API.</p>
+</div></div>
+  </text>
+  <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"/>
+  <version value="0.2.0"/>
+  <name value="OpenELISGlobalImplementationGuide"/>
+  <title value="OpenELIS Global FHIR Implementation Guide"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-09-29"/>
+  <publisher value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+  <contact>
+    <name value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openelis-global.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="OpenELIS Global community"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"/>
+    </telecom>
+  </contact>
+  <description value="Profiles, extensions, identifier systems and exchange workflows for the HL7 FHIR R4 interfaces of OpenELIS Global, an open-source laboratory information system: lab orders and results with EMRs such as OpenMRS, lab-to-lab referral, specimen shipment, sample storage, analyzers, and the OpenELIS FHIR REST API."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="org.openelisglobal.fhir"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.4.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://digi-uw.github.io/openelis-global2-fhir-ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid-template"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://digi-uw.github.io/openelis-global2-fhir-ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555"/>
+      </reference>
+      <name value="Analyzer Device"/>
+      <description value="A chemistry analyzer connected through the OpenELIS analyzer bridge."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-last-activated"/>
+      </reference>
+      <name value="Analyzer last activated"/>
+      <description value="When the analyzer was last activated in OpenELIS. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-last-activated (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-operational-status"/>
+      </reference>
+      <name value="Analyzer operational status"/>
+      <description value="OpenELIS's own analyzer lifecycle status, unmapped. Device.status carries the mapped FHIR value. Ignored on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-operational-status (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/analyzer-test-units"/>
+      </reference>
+      <name value="Analyzer test units"/>
+      <description value="The OpenELIS test units (lab sections) the analyzer serves. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-test-units (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/collection-location-gps"/>
+      </reference>
+      <name value="Collection location (GPS)"/>
+      <description value="Where the specimen was collected, as captured on the device used at collection. Added to Specimen.collection when the order has GPS coordinates (SpecimenTransformServiceImpl.createGpsExtension). OpenELIS currently sends this extension with url http://openelis-global.org/fhir/StructureDefinition/collection-location-gps (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/07ed1bd1-1bdf-58ae-a661-ee0703fcab70"/>
+      </reference>
+      <name value="EMR lab order Task"/>
+      <description value="Written by the EMR to the shared FHIR server. OpenELIS finds it with Task?status=requested&amp;owner=Practitioner/0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21"/>
+      </reference>
+      <name value="EMR service user representing OpenELIS"/>
+      <description value="The Practitioner in the EMR that stands for OpenELIS. Its reference is the value of org.openelisglobal.remote.source.identifier (Practitioner/0f1c6d3a-...) and the owner of every Task OpenELIS should pick up."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1"/>
+      </reference>
+      <name value="EMR ServiceRequest: glucose"/>
+      <description value="The EMR's test order. OpenELIS matches the test by the LOINC coding."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/24224471-e4bb-58c0-acbf-b6180b053e05"/>
+      </reference>
+      <name value="EMR ServiceRequest: HBsAg"/>
+      <description value="The EMR's test order. OpenELIS matches the test by the LOINC coding."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eqa-cycle"/>
+      </reference>
+      <name value="EQA cycle"/>
+      <description value="External quality assessment cycle the consignment belongs to. Only sent for EQA boxes. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/eqa-cycle (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rack-grid-dimensions"/>
+      </reference>
+      <name value="Grid dimensions"/>
+      <description value="Grid of a storage box as the string &quot;{rows} × {columns}&quot; (U+00D7 multiplication sign, with spaces), for example &quot;9 × 9&quot;. Parsed on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-grid-dimensions (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-lab-order-request-service-request"/>
+      </reference>
+      <name value="Lab Order Request ServiceRequest (EMR to OpenELIS)"/>
+      <description value="A test ordered by an external system. OpenELIS matches the test or panel by the LOINC coding in ServiceRequest.code (TaskInterpreterImpl.createTestFromFHIR / createPanelFromFHIR). The OpenELIS test must be configured with the same LOINC code."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-lab-order-request-task"/>
+      </reference>
+      <name value="Lab Order Request Task (EMR to OpenELIS)"/>
+      <description value="The Task an ordering system (for example OpenMRS with the Lab on FHIR module) writes to the shared FHIR server so OpenELIS picks the order up. OpenELIS polls each org.openelisglobal.remote.source.uri for Task?status=requested&amp;owner={one of org.openelisglobal.remote.source.identifier} (FhirApiWorkFlowServiceImpl.beginTaskImportOrderPath)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-analysis-result-uuid"/>
+      </reference>
+      <name value="oe-ns-analysis-result-uuid"/>
+      <description value="Identifier of a DiagnosticReport. The value is the Analysis UUID so it equals the matching ServiceRequest id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-analysis-uuid"/>
+      </reference>
+      <name value="oe-ns-analysis-uuid"/>
+      <description value="UUID of the OpenELIS test request (Analysis). Carried on ServiceRequest."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-analyzer-bridge-connection"/>
+      </reference>
+      <name value="oe-ns-analyzer-bridge-connection"/>
+      <description value="Connection id of the analyzer in the OpenELIS analyzer bridge. On import OpenELIS accepts any system ending in /analyzer_bridge_connection."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-analyzer-uuid"/>
+      </reference>
+      <name value="oe-ns-analyzer-uuid"/>
+      <description value="UUID of the OpenELIS analyzer. Carried on Device."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-facility-id"/>
+      </reference>
+      <name value="oe-ns-facility-id"/>
+      <description value="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-order-accession"/>
+      </reference>
+      <name value="oe-ns-order-accession"/>
+      <description value="Lab (accession) number of the OpenELIS order. Carried on Task."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-order-uuid"/>
+      </reference>
+      <name value="oe-ns-order-uuid"/>
+      <description value="UUID of the OpenELIS order (Sample). Carried on Task."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-org-clianum"/>
+      </reference>
+      <name value="oe-ns-org-clianum"/>
+      <description value="CLIA (or equivalent accreditation) number of the organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-org-code"/>
+      </reference>
+      <name value="oe-ns-org-code"/>
+      <description value="Organization code configured in OpenELIS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-org-shortname"/>
+      </reference>
+      <name value="oe-ns-org-shortname"/>
+      <description value="Organization short name configured in OpenELIS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-org-uuid"/>
+      </reference>
+      <name value="oe-ns-org-uuid"/>
+      <description value="UUID of the OpenELIS organization."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-pat-guid"/>
+      </reference>
+      <name value="oe-ns-pat-guid"/>
+      <description value="Patient GUID held in OpenELIS. On import OpenELIS reads this system as the external patient id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-pat-national-id"/>
+      </reference>
+      <name value="oe-ns-pat-national-id"/>
+      <description value="National identifier entered in OpenELIS. Sent with Identifier.use = official."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-pat-st-number"/>
+      </reference>
+      <name value="oe-ns-pat-st-number"/>
+      <description value="ST number entered in OpenELIS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-pat-subject-number"/>
+      </reference>
+      <name value="oe-ns-pat-subject-number"/>
+      <description value="Subject (study or programme) number entered in OpenELIS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-pat-uuid"/>
+      </reference>
+      <name value="oe-ns-pat-uuid"/>
+      <description value="OpenELIS internal UUID of the patient. Equals Patient.id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-provider-uuid"/>
+      </reference>
+      <name value="oe-ns-provider-uuid"/>
+      <description value="UUID of the OpenELIS provider. Carried on Practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-result-uuid"/>
+      </reference>
+      <name value="oe-ns-result-uuid"/>
+      <description value="UUID of the OpenELIS result. Carried on Observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-samp-labno"/>
+      </reference>
+      <name value="oe-ns-samp-labno"/>
+      <description value="Lab (accession) number of the order. Carried in ServiceRequest.requisition."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-sampleitem-labno"/>
+      </reference>
+      <name value="oe-ns-sampleitem-labno"/>
+      <description value="Accession number of the sample item: the order lab number followed by -{sortOrder}. Carried in Specimen.accessionIdentifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-sampleitem-uuid"/>
+      </reference>
+      <name value="oe-ns-sampleitem-uuid"/>
+      <description value="UUID of the OpenELIS sample item. Carried on Specimen.identifier."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-shipment-box-id"/>
+      </reference>
+      <name value="oe-ns-shipment-box-id"/>
+      <description value="Identifier of a shipping box. Carried on SupplyDelivery."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/oe-ns-storage-location-code"/>
+      </reference>
+      <name value="oe-ns-storage-location-code"/>
+      <description value="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-analyzer-device"/>
+      </reference>
+      <name value="OpenELIS Analyzer Device"/>
+      <description value="An analyzer as OpenELIS produces it (DeviceTransformServiceImpl), serves it from /fhir/Device, and includes it in result bundles when Observation.device references it. OpenELIS currently declares meta.profile = http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device, which is not this profile's URL (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/oe-analyzer-operational-status"/>
+      </reference>
+      <name value="OpenELIS Analyzer Operational Status"/>
+      <description value="OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/oe-analyzer-operational-status"/>
+      </reference>
+      <name value="OpenELIS Analyzer Operational Statuses"/>
+      <description value="All analyzer operational statuses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-diagnostic-report"/>
+      </reference>
+      <name value="OpenELIS DiagnosticReport"/>
+      <description value="The report for one ordered test, grouping its results (DiagnosticReportTransformServiceImpl), served from /fhir/DiagnosticReport (read, search and delete only). The id is the Analysis UUID, the same as the matching ServiceRequest id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/48549f60-c400-5510-97da-2e2497627e81"/>
+      </reference>
+      <name value="OpenELIS DiagnosticReport: glucose"/>
+      <description value="The report for the glucose test. Same id as its ServiceRequest (both are the Analysis UUID)."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/3b2c3407-5430-5878-9c61-c4c9b9c013c4"/>
+      </reference>
+      <name value="OpenELIS DiagnosticReport: HBsAg"/>
+      <description value="The report for the HBsAg test."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/OpenELISFhirServer"/>
+      </reference>
+      <name value="OpenELIS Global FHIR REST server"/>
+      <description value="The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenELIS-Global/fhir. It reads from and writes to the OpenELIS database directly. It is not the co-resident HAPI FHIR store. See api.html."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-observation"/>
+      </reference>
+      <name value="OpenELIS Observation"/>
+      <description value="One result value as OpenELIS produces it (ObservationTransformServiceImpl) and serves it from /fhir/Observation. A multi-component test produces one Observation per component."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/b73bf11f-06ff-55ad-935d-476bc270350a"/>
+      </reference>
+      <name value="OpenELIS Observation: glucose (numeric)"/>
+      <description value="A validated numeric result produced on an analyzer."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/8330c79d-ccd9-5ef4-876d-2b176e5e86a5"/>
+      </reference>
+      <name value="OpenELIS Observation: HBsAg (coded)"/>
+      <description value="A validated dictionary (coded) result: a LOINC answer coding plus the OpenELIS dictionary entry."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-order-task"/>
+      </reference>
+      <name value="OpenELIS Order Task"/>
+      <description value="The Task OpenELIS writes for each order (Sample) to track its state (TaskTransformServiceImpl). When the order came from an EMR Task, partOf points at that Task. When the order is finished, one output per test references its DiagnosticReport."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/ed860000-5fab-5072-a257-83bbe38c27f4"/>
+      </reference>
+      <name value="OpenELIS order Task (finished)"/>
+      <description value="OpenELIS's Task for the order, once finished: one output per test."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-order-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-organization"/>
+      </reference>
+      <name value="OpenELIS Organization"/>
+      <description value="An organization as OpenELIS produces it (OrganizationTransformServiceImpl) and serves it from /fhir/Organization: referring sites, reference labs, and the site's own facility Organization (FhirFacilityOrganizationServiceImpl)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-patient"/>
+      </reference>
+      <name value="OpenELIS Patient"/>
+      <description value="A patient as OpenELIS produces it (PatientTransformServiceImpl.transformToFhirPatient) and serves it from /fhir/Patient. Environmental and vector orders have no patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-practitioner"/>
+      </reference>
+      <name value="OpenELIS Practitioner"/>
+      <description value="A requesting provider as OpenELIS produces it (PractitionerTransformServiceImpl) and serves it from /fhir/Practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-referral-task"/>
+      </reference>
+      <name value="OpenELIS Referral Task"/>
+      <description value="The Task a referring OpenELIS writes when it refers a test to another laboratory (FhirReferralServiceImpl.createReferralTask). The reference lab polls for it with the same mechanism as EMR orders. When results are entered at the referring lab from a paper report, it publishes the Task as completed with an output referencing the DiagnosticReport. A referral marked lost sets the Task to cancelled. A referral rejected at the referring lab sets it to rejected."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-service-request"/>
+      </reference>
+      <name value="OpenELIS ServiceRequest"/>
+      <description value="One ordered test (an OpenELIS Analysis) as OpenELIS produces it (ServiceRequestTransformServiceImpl) and serves it from /fhir/ServiceRequest. The id is the Analysis UUID. The DiagnosticReport for the same test has the same id."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/48549f60-c400-5510-97da-2e2497627e81"/>
+      </reference>
+      <name value="OpenELIS ServiceRequest: glucose"/>
+      <description value="One ordered test. The id is the Analysis UUID."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4"/>
+      </reference>
+      <name value="OpenELIS ServiceRequest: HBsAg"/>
+      <description value="One ordered test. The id is the Analysis UUID."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-shipment-box"/>
+      </reference>
+      <name value="OpenELIS Shipment Box"/>
+      <description value="A box of specimens shipped from one OpenELIS site to another (ShippingBoxFhirTransform). Written to the sender's FHIR store on creation and on every status change. The receiving OpenELIS polls each remote source for SupplyDelivery?status=in-progress (ShipmentFhirImportService). SupplyDelivery is not served from /fhir."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-specimen"/>
+      </reference>
+      <name value="OpenELIS Specimen"/>
+      <description value="A sample item as OpenELIS produces it (SpecimenTransformServiceImpl) and serves it from /fhir/Specimen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab"/>
+      </reference>
+      <name value="OpenELIS Specimen: serum"/>
+      <description value="The serum sample item both tests run on, with GPS collection location."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/openelis-storage-location"/>
+      </reference>
+      <name value="OpenELIS Storage Location"/>
+      <description value="A level of the OpenELIS sample storage hierarchy: room, storage device (equipment), shelf, rack or box (StorageLocationFhirTransform). Served from /fhir/Location with read, create, update, delete and search (including _tag and _include=Location:partof). Every change is also mirrored to the FHIR store. The level is carried in meta.tag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="A patient as OpenELIS publishes it. A patient received with an EMR order keeps the EMR's Patient id as its OpenELIS FHIR UUID."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/position-occupancy"/>
+      </reference>
+      <name value="Position occupancy"/>
+      <description value="Whether any position in the storage box is occupied. Always sent on box-level Locations. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/position-occupancy (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rack-position-schema-hint"/>
+      </reference>
+      <name value="Position schema hint"/>
+      <description value="How positions in the box are labelled (for example letter-number). Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-position-schema-hint (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200"/>
+      </reference>
+      <name value="Reference laboratory: National Reference Laboratory"/>
+      <description value="The laboratory tests are referred to."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/1adff0e3-109a-55fe-b3b7-74736ef4ff6d"/>
+      </reference>
+      <name value="Referral Task (requested)"/>
+      <description value="HBsAg referred for confirmation. The reference lab's OpenELIS picks it up by polling."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-referral-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/d3619aef-5abf-5b4f-a76c-06f378deca13"/>
+      </reference>
+      <name value="Referring site: Riverside Health Centre"/>
+      <description value="A referring clinic configured in OpenELIS."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244"/>
+      </reference>
+      <name value="Requesting provider"/>
+      <description value="The clinician who ordered the tests."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyDelivery"/>
+      </extension>
+      <reference>
+        <reference value="SupplyDelivery/0e8e2c05-d198-51b0-8fa2-ac80c118c73e"/>
+      </reference>
+      <name value="Shipment box (sent)"/>
+      <description value="A box with one specimen sent to the reference laboratory. type is omitted, the recommended fix for Known Issue 4. OpenELIS currently sends supply-item-type#medication with the display Specimen Shipment, which fails the required binding."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-capacity"/>
+      </reference>
+      <name value="Shipment box capacity"/>
+      <description value="Number of specimens the box can hold. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-capacity (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-content-item"/>
+      </reference>
+      <name value="Shipment content item"/>
+      <description value="One row of the box manifest. Repeats once per item in the box. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-content-item (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-destination-org"/>
+      </reference>
+      <name value="Shipment destination organization id"/>
+      <description value="UUID of the destination Organization. Kept for receivers that do not read the contained destination Location. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-destination-org (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-non-conformity"/>
+      </reference>
+      <name value="Shipment non-conformity"/>
+      <description value="A problem recorded when the box was received (damaged, leaked, missing, rejected). SNOMED CT by default. Codes can be overridden per site. Only sent after reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-non-conformity (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-notes"/>
+      </reference>
+      <name value="Shipment notes"/>
+      <description value="Free-text notes on the box. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-notes (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-source-org"/>
+      </reference>
+      <name value="Shipment source laboratory"/>
+      <description value="Name of the sending OpenELIS site (its configuration name). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-source-org (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-specimen-type-summary"/>
+      </reference>
+      <name value="Shipment specimen type summary"/>
+      <description value="Count of items in the box per sample type. One repetition per distinct type, in no guaranteed order. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen-type-summary (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-temperature"/>
+      </reference>
+      <name value="Shipment temperature requirement"/>
+      <description value="Temperature the box must be kept at in transit. Free text (for example 2-8 °C). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-temperature (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shipment-specimen"/>
+      </reference>
+      <name value="Shipped specimen"/>
+      <description value="A Specimen in the box. Repeats once per sample item with a FHIR id. The receiving site uses these references at reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+      </reference>
+      <name value="Site Organization: Example District Hospital Laboratory"/>
+      <description value="The OpenELIS site's own facility Organization as pushed to the FHIR store at start-up (FhirFacilityOrganizationServiceImpl). It is the assigner of every facility identifier."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/storage-capacity"/>
+      </reference>
+      <name value="Storage capacity"/>
+      <description value="Capacity of the location: the capacity limit of a device or shelf. On a box it is rows x columns and is only sent with rack-grid-dimensions. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/storage-capacity (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/device-communication-protocol"/>
+      </reference>
+      <name value="Storage device communication protocol"/>
+      <description value="Protocol used to talk to a connected storage device. Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-communication-protocol (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/device-ip-address"/>
+      </reference>
+      <name value="Storage device IP address"/>
+      <description value="Network address of a connected storage device (for example a monitored freezer). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-ip-address (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/device-port"/>
+      </reference>
+      <name value="Storage device port"/>
+      <description value="Network port of a connected storage device. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-port (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/613ff118-ceeb-5472-9793-dc241d0d032c"/>
+      </reference>
+      <name value="Storage level: box"/>
+      <description value="A 9 x 9 cryobox in the rack. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd"/>
+      </reference>
+      <name value="Storage level: device (freezer)"/>
+      <description value="A monitored -80 freezer in the room. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends ve (Vehicle)."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/5a9cc354-9495-5090-91d7-b67b0d2ef5dc"/>
+      </reference>
+      <name value="Storage level: rack"/>
+      <description value="A rack on the shelf. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0"/>
+      </reference>
+      <name value="Storage level: room"/>
+      <description value="Top of the storage hierarchy."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/8264f454-03c2-597b-996d-b9ea0998f326"/>
+      </reference>
+      <name value="Storage level: shelf"/>
+      <description value="A shelf in the freezer. The physicalType follows the recommended fix for Known Issue 17. OpenELIS currently sends co with the display Container."/>
+      <exampleCanonical value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/storage-temperature"/>
+      </reference>
+      <name value="Storage temperature"/>
+      <description value="Temperature setting of a storage device. The unit is not carried on the wire (see Known Issues). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/storage-temperature (see Known Issues)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="workflows.html"/>
+        </extension>
+        <nameUrl value="workflows.html"/>
+        <title value="Exchange Workflows"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="api.html"/>
+        </extension>
+        <nameUrl value="api.html"/>
+        <title value="OpenELIS FHIR REST API"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="identifiers.html"/>
+        </extension>
+        <nameUrl value="identifiers.html"/>
+        <title value="Identifiers, Code Systems and URLs"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="known-issues.html"/>
+        </extension>
+        <nameUrl value="known-issues.html"/>
+        <title value="Known Issues"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/assets"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

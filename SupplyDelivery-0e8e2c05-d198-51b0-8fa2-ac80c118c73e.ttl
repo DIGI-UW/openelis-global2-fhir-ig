@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/SupplyDelivery/0e8e2c05-d198-51b0-8fa2-ac80c118c73e> a fhir:SupplyDelivery ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "0e8e2c05-d198-51b0-8fa2-ac80c118c73e"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyDelivery 0e8e2c05-d198-51b0-8fa2-ac80c118c73e</b></p><a name=\"0e8e2c05-d198-51b0-8fa2-ac80c118c73e\"> </a><a name=\"hc0e8e2c05-d198-51b0-8fa2-ac80c118c73e\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-shipment-box.html\">OpenELIS Shipment Box</a></p></div><p><b>Shipment destination organization id</b>: 32a104cd-6337-5d1b-b1a9-6849e98b2200</p><p><b>Shipment source laboratory</b>: Example District Hospital Laboratory</p><p><b>Shipment temperature requirement</b>: 2-8 °C</p><p><b>Shipment box capacity</b>: 50</p><p><b>Shipment notes</b>: Confirmatory testing</p><blockquote><p><b>Shipment content item</b></p><ul><li>label: EDH26000000417</li><li>type: Serum</li></ul></blockquote><p><b>Shipped specimen</b>: <a href=\"Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.html\">Serum</a></p><blockquote><p><b>Shipment specimen type summary</b></p><ul><li>type: Serum</li><li>count: 1</li></ul></blockquote><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-shipment-box-id.html\" title=\"Identifier of a shipping box. Carried on SupplyDelivery.\">OEShipmentBoxId</a>/BOX-2026-0091</p><p><b>status</b>: In Progress</p><h3>SuppliedItems</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Quantity</b></td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1 specimens<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{specimens} = '{specimens}')</span></td><td><span title=\"Codes:{http://snomed.info/sct 434711009}\">Specimen container</span></td></tr></table><p><b>occurrence</b>: 2026-09-28 15:10:00+1000</p><p><b>supplier</b>: <a href=\"Organization-a845f2db-10e5-5117-ac75-553f615e301a.html\">Organization Example District Hospital Laboratory</a></p><p><b>destination</b>: <a href=\"#hc0e8e2c05-d198-51b0-8fa2-ac80c118c73e/destination-facility\">National Reference Laboratory</a></p><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Location #destination-facility</b></p><a name=\"0e8e2c05-d198-51b0-8fa2-ac80c118c73e/destination-facility\"> </a><a name=\"hc0e8e2c05-d198-51b0-8fa2-ac80c118c73e/destination-facility\"> </a><p><b>name</b>: National Reference Laboratory</p><p><b>managingOrganization</b>: <a href=\"Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.html\">National Reference Laboratory</a></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Location ;
+     fhir:index 0 ;
+     fhir:Resource.id [ fhir:value "destination-facility" ] ;
+     fhir:Location.name [ fhir:value "National Reference Laboratory" ] ;
+     fhir:Location.managingOrganization [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200> ;
+       fhir:Reference.reference [ fhir:value "Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200" ] ;
+       fhir:Reference.display [ fhir:value "National Reference Laboratory" ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-destination-org" ] ;
+     fhir:Extension.valueString [ fhir:value "32a104cd-6337-5d1b-b1a9-6849e98b2200" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-source-org" ] ;
+     fhir:Extension.valueString [ fhir:value "Example District Hospital Laboratory" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-temperature" ] ;
+     fhir:Extension.valueString [ fhir:value "2-8 °C" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-capacity" ] ;
+     fhir:Extension.valueInteger [ fhir:value "50"^^xsd:integer ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-notes" ] ;
+     fhir:Extension.valueString [ fhir:value "Confirmatory testing" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "label" ] ;
+       fhir:Extension.valueString [ fhir:value "EDH26000000417" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "type" ] ;
+       fhir:Extension.valueString [ fhir:value "Serum" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-content-item" ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen" ] ;
+     fhir:Extension.valueReference [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab> ;
+       fhir:Reference.reference [ fhir:value "Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab" ] ;
+       fhir:Reference.display [ fhir:value "Serum" ]
+     ]
+  ], [
+     fhir:index 7 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "type" ] ;
+       fhir:Extension.valueString [ fhir:value "Serum" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "count" ] ;
+       fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen-type-summary" ]
+  ] ;
+  fhir:SupplyDelivery.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://openelis.org/shipment/box-id" ] ;
+     fhir:Identifier.value [ fhir:value "BOX-2026-0091" ]
+  ] ;
+  fhir:SupplyDelivery.status [ fhir:value "in-progress"] ;
+  fhir:SupplyDelivery.suppliedItem [
+     fhir:SupplyDelivery.suppliedItem.quantity [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "specimens" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "{specimens}" ]
+     ] ;
+     fhir:SupplyDelivery.suppliedItem.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a sct:434711009 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "434711009" ] ;
+         fhir:Coding.display [ fhir:value "Specimen container" ]
+       ]
+     ]
+  ] ;
+  fhir:SupplyDelivery.occurrenceDateTime [ fhir:value "2026-09-28T15:10:00+10:00"^^xsd:dateTime] ;
+  fhir:SupplyDelivery.supplier [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+     fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+  ] ;
+  fhir:SupplyDelivery.destination [
+     fhir:Reference.reference [ fhir:value "#destination-facility" ] ;
+     fhir:Reference.display [ fhir:value "National Reference Laboratory" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/SupplyDelivery/0e8e2c05-d198-51b0-8fa2-ac80c118c73e.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

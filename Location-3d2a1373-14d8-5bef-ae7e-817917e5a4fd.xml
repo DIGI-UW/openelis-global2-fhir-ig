@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="3d2a1373-14d8-5bef-ae7e-817917e5a4fd"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"/>
+    <tag>
+      <system value="http://openelis.org/fhir/tag/storage-hierarchy"/>
+      <code value="device"/>
+      <display value="Device"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location 3d2a1373-14d8-5bef-ae7e-817917e5a4fd</b></p><a name="3d2a1373-14d8-5bef-ae7e-817917e5a4fd"> </a><a name="hc3d2a1373-14d8-5bef-ae7e-817917e5a4fd"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>Storage temperature</b>: -80</p><p><b>Storage capacity</b>: 5</p><p><b>Storage device IP address</b>: 10.20.0.41</p><p><b>Storage device port</b>: 502</p><p><b>Storage device communication protocol</b>: Modbus TCP</p><p><b>identifier</b>: <a href="NamingSystem-oe-ns-storage-location-code.html" title="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.">OEStorageLocationCode</a>/MAIN-FRZ01</p><p><b>status</b>: Active</p><p><b>name</b>: Freezer 01 (-80)</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://openelis.org/fhir/CodeSystem/storage-device-type freezer}">Freezer</span></p><p><b>physicalType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ca}">Storage Equipment</span></p><p><b>partOf</b>: <a href="Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.html">Location Main laboratory storage</a></p></div>
+  </text>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-temperature">
+    <valueDecimal value="-80"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity">
+    <valueInteger value="5"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-ip-address">
+    <valueString value="10.20.0.41"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port">
+    <valueInteger value="502"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol">
+    <valueString value="Modbus TCP"/>
+  </extension>
+  <identifier>
+    <system value="http://openelis.org/storage-location-code"/>
+    <value value="MAIN-FRZ01"/>
+  </identifier>
+  <status value="active"/>
+  <name value="Freezer 01 (-80)"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://openelis.org/fhir/CodeSystem/storage-device-type"/>
+      <code value="freezer"/>
+      <display value="Freezer"/>
+    </coding>
+  </type>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="ca"/>
+      <display value="Cabinet"/>
+    </coding>
+    <text value="Storage Equipment"/>
+  </physicalType>
+  <partOf>
+    <reference value="Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0"/>
+  </partOf>
+</Location>

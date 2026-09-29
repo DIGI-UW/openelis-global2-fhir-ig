@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "3d2a1373-14d8-5bef-ae7e-817917e5a4fd"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location" ;
+       fhir:index -1 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location>
+     ], [
+       fhir:value "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location" ;
+       fhir:index -1 ;
+       fhir:link <http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://openelis.org/fhir/tag/storage-hierarchy" ] ;
+       fhir:Coding.code [ fhir:value "device" ] ;
+       fhir:Coding.display [ fhir:value "Device" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location 3d2a1373-14d8-5bef-ae7e-817917e5a4fd</b></p><a name=\"3d2a1373-14d8-5bef-ae7e-817917e5a4fd\"> </a><a name=\"hc3d2a1373-14d8-5bef-ae7e-817917e5a4fd\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-openelis-storage-location.html\">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style=\"margin-bottom: 0px\">Tag: </p></div><p><b>Storage temperature</b>: -80</p><p><b>Storage capacity</b>: 5</p><p><b>Storage device IP address</b>: 10.20.0.41</p><p><b>Storage device port</b>: 502</p><p><b>Storage device communication protocol</b>: Modbus TCP</p><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-storage-location-code.html\" title=\"Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.\">OEStorageLocationCode</a>/MAIN-FRZ01</p><p><b>status</b>: Active</p><p><b>name</b>: Freezer 01 (-80)</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://openelis.org/fhir/CodeSystem/storage-device-type freezer}\">Freezer</span></p><p><b>physicalType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ca}\">Storage Equipment</span></p><p><b>partOf</b>: <a href=\"Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.html\">Location Main laboratory storage</a></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-temperature" ] ;
+     fhir:Extension.valueDecimal [ fhir:value "-80"^^xsd:decimal ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity" ] ;
+     fhir:Extension.valueInteger [ fhir:value "5"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-ip-address" ] ;
+     fhir:Extension.valueString [ fhir:value "10.20.0.41" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port" ] ;
+     fhir:Extension.valueInteger [ fhir:value "502"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol" ] ;
+     fhir:Extension.valueString [ fhir:value "Modbus TCP" ]
+  ] ;
+  fhir:Location.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://openelis.org/storage-location-code" ] ;
+     fhir:Identifier.value [ fhir:value "MAIN-FRZ01" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Freezer 01 (-80)"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.type [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://openelis.org/fhir/CodeSystem/storage-device-type" ] ;
+       fhir:Coding.code [ fhir:value "freezer" ] ;
+       fhir:Coding.display [ fhir:value "Freezer" ]
+     ]
+  ] ;
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ] ;
+       fhir:Coding.code [ fhir:value "ca" ] ;
+       fhir:Coding.display [ fhir:value "Cabinet" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Storage Equipment" ]
+  ] ;
+  fhir:Location.partOf [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0> ;
+     fhir:Reference.reference [ fhir:value "Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

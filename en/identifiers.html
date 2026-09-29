@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Identifiers, Code Systems and URLs - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+
+<style>
+    div.markdown-toc {
+        color: var(--toc-box-text-color);
+        border-radius: 5px;
+    }
+
+    div.markdown-toc li a {
+        color: var(--toc-box-text-color);
+    }
+
+    div.markdown-toc p {
+        color: var(--toc-box-heading-text-color);
+        font-size: 1.4em;
+    }
+
+    #left-header {
+        line-height: 50px;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #left-header-logo {
+        float: left;
+        margin-left: 3px;
+    }
+
+    #right-header {
+        line-height: 50px;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #right-header-logo {
+        float: right;
+        margin-left: 3px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Placeholder for child template header declarations -->
+<div id="left-header">
+    <a id="left-header-logo" no-external="true" href="https://openelis-global.org/">
+        <img height="71" alt="Artifacts" src="assets/images/home.png">
+    </a>
+</div>
+
+<div id="right-header">
+    <a id="right-header-logo" no-external="true" href="https://hl7.org/fhir/"><img height="70" alt="FHIR website"
+            src="assets/images/fire.png"> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="api.html">FHIR API</a>
+  </li>
+  <li>
+    <a href="identifiers.html">Identifiers &amp; URLs</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="known-issues.html">Known Issues</a>
+  </li>
+  <li>
+    <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Identifiers, Code Systems and URLs</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Identifiers, Code Systems and URLs</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#identifier-systems" id="markdown-toc-identifier-systems">Identifier systems</a></li>
+  <li><a href="#code-systems" id="markdown-toc-code-systems">Code systems</a></li>
+  <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+  <li><a href="#profile-and-tag-urls-sent-in-meta" id="markdown-toc-profile-and-tag-urls-sent-in-meta">Profile and tag URLs sent in <code class="language-plaintext highlighter-rouge">meta</code></a></li>
+  <li><a href="#three-url-bases" id="markdown-toc-three-url-bases">Three URL bases</a></li>
+</ul>
+
+</div>
+<p>This page lists every URL OpenELIS puts on the wire: identifier systems, local code systems, extension URLs,
+and <code class="language-plaintext highlighter-rouge">meta.profile</code> / <code class="language-plaintext highlighter-rouge">meta.tag</code> values. Each identifier system also has a
+NamingSystem (see <a href="artifacts.html">Artifacts</a>) in this guide.</p>
+
+<p><code class="language-plaintext highlighter-rouge">{base}</code> is the <code class="language-plaintext highlighter-rouge">org.openelisglobal.oe.fhir.system</code> property, <code class="language-plaintext highlighter-rouge">http://openelis-global.org</code> by default.</p>
+
+<h3 id="identifier-systems">Identifier systems</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Used on</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/pat_uuid</code></td>
+      <td>Patient.identifier</td>
+      <td>OpenELIS patient UUID (equals Patient.id)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/pat_nationalId</code></td>
+      <td>Patient.identifier (use = official)</td>
+      <td>National id</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/pat_subjectNumber</code></td>
+      <td>Patient.identifier</td>
+      <td>Subject / programme number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/pat_stNumber</code></td>
+      <td>Patient.identifier</td>
+      <td>ST number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/pat_guid</code></td>
+      <td>Patient.identifier</td>
+      <td>Patient GUID. Read as the external patient id on import.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/facility_id</code></td>
+      <td>Most resources (use = official, assigner = site Organization). Device.owner.identifier.</td>
+      <td>The site's facility id (<code class="language-plaintext highlighter-rouge">facility.id</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/order_uuid</code></td>
+      <td>Task.identifier</td>
+      <td>Order (Sample) UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/order_accessionNumber</code></td>
+      <td>Task.identifier</td>
+      <td>Order lab number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/analysis_uuid</code></td>
+      <td>ServiceRequest.identifier</td>
+      <td>Analysis UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/samp_labNo</code></td>
+      <td>ServiceRequest.requisition</td>
+      <td>Order lab number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/sampleItem_uuid</code></td>
+      <td>Specimen.identifier</td>
+      <td>Sample item UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/sampleItem_labNo</code></td>
+      <td>Specimen.accessionIdentifier</td>
+      <td><code class="language-plaintext highlighter-rouge">{lab number}-{sort order}</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/result_uuid</code></td>
+      <td>Observation.identifier</td>
+      <td>Result UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/analysisResult_uuid</code></td>
+      <td>DiagnosticReport.identifier</td>
+      <td>Analysis UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/provider_uuid</code></td>
+      <td>Practitioner.identifier</td>
+      <td>Provider UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/org_uuid</code>, <code class="language-plaintext highlighter-rouge">{base}/org_code</code>, <code class="language-plaintext highlighter-rouge">{base}/org_shortName</code>, <code class="language-plaintext highlighter-rouge">{base}/org_cliaNum</code></td>
+      <td>Organization.identifier</td>
+      <td>Organization UUID, code, short name, CLIA number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/analyzer_uuid</code></td>
+      <td>Device.identifier</td>
+      <td>Analyzer UUID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/analyzer_bridge_connection</code></td>
+      <td>Device.identifier</td>
+      <td>Analyzer bridge connection id</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/notebook_questionare</code> (sic)</td>
+      <td>Questionnaire.identifier</td>
+      <td>Title of a questionnaire loaded from configuration</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/storage-location-code</code></td>
+      <td>Location.identifier (storage)</td>
+      <td>Hierarchical storage code</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/shipment/box-id</code></td>
+      <td>SupplyDelivery.identifier</td>
+      <td>Shipping box id</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="code-systems">Code systems</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Used in</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org</code></td>
+      <td>ServiceRequest.code, DiagnosticReport.code, Observation.code, Observation.valueCodeableConcept</td>
+      <td>Test and answer codes from the test catalog's terminology mappings</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>Specimen.type, Specimen.container.type, SupplyDelivery</td>
+      <td>Sample type mappings, container type (434711009), shipment non-conformities</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">https://openconceptlab.org/orgs/CIEL/sources/CIEL</code>, <code class="language-plaintext highlighter-rouge">https://openconceptlab.org</code></td>
+      <td>Test codings</td>
+      <td>CIEL and OCL mappings</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/sampleType</code></td>
+      <td>Specimen.type (always first)</td>
+      <td>Site sample types. Code = local abbreviation, display = localized name.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/dictionary_entry</code></td>
+      <td>Observation.valueCodeableConcept</td>
+      <td>Site dictionary (coded result) entries</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/test_result_component</code></td>
+      <td>Observation.code</td>
+      <td>Result components of multi-component tests (non-primary components only)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/samp_domain</code></td>
+      <td>ServiceRequest.category</td>
+      <td>Order domain (clinical / environmental / vector)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/sample_program</code></td>
+      <td>ServiceRequest.category</td>
+      <td>Programme the order was entered under</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/sample_condition</code></td>
+      <td>Specimen condition</td>
+      <td>Sample condition on receipt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/orgType</code></td>
+      <td>Organization.type</td>
+      <td>Site organization types (read back on import)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/task_output</code></td>
+      <td>Referral Task.output.type</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/refer_reason</code></td>
+      <td>Referral Task.reasonCode</td>
+      <td>Referral reason (currently sent with no code)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{base}/genIdType</code></td>
+      <td>Identifier.type</td>
+      <td><code class="language-plaintext highlighter-rouge">externalId</code>: an identifier assigned by an external system</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/tag/storage-hierarchy</code></td>
+      <td>Location.meta.tag</td>
+      <td><code class="language-plaintext highlighter-rouge">room</code>, <code class="language-plaintext highlighter-rouge">device</code>, <code class="language-plaintext highlighter-rouge">shelf</code>, <code class="language-plaintext highlighter-rouge">rack</code>, <code class="language-plaintext highlighter-rouge">box</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/CodeSystem/storage-device-type</code></td>
+      <td>Location.type (device)</td>
+      <td><code class="language-plaintext highlighter-rouge">freezer</code>, <code class="language-plaintext highlighter-rouge">refrigerator</code>, <code class="language-plaintext highlighter-rouge">cabinet</code>, <code class="language-plaintext highlighter-rouge">other</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/CodeSystem/storage-box-type</code></td>
+      <td>Location.type (box)</td>
+      <td>Free-text box type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="extensions">Extensions</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>URL OpenELIS sends</th>
+      <th>Context</th>
+      <th>Definition in this guide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis-global.org/fhir/StructureDefinition/collection-location-gps</code></td>
+      <td>Specimen.collection</td>
+      <td><a href="StructureDefinition-collection-location-gps.html">Collection location (GPS)</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/StructureDefinition/analyzer-last-activated</code></td>
+      <td>Device</td>
+      <td><a href="StructureDefinition-analyzer-last-activated.html">Analyzer last activated</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/StructureDefinition/analyzer-test-units</code></td>
+      <td>Device</td>
+      <td><a href="StructureDefinition-analyzer-test-units.html">Analyzer test units</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/StructureDefinition/analyzer-operational-status</code></td>
+      <td>Device</td>
+      <td><a href="StructureDefinition-analyzer-operational-status.html">Analyzer operational status</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/storage-temperature</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-storage-temperature.html">Storage temperature</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/storage-capacity</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-storage-capacity.html">Storage capacity</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/rack-grid-dimensions</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-rack-grid-dimensions.html">Grid dimensions</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/rack-position-schema-hint</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-rack-position-schema-hint.html">Position schema hint</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/position-occupancy</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-position-occupancy.html">Position occupancy</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/device-ip-address</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-device-ip-address.html">Storage device IP address</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/device-port</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-device-port.html">Storage device port</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/device-communication-protocol</code></td>
+      <td>Location</td>
+      <td><a href="StructureDefinition-device-communication-protocol.html">Storage device protocol</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-destination-org</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-destination-org.html">Destination organization id</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-source-org</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-source-org.html">Source laboratory</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-temperature</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-temperature.html">Temperature requirement</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-capacity</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-capacity.html">Box capacity</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-notes</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-notes.html">Notes</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-content-item</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-content-item.html">Content item</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-non-conformity</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-non-conformity.html">Non-conformity</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-specimen</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-specimen.html">Shipped specimen</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/shipment-specimen-type-summary</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-shipment-specimen-type-summary.html">Specimen type summary</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/extension/eqa-cycle</code></td>
+      <td>SupplyDelivery</td>
+      <td><a href="StructureDefinition-eqa-cycle.html">EQA cycle</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="profile-and-tag-urls-sent-in-meta">Profile and tag URLs sent in <code class="language-plaintext highlighter-rouge">meta</code></h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Where</th>
+      <th>Resolves to</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code> = <code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device</code></td>
+      <td>Device</td>
+      <td>Nothing. The matching profile in this guide is <a href="StructureDefinition-openelis-analyzer-device.html">OpenELIS Analyzer Device</a>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code> = <code class="language-plaintext highlighter-rouge">http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></td>
+      <td>Storage Location</td>
+      <td>Nothing (see <a href="known-issues.html">Known Issues</a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.tag</code> system <code class="language-plaintext highlighter-rouge">http://openelis.org/fhir/tag/storage-hierarchy</code></td>
+      <td>Storage Location</td>
+      <td>Codes <code class="language-plaintext highlighter-rouge">room</code>, <code class="language-plaintext highlighter-rouge">device</code>, <code class="language-plaintext highlighter-rouge">shelf</code>, <code class="language-plaintext highlighter-rouge">rack</code>, <code class="language-plaintext highlighter-rouge">box</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="three-url-bases">Three URL bases</h3>
+
+<p>OpenELIS currently uses three different bases for its own URLs:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{base}</code> = <code class="language-plaintext highlighter-rouge">http://openelis-global.org</code> (configurable) for identifier systems and local code systems</li>
+  <li><code class="language-plaintext highlighter-rouge">http://openelis.org/...</code> (hard-coded) for storage, shipment and Device definitions</li>
+  <li><code class="language-plaintext highlighter-rouge">https://openelis-global.org/fhir/...</code> for the inbound analyzer-bridge result contract, which this guide does not
+yet profile</li>
+</ul>
+
+<p>None of them is the canonical base of this guide, and none of them resolves. The extensions and profiles in this guide
+are defined under the guide's canonical, <code class="language-plaintext highlighter-rouge">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}</code>.
+The tables above map each URL OpenELIS sends to its definition here. The guide is intended as an API reference. A
+validator checking live OpenELIS messages against this guide will report the extension URLs above as unknown until
+OpenELIS adopts the canonical URLs (<a href="known-issues.html">Known Issues</a>).</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
+          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-29 02:24:00 +0000">
+    2026-09-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

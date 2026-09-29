@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="ed860000-5fab-5072-a257-83bbe38c27f4"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-order-task"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task ed860000-5fab-5072-a257-83bbe38c27f4</b></p><a name="ed860000-5fab-5072-a257-83bbe38c27f4"> </a><a name="hced860000-5fab-5072-a257-83bbe38c27f4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-order-task.html">OpenELIS Order Task</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-order-uuid.html" title="UUID of the OpenELIS order (Sample). Carried on Task.">OEOrderUUID</a>/ed860000-5fab-5072-a257-83bbe38c27f4 (use: usual, ), <a href="NamingSystem-oe-ns-order-accession.html" title="Lab (accession) number of the OpenELIS order. Carried on Task.">OEOrderAccessionNumber</a>/EDH26000000417 (use: usual, )</p><p><b>basedOn</b>: </p><ul><li><a href="ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.html">ServiceRequest Glucose [Mass/volume] in Serum or Plasma</a></li><li><a href="ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.html">ServiceRequest Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</a></li></ul><p><b>partOf</b>: <a href="Task-07ed1bd1-1bdf-58ae-a661-ee0703fcab70.html">Task: status = requested; intent = order; authoredOn = 2026-09-28 08:15:00+1000</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>priority</b>: Routine</p><p><b>for</b>: <a href="Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</a></p><p><b>authoredOn</b>: 2026-09-28 09:02:11+1000</p><blockquote><p><b>output</b></p><p><b>type</b>: <span title="Codes:">reference</span></p><p><b>value</b>: <a href="DiagnosticReport-48549f60-c400-5510-97da-2e2497627e81.html">Diagnostic Report for 'Glucose [Mass/volume] in Serum or Plasma' for '-&gt;Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))'</a></p></blockquote><blockquote><p><b>output</b></p><p><b>type</b>: <span title="Codes:">reference</span></p><p><b>value</b>: <a href="DiagnosticReport-3b2c3407-5430-5878-9c61-c4c9b9c013c4.html">Diagnostic Report for 'Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay' for '-&gt;Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))'</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/order_uuid"/>
+    <value value="ed860000-5fab-5072-a257-83bbe38c27f4"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/order_accessionNumber"/>
+    <value value="EDH26000000417"/>
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/48549f60-c400-5510-97da-2e2497627e81"/>
+  </basedOn>
+  <basedOn>
+    <reference value="ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4"/>
+  </basedOn>
+  <partOf>
+    <reference value="Task/07ed1bd1-1bdf-58ae-a661-ee0703fcab70"/>
+  </partOf>
+  <status value="completed"/>
+  <intent value="order"/>
+  <priority value="routine"/>
+  <for>
+    <reference value="Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+  </for>
+  <authoredOn value="2026-09-28T09:02:11+10:00"/>
+  <output>
+    <type>
+      <coding>
+        <code value="reference"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="DiagnosticReport/48549f60-c400-5510-97da-2e2497627e81"/>
+    </valueReference>
+  </output>
+  <output>
+    <type>
+      <coding>
+        <code value="reference"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="DiagnosticReport/3b2c3407-5430-5878-9c61-c4c9b9c013c4"/>
+    </valueReference>
+  </output>
+</Task>

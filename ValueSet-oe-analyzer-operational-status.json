@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "oe-analyzer-operational-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet oe-analyzer-operational-status</b></p><a name=\"oe-analyzer-operational-status\"> </a><a name=\"hcoe-analyzer-operational-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-oe-analyzer-operational-status.html\"><code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span></li></ul></div>"
+  },
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerOperationalStatusVS",
+  "title" : "OpenELIS Analyzer Operational Statuses",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-29T02:24:20+00:00",
+  "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+  "contact" : [{
+    "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openelis-global.org"
+    }]
+  },
+  {
+    "name" : "OpenELIS Global community",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"
+    }]
+  }],
+  "description" : "All analyzer operational statuses.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"
+    }]
+  }
+}

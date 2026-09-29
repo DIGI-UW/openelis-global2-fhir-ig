@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "1fa151e6-afa2-531c-b70c-fd63b88c10f0"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location" ;
+       fhir:index -1 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location>
+     ], [
+       fhir:value "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location" ;
+       fhir:index -1 ;
+       fhir:link <http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location>
+     ] ;
+     fhir:Meta.tag [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://openelis.org/fhir/tag/storage-hierarchy" ] ;
+       fhir:Coding.code [ fhir:value "room" ] ;
+       fhir:Coding.display [ fhir:value "Room" ]
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location 1fa151e6-afa2-531c-b70c-fd63b88c10f0</b></p><a name=\"1fa151e6-afa2-531c-b70c-fd63b88c10f0\"> </a><a name=\"hc1fa151e6-afa2-531c-b70c-fd63b88c10f0\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-openelis-storage-location.html\">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style=\"margin-bottom: 0px\">Tag: </p></div><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-storage-location-code.html\" title=\"Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.\">OEStorageLocationCode</a>/MAIN</p><p><b>status</b>: Active</p><p><b>name</b>: Main laboratory storage</p><p><b>description</b>: Ground floor, room 014</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Storage Room</span></p></div>"
+  ] ;
+  fhir:Location.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://openelis.org/storage-location-code" ] ;
+     fhir:Identifier.value [ fhir:value "MAIN" ]
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Main laboratory storage"] ;
+  fhir:Location.description [ fhir:value "Ground floor, room 014"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ] ;
+       fhir:Coding.code [ fhir:value "ro" ] ;
+       fhir:Coding.display [ fhir:value "Room" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Storage Room" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

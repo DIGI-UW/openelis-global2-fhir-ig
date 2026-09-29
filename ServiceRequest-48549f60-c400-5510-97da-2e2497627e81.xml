@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="48549f60-c400-5510-97da-2e2497627e81"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest 48549f60-c400-5510-97da-2e2497627e81</b></p><a name="48549f60-c400-5510-97da-2e2497627e81"> </a><a name="hc48549f60-c400-5510-97da-2e2497627e81"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-service-request.html">OpenELIS ServiceRequest</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-analysis-uuid.html" title="UUID of the OpenELIS test request (Analysis). Carried on ServiceRequest.">OEAnalysisUUID</a>/48549f60-c400-5510-97da-2e2497627e81 (use: usual, ), <a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB (use: official, )</p><p><b>requisition</b>: <a href="NamingSystem-oe-ns-samp-labno.html" title="Lab (accession) number of the order. Carried in ServiceRequest.requisition.">OESampleLabNumber</a>/EDH26000000417 (use: usual, )</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://openelis-global.org/samp_domain H}">H</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:{http://loinc.org 2345-7}">Glucose</span></p><p><b>subject</b>: <a href="Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</a></p><p><b>authoredOn</b>: 2026-09-28 11:40:00+1000</p><p><b>requester</b>: <a href="Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.html">Practitioner Kofi Mensah </a></p><p><b>specimen</b>: <a href="Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.html">Specimen: identifier = http://openelis-global.org/sampleItem_uuid#OESampleItemUUID#97b37d86-fd55-529b-bbd7-4766f3988fab (use: usual, ),http://openelis-global.org/facility_id#OEFacilityId#EDH-LAB (use: official, ); accessionIdentifier = http://openelis-global.org/sampleItem_labNo#OESampleItemLabNumber#EDH26000000417-1 (use: usual, ); status = available; type = Serum; receivedTime = 2026-09-28 09:30:00+1000</a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/analysis_uuid"/>
+    <value value="48549f60-c400-5510-97da-2e2497627e81"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+    <assigner>
+      <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+    </assigner>
+  </identifier>
+  <requisition>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/samp_labNo"/>
+    <value value="EDH26000000417"/>
+  </requisition>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://openelis-global.org/samp_domain"/>
+      <code value="H"/>
+      <display value="H"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2345-7"/>
+      <display value="Glucose [Mass/volume] in Serum or Plasma"/>
+    </coding>
+    <text value="Glucose"/>
+  </code>
+  <subject>
+    <reference value="Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+  </subject>
+  <authoredOn value="2026-09-28T11:40:00+10:00"/>
+  <requester>
+    <reference value="Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244"/>
+  </requester>
+  <specimen>
+    <reference value="Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab"/>
+  </specimen>
+</ServiceRequest>

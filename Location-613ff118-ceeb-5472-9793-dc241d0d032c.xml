@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="613ff118-ceeb-5472-9793-dc241d0d032c"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"/>
+    <tag>
+      <system value="http://openelis.org/fhir/tag/storage-hierarchy"/>
+      <code value="box"/>
+      <display value="Box"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location 613ff118-ceeb-5472-9793-dc241d0d032c</b></p><a name="613ff118-ceeb-5472-9793-dc241d0d032c"> </a><a name="hc613ff118-ceeb-5472-9793-dc241d0d032c"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>Grid dimensions</b>: 9 × 9</p><p><b>Storage capacity</b>: 81</p><p><b>Position schema hint</b>: letter-number</p><p><b>Position occupancy</b>: true</p><p><b>identifier</b>: <a href="NamingSystem-oe-ns-storage-location-code.html" title="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.">OEStorageLocationCode</a>/MAIN-FRZ01-Shelf 1-Rack 2-B3</p><p><b>status</b>: Active</p><p><b>name</b>: B3</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://openelis.org/fhir/CodeSystem/storage-box-type cryobox}">cryobox</span></p><p><b>physicalType</b>: <span title="Codes:">Storage Box</span></p><p><b>partOf</b>: <a href="Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.html">Location Rack 2</a></p></div>
+  </text>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-grid-dimensions">
+    <valueString value="9 × 9"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity">
+    <valueInteger value="81"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-position-schema-hint">
+    <valueString value="letter-number"/>
+  </extension>
+  <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/position-occupancy">
+    <valueBoolean value="true"/>
+  </extension>
+  <identifier>
+    <system value="http://openelis.org/storage-location-code"/>
+    <value value="MAIN-FRZ01-Shelf 1-Rack 2-B3"/>
+  </identifier>
+  <status value="active"/>
+  <name value="B3"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://openelis.org/fhir/CodeSystem/storage-box-type"/>
+      <code value="cryobox"/>
+    </coding>
+    <text value="cryobox"/>
+  </type>
+  <physicalType>
+    <text value="Storage Box"/>
+  </physicalType>
+  <partOf>
+    <reference value="Location/5a9cc354-9495-5090-91d7-b67b0d2ef5dc"/>
+  </partOf>
+</Location>

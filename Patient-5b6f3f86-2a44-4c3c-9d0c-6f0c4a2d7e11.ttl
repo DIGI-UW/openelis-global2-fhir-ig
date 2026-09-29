@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient 5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11</b></p><a name=\"5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11\"> </a><a name=\"hc5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-patient.html\">OpenELIS Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><a href=\"NamingSystem-oe-ns-pat-uuid.html\" title=\"OpenELIS internal UUID of the patient. Equals Patient.id.\">OEPatientUUID</a>/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (use: usual, )</li><li><a href=\"NamingSystem-oe-ns-pat-subject-number.html\" title=\"Subject (study or programme) number entered in OpenELIS.\">OEPatientSubjectNumber</a>/RHC-2026-00417 (use: usual, )</li><li><a href=\"NamingSystem-oe-ns-pat-national-id.html\" title=\"National identifier entered in OpenELIS. Sent with Identifier.use = official.\">OEPatientNationalId</a>/NID-000-123-456 (use: official, )</li><li><a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB (use: official, )</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+0005550199\">+000 555 0199</a></li><li>Plot 7, Hill Street commune: Riverside North Riverside XX </li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Patient.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_uuid" ] ;
+     fhir:Identifier.value [ fhir:value "5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_subjectNumber" ] ;
+     fhir:Identifier.value [ fhir:value "RHC-2026-00417" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_nationalId" ] ;
+     fhir:Identifier.value [ fhir:value "NID-000-123-456" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/pat_guid" ] ;
+     fhir:Identifier.value [ fhir:value "dd63810d-c44b-52b6-b70d-0d8e60533c6d" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/facility_id" ] ;
+     fhir:Identifier.value [ fhir:value "EDH-LAB" ] ;
+     fhir:Identifier.assigner [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+       fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+     ]
+  ] ;
+  fhir:Patient.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Banda" ] ;
+     fhir:HumanName.given [
+       fhir:value "Grace" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Patient.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+000 555 0199" ] ;
+     fhir:ContactPoint.use [ fhir:value "mobile" ]
+  ] ;
+  fhir:Patient.gender [ fhir:value "female"] ;
+  fhir:Patient.birthDate [ fhir:value "1991-04"^^xsd:gYearMonth] ;
+  fhir:Patient.address [
+     fhir:index 0 ;
+     fhir:Address.line [
+       fhir:value "Plot 7, Hill Street" ;
+       fhir:index 0
+     ], [
+       fhir:value "commune: Riverside North" ;
+       fhir:index 1
+     ] ;
+     fhir:Address.city [ fhir:value "Riverside" ] ;
+     fhir:Address.country [ fhir:value "XX" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

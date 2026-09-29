@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="1fa151e6-afa2-531c-b70c-fd63b88c10f0"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"/>
+    <tag>
+      <system value="http://openelis.org/fhir/tag/storage-hierarchy"/>
+      <code value="room"/>
+      <display value="Room"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location 1fa151e6-afa2-531c-b70c-fd63b88c10f0</b></p><a name="1fa151e6-afa2-531c-b70c-fd63b88c10f0"> </a><a name="hc1fa151e6-afa2-531c-b70c-fd63b88c10f0"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-storage-location-code.html" title="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.">OEStorageLocationCode</a>/MAIN</p><p><b>status</b>: Active</p><p><b>name</b>: Main laboratory storage</p><p><b>description</b>: Ground floor, room 014</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ro}">Storage Room</span></p></div>
+  </text>
+  <identifier>
+    <system value="http://openelis.org/storage-location-code"/>
+    <value value="MAIN"/>
+  </identifier>
+  <status value="active"/>
+  <name value="Main laboratory storage"/>
+  <description value="Ground floor, room 014"/>
+  <mode value="instance"/>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="ro"/>
+      <display value="Room"/>
+    </coding>
+    <text value="Storage Room"/>
+  </physicalType>
+</Location>

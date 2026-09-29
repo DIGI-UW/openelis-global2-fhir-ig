@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="07ed1bd1-1bdf-58ae-a661-ee0703fcab70"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-task"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task 07ed1bd1-1bdf-58ae-a661-ee0703fcab70</b></p><a name="07ed1bd1-1bdf-58ae-a661-ee0703fcab70"> </a><a name="hc07ed1bd1-1bdf-58ae-a661-ee0703fcab70"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-lab-order-request-task.html">Lab Order Request Task (EMR to OpenELIS)</a></p></div><p><b>basedOn</b>: </p><ul><li><a href="ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1.html">ServiceRequest Glucose [Mass/volume] in Serum or Plasma</a></li><li><a href="ServiceRequest-24224471-e4bb-58c0-acbf-b6180b053e05.html">ServiceRequest Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</a></li></ul><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html">Grace Banda</a></p><p><b>authoredOn</b>: 2026-09-28 08:15:00+1000</p><p><b>owner</b>: <a href="Practitioner-0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21.html">OpenELIS service user</a></p></div>
+  </text>
+  <basedOn>
+    <reference value="ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1"/>
+  </basedOn>
+  <basedOn>
+    <reference value="ServiceRequest/24224471-e4bb-58c0-acbf-b6180b053e05"/>
+  </basedOn>
+  <status value="requested"/>
+  <intent value="order"/>
+  <for>
+    <reference value="Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+    <display value="Grace Banda"/>
+  </for>
+  <authoredOn value="2026-09-28T08:15:00+10:00"/>
+  <owner>
+    <reference value="Practitioner/0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21"/>
+    <display value="OpenELIS service user"/>
+  </owner>
+</Task>

@@ -1,127 +1,286 @@
-OpenELISImplementationGuide : Validation Results
+OpenELISGlobalImplementationGuide : Validation Results
 =========================================
 
-err = 9, warn = 39, info = 2
+err = 0, warn = 31, info = 70
 $--
-Generated $--. FHIR version $-- for openelis#$-- (canonical = http://digi-uw.github.io/openelis-global-ig)
- Build Errors : 0 / 20 / 0
- /github/workspace/fsh-generated/resources/Device-OpenELISDeviceExample : 9 / 4 / 2
- /github/workspace/fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-openelis : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Location-LocationExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELIPatientIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELISDiagnosticReportIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELISObservationIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELISOrgIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELISServiceRequestIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/NamingSystem-OpenELISSpecimenIdentifierSystem : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-OpenElisObservationExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Specimen-OpenElisSpecimenExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-communication-mode : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-identifier-pattern : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-last-activated : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-location : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-protocol-version : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-test-units : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-transport-details : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-device : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-location : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-observation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elis-specimen : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elisorganisation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-open-elispractitioner : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-openelis-diagnostic-report : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-openelis-patient : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-openelis-service-request : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-openelis-task : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Task-49ef249a-3a8b-49e3-9e16-7e56e92d0c77 : 0 / 0 / 1
+Generated $--. FHIR version $-- for org.openelisglobal.fhir#$-- (canonical = https://digi-uw.github.io/openelis-global2-fhir-ig)
+ Build Errors : 0 / 3 / 0
+ /github/workspace/fsh-generated/resources/CapabilityStatement-OpenELISFhirServer : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-oe-analyzer-operational-status : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Device-ff2b5d6a-ff46-5f20-b254-4eaa0615d555 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-3b2c3407-5430-5878-9c61-c4c9b9c013c4 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-48549f60-c400-5510-97da-2e2497627e81 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-org.openelisglobal.fhir : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0 : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/Location-3d2a1373-14d8-5bef-ae7e-817917e5a4fd : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/Location-613ff118-ceeb-5472-9793-dc241d0d032c : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/Location-8264f454-03c2-597b-996d-b9ea0998f326 : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-analysis-result-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-analysis-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-analyzer-bridge-connection : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-analyzer-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-facility-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-order-accession : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-order-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-org-clianum : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-org-code : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-org-shortname : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-org-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-pat-guid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-pat-national-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-pat-st-number : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-pat-subject-number : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-pat-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-provider-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-result-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-samp-labno : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-sampleitem-labno : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-sampleitem-uuid : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-shipment-box-id : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/NamingSystem-oe-ns-storage-location-code : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-8330c79d-ccd9-5ef4-876d-2b176e5e86a5 : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/Observation-b73bf11f-06ff-55ad-935d-476bc270350a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Organization-a845f2db-10e5-5117-ac75-553f615e301a : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-d3619aef-5abf-5b4f-a76c-06f378deca13 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-24224471-e4bb-58c0-acbf-b6180b053e05 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1 : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-48549f60-c400-5510-97da-2e2497627e81 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-last-activated : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-operational-status : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-analyzer-test-units : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-collection-location-gps : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-device-communication-protocol : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-device-ip-address : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-device-port : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-eqa-cycle : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-analyzer-device : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-diagnostic-report : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-lab-order-request-service-request : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-lab-order-request-task : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-observation : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-order-task : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-organization : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-patient : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-practitioner : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-referral-task : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-service-request : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-shipment-box : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-specimen : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-openelis-storage-location : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-position-occupancy : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-rack-grid-dimensions : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-rack-position-schema-hint : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-capacity : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-content-item : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-destination-org : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-non-conformity : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-notes : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-source-org : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-specimen : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-specimen-type-summary : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shipment-temperature : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-storage-capacity : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-storage-temperature : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/SupplyDelivery-0e8e2c05-d198-51b0-8fa2-ac80c118c73e : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Task-07ed1bd1-1bdf-58ae-a661-ee0703fcab70 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-1adff0e3-109a-55fe-b3b7-74736ef4ff6d : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Task-ed860000-5fab-5072-a257-83bbe38c27f4 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-oe-analyzer-operational-status : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-communication-mode.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-protocol-version.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-transport-details.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-identifier-pattern.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-last-activated.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-location.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/analyzer-test-units.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/OpenELISDeviceExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /github/workspace/output/StructureDefinition-open-elis-observation-mappings.html: The html source has duplicate anchor Ids: Observation,Observation.basedOn,Observation.bodySite,Observation.category,Observation.code,Observation.component,Observation.component.code,Observation.component.dataAbsentReason,Observation.component.extension,Observation.component.id,Observation.component.interpretation,Observation.component.modifierExtension,Observation.component.referenceRange,Observation.component.value_x_,Observation.contained,Observation.dataAbsentReason,Observation.derivedFrom,Observation.device,Observation.effective_x_,Observation.encounter,Observation.extension,Observation.focus,Observation.hasMember,Observation.id,Observation.identifier,Observation.identifier.2,Observation.identifier.assigner,Observation.identifier.extension,Observation.identifier.id,Observation.identifier.period,Observation.identifier.system,Observation.identifier.type,Observation.identifier.use,Observation.identifier.value,Observation.implicitRules,Observation.interpretation,Observation.issued,Observation.language,Observation.meta,Observation.method,Observation.modifierExtension,Observation.note,Observation.partOf,Observation.performer,Observation.referenceRange,Observation.referenceRange.age,Observation.referenceRange.appliesTo,Observation.referenceRange.extension,Observation.referenceRange.high,Observation.referenceRange.id,Observation.referenceRange.low,Observation.referenceRange.modifierExtension,Observation.referenceRange.text,Observation.referenceRange.type,Observation.specimen,Observation.status,Observation.subject,Observation.text,Observation.value_x_
-WARNING: /github/workspace/output/StructureDefinition-open-elis-specimen-mappings.html: The html source has duplicate anchor Ids: Specimen,Specimen.accessionIdentifier,Specimen.accessionIdentifier.assigner,Specimen.accessionIdentifier.extension,Specimen.accessionIdentifier.id,Specimen.accessionIdentifier.period,Specimen.accessionIdentifier.system,Specimen.accessionIdentifier.type,Specimen.accessionIdentifier.use,Specimen.accessionIdentifier.value,Specimen.collection,Specimen.collection.bodySite,Specimen.collection.collected_x_,Specimen.collection.collected_x_.2,Specimen.collection.collector,Specimen.collection.duration,Specimen.collection.extension,Specimen.collection.fastingStatus_x_,Specimen.collection.id,Specimen.collection.method,Specimen.collection.modifierExtension,Specimen.collection.quantity,Specimen.condition,Specimen.contained,Specimen.container,Specimen.container.additive_x_,Specimen.container.capacity,Specimen.container.description,Specimen.container.extension,Specimen.container.id,Specimen.container.identifier,Specimen.container.modifierExtension,Specimen.container.specimenQuantity,Specimen.container.type,Specimen.extension,Specimen.id,Specimen.identifier,Specimen.identifier.2,Specimen.identifier.assigner,Specimen.identifier.extension,Specimen.identifier.id,Specimen.identifier.period,Specimen.identifier.system,Specimen.identifier.type,Specimen.identifier.use,Specimen.identifier.value,Specimen.implicitRules,Specimen.language,Specimen.meta,Specimen.modifierExtension,Specimen.note,Specimen.parent,Specimen.processing,Specimen.processing.additive,Specimen.processing.description,Specimen.processing.extension,Specimen.processing.id,Specimen.processing.modifierExtension,Specimen.processing.procedure,Specimen.processing.time_x_,Specimen.receivedTime,Specimen.request,Specimen.status,Specimen.subject,Specimen.text,Specimen.type,Specimen.type.coding,Specimen.type.coding.code,Specimen.type.coding.display,Specimen.type.coding.extension,Specimen.type.coding.id,Specimen.type.coding.system,Specimen.type.coding.userSelected,Specimen.type.coding.version,Specimen.type.extension,Specimen.type.id,Specimen.type.text
-WARNING: /github/workspace/output/StructureDefinition-open-elisorganisation-mappings.html: The html source has duplicate anchor Ids: Organization,Organization.active,Organization.address,Organization.address.city,Organization.address.country,Organization.address.district,Organization.address.extension,Organization.address.id,Organization.address.line,Organization.address.period,Organization.address.postalCode,Organization.address.state,Organization.address.text,Organization.address.type,Organization.address.use,Organization.alias,Organization.contact,Organization.contact.address,Organization.contact.extension,Organization.contact.id,Organization.contact.modifierExtension,Organization.contact.name,Organization.contact.purpose,Organization.contact.telecom,Organization.contained,Organization.endpoint,Organization.extension,Organization.id,Organization.identifier,Organization.identifier.2,Organization.identifier.3,Organization.identifier.4,Organization.identifier.5,Organization.identifier.6,Organization.identifier.assigner,Organization.identifier.assigner.2,Organization.identifier.assigner.3,Organization.identifier.assigner.4,Organization.identifier.assigner.5,Organization.identifier.extension,Organization.identifier.extension.2,Organization.identifier.extension.3,Organization.identifier.extension.4,Organization.identifier.extension.5,Organization.identifier.id,Organization.identifier.id.2,Organization.identifier.id.3,Organization.identifier.id.4,Organization.identifier.id.5,Organization.identifier.period,Organization.identifier.period.2,Organization.identifier.period.3,Organization.identifier.period.4,Organization.identifier.period.5,Organization.identifier.system,Organization.identifier.system.2,Organization.identifier.system.3,Organization.identifier.system.4,Organization.identifier.system.5,Organization.identifier.type,Organization.identifier.type.2,Organization.identifier.type.3,Organization.identifier.type.4,Organization.identifier.type.5,Organization.identifier.use,Organization.identifier.use.2,Organization.identifier.use.3,Organization.identifier.use.4,Organization.identifier.use.5,Organization.identifier.value,Organization.identifier.value.2,Organization.identifier.value.3,Organization.identifier.value.4,Organization.identifier.value.5,Organization.implicitRules,Organization.language,Organization.meta,Organization.modifierExtension,Organization.name,Organization.partOf,Organization.telecom,Organization.text,Organization.type
-WARNING: /github/workspace/output/StructureDefinition-open-elispractitioner-mappings.html: The html source has duplicate anchor Ids: Practitioner,Practitioner.active,Practitioner.address,Practitioner.birthDate,Practitioner.communication,Practitioner.contained,Practitioner.extension,Practitioner.gender,Practitioner.id,Practitioner.identifier,Practitioner.implicitRules,Practitioner.language,Practitioner.meta,Practitioner.modifierExtension,Practitioner.name,Practitioner.name.extension,Practitioner.name.family,Practitioner.name.given,Practitioner.name.id,Practitioner.name.period,Practitioner.name.prefix,Practitioner.name.suffix,Practitioner.name.text,Practitioner.name.use,Practitioner.photo,Practitioner.qualification,Practitioner.qualification.code,Practitioner.qualification.extension,Practitioner.qualification.id,Practitioner.qualification.identifier,Practitioner.qualification.issuer,Practitioner.qualification.modifierExtension,Practitioner.qualification.period,Practitioner.telecom,Practitioner.text
-WARNING: /github/workspace/output/StructureDefinition-openelis-diagnostic-report-mappings.html: The html source has duplicate anchor Ids: DiagnosticReport,DiagnosticReport.basedOn,DiagnosticReport.category,DiagnosticReport.code,DiagnosticReport.code.coding,DiagnosticReport.code.extension,DiagnosticReport.code.id,DiagnosticReport.code.text,DiagnosticReport.conclusion,DiagnosticReport.conclusionCode,DiagnosticReport.contained,DiagnosticReport.effective_x_,DiagnosticReport.encounter,DiagnosticReport.extension,DiagnosticReport.id,DiagnosticReport.identifier,DiagnosticReport.identifier.2,DiagnosticReport.identifier.assigner,DiagnosticReport.identifier.extension,DiagnosticReport.identifier.id,DiagnosticReport.identifier.period,DiagnosticReport.identifier.system,DiagnosticReport.identifier.type,DiagnosticReport.identifier.use,DiagnosticReport.identifier.value,DiagnosticReport.imagingStudy,DiagnosticReport.implicitRules,DiagnosticReport.issued,DiagnosticReport.language,DiagnosticReport.media,DiagnosticReport.media.comment,DiagnosticReport.media.extension,DiagnosticReport.media.id,DiagnosticReport.media.link,DiagnosticReport.media.modifierExtension,DiagnosticReport.meta,DiagnosticReport.modifierExtension,DiagnosticReport.performer,DiagnosticReport.presentedForm,DiagnosticReport.result,DiagnosticReport.resultsInterpreter,DiagnosticReport.specimen,DiagnosticReport.status,DiagnosticReport.subject,DiagnosticReport.text
-WARNING: /github/workspace/output/StructureDefinition-openelis-patient-mappings.html: The html source has duplicate anchor Ids: Patient,Patient.active,Patient.address,Patient.birthDate,Patient.communication,Patient.communication.extension,Patient.communication.id,Patient.communication.language,Patient.communication.modifierExtension,Patient.communication.preferred,Patient.contact,Patient.contact.address,Patient.contact.extension,Patient.contact.gender,Patient.contact.id,Patient.contact.modifierExtension,Patient.contact.name,Patient.contact.organization,Patient.contact.period,Patient.contact.relationship,Patient.contact.telecom,Patient.contained,Patient.deceased_x_,Patient.extension,Patient.gender,Patient.generalPractitioner,Patient.id,Patient.identifier,Patient.identifier.2,Patient.identifier.3,Patient.identifier.4,Patient.identifier.5,Patient.identifier.6,Patient.identifier.7,Patient.identifier.assigner,Patient.identifier.assigner.2,Patient.identifier.assigner.3,Patient.identifier.assigner.4,Patient.identifier.assigner.5,Patient.identifier.assigner.6,Patient.identifier.extension,Patient.identifier.extension.2,Patient.identifier.extension.3,Patient.identifier.extension.4,Patient.identifier.extension.5,Patient.identifier.extension.6,Patient.identifier.id,Patient.identifier.id.2,Patient.identifier.id.3,Patient.identifier.id.4,Patient.identifier.id.5,Patient.identifier.id.6,Patient.identifier.period,Patient.identifier.period.2,Patient.identifier.period.3,Patient.identifier.period.4,Patient.identifier.period.5,Patient.identifier.period.6,Patient.identifier.system,Patient.identifier.system.2,Patient.identifier.system.3,Patient.identifier.system.4,Patient.identifier.system.5,Patient.identifier.system.6,Patient.identifier.type,Patient.identifier.type.2,Patient.identifier.type.3,Patient.identifier.type.4,Patient.identifier.type.5,Patient.identifier.type.6,Patient.identifier.use,Patient.identifier.use.2,Patient.identifier.use.3,Patient.identifier.use.4,Patient.identifier.use.5,Patient.identifier.use.6,Patient.identifier.value,Patient.identifier.value.2,Patient.identifier.value.3,Patient.identifier.value.4,Patient.identifier.value.5,Patient.identifier.value.6,Patient.implicitRules,Patient.language,Patient.link,Patient.link.extension,Patient.link.id,Patient.link.modifierExtension,Patient.link.other,Patient.link.type,Patient.managingOrganization,Patient.maritalStatus,Patient.meta,Patient.modifierExtension,Patient.multipleBirth_x_,Patient.name,Patient.photo,Patient.telecom,Patient.text
-WARNING: /github/workspace/output/StructureDefinition-openelis-service-request-mappings.html: The html source has duplicate anchor Ids: ServiceRequest,ServiceRequest.asNeeded_x_,ServiceRequest.authoredOn,ServiceRequest.basedOn,ServiceRequest.bodySite,ServiceRequest.category,ServiceRequest.code,ServiceRequest.code.coding,ServiceRequest.code.coding.code,ServiceRequest.code.coding.display,ServiceRequest.code.coding.extension,ServiceRequest.code.coding.id,ServiceRequest.code.coding.system,ServiceRequest.code.coding.userSelected,ServiceRequest.code.coding.version,ServiceRequest.code.extension,ServiceRequest.code.id,ServiceRequest.code.text,ServiceRequest.contained,ServiceRequest.doNotPerform,ServiceRequest.encounter,ServiceRequest.extension,ServiceRequest.id,ServiceRequest.identifier,ServiceRequest.identifier.2,ServiceRequest.identifier.3,ServiceRequest.identifier.assigner,ServiceRequest.identifier.assigner.2,ServiceRequest.identifier.extension,ServiceRequest.identifier.extension.2,ServiceRequest.identifier.id,ServiceRequest.identifier.id.2,ServiceRequest.identifier.period,ServiceRequest.identifier.period.2,ServiceRequest.identifier.system,ServiceRequest.identifier.system.2,ServiceRequest.identifier.type,ServiceRequest.identifier.type.2,ServiceRequest.identifier.use,ServiceRequest.identifier.use.2,ServiceRequest.identifier.value,ServiceRequest.identifier.value.2,ServiceRequest.implicitRules,ServiceRequest.instantiatesCanonical,ServiceRequest.instantiatesUri,ServiceRequest.insurance,ServiceRequest.intent,ServiceRequest.language,ServiceRequest.locationCode,ServiceRequest.locationReference,ServiceRequest.meta,ServiceRequest.modifierExtension,ServiceRequest.note,ServiceRequest.occurrence_x_,ServiceRequest.orderDetail,ServiceRequest.patientInstruction,ServiceRequest.performer,ServiceRequest.performerType,ServiceRequest.priority,ServiceRequest.quantity_x_,ServiceRequest.reasonCode,ServiceRequest.reasonReference,ServiceRequest.relevantHistory,ServiceRequest.replaces,ServiceRequest.requester,ServiceRequest.requisition,ServiceRequest.specimen,ServiceRequest.status,ServiceRequest.subject,ServiceRequest.supportingInfo,ServiceRequest.text
-WARNING: /github/workspace/output/StructureDefinition-openelis-task-mappings.html: The html source has duplicate anchor Ids: Task,Task.authoredOn,Task.basedOn,Task.businessStatus,Task.code,Task.contained,Task.description,Task.encounter,Task.executionPeriod,Task.extension,Task.focus,Task.for,Task.groupIdentifier,Task.id,Task.identifier,Task.implicitRules,Task.input,Task.input.extension,Task.input.id,Task.input.modifierExtension,Task.input.type,Task.input.value_x_,Task.instantiatesCanonical,Task.instantiatesUri,Task.insurance,Task.intent,Task.language,Task.lastModified,Task.location,Task.meta,Task.modifierExtension,Task.note,Task.output,Task.output.extension,Task.output.id,Task.output.modifierExtension,Task.output.type,Task.output.type.coding,Task.output.type.extension,Task.output.type.id,Task.output.type.text,Task.output.value_x_,Task.owner,Task.partOf,Task.performerType,Task.priority,Task.reasonCode,Task.reasonReference,Task.relevantHistory,Task.requester,Task.restriction,Task.restriction.extension,Task.restriction.id,Task.restriction.modifierExtension,Task.restriction.period,Task.restriction.recipient,Task.restriction.repetitions,Task.status,Task.statusReason,Task.text
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/Device-OpenELISDeviceExample.json ==
-ERROR: Device/OpenELISDeviceExample: Device.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:uuid in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:uuid in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[2]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:uuid in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:machineId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:machineId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[2]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:machineId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:sourceId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[1]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:sourceId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-ERROR: Device/OpenELISDeviceExample: Device.identifier[2]: Slicing cannot be evaluated: Could not match discriminator (system) for slice Device.identifier:sourceId in profile http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0 - the discriminator [system] does not have fixed value, binding or existence assertions
-INFORMATION: Device/OpenELISDeviceExample: Device: Device.identifier:uuid: Found 0 matches, but unable to check minimum required (Device.identifier) due to lack of slicing validation (from http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device|0.1.0)
-WARNING: Device/OpenELISDeviceExample: Device.identifier[0].system: No definition could be found for URL value 'http://openelis-global.org/analyzer_uuid'
-WARNING: Device/OpenELISDeviceExample: Device.identifier[1].system: No definition could be found for URL value 'http://openelis-global.org/analyzer_machineId'
-WARNING: Device/OpenELISDeviceExample: Device.identifier[2].system: No definition could be found for URL value 'http://openelis-global.org/analyzer_sourceId'
-WARNING: Device/OpenELISDeviceExample: Device.owner.identifier.system: No definition could be found for URL value 'http://openelis-global.org/facility'
-== fsh-generated/resources/DiagnosticReport-OpenElisDiagnosticReportExample.json ==
-== fsh-generated/resources/ImplementationGuide-openelis.json ==
-== fsh-generated/resources/Location-LocationExample.json ==
-== fsh-generated/resources/NamingSystem-OpenELIPatientIdentifierSystem.json ==
-== fsh-generated/resources/NamingSystem-OpenELISDiagnosticReportIdentifierSystem.json ==
-== fsh-generated/resources/NamingSystem-OpenELISObservationIdentifierSystem.json ==
-== fsh-generated/resources/NamingSystem-OpenELISOrgIdentifierSystem.json ==
-== fsh-generated/resources/NamingSystem-OpenELISServiceRequestIdentifierSystem.json ==
-== fsh-generated/resources/NamingSystem-OpenELISSpecimenIdentifierSystem.json ==
-== fsh-generated/resources/Observation-OpenElisObservationExample.json ==
-== fsh-generated/resources/Organization-bc8479a5-b34b-4578-9d38-a351bc92e614.json ==
-== fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json ==
-== fsh-generated/resources/Practitioner-f185bb76-c298-4671-9be3-ccc94c0a9868.json ==
-== fsh-generated/resources/ServiceRequest-OpenElisServiceRequestExample.json ==
-== fsh-generated/resources/Specimen-OpenElisSpecimenExample.json ==
-== fsh-generated/resources/StructureDefinition-analyzer-communication-mode.json ==
-WARNING: StructureDefinition/analyzer-communication-mode: StructureDefinition.context[0]: Review the extension type for analyzer-communication-mode: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-communication-mode'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-analyzer-identifier-pattern.json ==
-WARNING: StructureDefinition/analyzer-identifier-pattern: StructureDefinition.context[0]: Review the extension type for analyzer-identifier-pattern: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-identifier-pattern'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/CapabilityStatement-OpenELISFhirServer.json ==
+INFORMATION: Resource: The resource CapabilityStatement/OpenELISFhirServer could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-oe-analyzer-operational-status.json ==
+WARNING: Resource: The resource CodeSystem/oe-analyzer-operational-status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Device-ff2b5d6a-ff46-5f20-b254-4eaa0615d555.json ==
+== fsh-generated/resources/DiagnosticReport-3b2c3407-5430-5878-9c61-c4c9b9c013c4.json ==
+== fsh-generated/resources/DiagnosticReport-48549f60-c400-5510-97da-2e2497627e81.json ==
+== fsh-generated/resources/ImplementationGuide-org.openelisglobal.fhir.json ==
+INFORMATION: Resource: The resource ImplementationGuide/org.openelisglobal.fhir could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.json ==
+WARNING: Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0: Location.meta.profile[1]: A definition could not be found for Canonical URL 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location'
+INFORMATION: Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0: Location.meta.tag[0].system: A definition for CodeSystem 'http://openelis.org/fhir/tag/storage-hierarchy' could not be found, so the code cannot be validated
+WARNING: Location/1fa151e6-afa2-531c-b70c-fd63b88c10f0: Location.meta.profile[1]: Profile reference 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Location-3d2a1373-14d8-5bef-ae7e-817917e5a4fd.json ==
+WARNING: Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd: Location.meta.profile[1]: A definition could not be found for Canonical URL 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location'
+INFORMATION: Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd: Location.meta.tag[0].system: A definition for CodeSystem 'http://openelis.org/fhir/tag/storage-hierarchy' could not be found, so the code cannot be validated
+WARNING: Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd: Location.type[0].coding[0].system: A definition for CodeSystem 'http://openelis.org/fhir/CodeSystem/storage-device-type' could not be found, so the code cannot be validated
+WARNING: Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd: Location.meta.profile[1]: Profile reference 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.json ==
+WARNING: Location/5a9cc354-9495-5090-91d7-b67b0d2ef5dc: Location.meta.profile[1]: A definition could not be found for Canonical URL 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location'
+INFORMATION: Location/5a9cc354-9495-5090-91d7-b67b0d2ef5dc: Location.meta.tag[0].system: A definition for CodeSystem 'http://openelis.org/fhir/tag/storage-hierarchy' could not be found, so the code cannot be validated
+WARNING: Location/5a9cc354-9495-5090-91d7-b67b0d2ef5dc: Location.meta.profile[1]: Profile reference 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Location-613ff118-ceeb-5472-9793-dc241d0d032c.json ==
+WARNING: Location/613ff118-ceeb-5472-9793-dc241d0d032c: Location.meta.profile[1]: A definition could not be found for Canonical URL 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location'
+INFORMATION: Location/613ff118-ceeb-5472-9793-dc241d0d032c: Location.meta.tag[0].system: A definition for CodeSystem 'http://openelis.org/fhir/tag/storage-hierarchy' could not be found, so the code cannot be validated
+WARNING: Location/613ff118-ceeb-5472-9793-dc241d0d032c: Location.type[0].coding[0].system: A definition for CodeSystem 'http://openelis.org/fhir/CodeSystem/storage-box-type' could not be found, so the code cannot be validated
+WARNING: Location/613ff118-ceeb-5472-9793-dc241d0d032c: Location.meta.profile[1]: Profile reference 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Location-8264f454-03c2-597b-996d-b9ea0998f326.json ==
+WARNING: Location/8264f454-03c2-597b-996d-b9ea0998f326: Location.meta.profile[1]: A definition could not be found for Canonical URL 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location'
+INFORMATION: Location/8264f454-03c2-597b-996d-b9ea0998f326: Location.meta.tag[0].system: A definition for CodeSystem 'http://openelis.org/fhir/tag/storage-hierarchy' could not be found, so the code cannot be validated
+WARNING: Location/8264f454-03c2-597b-996d-b9ea0998f326: Location.meta.profile[1]: Profile reference 'http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/NamingSystem-oe-ns-analysis-result-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-analysis-result-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-analysis-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-analysis-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-analyzer-bridge-connection.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-analyzer-bridge-connection could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-analyzer-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-analyzer-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-facility-id.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-facility-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-order-accession.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-order-accession could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-order-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-order-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-org-clianum.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-org-clianum could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-org-code.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-org-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-org-shortname.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-org-shortname could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-org-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-org-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-pat-guid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-pat-guid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-pat-national-id.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-pat-national-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-pat-st-number.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-pat-st-number could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-pat-subject-number.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-pat-subject-number could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-pat-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-pat-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-provider-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-provider-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-result-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-result-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-samp-labno.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-samp-labno could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-sampleitem-labno.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-sampleitem-labno could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-sampleitem-uuid.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-sampleitem-uuid could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-shipment-box-id.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-shipment-box-id could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/NamingSystem-oe-ns-storage-location-code.json ==
+INFORMATION: Resource: The resource NamingSystem/oe-ns-storage-location-code could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/Observation-8330c79d-ccd9-5ef4-876d-2b176e5e86a5.json ==
+INFORMATION: Observation/8330c79d-ccd9-5ef4-876d-2b176e5e86a5: Observation.value.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Observation/8330c79d-ccd9-5ef4-876d-2b176e5e86a5: Observation.value.ofType(CodeableConcept).coding[1].system: A definition for the code system 'http://openelis-global.org/dictionary_entry' could not be found, so this coding was not checked. The CodeableConcept is still valid: another coding is in the value set
+WARNING: Observation/8330c79d-ccd9-5ef4-876d-2b176e5e86a5: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-b73bf11f-06ff-55ad-935d-476bc270350a.json ==
+== fsh-generated/resources/Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.json ==
+WARNING: Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200: Organization.type[0].coding[0].system: A definition for CodeSystem 'http://openelis-global.org/orgType' could not be found, so the code cannot be validated
+== fsh-generated/resources/Organization-a845f2db-10e5-5117-ac75-553f615e301a.json ==
+== fsh-generated/resources/Organization-d3619aef-5abf-5b4f-a76c-06f378deca13.json ==
+WARNING: Organization/d3619aef-5abf-5b4f-a76c-06f378deca13: Organization.type[0].coding[0]: A definition for CodeSystem 'http://openelis-global.org/orgType' could not be found, so the code cannot be validated
+== fsh-generated/resources/Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.json ==
+== fsh-generated/resources/Practitioner-0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21.json ==
+== fsh-generated/resources/Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.json ==
+== fsh-generated/resources/ServiceRequest-24224471-e4bb-58c0-acbf-b6180b053e05.json ==
+== fsh-generated/resources/ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1.json ==
+WARNING: ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1: ServiceRequest.code.coding[1].system: A definition for the code system 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' could not be found, so this coding was not checked. The CodeableConcept is still valid: another coding is in the value set
+INFORMATION: ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1: ServiceRequest.code.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.json ==
+WARNING: ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4: ServiceRequest.category[0].coding[0].system: A definition for CodeSystem 'http://openelis-global.org/samp_domain' could not be found, so the code cannot be validated
+== fsh-generated/resources/ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.json ==
+WARNING: ServiceRequest/48549f60-c400-5510-97da-2e2497627e81: ServiceRequest.category[0].coding[0].system: A definition for CodeSystem 'http://openelis-global.org/samp_domain' could not be found, so the code cannot be validated
+== fsh-generated/resources/Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.json ==
+WARNING: Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab: Specimen.type.coding[0].system: A definition for CodeSystem 'http://openelis-global.org/sampleType' could not be found, so the code cannot be validated
+INFORMATION: Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab: Specimen.type.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen|0.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-analyzer-last-activated.json ==
-WARNING: StructureDefinition/analyzer-last-activated: StructureDefinition.context[0]: Review the extension type for analyzer-last-activated: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-last-activated'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-analyzer-location.json ==
-WARNING: StructureDefinition/analyzer-location: StructureDefinition.context[0]: Review the extension type for analyzer-location: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-location'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-analyzer-protocol-version.json ==
-WARNING: StructureDefinition/analyzer-protocol-version: StructureDefinition.context[0]: Review the extension type for analyzer-protocol-version: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-protocol-version'): The Implementation Guide contains no examples for this extension
+INFORMATION: Resource: The resource StructureDefinition/analyzer-last-activated could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-analyzer-operational-status.json ==
+INFORMATION: Resource: The resource StructureDefinition/analyzer-operational-status could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-analyzer-test-units.json ==
-WARNING: StructureDefinition/analyzer-test-units: StructureDefinition.context[0]: Review the extension type for analyzer-test-units: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-test-units'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-analyzer-transport-details.json ==
-WARNING: StructureDefinition/analyzer-transport-details: StructureDefinition.context[0]: Review the extension type for analyzer-transport-details: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-transport-details'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-open-elis-device.json ==
-WARNING: StructureDefinition/open-elis-device: StructureDefinition.mapping[0].uri: No definition could be found for URL value 'Analyzer'
-INFORMATION: StructureDefinition/open-elis-device: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-== fsh-generated/resources/StructureDefinition-open-elis-location.json ==
-== fsh-generated/resources/StructureDefinition-open-elis-observation.json ==
-== fsh-generated/resources/StructureDefinition-open-elis-specimen.json ==
-== fsh-generated/resources/StructureDefinition-open-elisorganisation.json ==
-== fsh-generated/resources/StructureDefinition-open-elispractitioner.json ==
+INFORMATION: Resource: The resource StructureDefinition/analyzer-test-units could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-collection-location-gps.json ==
+INFORMATION: Resource: The resource StructureDefinition/collection-location-gps could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-device-communication-protocol.json ==
+INFORMATION: Resource: The resource StructureDefinition/device-communication-protocol could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-device-ip-address.json ==
+INFORMATION: Resource: The resource StructureDefinition/device-ip-address could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-device-port.json ==
+INFORMATION: Resource: The resource StructureDefinition/device-port could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-eqa-cycle.json ==
+INFORMATION: Resource: The resource StructureDefinition/eqa-cycle could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/eqa-cycle'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-openelis-analyzer-device.json ==
+INFORMATION: StructureDefinition/openelis-analyzer-device: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: Resource: The resource StructureDefinition/openelis-analyzer-device could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-openelis-diagnostic-report.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-diagnostic-report could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-lab-order-request-service-request.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-lab-order-request-service-request could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-lab-order-request-task.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-lab-order-request-task could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-observation.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-observation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-order-task.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-order-task could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-organization.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-organization could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-openelis-patient.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-practitioner.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-practitioner could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-referral-task.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-referral-task could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-openelis-service-request.json ==
-== fsh-generated/resources/StructureDefinition-openelis-task.json ==
-== fsh-generated/resources/Task-49ef249a-3a8b-49e3-9e16-7e56e92d0c77.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-service-request could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-shipment-box.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-shipment-box could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-specimen.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-specimen could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-openelis-storage-location.json ==
+INFORMATION: Resource: The resource StructureDefinition/openelis-storage-location could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-position-occupancy.json ==
+INFORMATION: Resource: The resource StructureDefinition/position-occupancy could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-rack-grid-dimensions.json ==
+INFORMATION: Resource: The resource StructureDefinition/rack-grid-dimensions could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-rack-position-schema-hint.json ==
+INFORMATION: Resource: The resource StructureDefinition/rack-position-schema-hint could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-capacity.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-capacity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-content-item.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-content-item could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-destination-org.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-destination-org could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-non-conformity.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-non-conformity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+WARNING: StructureDefinition.where(url = 'https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-non-conformity'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-shipment-notes.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-notes could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-source-org.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-source-org could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-specimen.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-specimen could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-specimen-type-summary.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-specimen-type-summary could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-shipment-temperature.json ==
+INFORMATION: Resource: The resource StructureDefinition/shipment-temperature could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-storage-capacity.json ==
+INFORMATION: Resource: The resource StructureDefinition/storage-capacity could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-storage-temperature.json ==
+INFORMATION: Resource: The resource StructureDefinition/storage-temperature could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/SupplyDelivery-0e8e2c05-d198-51b0-8fa2-ac80c118c73e.json ==
+WARNING: SupplyDelivery/0e8e2c05-d198-51b0-8fa2-ac80c118c73e: SupplyDelivery.suppliedItem.quantity: UCUM Codes that contain human readable annotations like {specimens} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+== fsh-generated/resources/Task-07ed1bd1-1bdf-58ae-a661-ee0703fcab70.json ==
+== fsh-generated/resources/Task-1adff0e3-109a-55fe-b3b7-74736ef4ff6d.json ==
+WARNING: Task/1adff0e3-109a-55fe-b3b7-74736ef4ff6d: Task.reasonCode.coding[0].system: A definition for CodeSystem 'http://openelis-global.org/refer_reason' could not be found, so the code cannot be validated
+== fsh-generated/resources/Task-ed860000-5fab-5072-a257-83bbe38c27f4.json ==
+WARNING: Task/ed860000-5fab-5072-a257-83bbe38c27f4: Task.output[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Task/ed860000-5fab-5072-a257-83bbe38c27f4: Task.output[1].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/ValueSet-oe-analyzer-operational-status.json ==
+WARNING: Resource: The resource ValueSet/oe-analyzer-operational-status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

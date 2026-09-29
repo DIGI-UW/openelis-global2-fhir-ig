@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/DiagnosticReport/48549f60-c400-5510-97da-2e2497627e81> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "48549f60-c400-5510-97da-2e2497627e81"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport 48549f60-c400-5510-97da-2e2497627e81</b></p><a name=\"48549f60-c400-5510-97da-2e2497627e81\"> </a><a name=\"hc48549f60-c400-5510-97da-2e2497627e81\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-diagnostic-report.html\">OpenELIS DiagnosticReport</a></p></div><h2><span title=\"Codes:{http://loinc.org 2345-7}\">Glucose</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</td></tr><tr><td>Identifiers</td><td> <a href=\"NamingSystem-oe-ns-analysis-result-uuid.html\" title=\"Identifier of a DiagnosticReport. The value is the Analysis UUID so it equals the matching ServiceRequest id.\">OEAnalysisResultUUID</a>/48549f60-c400-5510-97da-2e2497627e81 (use: usual, ) <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB (use: official, )</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td><td><b>Reported</b></td></tr><tr><td><a href=\"Observation-b73bf11f-06ff-55ad-935d-476bc270350a.html\"><span title=\"Codes:{http://loinc.org 2345-7}\">Glucose</span></a></td><td>92 mg/dL</td><td>Final</td><td>2026-09-28 13:05:00+1000</td><td>2026-09-28 13:05:00+1000</td></tr></table></div>"
+  ] ;
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/analysisResult_uuid" ] ;
+     fhir:Identifier.value [ fhir:value "48549f60-c400-5510-97da-2e2497627e81" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/facility_id" ] ;
+     fhir:Identifier.value [ fhir:value "EDH-LAB" ] ;
+     fhir:Identifier.assigner [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+       fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.basedOn [
+     fhir:index 0 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/ServiceRequest/48549f60-c400-5510-97da-2e2497627e81> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/48549f60-c400-5510-97da-2e2497627e81" ]
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:2345-7 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "2345-7" ] ;
+       fhir:Coding.display [ fhir:value "Glucose [Mass/volume] in Serum or Plasma" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Glucose" ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11> ;
+     fhir:Reference.reference [ fhir:value "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11" ]
+  ] ;
+  fhir:DiagnosticReport.specimen [
+     fhir:index 0 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab> ;
+     fhir:Reference.reference [ fhir:value "Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab" ]
+  ] ;
+  fhir:DiagnosticReport.result [
+     fhir:index 0 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Observation/b73bf11f-06ff-55ad-935d-476bc270350a> ;
+     fhir:Reference.reference [ fhir:value "Observation/b73bf11f-06ff-55ad-935d-476bc270350a" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/DiagnosticReport/48549f60-c400-5510-97da-2e2497627e81.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

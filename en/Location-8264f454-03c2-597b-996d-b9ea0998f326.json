@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Location",
+  "id" : "8264f454-03c2-597b-996d-b9ea0998f326",
+  "meta" : {
+    "profile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location",
+    "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"],
+    "tag" : [{
+      "system" : "http://openelis.org/fhir/tag/storage-hierarchy",
+      "code" : "shelf",
+      "display" : "Shelf"
+    }]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location 8264f454-03c2-597b-996d-b9ea0998f326</b></p><a name=\"8264f454-03c2-597b-996d-b9ea0998f326\"> </a><a name=\"hc8264f454-03c2-597b-996d-b9ea0998f326\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-openelis-storage-location.html\">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style=\"margin-bottom: 0px\">Tag: </p></div><p><b>Storage capacity</b>: 4</p><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-storage-location-code.html\" title=\"Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.\">OEStorageLocationCode</a>/MAIN-FRZ01-Shelf 1</p><p><b>status</b>: Active</p><p><b>name</b>: Shelf 1</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:\">Storage Shelf</span></p><p><b>partOf</b>: <a href=\"Location-3d2a1373-14d8-5bef-ae7e-817917e5a4fd.html\">Location Freezer 01 (-80)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity",
+    "valueInteger" : 4
+  }],
+  "identifier" : [{
+    "system" : "http://openelis.org/storage-location-code",
+    "value" : "MAIN-FRZ01-Shelf 1"
+  }],
+  "status" : "active",
+  "name" : "Shelf 1",
+  "mode" : "instance",
+  "physicalType" : {
+    "text" : "Storage Shelf"
+  },
+  "partOf" : {
+    "reference" : "Location/3d2a1373-14d8-5bef-ae7e-817917e5a4fd"
+  }
+}

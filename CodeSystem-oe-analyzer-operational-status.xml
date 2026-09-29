@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="oe-analyzer-operational-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem oe-analyzer-operational-status</b></p><a name="oe-analyzer-operational-status"> </a><a name="hcoe-analyzer-operational-status"> </a><p>This case-sensitive code system <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">SETUP<a name="oe-analyzer-operational-status-SETUP"> </a></td><td>Setup</td><td>Being configured. Device.status = active.</td></tr><tr><td style="white-space:nowrap">VALIDATION<a name="oe-analyzer-operational-status-VALIDATION"> </a></td><td>Validation</td><td>Under validation. Device.status = active.</td></tr><tr><td style="white-space:nowrap">ACTIVE<a name="oe-analyzer-operational-status-ACTIVE"> </a></td><td>Active</td><td>In routine use. Device.status = active.</td></tr><tr><td style="white-space:nowrap">ERROR_PENDING<a name="oe-analyzer-operational-status-ERROR_PENDING"> </a></td><td>Error pending</td><td>Has an unresolved error. Device.status = entered-in-error.</td></tr><tr><td style="white-space:nowrap">OFFLINE<a name="oe-analyzer-operational-status-OFFLINE"> </a></td><td>Offline</td><td>Not reachable. Device.status = unknown.</td></tr><tr><td style="white-space:nowrap">INACTIVE<a name="oe-analyzer-operational-status-INACTIVE"> </a></td><td>Inactive</td><td>Retired or disabled. Device.status = inactive.</td></tr></table></div>
+  </text>
+  <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+  <version value="0.2.0"/>
+  <name value="OEAnalyzerOperationalStatus"/>
+  <title value="OpenELIS Analyzer Operational Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-29T02:24:20+00:00"/>
+  <publisher value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+  <contact>
+    <name value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openelis-global.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="OpenELIS Global community"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"/>
+    </telecom>
+  </contact>
+  <description value="OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="SETUP"/>
+    <display value="Setup"/>
+    <definition value="Being configured. Device.status = active."/>
+  </concept>
+  <concept>
+    <code value="VALIDATION"/>
+    <display value="Validation"/>
+    <definition value="Under validation. Device.status = active."/>
+  </concept>
+  <concept>
+    <code value="ACTIVE"/>
+    <display value="Active"/>
+    <definition value="In routine use. Device.status = active."/>
+  </concept>
+  <concept>
+    <code value="ERROR_PENDING"/>
+    <display value="Error pending"/>
+    <definition value="Has an unresolved error. Device.status = entered-in-error."/>
+  </concept>
+  <concept>
+    <code value="OFFLINE"/>
+    <display value="Offline"/>
+    <definition value="Not reachable. Device.status = unknown."/>
+  </concept>
+  <concept>
+    <code value="INACTIVE"/>
+    <display value="Inactive"/>
+    <definition value="Retired or disabled. Device.status = inactive."/>
+  </concept>
+</CodeSystem>

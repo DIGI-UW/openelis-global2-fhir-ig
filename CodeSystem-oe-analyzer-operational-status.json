@@ -1,0 +1,71 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "oe-analyzer-operational-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem oe-analyzer-operational-status</b></p><a name=\"oe-analyzer-operational-status\"> </a><a name=\"hcoe-analyzer-operational-status\"> </a><p>This case-sensitive code system <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SETUP<a name=\"oe-analyzer-operational-status-SETUP\"> </a></td><td>Setup</td><td>Being configured. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">VALIDATION<a name=\"oe-analyzer-operational-status-VALIDATION\"> </a></td><td>Validation</td><td>Under validation. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">ACTIVE<a name=\"oe-analyzer-operational-status-ACTIVE\"> </a></td><td>Active</td><td>In routine use. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">ERROR_PENDING<a name=\"oe-analyzer-operational-status-ERROR_PENDING\"> </a></td><td>Error pending</td><td>Has an unresolved error. Device.status = entered-in-error.</td></tr><tr><td style=\"white-space:nowrap\">OFFLINE<a name=\"oe-analyzer-operational-status-OFFLINE\"> </a></td><td>Offline</td><td>Not reachable. Device.status = unknown.</td></tr><tr><td style=\"white-space:nowrap\">INACTIVE<a name=\"oe-analyzer-operational-status-INACTIVE\"> </a></td><td>Inactive</td><td>Retired or disabled. Device.status = inactive.</td></tr></table></div>"
+  },
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerOperationalStatus",
+  "title" : "OpenELIS Analyzer Operational Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-29T02:24:20+00:00",
+  "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+  "contact" : [{
+    "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openelis-global.org"
+    }]
+  },
+  {
+    "name" : "OpenELIS Global community",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"
+    }]
+  }],
+  "description" : "OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "SETUP",
+    "display" : "Setup",
+    "definition" : "Being configured. Device.status = active."
+  },
+  {
+    "code" : "VALIDATION",
+    "display" : "Validation",
+    "definition" : "Under validation. Device.status = active."
+  },
+  {
+    "code" : "ACTIVE",
+    "display" : "Active",
+    "definition" : "In routine use. Device.status = active."
+  },
+  {
+    "code" : "ERROR_PENDING",
+    "display" : "Error pending",
+    "definition" : "Has an unresolved error. Device.status = entered-in-error."
+  },
+  {
+    "code" : "OFFLINE",
+    "display" : "Offline",
+    "definition" : "Not reachable. Device.status = unknown."
+  },
+  {
+    "code" : "INACTIVE",
+    "display" : "Inactive",
+    "definition" : "Retired or disabled. Device.status = inactive."
+  }]
+}

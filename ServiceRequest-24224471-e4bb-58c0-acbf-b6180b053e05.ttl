@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/ServiceRequest/24224471-e4bb-58c0-acbf-b6180b053e05> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "24224471-e4bb-58c0-acbf-b6180b053e05"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest 24224471-e4bb-58c0-acbf-b6180b053e05</b></p><a name=\"24224471-e4bb-58c0-acbf-b6180b053e05\"> </a><a name=\"hc24224471-e4bb-58c0-acbf-b6180b053e05\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-lab-order-request-service-request.html\">Lab Order Request ServiceRequest (EMR to OpenELIS)</a></p></div><p><b>identifier</b>: <code>http://emr.example.org/order</code>/ORD-88214</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 5196-1}\">Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</span></p><p><b>subject</b>: <a href=\"Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html\">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</a></p><p><b>requester</b>: Dr Kofi Mensah (EMR practitioner record)</p></div>"
+  ] ;
+  fhir:ServiceRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://emr.example.org/order" ] ;
+     fhir:Identifier.value [ fhir:value "ORD-88214" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.priority [ fhir:value "routine"] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:5196-1 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "5196-1" ] ;
+       fhir:Coding.display [ fhir:value "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11> ;
+     fhir:Reference.reference [ fhir:value "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11" ]
+  ] ;
+  fhir:ServiceRequest.requester [
+     fhir:Reference.display [ fhir:value "Dr Kofi Mensah (EMR practitioner record)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/ServiceRequest/24224471-e4bb-58c0-acbf-b6180b053e05.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="d3619aef-5abf-5b4f-a76c-06f378deca13"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization d3619aef-5abf-5b4f-a76c-06f378deca13</b></p><a name="d3619aef-5abf-5b4f-a76c-06f378deca13"> </a><a name="hcd3619aef-5abf-5b4f-a76c-06f378deca13"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-organization.html">OpenELIS Organization</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-org-code.html" title="Organization code configured in OpenELIS.">OEOrganizationCode</a>/RHC01, <a href="NamingSystem-oe-ns-org-shortname.html" title="Organization short name configured in OpenELIS.">OEOrganizationShortName</a>/Riverside HC, <a href="NamingSystem-oe-ns-org-uuid.html" title="UUID of the OpenELIS organization.">OEOrganizationUUID</a>/d3619aef-5abf-5b4f-a76c-06f378deca13, <a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://openelis-global.org/orgType referringClinic}">Referring clinic</span></p><p><b>name</b>: Riverside Health Centre</p><p><b>address</b>: 12 Market Road Riverside </p></div>
+  </text>
+  <identifier>
+    <system value="http://openelis-global.org/org_code"/>
+    <value value="RHC01"/>
+  </identifier>
+  <identifier>
+    <system value="http://openelis-global.org/org_shortName"/>
+    <value value="Riverside HC"/>
+  </identifier>
+  <identifier>
+    <system value="http://openelis-global.org/org_uuid"/>
+    <value value="d3619aef-5abf-5b4f-a76c-06f378deca13"/>
+  </identifier>
+  <identifier>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+    <assigner>
+      <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://openelis-global.org/orgType"/>
+      <code value="referringClinic"/>
+    </coding>
+    <text value="Referring clinic"/>
+  </type>
+  <name value="Riverside Health Centre"/>
+  <address>
+    <line value="12 Market Road"/>
+    <city value="Riverside"/>
+  </address>
+</Organization>

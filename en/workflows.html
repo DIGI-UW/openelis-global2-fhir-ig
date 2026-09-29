@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Exchange Workflows - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+
+<style>
+    div.markdown-toc {
+        color: var(--toc-box-text-color);
+        border-radius: 5px;
+    }
+
+    div.markdown-toc li a {
+        color: var(--toc-box-text-color);
+    }
+
+    div.markdown-toc p {
+        color: var(--toc-box-heading-text-color);
+        font-size: 1.4em;
+    }
+
+    #left-header {
+        line-height: 50px;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #left-header-logo {
+        float: left;
+        margin-left: 3px;
+    }
+
+    #right-header {
+        line-height: 50px;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #right-header-logo {
+        float: right;
+        margin-left: 3px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Placeholder for child template header declarations -->
+<div id="left-header">
+    <a id="left-header-logo" no-external="true" href="https://openelis-global.org/">
+        <img height="71" alt="Artifacts" src="assets/images/home.png">
+    </a>
+</div>
+
+<div id="right-header">
+    <a id="right-header-logo" no-external="true" href="https://hl7.org/fhir/"><img height="70" alt="FHIR website"
+            src="assets/images/fire.png"> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="api.html">FHIR API</a>
+  </li>
+  <li>
+    <a href="identifiers.html">Identifiers &amp; URLs</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="known-issues.html">Known Issues</a>
+  </li>
+  <li>
+    <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Exchange Workflows</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Exchange Workflows</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#1-lab-orders-from-an-emr-and-results-back" id="markdown-toc-1-lab-orders-from-an-emr-and-results-back">1. Lab orders from an EMR, and results back</a></li>
+  <li><a href="#2-lab-to-lab-referral" id="markdown-toc-2-lab-to-lab-referral">2. Lab-to-lab referral</a></li>
+  <li><a href="#3-specimen-shipment-between-laboratories" id="markdown-toc-3-specimen-shipment-between-laboratories">3. Specimen shipment between laboratories</a></li>
+  <li><a href="#4-pushing-data-to-a-shared-health-record-or-lab-repository" id="markdown-toc-4-pushing-data-to-a-shared-health-record-or-lab-repository">4. Pushing data to a shared health record or lab repository</a></li>
+  <li><a href="#5-facility-and-provider-registries" id="markdown-toc-5-facility-and-provider-registries">5. Facility and provider registries</a></li>
+  <li><a href="#configuration-reference" id="markdown-toc-configuration-reference">Configuration reference</a></li>
+</ul>
+
+</div>
+<p>This page describes the exchanges OpenELIS takes part in, which resources travel in each, and the
+OpenELIS configuration properties that switch them on. Property names are given without the
+<code class="language-plaintext highlighter-rouge">org.openelisglobal.</code> prefix. They are set in the OpenELIS properties file (<code class="language-plaintext highlighter-rouge">common.properties</code> in the
+standard Docker distribution).</p>
+
+<p>OpenELIS exchanges data by <strong>polling</strong> remote FHIR servers and by <strong>writing to its co-resident FHIR store</strong>,
+from which FHIR Subscriptions push to a subscriber. It does not accept pushed orders on its own REST API.</p>
+
+<h3 id="1-lab-orders-from-an-emr-and-results-back">1. Lab orders from an EMR, and results back</h3>
+
+<p>This is the workflow used with OpenMRS (Lab on FHIR module), and with any EMR that can write FHIR Tasks
+to a shared server. Setup steps for OpenMRS are on the
+<a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/239992838/Medical+Records+System+OpenMRS+Interoperability">OpenMRS Interoperability</a>
+page.</p>
+
+<p><img src="emr-order-sequence.svg" alt="Sequence of an EMR lab order and its results" /></p>
+
+<ol>
+  <li>The EMR writes a <a href="StructureDefinition-openelis-lab-order-request-task.html">Lab Order Request Task</a>
+(<code class="language-plaintext highlighter-rouge">status = requested</code>, <code class="language-plaintext highlighter-rouge">owner</code> = the OpenELIS service user), one
+<a href="StructureDefinition-openelis-lab-order-request-service-request.html">Lab Order Request ServiceRequest</a> per test,
+and the Patient to the shared FHIR server.</li>
+  <li>Every <code class="language-plaintext highlighter-rouge">remote.poll.frequency</code> milliseconds (default 120000), OpenELIS searches each <code class="language-plaintext highlighter-rouge">remote.source.uri</code>
+for <code class="language-plaintext highlighter-rouge">Task?status=requested&amp;owner={remote.source.identifier}</code> and fetches the ServiceRequests and Patient.</li>
+  <li>OpenELIS matches each ServiceRequest to a test or panel <strong>by its LOINC coding</strong>. The test or panel must
+carry the same LOINC code in OpenELIS. Unmatched tests are reported as unsupported. When the order has no
+Specimen and the LOINC code matches several tests or sample types, the order is held as <em>Awaiting
+Specimen</em>.</li>
+  <li>The order appears in OpenELIS under <em>Electronic Orders</em>. OpenELIS copies the EMR Task, ServiceRequests and
+Patient into its FHIR store under their original ids. The Task copy gets an extra identifier (system = the
+remote Task URL, type <code class="language-plaintext highlighter-rouge">{base}/genIdType#externalId</code>). A patient new to OpenELIS keeps the EMR's Patient id as
+its OpenELIS FHIR UUID.</li>
+  <li>OpenELIS sets its copy of the EMR Task to <code class="language-plaintext highlighter-rouge">accepted</code> or <code class="language-plaintext highlighter-rouge">rejected</code>. If <code class="language-plaintext highlighter-rouge">remote.source.updateStatus=true</code> it also
+writes that status to the EMR Task on the remote server.</li>
+  <li>As the lab works, OpenELIS writes <a href="StructureDefinition-openelis-specimen.html">Specimen</a>,
+<a href="StructureDefinition-openelis-service-request.html">ServiceRequest</a>,
+<a href="StructureDefinition-openelis-observation.html">Observation</a>,
+<a href="StructureDefinition-openelis-diagnostic-report.html">DiagnosticReport</a> and, where an analyzer was used,
+<a href="StructureDefinition-openelis-analyzer-device.html">Device</a> resources to its FHIR store in transaction bundles.</li>
+  <li>When the order is finished, the copy of the EMR Task becomes <code class="language-plaintext highlighter-rouge">completed</code> with one output per test referencing its
+DiagnosticReport. OpenELIS's own <a href="StructureDefinition-openelis-order-task.html">Order Task</a> for the sample, with
+<code class="language-plaintext highlighter-rouge">partOf</code> pointing at the EMR Task, is completed the same way.</li>
+  <li>FHIR Subscriptions on the store push each changed resource of the types in <code class="language-plaintext highlighter-rouge">fhir.subscriber.resources</code> to
+<code class="language-plaintext highlighter-rouge">fhir.subscriber</code>, normally the shared FHIR server, where the EMR reads the results.</li>
+</ol>
+
+<p><strong>What OpenELIS needs in the incoming resources</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Required by OpenELIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Task</td>
+      <td><code class="language-plaintext highlighter-rouge">status = requested</code>. <code class="language-plaintext highlighter-rouge">owner</code> equal to one of the values in <code class="language-plaintext highlighter-rouge">remote.source.identifier</code>. <code class="language-plaintext highlighter-rouge">basedOn</code> the ServiceRequest(s). <code class="language-plaintext highlighter-rouge">for</code> the Patient (clinical orders). When <code class="language-plaintext highlighter-rouge">for</code> is absent, the ServiceRequest subject is used. Optional <code class="language-plaintext highlighter-rouge">location</code>: matched to the OpenELIS Organization with the same FHIR id, or created as a new referring site.</td>
+    </tr>
+    <tr>
+      <td>ServiceRequest</td>
+      <td><code class="language-plaintext highlighter-rouge">code</code> with a <code class="language-plaintext highlighter-rouge">http://loinc.org</code> coding matching an active OpenELIS test. The first <code class="language-plaintext highlighter-rouge">identifier</code> is required and becomes the external order number. An order number already received is refused as a duplicate. <code class="language-plaintext highlighter-rouge">priority</code> (routine when absent).</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td><strong>Required</strong> for clinical orders: <code class="language-plaintext highlighter-rouge">gender</code> male or female, <code class="language-plaintext highlighter-rouge">birthDate</code> (a partially known date is kept at its precision), and at least one identifier OpenELIS recognises as a patient id: <code class="language-plaintext highlighter-rouge">{base}/pat_nationalId</code>, <code class="language-plaintext highlighter-rouge">{base}/pat_stNumber</code>, or any identifier with type <code class="language-plaintext highlighter-rouge">{base}/genIdType#externalId</code>. <code class="language-plaintext highlighter-rouge">pat_guid</code> or <code class="language-plaintext highlighter-rouge">pat_subjectNumber</code> alone is not enough. Missing any of these, the order is stored as non-conforming and the Task is rejected. Name, telecom and address are copied when present.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2-lab-to-lab-referral">2. Lab-to-lab referral</h3>
+
+<p>When a test is referred from one OpenELIS laboratory to another, the referring laboratory writes an
+<a href="StructureDefinition-openelis-referral-task.html">OpenELIS Referral Task</a> with the ServiceRequest, Specimen and
+Patient. The reference laboratory picks it up with the same polling mechanism as EMR orders (its
+<code class="language-plaintext highlighter-rouge">remote.source.uri</code> includes the server the referring lab writes to, and its <code class="language-plaintext highlighter-rouge">remote.source.identifier</code> matches
+the Task owner).</p>
+
+<p><img src="referral-sequence.svg" alt="Sequence of a lab-to-lab referral" /></p>
+
+<ul>
+  <li>The reference laboratory accepts or rejects the Task.</li>
+  <li>The referring laboratory polls for its own referral Tasks by id. When it sees <code class="language-plaintext highlighter-rouge">accepted</code> it moves the referral to
+<em>received</em>. A <code class="language-plaintext highlighter-rouge">rejected</code> Task is not picked up (see <a href="known-issues.html">Known Issues</a>). When it sees <code class="language-plaintext highlighter-rouge">completed</code> it lists the returned results under <em>Returned, needs action</em>. A user then
+accepts them into the referred test.</li>
+  <li>When results come back on paper and are entered by hand, the referring laboratory publishes the same
+completion itself: ServiceRequest <code class="language-plaintext highlighter-rouge">completed</code> and the referral Task <code class="language-plaintext highlighter-rouge">completed</code>, with an output of type
+<code class="language-plaintext highlighter-rouge">{base}/task_output#DiagnosticReport</code>.</li>
+  <li>Marking a referral lost at the referring laboratory sets the Task to <code class="language-plaintext highlighter-rouge">cancelled</code>. Rejecting it there sets it to
+<code class="language-plaintext highlighter-rouge">rejected</code>. Cancelling a referral does not update the Task.</li>
+</ul>
+
+<p>Referral message examples used in production are on the Confluence page
+<a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/240386061/Examples+of+FHIR+messages+used">Examples of FHIR messages used</a>.</p>
+
+<h3 id="3-specimen-shipment-between-laboratories">3. Specimen shipment between laboratories</h3>
+
+<p>Boxes of specimens shipped from one OpenELIS site to another travel as
+<a href="StructureDefinition-openelis-shipment-box.html">OpenELIS Shipment Box</a> (SupplyDelivery) resources. SupplyDelivery
+is not served from the OpenELIS REST API. It is exchanged through the FHIR stores.</p>
+
+<p><img src="shipment-sequence.svg" alt="Sequence of a specimen shipment" /></p>
+
+<ul>
+  <li>The sending OpenELIS writes the SupplyDelivery to its FHIR store when the box is created and on every status
+change. Draft and ready-to-send boxes are already <code class="language-plaintext highlighter-rouge">in-progress</code>, so a receiver can import a box before it is sent
+(see <a href="known-issues.html">Known Issues</a>).</li>
+  <li>The receiving OpenELIS searches each <code class="language-plaintext highlighter-rouge">remote.source.uri</code> for <code class="language-plaintext highlighter-rouge">SupplyDelivery?status=in-progress</code>. It runs on
+demand from the shipment screen, or on a schedule when <code class="language-plaintext highlighter-rouge">shipment.import.scheduled=true</code>. Boxes older than
+<code class="language-plaintext highlighter-rouge">shipment.import.maxAgeDays</code> (default 30) are ignored. Boxes are matched to the receiving site by the
+destination Organization.</li>
+  <li>At reception the receiver reads the <code class="language-plaintext highlighter-rouge">shipment-specimen</code> references and records non-conformities. With
+<code class="language-plaintext highlighter-rouge">remote.source.updateStatus=true</code> it then sets the sender's SupplyDelivery to <code class="language-plaintext highlighter-rouge">completed</code>. This is the only
+case where OpenELIS writes to a remote server outside the Task workflow.</li>
+</ul>
+
+<h3 id="4-pushing-data-to-a-shared-health-record-or-lab-repository">4. Pushing data to a shared health record or lab repository</h3>
+
+<p>At start-up OpenELIS creates one rest-hook Subscription in its FHIR store for each resource type listed in
+<code class="language-plaintext highlighter-rouge">fhir.subscriber.resources</code>, with the endpoint <code class="language-plaintext highlighter-rouge">fhir.subscriber</code> and payload <code class="language-plaintext highlighter-rouge">application/fhir+json</code>. The
+store then pushes every change of those types. The shipped default list is
+<code class="language-plaintext highlighter-rouge">Task, Patient, ServiceRequest, DiagnosticReport, Observation, Specimen, Practitioner, Encounter</code>.</p>
+
+<p>Device, Location (storage), SupplyDelivery, Questionnaire and QuestionnaireResponse are not in the default list.
+Add them if the subscriber needs them. For example, an <code class="language-plaintext highlighter-rouge">Observation.device</code> reference only resolves on the
+subscriber if Device is subscribed.</p>
+
+<p>OpenELIS also runs a periodic export task to the subscriber (every <code class="language-plaintext highlighter-rouge">fhir.subscriber.backup.interval</code> minutes,
+default 5) to cover missed notifications.</p>
+
+<h3 id="5-facility-and-provider-registries">5. Facility and provider registries</h3>
+
+<p>OpenELIS can import Organizations from a facility registry (for example GOFR) and Practitioners from a
+provider registry:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">facilitylist.fhirstore</code></td>
+      <td>FHIR base URL of the facility registry. Organizations are imported with their types (<code class="language-plaintext highlighter-rouge">{base}/orgType</code>) and identifiers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">facilitylist.authurl</code>, <code class="language-plaintext highlighter-rouge">facilitylist.username</code>, <code class="language-plaintext highlighter-rouge">facilitylist.password</code>, <code class="language-plaintext highlighter-rouge">facilitylist.auth</code></td>
+      <td>Authentication for the facility registry (default <code class="language-plaintext highlighter-rouge">basic</code>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">providerlist.fhirstore</code></td>
+      <td>FHIR base URL of the provider registry.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">providerlist.poll.frequency</code></td>
+      <td>Provider import interval in milliseconds (default 3600000).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">crserver.uri</code>, <code class="language-plaintext highlighter-rouge">crserver.username</code>, <code class="language-plaintext highlighter-rouge">crserver.password</code></td>
+      <td>Client registry (for example OpenCR) used for patient search.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="configuration-reference">Configuration reference</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">oe.fhir.system</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://openelis-global.org</code></td>
+      <td>Base of OpenELIS identifier and local code systems. Keep the default unless every partner agrees.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhirstore.uri</code></td>
+      <td>none</td>
+      <td>Co-resident FHIR store.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhirstore.username</code>, <code class="language-plaintext highlighter-rouge">fhirstore.password</code></td>
+      <td>none</td>
+      <td>Basic authentication OpenELIS sends to the FHIR store and to every remote server.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">remote.source.uri</code></td>
+      <td>none</td>
+      <td>Comma-separated remote FHIR servers polled for Tasks and shipments.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">remote.source.identifier</code></td>
+      <td>none</td>
+      <td>OpenELIS's identity as <code class="language-plaintext highlighter-rouge">Task.owner</code>, for example <code class="language-plaintext highlighter-rouge">Practitioner/{uuid}</code>. <code class="language-plaintext highlighter-rouge">Practitioner/*</code> accepts every Practitioner on the remote server.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">remote.source.updateStatus</code></td>
+      <td>none (shipped: <code class="language-plaintext highlighter-rouge">true</code>)</td>
+      <td>When true, OpenELIS writes accepted / rejected (Task) and completed (SupplyDelivery) back to the remote server.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">remote.poll.frequency</code></td>
+      <td>120000</td>
+      <td>Poll interval in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir.subscriber</code></td>
+      <td>none</td>
+      <td>Endpoint the FHIR store's Subscriptions push to.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir.subscriber.resources</code></td>
+      <td>none (distribution: see above)</td>
+      <td>Resource types to subscribe.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir.subscriber.allowHTTP</code></td>
+      <td>false</td>
+      <td>Allow a plain-http subscriber.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir.subscriber.backup.interval</code></td>
+      <td>5</td>
+      <td>Export retry interval in minutes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fhir.transformOnStartup</code></td>
+      <td>false</td>
+      <td>Copy existing OpenELIS data into the FHIR store at start-up.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">task.useBasedOn</code></td>
+      <td>not set</td>
+      <td>Still in the shipped properties and older setup guides, but no longer read by OpenELIS.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">facility.id</code>, <code class="language-plaintext highlighter-rouge">facility.country</code>, <code class="language-plaintext highlighter-rouge">facility.state</code>, <code class="language-plaintext highlighter-rouge">facility.district</code>, <code class="language-plaintext highlighter-rouge">facility.city</code>, <code class="language-plaintext highlighter-rouge">facility.postalcode</code></td>
+      <td>none</td>
+      <td>The site's facility identifier and address, used for the facility Organization and the <code class="language-plaintext highlighter-rouge">{base}/facility_id</code> identifier.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">shipment.import.scheduled</code>, <code class="language-plaintext highlighter-rouge">shipment.import.maxAgeDays</code></td>
+      <td>false, 30</td>
+      <td>Shipment import schedule and age window.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
+          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-29 02:24:00 +0000">
+    2026-09-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

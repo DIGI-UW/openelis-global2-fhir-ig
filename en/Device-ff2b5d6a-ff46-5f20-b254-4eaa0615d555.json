@@ -1,0 +1,59 @@
+{
+  "resourceType" : "Device",
+  "id" : "ff2b5d6a-ff46-5f20-b254-4eaa0615d555",
+  "meta" : {
+    "profile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ff2b5d6a-ff46-5f20-b254-4eaa0615d555</b></p><a name=\"ff2b5d6a-ff46-5f20-b254-4eaa0615d555\"> </a><a name=\"hcff2b5d6a-ff46-5f20-b254-4eaa0615d555\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-analyzer-device.html\">OpenELIS Analyzer Device</a></p></div><p><b>Analyzer last activated</b>: 2026-09-01 07:30:00+1000</p><blockquote><p><b>Analyzer test units</b></p><ul><li>testUnitId: 36</li><li>testUnitId: 41</li></ul></blockquote><p><b>Analyzer operational status</b>: ACTIVE</p><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-analyzer-uuid.html\" title=\"UUID of the OpenELIS analyzer. Carried on Device.\">OEAnalyzerUUID</a>/ff2b5d6a-ff46-5f20-b254-4eaa0615d555\u00a0(use:\u00a0usual,\u00a0), <a href=\"NamingSystem-oe-ns-analyzer-bridge-connection.html\" title=\"Connection id of the analyzer in the OpenELIS analyzer bridge. On import OpenELIS accepts any system ending in /analyzer_bridge_connection.\">OEAnalyzerBridgeConnection</a>/chem-01\u00a0(use:\u00a0usual,\u00a0)</p><p><b>status</b>: Active</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Chemistry Analyzer 1</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">astm-chemistry-generic</span></p><p><b>owner</b>: Identifier: <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB\u00a0(use:\u00a0official,\u00a0)</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated",
+    "valueDateTime" : "2026-09-01T07:30:00+10:00"
+  },
+  {
+    "extension" : [{
+      "url" : "testUnitId",
+      "valueString" : "36"
+    },
+    {
+      "url" : "testUnitId",
+      "valueString" : "41"
+    }],
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-test-units"
+  },
+  {
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status",
+    "valueCode" : "ACTIVE"
+  }],
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://openelis-global.org/analyzer_uuid",
+    "value" : "ff2b5d6a-ff46-5f20-b254-4eaa0615d555"
+  },
+  {
+    "use" : "usual",
+    "system" : "http://openelis-global.org/analyzer_bridge_connection",
+    "value" : "chem-01"
+  }],
+  "status" : "active",
+  "deviceName" : [{
+    "name" : "Chemistry Analyzer 1",
+    "type" : "user-friendly-name"
+  }],
+  "type" : {
+    "text" : "astm-chemistry-generic"
+  },
+  "owner" : {
+    "identifier" : {
+      "use" : "official",
+      "system" : "http://openelis-global.org/facility_id",
+      "value" : "EDH-LAB",
+      "assigner" : {
+        "reference" : "Organization/a845f2db-10e5-5117-ac75-553f615e301a"
+      }
+    }
+  }
+}

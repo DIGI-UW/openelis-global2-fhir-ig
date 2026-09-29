@@ -1,0 +1,125 @@
+# org.openelisglobal.fhir#0.2.0: OpenELIS Global FHIR Implementation Guide(en)
+
+## Pages
+
+* [Home](index.md)
+* [Change Log](changes.md)
+* [Identifiers, Code Systems and URLs](identifiers.md)
+* [Exchange Workflows](workflows.md)
+* [Artifacts Summary](artifacts.md)
+* [OpenELIS FHIR REST API](api.md)
+* [Known Issues](known-issues.md)
+
+## Resources
+
+### CodeSystems
+
+* [OpenELIS Analyzer Operational Status](CodeSystem-oe-analyzer-operational-status.md)
+
+### ValueSets
+
+* [OpenELIS Analyzer Operational Statuses](ValueSet-oe-analyzer-operational-status.md)
+
+### Resource Profiles
+
+* [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.md)
+* [OpenELIS DiagnosticReport](StructureDefinition-openelis-diagnostic-report.md)
+* [Lab Order Request ServiceRequest (EMR to OpenELIS)](StructureDefinition-openelis-lab-order-request-service-request.md)
+* [Lab Order Request Task (EMR to OpenELIS)](StructureDefinition-openelis-lab-order-request-task.md)
+* [OpenELIS Observation](StructureDefinition-openelis-observation.md)
+* [OpenELIS Order Task](StructureDefinition-openelis-order-task.md)
+* [OpenELIS Organization](StructureDefinition-openelis-organization.md)
+* [OpenELIS Patient](StructureDefinition-openelis-patient.md)
+* [OpenELIS Practitioner](StructureDefinition-openelis-practitioner.md)
+* [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md)
+* [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md)
+* [OpenELIS Shipment Box](StructureDefinition-openelis-shipment-box.md)
+* [OpenELIS Specimen](StructureDefinition-openelis-specimen.md)
+* [OpenELIS Storage Location](StructureDefinition-openelis-storage-location.md)
+
+### Extensions
+
+* [Analyzer last activated](StructureDefinition-analyzer-last-activated.md)
+* [Analyzer operational status](StructureDefinition-analyzer-operational-status.md)
+* [Analyzer test units](StructureDefinition-analyzer-test-units.md)
+* [Collection location (GPS)](StructureDefinition-collection-location-gps.md)
+* [Storage device communication protocol](StructureDefinition-device-communication-protocol.md)
+* [Storage device IP address](StructureDefinition-device-ip-address.md)
+* [Storage device port](StructureDefinition-device-port.md)
+* [EQA cycle](StructureDefinition-eqa-cycle.md)
+* [Position occupancy](StructureDefinition-position-occupancy.md)
+* [Grid dimensions](StructureDefinition-rack-grid-dimensions.md)
+* [Position schema hint](StructureDefinition-rack-position-schema-hint.md)
+* [Shipment box capacity](StructureDefinition-shipment-capacity.md)
+* [Shipment content item](StructureDefinition-shipment-content-item.md)
+* [Shipment destination organization id](StructureDefinition-shipment-destination-org.md)
+* [Shipment non-conformity](StructureDefinition-shipment-non-conformity.md)
+* [Shipment notes](StructureDefinition-shipment-notes.md)
+* [Shipment source laboratory](StructureDefinition-shipment-source-org.md)
+* [Shipment specimen type summary](StructureDefinition-shipment-specimen-type-summary.md)
+* [Shipped specimen](StructureDefinition-shipment-specimen.md)
+* [Shipment temperature requirement](StructureDefinition-shipment-temperature.md)
+* [Storage capacity](StructureDefinition-storage-capacity.md)
+* [Storage temperature](StructureDefinition-storage-temperature.md)
+
+### CapabilityStatements
+
+* [OpenELIS Global FHIR REST server](CapabilityStatement-OpenELISFhirServer.md)
+
+### ImplementationGuides
+
+* [OpenELIS Global FHIR Implementation Guide](ImplementationGuide-org.openelisglobal.fhir.md)
+
+### NamingSystems
+
+* [OEAnalysisResultUUID](NamingSystem-oe-ns-analysis-result-uuid.md)
+* [OEAnalysisUUID](NamingSystem-oe-ns-analysis-uuid.md)
+* [OEAnalyzerBridgeConnection](NamingSystem-oe-ns-analyzer-bridge-connection.md)
+* [OEAnalyzerUUID](NamingSystem-oe-ns-analyzer-uuid.md)
+* [OEFacilityId](NamingSystem-oe-ns-facility-id.md)
+* [OEOrderAccessionNumber](NamingSystem-oe-ns-order-accession.md)
+* [OEOrderUUID](NamingSystem-oe-ns-order-uuid.md)
+* [OEOrganizationCLIANumber](NamingSystem-oe-ns-org-clianum.md)
+* [OEOrganizationCode](NamingSystem-oe-ns-org-code.md)
+* [OEOrganizationShortName](NamingSystem-oe-ns-org-shortname.md)
+* [OEOrganizationUUID](NamingSystem-oe-ns-org-uuid.md)
+* [OEPatientGUID](NamingSystem-oe-ns-pat-guid.md)
+* [OEPatientNationalId](NamingSystem-oe-ns-pat-national-id.md)
+* [OEPatientSTNumber](NamingSystem-oe-ns-pat-st-number.md)
+* [OEPatientSubjectNumber](NamingSystem-oe-ns-pat-subject-number.md)
+* [OEPatientUUID](NamingSystem-oe-ns-pat-uuid.md)
+* [OEProviderUUID](NamingSystem-oe-ns-provider-uuid.md)
+* [OEResultUUID](NamingSystem-oe-ns-result-uuid.md)
+* [OESampleLabNumber](NamingSystem-oe-ns-samp-labno.md)
+* [OESampleItemLabNumber](NamingSystem-oe-ns-sampleitem-labno.md)
+* [OESampleItemUUID](NamingSystem-oe-ns-sampleitem-uuid.md)
+* [OEShipmentBoxId](NamingSystem-oe-ns-shipment-box-id.md)
+* [OEStorageLocationCode](NamingSystem-oe-ns-storage-location-code.md)
+
+### Examples
+
+* [ff2b5d6a-ff46-5f20-b254-4eaa0615d555 (Device)](Device-ff2b5d6a-ff46-5f20-b254-4eaa0615d555.md)
+* [3b2c3407-5430-5878-9c61-c4c9b9c013c4 (DiagnosticReport)](DiagnosticReport-3b2c3407-5430-5878-9c61-c4c9b9c013c4.md)
+* [48549f60-c400-5510-97da-2e2497627e81 (DiagnosticReport)](DiagnosticReport-48549f60-c400-5510-97da-2e2497627e81.md)
+* [Main laboratory storage (Location)](Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.md)
+* [Freezer 01 (-80) (Location)](Location-3d2a1373-14d8-5bef-ae7e-817917e5a4fd.md)
+* [Rack 2 (Location)](Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.md)
+* [B3 (Location)](Location-613ff118-ceeb-5472-9793-dc241d0d032c.md)
+* [Shelf 1 (Location)](Location-8264f454-03c2-597b-996d-b9ea0998f326.md)
+* [8330c79d-ccd9-5ef4-876d-2b176e5e86a5 (Observation)](Observation-8330c79d-ccd9-5ef4-876d-2b176e5e86a5.md)
+* [b73bf11f-06ff-55ad-935d-476bc270350a (Observation)](Observation-b73bf11f-06ff-55ad-935d-476bc270350a.md)
+* [National Reference Laboratory (Organization)](Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.md)
+* [Example District Hospital Laboratory (Organization)](Organization-a845f2db-10e5-5117-ac75-553f615e301a.md)
+* [Riverside Health Centre (Organization)](Organization-d3619aef-5abf-5b4f-a76c-06f378deca13.md)
+* [5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (Patient)](Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.md)
+* [0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21 (Practitioner)](Practitioner-0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21.md)
+* [cc90c222-c1fa-5cb0-bb01-a2b35ac26244 (Practitioner)](Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.md)
+* [24224471-e4bb-58c0-acbf-b6180b053e05 (ServiceRequest)](ServiceRequest-24224471-e4bb-58c0-acbf-b6180b053e05.md)
+* [35acd1d2-f076-5434-9105-683254702ff1 (ServiceRequest)](ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1.md)
+* [3b2c3407-5430-5878-9c61-c4c9b9c013c4 (ServiceRequest)](ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.md)
+* [48549f60-c400-5510-97da-2e2497627e81 (ServiceRequest)](ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.md)
+* [97b37d86-fd55-529b-bbd7-4766f3988fab (Specimen)](Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.md)
+* [0e8e2c05-d198-51b0-8fa2-ac80c118c73e (SupplyDelivery)](SupplyDelivery-0e8e2c05-d198-51b0-8fa2-ac80c118c73e.md)
+* [07ed1bd1-1bdf-58ae-a661-ee0703fcab70 (Task)](Task-07ed1bd1-1bdf-58ae-a661-ee0703fcab70.md)
+* [1adff0e3-109a-55fe-b3b7-74736ef4ff6d (Task)](Task-1adff0e3-109a-55fe-b3b7-74736ef4ff6d.md)
+* [ed860000-5fab-5072-a257-83bbe38c27f4 (Task)](Task-ed860000-5fab-5072-a257-83bbe38c27f4.md)

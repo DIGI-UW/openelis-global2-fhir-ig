@@ -168,6 +168,18 @@
     "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
   },
   {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
     "url" : "http://hl7.org/fhir/request-intent",
     "version" : "4.0.1",
     "status" : "draft",
@@ -177,8 +189,8 @@
     "oids" : ["2.16.840.1.113883.4.642.4.114"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
-    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
   },
   {
     "url" : "http://hl7.org/fhir/request-priority",
@@ -205,6 +217,17 @@
     "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
   },
   {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
     "url" : "http://hl7.org/fhir/specimen-status",
     "version" : "4.0.1",
     "status" : "draft",
@@ -215,6 +238,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/supplydelivery-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SupplyDeliveryStatus",
+    "title" : "SupplyDeliveryStatus",
+    "description" : "Status of the supply delivery.",
+    "oids" : ["2.16.840.1.113883.4.642.4.701"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-supplydelivery-status.html" : "SupplyDeliveryStatus"
   },
   {
     "url" : "http://hl7.org/fhir/task-intent",
@@ -262,20 +297,33 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
-    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
     "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
     "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "http://hl7.org/fhir/R4/valueset-supply-item.html" : "SNOMED CT Supply Item",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
     "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)"
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
@@ -291,7 +339,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-    "version" : "1.0.0",
+    "version" : "2.0.0",
     "status" : "active",
     "name" : "DataAbsentReason",
     "title" : "DataAbsentReason",
@@ -303,7 +351,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
-    "version" : "2.0.0",
+    "version" : "3.0.0",
     "status" : "active",
     "name" : "FHIRDeviceStatusReason",
     "title" : "FHIRDeviceStatusReason",
@@ -339,7 +387,7 @@
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-    "version" : "2.0.1",
+    "version" : "3.0.0",
     "status" : "active",
     "name" : "OrganizationType",
     "title" : "Organization type",
@@ -360,6 +408,18 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/supply-item-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "SupplyItemType",
+    "title" : "Supply Item Type",
+    "description" : "This value sets refers to a specific supply item.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1194"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-supplydelivery-type.html" : "Supply Item Type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
@@ -383,7 +443,7 @@
     "oids" : ["2.16.840.1.113883.18.47"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0116.html" : "hl7VS-bedStatus"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -419,7 +479,7 @@
     "oids" : ["2.16.840.1.113883.18.229"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
@@ -443,7 +503,7 @@
     "oids" : ["2.16.840.1.113883.18.311"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v2-0487.html" : "hl7VS-specimenType"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0487.html" : "hl7VS-specimenType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
@@ -455,7 +515,7 @@
     "oids" : ["2.16.840.1.113883.18.317"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
@@ -467,11 +527,11 @@
     "oids" : ["2.16.840.1.113883.18.422"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-    "version" : "4.0.0",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "MaritalStatus",
     "title" : "MaritalStatus",
@@ -515,6 +575,17 @@
     "oids" : ["2.16.840.1.113883.5.111"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+    "http://terminology.hl7.org/7.4.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+  },
+  {
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "OEAnalyzerOperationalStatus",
+    "title" : "OpenELIS Analyzer Operational Status",
+    "description" : "OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value.",
+    "uses" : {
+    },
+    "ValueSet-oe-analyzer-operational-status.html" : "OpenELIS Analyzer Operational Statuses"
   }]
 }

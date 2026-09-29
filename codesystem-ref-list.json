@@ -1,3 +1,13 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status",
+    "version" : "0.2.0",
+    "status" : "active",
+    "name" : "OEAnalyzerOperationalStatus",
+    "title" : "OpenELIS Analyzer Operational Status",
+    "description" : "OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value.",
+    "uses" : {
+    },
+    "ValueSet-oe-analyzer-operational-status.html" : "OpenELIS Analyzer Operational Statuses"
+  }]
 }

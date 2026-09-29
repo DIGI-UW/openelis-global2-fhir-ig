@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+
+<style>
+    div.markdown-toc {
+        color: var(--toc-box-text-color);
+        border-radius: 5px;
+    }
+
+    div.markdown-toc li a {
+        color: var(--toc-box-text-color);
+    }
+
+    div.markdown-toc p {
+        color: var(--toc-box-heading-text-color);
+        font-size: 1.4em;
+    }
+
+    #left-header {
+        line-height: 50px;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #left-header-logo {
+        float: left;
+        margin-left: 3px;
+    }
+
+    #right-header {
+        line-height: 50px;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #right-header-logo {
+        float: right;
+        margin-left: 3px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Placeholder for child template header declarations -->
+<div id="left-header">
+    <a id="left-header-logo" no-external="true" href="https://openelis-global.org/">
+        <img height="71" alt="Artifacts" src="assets/images/home.png">
+    </a>
+</div>
+
+<div id="right-header">
+    <a id="right-header-logo" no-external="true" href="https://hl7.org/fhir/"><img height="70" alt="FHIR website"
+            src="assets/images/fire.png"> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="api.html">FHIR API</a>
+  </li>
+  <li>
+    <a href="identifiers.html">Identifiers &amp; URLs</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="known-issues.html">Known Issues</a>
+  </li>
+  <li>
+    <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir|0.2.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            as of 
+2026-09-29
+
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OpenELISGlobalImplementationGuide</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#about-this-guide" id="markdown-toc-about-this-guide">About this guide</a></li>
+  <li><a href="#where-to-find-the-rest-of-the-documentation" id="markdown-toc-where-to-find-the-rest-of-the-documentation">Where to find the rest of the documentation</a></li>
+  <li><a href="#how-openelis-uses-fhir" id="markdown-toc-how-openelis-uses-fhir">How OpenELIS uses FHIR</a></li>
+  <li><a href="#profiles-in-this-guide" id="markdown-toc-profiles-in-this-guide">Profiles in this guide</a></li>
+  <li><a href="#conventions" id="markdown-toc-conventions">Conventions</a></li>
+  <li><a href="#contributing" id="markdown-toc-contributing">Contributing</a></li>
+  <li><a href="#intellectual-property" id="markdown-toc-intellectual-property">Intellectual property</a></li>
+  <li><a href="#status" id="markdown-toc-status">Status</a></li>
+</ul>
+
+</div>
+<h3 id="about-this-guide">About this guide</h3>
+
+<p>This Implementation Guide (IG) describes the HL7® FHIR® R4 interfaces of
+<a href="https://openelis-global.org">OpenELIS Global</a>, the open-source laboratory information system
+maintained by the Digital Initiatives Group (DIGI) at the University of Washington and the OpenELIS
+Global community.</p>
+
+<p>It is written for teams connecting another system to OpenELIS: EMRs such as OpenMRS, national shared
+health records and lab data repositories, facility and client registries, other OpenELIS laboratories,
+and analyzer middleware.</p>
+
+<p><strong>What the profiles describe.</strong> Every profile, extension and identifier system in this guide describes
+what OpenELIS Global 3.x reads and writes today. They were checked against the
+<a href="https://github.com/DIGI-UW/OpenELIS-Global-2">OpenELIS-Global-2</a> <code class="language-plaintext highlighter-rouge">develop</code> branch at commit
+<code class="language-plaintext highlighter-rouge">889166b</code> (29 September 2026). Where OpenELIS does something that is not ideal FHIR, the guide
+documents the current behaviour and lists the gap on the <a href="known-issues.html">Known Issues</a> page. It does
+not describe the behaviour we would like instead.</p>
+
+<h3 id="where-to-find-the-rest-of-the-documentation">Where to find the rest of the documentation</h3>
+
+<p>This guide covers the FHIR contract only. Installation, configuration and user documentation live in
+the OpenELIS Global documentation space on Confluence:</p>
+
+<ul>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide">FHIR Implementation Guide</a>: the Confluence landing page for this guide</li>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/overview">OpenELIS Global documentation home</a></li>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/645136385/Interoperability+Roadmap">Interoperability Roadmap</a>: systems OpenELIS has been tested with</li>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/239992838/Medical+Records+System+OpenMRS+Interoperability">OpenMRS Interoperability</a>: configuring OpenMRS and OpenELIS for FHIR lab orders and results</li>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/246382619/Interacting+with+Co-resident+FHIR+Store">Interacting with the co-resident FHIR store</a></li>
+  <li><a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/240386061/Examples+of+FHIR+messages+used">Examples of FHIR messages used</a> between referring and reference labs</li>
+</ul>
+
+<h3 id="how-openelis-uses-fhir">How OpenELIS uses FHIR</h3>
+
+<p>OpenELIS has three FHIR surfaces. Most integration problems come from mixing them up.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surface</th>
+      <th>What it is</th>
+      <th>Used for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>OpenELIS FHIR REST API</strong></td>
+      <td>A FHIR R4 server inside OpenELIS, at <code class="language-plaintext highlighter-rouge">https://{host}/api/OpenELIS-Global/fhir</code>. It reads and writes the OpenELIS database directly.</td>
+      <td>Querying and managing patients, orders, specimens, results, organizations, practitioners, storage locations and analyzers. See <a href="api.html">OpenELIS FHIR REST API</a>.</td>
+    </tr>
+    <tr>
+      <td><strong>Co-resident FHIR store</strong></td>
+      <td>A HAPI FHIR JPA server deployed next to every OpenELIS instance (<code class="language-plaintext highlighter-rouge">org.openelisglobal.fhirstore.uri</code>). OpenELIS writes transaction bundles to it after order entry, result entry and validation.</td>
+      <td>The copy of OpenELIS data that other systems subscribe to, and the store other OpenELIS instances poll for referrals and shipments.</td>
+    </tr>
+    <tr>
+      <td><strong>Remote FHIR servers</strong></td>
+      <td>Servers OpenELIS polls (<code class="language-plaintext highlighter-rouge">org.openelisglobal.remote.source.uri</code>) and pushes to (<code class="language-plaintext highlighter-rouge">org.openelisglobal.fhir.subscriber</code>).</td>
+      <td>Receiving lab orders from EMRs, lab-to-lab referral, specimen shipment, and pushing data to a shared health record or lab data repository. See <a href="workflows.html">Exchange Workflows</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="assets/images/exchange_workflow.png" alt="An EMR and OpenELIS exchanging lab orders and results through an interoperability layer and a central lab repository" /></p>
+
+<p><em>Typical deployment: an EMR and OpenELIS exchange orders and results through a shared FHIR server, optionally behind an interoperability layer such as OpenHIM.</em></p>
+
+<h3 id="profiles-in-this-guide">Profiles in this guide</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Area</th>
+      <th>Profile</th>
+      <th>Base</th>
+      <th>Produced or consumed by OpenELIS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>People and places</td>
+      <td><a href="StructureDefinition-openelis-patient.html">OpenELIS Patient</a></td>
+      <td>Patient</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-practitioner.html">OpenELIS Practitioner</a></td>
+      <td>Practitioner</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-organization.html">OpenELIS Organization</a></td>
+      <td>Organization</td>
+      <td>Produced and consumed</td>
+    </tr>
+    <tr>
+      <td>Incoming orders</td>
+      <td><a href="StructureDefinition-openelis-lab-order-request-task.html">Lab Order Request Task</a></td>
+      <td>Task</td>
+      <td>Consumed (from EMRs)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-lab-order-request-service-request.html">Lab Order Request ServiceRequest</a></td>
+      <td>ServiceRequest</td>
+      <td>Consumed (from EMRs)</td>
+    </tr>
+    <tr>
+      <td>Orders</td>
+      <td><a href="StructureDefinition-openelis-order-task.html">OpenELIS Order Task</a></td>
+      <td>Task</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-service-request.html">OpenELIS ServiceRequest</a></td>
+      <td>ServiceRequest</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-specimen.html">OpenELIS Specimen</a></td>
+      <td>Specimen</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-referral-task.html">OpenELIS Referral Task</a></td>
+      <td>Task</td>
+      <td>Produced and consumed (lab to lab)</td>
+    </tr>
+    <tr>
+      <td>Results</td>
+      <td><a href="StructureDefinition-openelis-observation.html">OpenELIS Observation</a></td>
+      <td>Observation</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="StructureDefinition-openelis-diagnostic-report.html">OpenELIS DiagnosticReport</a></td>
+      <td>DiagnosticReport</td>
+      <td>Produced</td>
+    </tr>
+    <tr>
+      <td>Instruments</td>
+      <td><a href="StructureDefinition-openelis-analyzer-device.html">OpenELIS Analyzer Device</a></td>
+      <td>Device</td>
+      <td>Produced and consumed</td>
+    </tr>
+    <tr>
+      <td>Storage</td>
+      <td><a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a></td>
+      <td>Location</td>
+      <td>Produced and consumed</td>
+    </tr>
+    <tr>
+      <td>Shipment</td>
+      <td><a href="StructureDefinition-openelis-shipment-box.html">OpenELIS Shipment Box</a></td>
+      <td>SupplyDelivery</td>
+      <td>Produced and consumed (lab to lab)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <a href="CapabilityStatement-OpenELISFhirServer.html">CapabilityStatement</a> describes the REST API. The
+<a href="identifiers.html">Identifiers, Code Systems and URLs</a> page lists every identifier system, local code system
+and extension URL OpenELIS uses. The <a href="artifacts.html">Artifacts</a> page lists everything, including the
+worked examples.</p>
+
+<h3 id="conventions">Conventions</h3>
+
+<ul>
+  <li><strong>Identifier and code system base.</strong> OpenELIS builds most identifier systems and local code systems as
+<code class="language-plaintext highlighter-rouge">{base}/{suffix}</code>, where <code class="language-plaintext highlighter-rouge">{base}</code> is the <code class="language-plaintext highlighter-rouge">org.openelisglobal.oe.fhir.system</code> property. It defaults to
+<code class="language-plaintext highlighter-rouge">http://openelis-global.org</code>. The profiles in this guide assume the default. A site that changes the property
+sends different system URLs, and those will not match the slices in these profiles.</li>
+  <li><strong>Must Support.</strong> An element flagged Must Support is one OpenELIS populates whenever it holds the data.
+Receivers should store or display it. On incoming profiles, Must Support marks elements OpenELIS reads.</li>
+  <li><strong>Resource ids</strong> are the OpenELIS FHIR UUIDs of the underlying records. A ServiceRequest and the
+DiagnosticReport for the same test share one id, the Analysis UUID.</li>
+  <li><strong>Environmental and vector samples</strong> have no patient. Resources for them omit <code class="language-plaintext highlighter-rouge">subject</code> / <code class="language-plaintext highlighter-rouge">for</code>.</li>
+  <li><strong>Mappings.</strong> Each profile has a mapping to the OpenELIS data model (the <code class="language-plaintext highlighter-rouge">Mappings</code> tab), naming the
+table or class each element comes from.</li>
+</ul>
+
+<h3 id="contributing">Contributing</h3>
+
+<p>The source is at <a href="https://github.com/DIGI-UW/openelis-global2-fhir-ig">DIGI-UW/openelis-global2-fhir-ig</a>,
+written in FHIR Shorthand. Pull requests are built by the HL7 IG Publisher in CI, and merges to <code class="language-plaintext highlighter-rouge">main</code>
+publish to this site. When OpenELIS changes what it sends, update the matching profile in the same release.
+Report problems as GitHub issues or in the OpenELIS Global community channels.</p>
+
+<h3 id="intellectual-property">Intellectual property</h3>
+
+<p>This guide and its examples may use terminologies such as LOINC® and SNOMED CT®, which have their own
+licence terms. Implementers are responsible for complying with them.</p>
+
+<h3 id="status">Status</h3>
+
+<p>This is a <strong>draft</strong> (0.2.0, continuous integration build). It documents the behaviour of the current
+development branch and may change with each OpenELIS release.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
+          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-29 02:24:00 +0000">
+    2026-09-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

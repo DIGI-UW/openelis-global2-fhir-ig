@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 502" width="880" height="502" font-family="Helvetica,Arial,sans-serif" font-size="13">
+<defs><marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f3a5f"/></marker></defs>
+<rect width="880" height="502" fill="#ffffff"/>
+<text x="440.0" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f3a5f">Lab-to-lab referral between OpenELIS instances</text>
+<line x1="120" y1="94" x2="120" y2="472" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="40" y="60" width="160" height="50" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="120" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">Referring</text>
+<text x="120" y="98" text-anchor="middle" font-weight="bold" fill="#1f3a5f">OpenELIS</text>
+<line x1="370" y1="94" x2="370" y2="472" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="290" y="60" width="160" height="50" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="370" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">Shared / remote</text>
+<text x="370" y="98" text-anchor="middle" font-weight="bold" fill="#1f3a5f">FHIR server</text>
+<line x1="620" y1="94" x2="620" y2="472" stroke="#9aa7b5" stroke-dasharray="4 4"/>
+<rect x="540" y="60" width="160" height="50" rx="6" fill="#e8f0f8" stroke="#1f3a5f"/>
+<text x="620" y="82" text-anchor="middle" font-weight="bold" fill="#1f3a5f">Reference lab</text>
+<text x="620" y="98" text-anchor="middle" font-weight="bold" fill="#1f3a5f">OpenELIS</text>
+<line x1="120" y1="176" x2="370" y2="176" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="23.200000000000017" y="155" width="443.59999999999997" height="17" fill="#fff" opacity="0.92"/>
+<text x="245.0" y="169" text-anchor="middle" fill="#222">1. Referral Task (requested) + ServiceRequest + Specimen + Patient</text>
+<line x1="620" y1="222" x2="370" y2="222" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="365.6" y="201" width="258.79999999999995" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="215" text-anchor="middle" fill="#222">2. GET Task?status=requested&amp;owner=...</text>
+<line x1="620" y1="268" x2="370" y2="268" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="388.7" y="247" width="212.6" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="261" text-anchor="middle" fill="#222">3. PUT Task accepted / rejected</text>
+<rect x="664" y="303" width="192.79999999999998" height="17" fill="#fff" opacity="0.92"/>
+<path d="M620,304 h40 v18 h-38" fill="none" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="668" y="316" fill="#222">4. Accession, test, validate</text>
+<line x1="620" y1="360" x2="370" y2="360" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="322.70000000000005" y="339" width="344.59999999999997" height="17" fill="#fff" opacity="0.92"/>
+<text x="495.0" y="353" text-anchor="middle" fill="#222">5. Task completed + DiagnosticReport + Observations</text>
+<line x1="120" y1="406" x2="370" y2="406" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="99.1" y="385" width="291.8" height="17" fill="#fff" opacity="0.92"/>
+<text x="245.0" y="399" text-anchor="middle" fill="#222">6. GET Task?_id={referral}&amp;status=completed</text>
+<rect x="164" y="441" width="219.2" height="17" fill="#fff" opacity="0.92"/>
+<path d="M120,442 h40 v18 h-38" fill="none" stroke="#1f3a5f" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="168" y="454" fill="#222">7. User accepts returned results</text>
+</svg>

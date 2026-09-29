@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="oe-analyzer-operational-status"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet oe-analyzer-operational-status</b></p><a name="oe-analyzer-operational-status"> </a><a name="hcoe-analyzer-operational-status"> </a><ul><li>Include all codes defined in <a href="CodeSystem-oe-analyzer-operational-status.html"><code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status"/>
+  <version value="0.2.0"/>
+  <name value="OEAnalyzerOperationalStatusVS"/>
+  <title value="OpenELIS Analyzer Operational Statuses"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-29T02:24:20+00:00"/>
+  <publisher value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+  <contact>
+    <name value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openelis-global.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="OpenELIS Global community"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"/>
+    </telecom>
+  </contact>
+  <description value="All analyzer operational statuses."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"/>
+    </include>
+  </compose>
+</ValueSet>

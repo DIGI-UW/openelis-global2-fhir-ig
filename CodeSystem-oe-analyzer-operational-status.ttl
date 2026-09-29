@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "oe-analyzer-operational-status"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem oe-analyzer-operational-status</b></p><a name=\"oe-analyzer-operational-status\"> </a><a name=\"hcoe-analyzer-operational-status\"> </a><p>This case-sensitive code system <code>https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SETUP<a name=\"oe-analyzer-operational-status-SETUP\"> </a></td><td>Setup</td><td>Being configured. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">VALIDATION<a name=\"oe-analyzer-operational-status-VALIDATION\"> </a></td><td>Validation</td><td>Under validation. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">ACTIVE<a name=\"oe-analyzer-operational-status-ACTIVE\"> </a></td><td>Active</td><td>In routine use. Device.status = active.</td></tr><tr><td style=\"white-space:nowrap\">ERROR_PENDING<a name=\"oe-analyzer-operational-status-ERROR_PENDING\"> </a></td><td>Error pending</td><td>Has an unresolved error. Device.status = entered-in-error.</td></tr><tr><td style=\"white-space:nowrap\">OFFLINE<a name=\"oe-analyzer-operational-status-OFFLINE\"> </a></td><td>Offline</td><td>Not reachable. Device.status = unknown.</td></tr><tr><td style=\"white-space:nowrap\">INACTIVE<a name=\"oe-analyzer-operational-status-INACTIVE\"> </a></td><td>Inactive</td><td>Retired or disabled. Device.status = inactive.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status"] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "OEAnalyzerOperationalStatus"] ;
+  fhir:CodeSystem.title [ fhir:value "OpenELIS Analyzer Operational Status"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-29T02:24:20+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "OpenELIS Global (Digital Initiatives Group, University of Washington)"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "OpenELIS Global (Digital Initiatives Group, University of Washington)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://openelis-global.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "OpenELIS Global community" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://uwdigi.atlassian.net/wiki/spaces/oeg/overview" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "OpenELIS's own analyzer lifecycle status, sent unchanged (enum name, a plain code with no system) in the analyzer-operational-status extension. This CodeSystem exists only so the IG can bind that code. Device.status carries the FHIR mapping of the same value."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ] ;
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "SETUP" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Setup" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Being configured. Device.status = active." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "VALIDATION" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Validation" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Under validation. Device.status = active." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ACTIVE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Active" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "In routine use. Device.status = active." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "ERROR_PENDING" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Error pending" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Has an unresolved error. Device.status = entered-in-error." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "OFFLINE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Offline" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Not reachable. Device.status = unknown." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "INACTIVE" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Inactive" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Retired or disabled. Device.status = inactive." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

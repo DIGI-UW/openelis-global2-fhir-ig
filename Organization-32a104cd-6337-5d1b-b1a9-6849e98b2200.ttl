@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "32a104cd-6337-5d1b-b1a9-6849e98b2200"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 32a104cd-6337-5d1b-b1a9-6849e98b2200</b></p><a name=\"32a104cd-6337-5d1b-b1a9-6849e98b2200\"> </a><a name=\"hc32a104cd-6337-5d1b-b1a9-6849e98b2200\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-organization.html\">OpenELIS Organization</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-org-code.html\" title=\"Organization code configured in OpenELIS.\">OEOrganizationCode</a>/NRL, <a href=\"NamingSystem-oe-ns-org-uuid.html\" title=\"UUID of the OpenELIS organization.\">OEOrganizationUUID</a>/32a104cd-6337-5d1b-b1a9-6849e98b2200, <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://openelis-global.org/orgType referralLab}\">Reference laboratory</span></p><p><b>name</b>: National Reference Laboratory</p></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_code" ] ;
+     fhir:Identifier.value [ fhir:value "NRL" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/org_uuid" ] ;
+     fhir:Identifier.value [ fhir:value "32a104cd-6337-5d1b-b1a9-6849e98b2200" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/facility_id" ] ;
+     fhir:Identifier.value [ fhir:value "EDH-LAB" ] ;
+     fhir:Identifier.assigner [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+       fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+     ]
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://openelis-global.org/orgType" ] ;
+       fhir:Coding.code [ fhir:value "referralLab" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Reference laboratory" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "National Reference Laboratory"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Task",
+  "id" : "1adff0e3-109a-55fe-b3b7-74736ef4ff6d",
+  "meta" : {
+    "profile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-referral-task"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task 1adff0e3-109a-55fe-b3b7-74736ef4ff6d</b></p><a name=\"1adff0e3-109a-55fe-b3b7-74736ef4ff6d\"> </a><a name=\"hc1adff0e3-109a-55fe-b3b7-74736ef4ff6d\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-referral-task.html\">OpenELIS Referral Task</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.html\">ServiceRequest Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</a></p><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>description</b>: referring accession number EDH26000000417 from Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244 to Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200</p><p><b>focus</b>: <a href=\"ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.html\">ServiceRequest Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</a></p><p><b>for</b>: <a href=\"Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html\">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>authoredOn</b>: 2026-09-28 14:30:00+1000</p><p><b>requester</b>: <a href=\"Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.html\">Practitioner Kofi Mensah </a></p><p><b>owner</b>: <a href=\"Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.html\">Organization National Reference Laboratory</a></p><p><b>reasonCode</b>: <span title=\"Codes:\"/></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4"
+  }],
+  "status" : "requested",
+  "intent" : "order",
+  "description" : "referring accession number EDH26000000417 from Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244 to Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200",
+  "focus" : {
+    "reference" : "ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4"
+  },
+  "for" : {
+    "reference" : "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"
+  },
+  "authoredOn" : "2026-09-28T14:30:00+10:00",
+  "requester" : {
+    "reference" : "Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244"
+  },
+  "owner" : {
+    "reference" : "Organization/32a104cd-6337-5d1b-b1a9-6849e98b2200"
+  },
+  "reasonCode" : {
+    "coding" : [{
+      "system" : "http://openelis-global.org/refer_reason"
+    }]
+  }
+}

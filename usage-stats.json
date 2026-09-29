@@ -1,48 +1,350 @@
 {
-  "package": "openelis",
-  "version": "0.1.0",
+  "package": "org.openelisglobal.fhir",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-communication-mode",
-      "title": "Analyzer Communication Mode",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-identifier-pattern",
-      "title": "AnalyzerIdentifierPattern",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-last-activated",
-      "title": "AnalyzerLastActivated",
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated",
+      "title": "Analyzer last activated",
       "types": [
         "dateTime"
       ]
     },
     {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-location",
-      "title": "AnalyzerLocation",
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status",
+      "title": "Analyzer operational status",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-test-units",
+      "title": "Analyzer test units",
+      "types": [
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/collection-location-gps",
+      "title": "Collection location (GPS)",
+      "types": [
+        "decimal",
+        "decimal",
+        "integer",
+        "code",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol",
+      "title": "Storage device communication protocol",
       "types": [
         "string"
       ]
     },
     {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-protocol-version",
-      "title": "Analyzer Protocol Version",
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-ip-address",
+      "title": "Storage device IP address",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port",
+      "title": "Storage device port",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/eqa-cycle",
+      "title": "EQA cycle",
+      "types": [
+        "string",
+        "integer",
+        "string",
+        "date",
+        "date",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/position-occupancy",
+      "title": "Position occupancy",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-grid-dimensions",
+      "title": "Grid dimensions",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-position-schema-hint",
+      "title": "Position schema hint",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-capacity",
+      "title": "Shipment box capacity",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-content-item",
+      "title": "Shipment content item",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-destination-org",
+      "title": "Shipment destination organization id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-non-conformity",
+      "title": "Shipment non-conformity",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-test-units",
-      "title": "AnalyzerTestUnits",
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-notes",
+      "title": "Shipment notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-source-org",
+      "title": "Shipment source laboratory",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen",
+      "title": "Shipped specimen",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen-type-summary",
+      "title": "Shipment specimen type summary",
       "types": [
         "string",
+        "integer",
         "base64Binary",
         "boolean",
         "canonical",
@@ -96,546 +398,96 @@
       ]
     },
     {
-      "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-transport-details",
-      "title": "Analyzer Transport Details",
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-temperature",
+      "title": "Shipment temperature requirement",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
+        "string"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity",
+      "title": "Storage capacity",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-temperature",
+      "title": "Storage temperature",
+      "types": [
+        "decimal"
       ]
     }
   ],
   "profiles": {
     "Device": [
       {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device",
-        "title": "OpenELIS Device"
-      }
-    ],
-    "Location": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
-        "title": "OpenELIS Facility Location"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
-        "title": "OpenELIS Observation"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
-        "title": "OpenElis Specimen"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
-        "title": "OpenELIS Organization"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
-        "title": "OpenELIS Practitioner"
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device",
+        "title": "OpenELIS Analyzer Device"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
-        "title": "OpenELIS Diagnostic Report"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
-        "title": "OpenELIS Patient"
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report",
+        "title": "OpenELIS DiagnosticReport"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
-        "title": "OpenELIS Service Request"
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request",
+        "title": "OpenELIS ServiceRequest"
       }
     ],
     "Task": [
       {
-        "url": "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
-        "title": "OpenElis Task"
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-referral-task",
+        "title": "OpenELIS Referral Task"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation",
+        "title": "OpenELIS Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization",
+        "title": "OpenELIS Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient",
+        "title": "OpenELIS Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner",
+        "title": "OpenELIS Practitioner"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box",
+        "title": "OpenELIS Shipment Box"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen",
+        "title": "OpenELIS Specimen"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location",
+        "title": "OpenELIS Storage Location"
       }
     ]
   },
   "usage": {
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-communication-mode": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-identifier-pattern": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-last-activated": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-location": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-protocol-version": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-test-units": [
-      "Device"
-    ],
-    "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-transport-details": [
-      "Device"
-    ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"
     ],
@@ -664,6 +516,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -684,6 +537,72 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated": [
+      "Device"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status": [
+      "Device"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-test-units": [
+      "Device"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/collection-location-gps": [
+      "Specimen.collection"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-ip-address": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/eqa-cycle": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/position-occupancy": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-grid-dimensions": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-position-schema-hint": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-capacity": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-content-item": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-destination-org": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-non-conformity": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-notes": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-source-org": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen-type-summary": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-temperature": [
+      "SupplyDelivery"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity": [
+      "Location"
+    ],
+    "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-temperature": [
+      "Location"
     ]
   }
 }

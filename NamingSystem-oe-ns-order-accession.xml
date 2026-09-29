@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="oe-ns-order-accession"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: NamingSystem oe-ns-order-accession</b></p><a name="oe-ns-order-accession"> </a><a name="hcoe-ns-order-accession"> </a><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-accession</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>OEOrderAccessionNumber</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Lab (accession) number of the OpenELIS order. Carried on Task.</p>
+</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/order_accessionNumber</td><td>true</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-accession"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="0.2.0"/>
+  </extension>
+  <name value="OEOrderAccessionNumber"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2026-09-29"/>
+  <publisher value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+  <contact>
+    <name value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://openelis-global.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="OpenELIS Global community"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"/>
+    </telecom>
+  </contact>
+  <responsible value="OpenELIS Global"/>
+  <description value="Lab (accession) number of the OpenELIS order. Carried on Task."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://openelis-global.org/order_accessionNumber"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

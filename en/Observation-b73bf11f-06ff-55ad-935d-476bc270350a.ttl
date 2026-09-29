@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Observation/b73bf11f-06ff-55ad-935d-476bc270350a> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "b73bf11f-06ff-55ad-935d-476bc270350a"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation" ;
+       fhir:index -1 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation b73bf11f-06ff-55ad-935d-476bc270350a</b></p><a name=\"b73bf11f-06ff-55ad-935d-476bc270350a\"> </a><a name=\"hcb73bf11f-06ff-55ad-935d-476bc270350a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-observation.html\">OpenELIS Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-result-uuid.html\" title=\"UUID of the OpenELIS result. Carried on Observation.\">OEResultUUID</a>/b73bf11f-06ff-55ad-935d-476bc270350a (use: usual, ), <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB (use: official, )</p><p><b>basedOn</b>: <a href=\"ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.html\">ServiceRequest Glucose [Mass/volume] in Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2345-7}\">Glucose</span></p><p><b>subject</b>: <a href=\"Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html\">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</a></p><p><b>effective</b>: 2026-09-28 13:05:00+1000</p><p><b>issued</b>: 2026-09-28 13:05:00+1000</p><p><b>performer</b>: <a href=\"Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.html\">Practitioner Kofi Mensah </a></p><p><b>value</b>: 92 mg/dL</p><p><b>specimen</b>: <a href=\"Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.html\">Specimen: identifier = http://openelis-global.org/sampleItem_uuid#OESampleItemUUID#97b37d86-fd55-529b-bbd7-4766f3988fab (use: usual, ),http://openelis-global.org/facility_id#OEFacilityId#EDH-LAB (use: official, ); accessionIdentifier = http://openelis-global.org/sampleItem_labNo#OESampleItemLabNumber#EDH26000000417-1 (use: usual, ); status = available; type = Serum; receivedTime = 2026-09-28 09:30:00+1000</a></p><p><b>device</b>: <a href=\"Device-ff2b5d6a-ff46-5f20-b254-4eaa0615d555.html\">Device: extension = 2026-09-01 07:30:00+1000,,ACTIVE; identifier = http://openelis-global.org/analyzer_uuid#OEAnalyzerUUID#ff2b5d6a-ff46-5f20-b254-4eaa0615d555 (use: usual, ),http://openelis-global.org/analyzer_bridge_connection#OEAnalyzerBridgeConnection#chem-01 (use: usual, ); status = active; type = </a></p></div>"
+  ] ;
+  fhir:Observation.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/result_uuid" ] ;
+     fhir:Identifier.value [ fhir:value "b73bf11f-06ff-55ad-935d-476bc270350a" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "official" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/facility_id" ] ;
+     fhir:Identifier.value [ fhir:value "EDH-LAB" ] ;
+     fhir:Identifier.assigner [
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+       fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+     ]
+  ] ;
+  fhir:Observation.basedOn [
+     fhir:index -1 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/ServiceRequest/48549f60-c400-5510-97da-2e2497627e81> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/48549f60-c400-5510-97da-2e2497627e81" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:2345-7 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "2345-7" ] ;
+       fhir:Coding.display [ fhir:value "Glucose [Mass/volume] in Serum or Plasma" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Glucose" ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11> ;
+     fhir:Reference.reference [ fhir:value "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-28T13:05:00+10:00"^^xsd:dateTime] ;
+  fhir:Observation.issued [ fhir:value "2026-09-28T13:05:00+10:00"^^xsd:dateTime] ;
+  fhir:Observation.performer [
+     fhir:index -1 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244" ]
+  ] ;
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "92"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "mg/dL" ]
+  ] ;
+  fhir:Observation.specimen [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab> ;
+     fhir:Reference.reference [ fhir:value "Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab" ]
+  ] ;
+  fhir:Observation.device [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555> ;
+     fhir:Reference.reference [ fhir:value "Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Observation/b73bf11f-06ff-55ad-935d-476bc270350a.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "oe-ns-order-uuid",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-order-uuid</b></p><a name=\"oe-ns-order-uuid\"> </a><a name=\"hcoe-ns-order-uuid\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-uuid</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>OEOrderUUID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>UUID of the OpenELIS order (Sample). Carried on Task.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/order_uuid</td><td>true</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-uuid"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.2.0"
+  }],
+  "name" : "OEOrderUUID",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2026-09-29",
+  "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+  "contact" : [{
+    "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openelis-global.org"
+    }]
+  },
+  {
+    "name" : "OpenELIS Global community",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://uwdigi.atlassian.net/wiki/spaces/oeg/overview"
+    }]
+  }],
+  "responsible" : "OpenELIS Global",
+  "description" : "UUID of the OpenELIS order (Sample). Carried on Task.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://openelis-global.org/order_uuid",
+    "preferred" : true
+  }]
+}

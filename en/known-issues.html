@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Known Issues - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+
+<style>
+    div.markdown-toc {
+        color: var(--toc-box-text-color);
+        border-radius: 5px;
+    }
+
+    div.markdown-toc li a {
+        color: var(--toc-box-text-color);
+    }
+
+    div.markdown-toc p {
+        color: var(--toc-box-heading-text-color);
+        font-size: 1.4em;
+    }
+
+    #left-header {
+        line-height: 50px;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #left-header-logo {
+        float: left;
+        margin-left: 3px;
+    }
+
+    #right-header {
+        line-height: 50px;
+        float: right;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #808080;
+    }
+
+    #right-header-logo {
+        float: right;
+        margin-left: 3px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Placeholder for child template header declarations -->
+<div id="left-header">
+    <a id="left-header-logo" no-external="true" href="https://openelis-global.org/">
+        <img height="71" alt="Artifacts" src="assets/images/home.png">
+    </a>
+</div>
+
+<div id="right-header">
+    <a id="right-header-logo" no-external="true" href="https://hl7.org/fhir/"><img height="70" alt="FHIR website"
+            src="assets/images/fire.png"> </a>
+</div>
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="../assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="workflows.html">Workflows</a>
+  </li>
+  <li>
+    <a href="api.html">FHIR API</a>
+  </li>
+  <li>
+    <a href="identifiers.html">Identifiers &amp; URLs</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="known-issues.html">Known Issues</a>
+  </li>
+  <li>
+    <a href="https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Known Issues</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Known Issues</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#conformance-with-base-fhir-r4" id="markdown-toc-conformance-with-base-fhir-r4">Conformance with base FHIR R4</a></li>
+  <li><a href="#semantics-and-data-quality" id="markdown-toc-semantics-and-data-quality">Semantics and data quality</a></li>
+  <li><a href="#urls-and-configuration" id="markdown-toc-urls-and-configuration">URLs and configuration</a></li>
+  <li><a href="#rest-api" id="markdown-toc-rest-api">REST API</a></li>
+  <li><a href="#not-yet-covered-by-this-guide" id="markdown-toc-not-yet-covered-by-this-guide">Not yet covered by this guide</a></li>
+</ul>
+
+</div>
+<p>This guide documents what OpenELIS sends today. Where that behaviour does not conform to FHIR R4, or is likely to
+surprise a receiver, it is listed here with the code location, so implementers can plan around it and the
+OpenELIS team can fix it. Class names refer to
+<a href="https://github.com/DIGI-UW/OpenELIS-Global-2">OpenELIS-Global-2</a> <code class="language-plaintext highlighter-rouge">develop</code> as of 29 September 2026.</p>
+
+<p>When an item is fixed in OpenELIS, update the matching profile and remove the item in the same pull request.</p>
+
+<h3 id="conformance-with-base-fhir-r4">Conformance with base FHIR R4</h3>
+
+<p>These make some OpenELIS resources fail validation against base R4.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Issue</th>
+      <th>Where</th>
+      <th>Suggested fix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Referral Tasks have no <code class="language-plaintext highlighter-rouge">intent</code>. R4 requires it.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirReferralServiceImpl.createReferralTask</code></td>
+      <td>Set <code class="language-plaintext highlighter-rouge">intent = order</code>.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Order Task <code class="language-plaintext highlighter-rouge">status</code> is left empty when the order status has no mapping. R4 requires <code class="language-plaintext highlighter-rouge">status</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">TaskTransformServiceImpl.transformToTask</code></td>
+      <td>Map the remaining statuses, or fall back to <code class="language-plaintext highlighter-rouge">in-progress</code>.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ServiceRequests for environmental and vector samples have no <code class="language-plaintext highlighter-rouge">subject</code>. R4 requires it.</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code></td>
+      <td>Use a Location (sampling site) or Group as the subject.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><code class="language-plaintext highlighter-rouge">SupplyDelivery.type</code> uses <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/supply-item-type#medication</code> with display "Specimen Shipment". The element has a required binding to SupplyDeliveryType, the display does not match, and specimens are not medication.</td>
+      <td><code class="language-plaintext highlighter-rouge">ShippingBoxFhirTransform</code></td>
+      <td>Omit <code class="language-plaintext highlighter-rouge">type</code> (it is optional), or carry the shipment type in an extension.</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Identifiers can be sent with a system and no value when the record has no FHIR UUID, for example <code class="language-plaintext highlighter-rouge">Practitioner.identifier</code> with system <code class="language-plaintext highlighter-rouge">{base}/provider_uuid</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">Provider.getFhirUuidAsString</code>, <code class="language-plaintext highlighter-rouge">PractitionerTransformServiceImpl</code></td>
+      <td>Skip the identifier when there is no UUID.</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>When importing an EMR order, OpenELIS writes an extra Task that has only an id and <code class="language-plaintext highlighter-rouge">basedOn</code> (the remote Task URL), with no <code class="language-plaintext highlighter-rouge">status</code> or <code class="language-plaintext highlighter-rouge">intent</code>. Task is in the default subscription list, so subscribers receive it.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirApiWorkFlowServiceImpl.saveTaskBasedOnRemoteTask</code></td>
+      <td>Populate status and intent, or drop the extra Task.</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>On the lost and rejected referral paths, when the FHIR store has no copy of the ServiceRequest, OpenELIS pushes a ServiceRequest with only an id and a status.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirReferralServiceImpl.publishReferralLost</code> / <code class="language-plaintext highlighter-rouge">publishReferralRejected</code></td>
+      <td>Rebuild the full ServiceRequest from the Analysis.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="semantics-and-data-quality">Semantics and data quality</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Issue</th>
+      <th>Where</th>
+      <th>Suggested fix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.authoredOn</code> is the time the resource was generated, not the time the order was entered.</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code> (<code class="language-plaintext highlighter-rouge">new Date()</code>)</td>
+      <td>Use <code class="language-plaintext highlighter-rouge">Sample.enteredDate</code>.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.locationReference</code> is written as <code class="language-plaintext highlighter-rouge">Location/{Organization UUID}</code> for the referring site and department. No such Location exists.</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code></td>
+      <td>Publish matching Location resources, or reference the Organization another way.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.performer</code> is the ordering provider, not the analyst or the validating biologist.</td>
+      <td><code class="language-plaintext highlighter-rouge">ObservationTransformServiceImpl</code></td>
+      <td>Reference the validating user, or omit it.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><code class="language-plaintext highlighter-rouge">Specimen.collection.collector</code> is never populated, although the collector is passed to the transform.</td>
+      <td><code class="language-plaintext highlighter-rouge">SpecimenTransformServiceImpl.transformToCollection</code></td>
+      <td>Populate it.</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td><code class="language-plaintext highlighter-rouge">Specimen.container.specimenQuantity</code> sends the OpenELIS unit name as a UCUM code. Not every OpenELIS unit name is valid UCUM.</td>
+      <td><code class="language-plaintext highlighter-rouge">SpecimenTransformServiceImpl</code></td>
+      <td>Send <code class="language-plaintext highlighter-rouge">system</code> only when the unit is a UCUM code. Otherwise use <code class="language-plaintext highlighter-rouge">unit</code> only.</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient.gender</code>: any stored value other than <code class="language-plaintext highlighter-rouge">M</code> is sent as <code class="language-plaintext highlighter-rouge">female</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">PatientTransformServiceImpl</code></td>
+      <td>Map F to female, blank to unknown, and anything else to other or unknown.</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>The <code class="language-plaintext highlighter-rouge">{base}/org_uuid</code> identifier is only sent when the organization has a code. The condition checks <code class="language-plaintext highlighter-rouge">code</code> instead of the UUID.</td>
+      <td><code class="language-plaintext highlighter-rouge">OrganizationTransformServiceImpl.setFhirOrganizationIdentifiers</code></td>
+      <td>Check the UUID.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Order Task <code class="language-plaintext highlighter-rouge">output.type</code> is the code <code class="language-plaintext highlighter-rouge">reference</code> with no system. Referral Tasks use <code class="language-plaintext highlighter-rouge">{base}/task_output#DiagnosticReport</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">TaskTransformServiceImpl</code></td>
+      <td>Use the same coding in both.</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Referral Task <code class="language-plaintext highlighter-rouge">reasonCode</code> has a system (<code class="language-plaintext highlighter-rouge">{base}/refer_reason</code>) but no code.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirReferralServiceImpl.createReferralTask</code></td>
+      <td>Send the referral reason, or omit the element.</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Storage <code class="language-plaintext highlighter-rouge">Location.physicalType</code>: devices use <code class="language-plaintext highlighter-rouge">ve</code> (Vehicle), and shelves, racks and boxes use <code class="language-plaintext highlighter-rouge">co</code>, which is <em>Corridor</em> in FHIR. OpenELIS sends the display "Container", which validators report as a display mismatch.</td>
+      <td><code class="language-plaintext highlighter-rouge">StorageLocationFhirTransform</code></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">ca</code> (Cabinet) for devices. Rely on <code class="language-plaintext highlighter-rouge">meta.tag</code> for the level and send physicalType as text or a local code.</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Storage Locations declare <code class="language-plaintext highlighter-rouge">meta.profile</code> = <code class="language-plaintext highlighter-rouge">http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code>, which does not resolve. The IHE mCSD canonical is <code class="language-plaintext highlighter-rouge">https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Location</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">StorageLocationFhirTransform</code></td>
+      <td>Declare this guide's OpenELIS Storage Location profile instead.</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>The storage temperature is sent with no unit. Box grids are sent as the formatted string <code class="language-plaintext highlighter-rouge">"R × C"</code>. The <code class="language-plaintext highlighter-rouge">position-grid-row</code> and <code class="language-plaintext highlighter-rouge">position-grid-column</code> extensions are defined in code but never sent.</td>
+      <td><code class="language-plaintext highlighter-rouge">StorageLocationFhirTransform</code></td>
+      <td>Use a Quantity with a UCUM unit, and two integers for the grid.</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td><code class="language-plaintext highlighter-rouge">shipment-non-conformity</code> does not say which item in the box it applies to.</td>
+      <td><code class="language-plaintext highlighter-rouge">ShippingBoxFhirTransform</code></td>
+      <td>Nest it in <code class="language-plaintext highlighter-rouge">shipment-content-item</code>.</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Draft and ready-to-send boxes are written to the FHIR store as <code class="language-plaintext highlighter-rouge">in-progress</code>. A receiver imports any <code class="language-plaintext highlighter-rouge">in-progress</code> box as in transit, so it can receive a box that was never sent.</td>
+      <td><code class="language-plaintext highlighter-rouge">ShippingBoxFhirTransform.mapBoxStateToFhirStatus</code>, <code class="language-plaintext highlighter-rouge">ShipmentFhirImportService</code></td>
+      <td>Write the SupplyDelivery only once the box is sent, or map draft to a status receivers skip.</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.basedOn</code> is written as <code class="language-plaintext highlighter-rouge">ServiceRequest/{external order number}</code> (the incoming ServiceRequest's first identifier value), not the incoming ServiceRequest's id. It is one value per sample, so every test carries the same reference.</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code> (<code class="language-plaintext highlighter-rouge">sample.getReferringId()</code>)</td>
+      <td>Keep the incoming ServiceRequest id per analysis and reference it, or use a logical reference by identifier.</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>The referral Task requester is a copy of the provider written to the FHIR store with a new random id for each referral, so duplicate Practitioners accumulate and the reference never carries the provider UUID. On the completion, lost and rejected paths the owner can be empty when the reference lab's Organization is not in the FHIR store.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirReferralServiceImpl</code></td>
+      <td>Reference the provider's existing Practitioner. Fail loudly when the owner cannot be resolved.</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>The referring lab only polls for referral Tasks in requested, received or accepted status, so a Task the reference lab rejected is never seen.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirApiWorkFlowServiceImpl.beginTaskCheckIfAcceptedPath</code></td>
+      <td>Include rejected in the search and handle it.</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>QuestionnaireResponses have no <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">basedOn</code> or <code class="language-plaintext highlighter-rouge">authored</code>. Generic Sample answers use <code class="language-plaintext highlighter-rouge">valueCoding</code> with no system.</td>
+      <td><code class="language-plaintext highlighter-rouge">GenericSampleOrderServiceImpl</code>, order entry front end</td>
+      <td>Link the response to the patient and order, and send the answer option's system.</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>The questionnaire identifier system is misspelled: <code class="language-plaintext highlighter-rouge">{base}/notebook_questionare</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">QuestionnaireConfigurationHandler</code></td>
+      <td>Correct it, and keep reading the old spelling.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="urls-and-configuration">URLs and configuration</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Issue</th>
+      <th>Where</th>
+      <th>Suggested fix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>27</td>
+      <td>OpenELIS uses three URL bases for its own definitions (<code class="language-plaintext highlighter-rouge">http://openelis-global.org</code>, <code class="language-plaintext highlighter-rouge">http://openelis.org</code>, <code class="language-plaintext highlighter-rouge">https://openelis-global.org/fhir</code>), and none of them resolves. This guide defines the extensions under its own canonical, so live messages do not match its definitions until the code changes.</td>
+      <td>Various</td>
+      <td>Move every extension and profile URL to this guide's canonical (<code class="language-plaintext highlighter-rouge">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}</code>) and keep accepting the old URLs on import.</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Some code ignores <code class="language-plaintext highlighter-rouge">org.openelisglobal.oe.fhir.system</code> and hard-codes <code class="language-plaintext highlighter-rouge">http://openelis-global.org/pat_*</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">PatientTransformServiceImpl.transformToOpenElisPatientSearchResults</code>, <code class="language-plaintext highlighter-rouge">PatientSearchRestController</code></td>
+      <td>Use <code class="language-plaintext highlighter-rouge">FhirConfig.getOeFhirSystem()</code>.</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Analyzer <code class="language-plaintext highlighter-rouge">Device.id</code> falls back to the numeric database id when the analyzer has no UUID. <code class="language-plaintext highlighter-rouge">Device.owner</code> is an identifier-only reference.</td>
+      <td><code class="language-plaintext highlighter-rouge">DeviceTransformServiceImpl</code></td>
+      <td>Always assign a UUID. Add <code class="language-plaintext highlighter-rouge">owner.reference</code> to the site Organization.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rest-api">REST API</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Issue</th>
+      <th>Where</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /Patient</code> returns the database id in the Location header, not the FHIR UUID used by <code class="language-plaintext highlighter-rouge">GET /Patient/{id}</code>. <code class="language-plaintext highlighter-rouge">DELETE /Patient/{id}</code> does not change the OpenELIS patient: it only marks the FHIR store copy inactive.</td>
+      <td><code class="language-plaintext highlighter-rouge">PatientProvider.create</code> / <code class="language-plaintext highlighter-rouge">delete</code></td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td><code class="language-plaintext highlighter-rouge">_sort</code> is accepted and ignored.</td>
+      <td><code class="language-plaintext highlighter-rouge">BaseFhirDao</code></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Unauthenticated requests, including <code class="language-plaintext highlighter-rouge">GET /metadata</code>, get a redirect to the login page instead of 401 with an OperationOutcome.</td>
+      <td><code class="language-plaintext highlighter-rouge">SecurityConfig</code></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>The OpenELIS-generated CapabilityStatement at <code class="language-plaintext highlighter-rouge">/metadata</code> does not reference the profiles in this guide.</td>
+      <td><code class="language-plaintext highlighter-rouge">FhirRestfulServer</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="not-yet-covered-by-this-guide">Not yet covered by this guide</h3>
+
+<ul>
+  <li>The inbound analyzer-bridge result bundle (<code class="language-plaintext highlighter-rouge">POST /analyzer/fhir</code>, profile
+<code class="language-plaintext highlighter-rouge">https://openelis-global.org/fhir/StructureDefinition/analyzer-normalized-bundle-v1</code>).</li>
+  <li>External quality assessment (EQA) result submission (DiagnosticReport and Observation with <code class="language-plaintext highlighter-rouge">{base}/eqa/...</code> systems).</li>
+  <li>Questionnaire and QuestionnaireResponse (programme questions and Generic Sample forms).</li>
+  <li>Pathology, cytology and immunohistochemistry reports.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
+          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-09-29 02:24:00 +0000">
+    2026-09-29
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

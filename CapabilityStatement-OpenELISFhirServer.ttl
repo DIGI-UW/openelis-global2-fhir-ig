@@ -1,0 +1,784 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "OpenELISFhirServer"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement OpenELISFhirServer</b></p><a name=\"OpenELISFhirServer\"> </a><a name=\"hcOpenELISFhirServer\"> </a><h2 id=\"title\">OpenELIS Global FHIR REST server</h2><ul><li>Implementation Guide Version: 0.2.0 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code>, <code>xml</code></li><li>Published on: 2026-09-29 </li><li>Published by: OpenELIS Global (Digital Initiatives Group, University of Washington) </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id=\"shallIGs\">SHALL Support the Following Implementation Guides</h3><ul><li><a href=\"index.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir</a></li></ul><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div><p>Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is accepted but ignored: results come back in database insertion order. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported.</p>\n</div><div class=\"lead\"><em>Security</em></div><blockquote><div><p>TLS is required. Send HTTP Basic credentials of an OpenELIS user account (Authorization: Basic), or use an authenticated OpenELIS browser session. Where the site enables them, OpenELIS also accepts client certificate and OAuth2 / OIDC login. Requests without credentials are redirected to the login page, including /metadata.</p>\n</div></blockquote></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th class=\"text-center\"><b title=\"DELETE a resource (delete interaction)\">D</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Patient1-1\">Patient</a></td><td><a href=\"StructureDefinition-openelis-patient.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, name, given, family, birthdate, gender</td><td/><td><code>ServiceRequest:patient</code>, <code>ServiceRequest:subject</code>, <code>Specimen:patient</code>, <code>Specimen:subject</code>, <code>Observation:patient</code>, <code>Observation:subject</code>, <code>DiagnosticReport:patient</code>, <code>DiagnosticReport:subject</code></td><td/></tr><tr><td><a href=\"#ServiceRequest1-2\">ServiceRequest</a></td><td><a href=\"StructureDefinition-openelis-service-request.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, patient, subject, requester, specimen, code, status</td><td><code>ServiceRequest:patient</code>, <code>ServiceRequest:subject</code>, <code>ServiceRequest:requester</code>, <code>ServiceRequest:specimen</code></td><td><code>Observation:based-on</code>, <code>DiagnosticReport:based-on</code></td><td/></tr><tr><td><a href=\"#DiagnosticReport1-3\">DiagnosticReport</a></td><td><a href=\"StructureDefinition-openelis-diagnostic-report.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, patient, subject, based-on, result, specimen, code, status, issued</td><td><code>DiagnosticReport:patient</code>, <code>DiagnosticReport:subject</code>, <code>DiagnosticReport:based-on</code>, <code>DiagnosticReport:result</code>, <code>DiagnosticReport:specimen</code></td><td/><td/></tr><tr><td><a href=\"#Observation1-4\">Observation</a></td><td><a href=\"StructureDefinition-openelis-observation.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, patient, subject, based-on, specimen, code, status, date</td><td><code>Observation:patient</code>, <code>Observation:subject</code>, <code>Observation:based-on</code>, <code>Observation:specimen</code>, <code>Observation:performer</code></td><td><code>DiagnosticReport:result</code></td><td/></tr><tr><td><a href=\"#Specimen1-5\">Specimen</a></td><td><a href=\"StructureDefinition-openelis-specimen.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, accession, patient, subject, type, status, collected</td><td><code>Specimen:patient</code>, <code>Specimen:subject</code></td><td><code>ServiceRequest:specimen</code>, <code>Observation:specimen</code>, <code>DiagnosticReport:specimen</code></td><td/></tr><tr><td><a href=\"#Practitioner1-6\">Practitioner</a></td><td><a href=\"StructureDefinition-openelis-practitioner.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, name, given, family, address-city, address-state, address-postalcode, address-country, telecom, email, phone</td><td/><td><code>ServiceRequest:requester</code>, <code>Observation:performer</code></td><td/></tr><tr><td><a href=\"#Organization1-7\">Organization</a></td><td><a href=\"StructureDefinition-openelis-organization.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, name, active, type, partof, address-city, address-state</td><td><code>Organization:partof</code></td><td><code>Organization:partof</code></td><td/></tr><tr><td><a href=\"#Location1-8\">Location</a></td><td><a href=\"StructureDefinition-openelis-storage-location.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, name, status, partof, _tag</td><td><code>Location:partof</code></td><td><code>Location:partof</code></td><td/></tr><tr><td><a href=\"#Device1-9\">Device</a></td><td><a href=\"StructureDefinition-openelis-analyzer-device.html\">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device</a></td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td>_id, identifier, _lastUpdated, device-name, type, status</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-patient.html\">OpenELIS Patient</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Delete does not change the patient in OpenELIS: it only marks the FHIR store copy active = false (see Known Issues). The id returned by create is the database id, not the FHIR UUID.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>given</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>family</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>birthdate</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>gender</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"ServiceRequest1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>ServiceRequest</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-service-request.html\">OpenELIS ServiceRequest</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Backed by the OpenELIS Analysis (one per ordered test). create requires subject (an existing Patient), code and specimen (an existing Specimen, which supplies the lab number and sample item). Delete cancels the Analysis and returns 204.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>subject</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>requester</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>specimen</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"DiagnosticReport1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>DiagnosticReport</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-diagnostic-report.html\">OpenELIS DiagnosticReport</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>A read-only view of the OpenELIS Analysis. Its id equals the ServiceRequest id for the same test. Delete cancels the Analysis.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>subject</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>based-on</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>result</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>specimen</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>issued</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Observation1-4\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Observation</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-observation.html\">OpenELIS Observation</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Backed by the OpenELIS Result.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>subject</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>based-on</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>specimen</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>code</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>date</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Specimen1-5\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Specimen</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-specimen.html\">OpenELIS Specimen</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Backed by the OpenELIS SampleItem. On update a body id that differs from the URL id returns 400. Delete cancels (rejects) the sample item.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>accession</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>subject</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>type</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>collected</td><td><code>date</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Practitioner1-6\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Practitioner</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-practitioner.html\">OpenELIS Practitioner</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Backed by the OpenELIS Provider. update changes name and telecom only. Delete sets active = false.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>given</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>family</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-city</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-state</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-postalcode</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-country</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>telecom</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>email</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>phone</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Organization1-7\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Organization</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-organization.html\">OpenELIS Organization</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>update changes name, active and partOf only. Delete sets the organization inactive.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>active</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>type</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>partof</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-city</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>address-state</td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Location1-8\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Location</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-storage-location.html\">OpenELIS Storage Location</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>The sample storage hierarchy (room / device / shelf / rack / box). The level comes from meta.tag (system http://openelis.org/fhir/tag/storage-hierarchy), falling back to physicalType.text. partOf is required except for rooms. On create the client id is ignored. On update a body id that differs from the URL id returns 400. Delete deactivates.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>partof</td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_tag</td><td><code>token</code></td><td><div><p>Storage level: http://openelis.org/fhir/tag/storage-hierarchy|room / device / shelf / rack / box</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Device1-9\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Device</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-openelis-analyzer-device.html\">OpenELIS Analyzer Device</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li>Supports <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>Backed by the OpenELIS Analyzer. On create the client id is ignored. Delete sets the analyzer inactive.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>_lastUpdated</td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>device-name</td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>type</td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td>status</td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\"> </div></div></div></div></div></div>"
+  ] ;
+  fhir:CapabilityStatement.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer"] ;
+  fhir:CapabilityStatement.version [ fhir:value "0.2.0"] ;
+  fhir:CapabilityStatement.name [ fhir:value "OpenELISFhirServer"] ;
+  fhir:CapabilityStatement.title [ fhir:value "OpenELIS Global FHIR REST server"] ;
+  fhir:CapabilityStatement.status [ fhir:value "active"] ;
+  fhir:CapabilityStatement.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CapabilityStatement.date [ fhir:value "2026-09-29"^^xsd:date] ;
+  fhir:CapabilityStatement.publisher [ fhir:value "OpenELIS Global (Digital Initiatives Group, University of Washington)"] ;
+  fhir:CapabilityStatement.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "OpenELIS Global (Digital Initiatives Group, University of Washington)" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://openelis-global.org" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "OpenELIS Global community" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://uwdigi.atlassian.net/wiki/spaces/oeg/overview" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.description [ fhir:value "The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenELIS-Global/fhir. It reads from and writes to the OpenELIS database directly. It is not the co-resident HAPI FHIR store. See api.html."] ;
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "001" ] ;
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ] ;
+  fhir:CapabilityStatement.kind [ fhir:value "capability"] ;
+  fhir:CapabilityStatement.software [
+     fhir:CapabilityStatement.software.name [ fhir:value "OpenELIS Global" ] ;
+     fhir:CapabilityStatement.software.version [ fhir:value "3.x (develop, 2026-09-29)" ]
+  ] ;
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:CapabilityStatement.format [
+     fhir:value "json" ;
+     fhir:index 0
+  ], [
+     fhir:value "xml" ;
+     fhir:index 1
+  ] ;
+  fhir:CapabilityStatement.implementationGuide [
+     fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir" ;
+     fhir:index 0 ;
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir>
+  ] ;
+  fhir:CapabilityStatement.rest [
+     fhir:index 0 ;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ] ;
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is accepted but ignored: results come back in database insertion order. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported." ] ;
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "TLS is required. Send HTTP Basic credentials of an OpenELIS user account (Authorization: Basic), or use an authenticated OpenELIS browser session. Where the site enables them, OpenELIS also accepts client certificate and OAuth2 / OIDC login. Requests without credentials are redirected to the login page, including /metadata." ]
+     ] ;
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Delete does not change the patient in OpenELIS: it only marks the FHIR store copy active = false (see Known Issues). The id returned by create is the database id, not the FHIR UUID." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "ServiceRequest:patient" ;
+         fhir:index 0
+       ], [
+         fhir:value "ServiceRequest:subject" ;
+         fhir:index 1
+       ], [
+         fhir:value "Specimen:patient" ;
+         fhir:index 2
+       ], [
+         fhir:value "Specimen:subject" ;
+         fhir:index 3
+       ], [
+         fhir:value "Observation:patient" ;
+         fhir:index 4
+       ], [
+         fhir:value "Observation:subject" ;
+         fhir:index 5
+       ], [
+         fhir:value "DiagnosticReport:patient" ;
+         fhir:index 6
+       ], [
+         fhir:value "DiagnosticReport:subject" ;
+         fhir:index 7
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "given" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "family" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "birthdate" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "gender" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ServiceRequest" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Backed by the OpenELIS Analysis (one per ordered test). create requires subject (an existing Patient), code and specimen (an existing Specimen, which supplies the lab number and sample item). Delete cancels the Analysis and returns 204." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "ServiceRequest:patient" ;
+         fhir:index 0
+       ], [
+         fhir:value "ServiceRequest:subject" ;
+         fhir:index 1
+       ], [
+         fhir:value "ServiceRequest:requester" ;
+         fhir:index 2
+       ], [
+         fhir:value "ServiceRequest:specimen" ;
+         fhir:index 3
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "Observation:based-on" ;
+         fhir:index 0
+       ], [
+         fhir:value "DiagnosticReport:based-on" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "requester" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specimen" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "DiagnosticReport" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "A read-only view of the OpenELIS Analysis. Its id equals the ServiceRequest id for the same test. Delete cancels the Analysis." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "DiagnosticReport:patient" ;
+         fhir:index 0
+       ], [
+         fhir:value "DiagnosticReport:subject" ;
+         fhir:index 1
+       ], [
+         fhir:value "DiagnosticReport:based-on" ;
+         fhir:index 2
+       ], [
+         fhir:value "DiagnosticReport:result" ;
+         fhir:index 3
+       ], [
+         fhir:value "DiagnosticReport:specimen" ;
+         fhir:index 4
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "based-on" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "result" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specimen" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 9 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 10 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "issued" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Observation" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Backed by the OpenELIS Result." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "Observation:patient" ;
+         fhir:index 0
+       ], [
+         fhir:value "Observation:subject" ;
+         fhir:index 1
+       ], [
+         fhir:value "Observation:based-on" ;
+         fhir:index 2
+       ], [
+         fhir:value "Observation:specimen" ;
+         fhir:index 3
+       ], [
+         fhir:value "Observation:performer" ;
+         fhir:index 4
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "DiagnosticReport:result" ;
+         fhir:index 0
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "based-on" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "specimen" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 9 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "date" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Specimen" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Backed by the OpenELIS SampleItem. On update a body id that differs from the URL id returns 400. Delete cancels (rejects) the sample item." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "Specimen:patient" ;
+         fhir:index 0
+       ], [
+         fhir:value "Specimen:subject" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "ServiceRequest:specimen" ;
+         fhir:index 0
+       ], [
+         fhir:value "Observation:specimen" ;
+         fhir:index 1
+       ], [
+         fhir:value "DiagnosticReport:specimen" ;
+         fhir:index 2
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "accession" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "subject" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "collected" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Backed by the OpenELIS Provider. update changes name and telecom only. Delete sets active = false." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "ServiceRequest:requester" ;
+         fhir:index 0
+       ], [
+         fhir:value "Observation:performer" ;
+         fhir:index 1
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "given" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "family" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-city" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-state" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-postalcode" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 9 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-country" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 10 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "telecom" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 11 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "email" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 12 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "phone" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "update changes name, active and partOf only. Delete sets the organization inactive." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "Organization:partof" ;
+         fhir:index 0
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "Organization:partof" ;
+         fhir:index 0
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "active" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partof" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 7 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-city" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 8 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "address-state" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Location" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "The sample storage hierarchy (room / device / shelf / rack / box). The level comes from meta.tag (system http://openelis.org/fhir/tag/storage-hierarchy), falling back to physicalType.text. partOf is required except for rooms. On create the client id is ignored. On update a body id that differs from the URL id returns 400. Delete deactivates." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchInclude [
+         fhir:value "Location:partof" ;
+         fhir:index 0
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchRevInclude [
+         fhir:value "Location:partof" ;
+         fhir:index 0
+       ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "partof" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ]
+       ], [
+         fhir:index 6 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_tag" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Storage level: http://openelis.org/fhir/tag/storage-hierarchy|room / device / shelf / rack / box" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Device" ] ;
+       fhir:CapabilityStatement.rest.resource.profile [
+         fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device" ;
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device>
+       ] ;
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "Backed by the OpenELIS Analyzer. On create the client id is ignored. Delete sets the analyzer inactive." ] ;
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ] ;
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "no-version" ] ;
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ] ;
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 1 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 2 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ]
+       ], [
+         fhir:index 3 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "device-name" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "string" ]
+       ], [
+         fhir:index 4 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "type" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ], [
+         fhir:index 5 ;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ] ;
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

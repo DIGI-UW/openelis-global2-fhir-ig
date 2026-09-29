@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="5a9cc354-9495-5090-91d7-b67b0d2ef5dc"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location"/>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location"/>
+    <tag>
+      <system value="http://openelis.org/fhir/tag/storage-hierarchy"/>
+      <code value="rack"/>
+      <display value="Rack"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location 5a9cc354-9495-5090-91d7-b67b0d2ef5dc</b></p><a name="5a9cc354-9495-5090-91d7-b67b0d2ef5dc"> </a><a name="hc5a9cc354-9495-5090-91d7-b67b0d2ef5dc"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-storage-location-code.html" title="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.">OEStorageLocationCode</a>/MAIN-FRZ01-Shelf 1-Rack 2</p><p><b>status</b>: Active</p><p><b>name</b>: Rack 2</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title="Codes:">Storage Rack</span></p><p><b>partOf</b>: <a href="Location-8264f454-03c2-597b-996d-b9ea0998f326.html">Location Shelf 1</a></p></div>
+  </text>
+  <identifier>
+    <system value="http://openelis.org/storage-location-code"/>
+    <value value="MAIN-FRZ01-Shelf 1-Rack 2"/>
+  </identifier>
+  <status value="active"/>
+  <name value="Rack 2"/>
+  <mode value="instance"/>
+  <physicalType>
+    <text value="Storage Rack"/>
+  </physicalType>
+  <partOf>
+    <reference value="Location/8264f454-03c2-597b-996d-b9ea0998f326"/>
+  </partOf>
+</Location>

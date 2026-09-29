@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="cc90c222-c1fa-5cb0-bb01-a2b35ac26244"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner cc90c222-c1fa-5cb0-bb01-a2b35ac26244</b></p><a name="cc90c222-c1fa-5cb0-bb01-a2b35ac26244"> </a><a name="hccc90c222-c1fa-5cb0-bb01-a2b35ac26244"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-practitioner.html">OpenELIS Practitioner</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-provider-uuid.html" title="UUID of the OpenELIS provider. Carried on Practitioner.">OEProviderUUID</a>/cc90c222-c1fa-5cb0-bb01-a2b35ac26244 (use: usual, ), <a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Kofi Mensah </p><p><b>telecom</b>: <a href="tel:+0005550101">+000 555 0101</a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/provider_uuid"/>
+    <value value="cc90c222-c1fa-5cb0-bb01-a2b35ac26244"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+    <assigner>
+      <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Mensah"/>
+    <given value="Kofi"/>
+    <prefix value="Dr"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+000 555 0101"/>
+    <use value="mobile"/>
+  </telecom>
+</Practitioner>

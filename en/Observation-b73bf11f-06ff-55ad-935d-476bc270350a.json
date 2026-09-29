@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Observation",
+  "id" : "b73bf11f-06ff-55ad-935d-476bc270350a",
+  "meta" : {
+    "profile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation b73bf11f-06ff-55ad-935d-476bc270350a</b></p><a name=\"b73bf11f-06ff-55ad-935d-476bc270350a\"> </a><a name=\"hcb73bf11f-06ff-55ad-935d-476bc270350a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-observation.html\">OpenELIS Observation</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-result-uuid.html\" title=\"UUID of the OpenELIS result. Carried on Observation.\">OEResultUUID</a>/b73bf11f-06ff-55ad-935d-476bc270350a\u00a0(use:\u00a0usual,\u00a0), <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB\u00a0(use:\u00a0official,\u00a0)</p><p><b>basedOn</b>: <a href=\"ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.html\">ServiceRequest Glucose [Mass/volume] in Serum or Plasma</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2345-7}\">Glucose</span></p><p><b>subject</b>: <a href=\"Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html\">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>effective</b>: 2026-09-28 13:05:00+1000</p><p><b>issued</b>: 2026-09-28 13:05:00+1000</p><p><b>performer</b>: <a href=\"Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.html\">Practitioner Kofi Mensah </a></p><p><b>value</b>: 92 mg/dL</p><p><b>specimen</b>: <a href=\"Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.html\">Specimen: identifier = http://openelis-global.org/sampleItem_uuid#OESampleItemUUID#97b37d86-fd55-529b-bbd7-4766f3988fab\u00a0(use:\u00a0usual,\u00a0),http://openelis-global.org/facility_id#OEFacilityId#EDH-LAB\u00a0(use:\u00a0official,\u00a0); accessionIdentifier = http://openelis-global.org/sampleItem_labNo#OESampleItemLabNumber#EDH26000000417-1\u00a0(use:\u00a0usual,\u00a0); status = available; type = Serum; receivedTime = 2026-09-28 09:30:00+1000</a></p><p><b>device</b>: <a href=\"Device-ff2b5d6a-ff46-5f20-b254-4eaa0615d555.html\">Device: extension = 2026-09-01 07:30:00+1000,,ACTIVE; identifier = http://openelis-global.org/analyzer_uuid#OEAnalyzerUUID#ff2b5d6a-ff46-5f20-b254-4eaa0615d555\u00a0(use:\u00a0usual,\u00a0),http://openelis-global.org/analyzer_bridge_connection#OEAnalyzerBridgeConnection#chem-01\u00a0(use:\u00a0usual,\u00a0); status = active; type = </a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://openelis-global.org/result_uuid",
+    "value" : "b73bf11f-06ff-55ad-935d-476bc270350a"
+  },
+  {
+    "use" : "official",
+    "system" : "http://openelis-global.org/facility_id",
+    "value" : "EDH-LAB",
+    "assigner" : {
+      "reference" : "Organization/a845f2db-10e5-5117-ac75-553f615e301a"
+    }
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/48549f60-c400-5510-97da-2e2497627e81"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2345-7",
+      "display" : "Glucose [Mass/volume] in Serum or Plasma"
+    }],
+    "text" : "Glucose"
+  },
+  "subject" : {
+    "reference" : "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"
+  },
+  "effectiveDateTime" : "2026-09-28T13:05:00+10:00",
+  "issued" : "2026-09-28T13:05:00+10:00",
+  "performer" : [{
+    "reference" : "Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244"
+  }],
+  "valueQuantity" : {
+    "value" : 92,
+    "unit" : "mg/dL"
+  },
+  "specimen" : {
+    "reference" : "Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab"
+  },
+  "device" : {
+    "reference" : "Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555"
+  }
+}

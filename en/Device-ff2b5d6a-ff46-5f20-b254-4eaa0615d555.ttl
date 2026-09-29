@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ff2b5d6a-ff46-5f20-b254-4eaa0615d555"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device" ;
+       fhir:index -1 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ff2b5d6a-ff46-5f20-b254-4eaa0615d555</b></p><a name=\"ff2b5d6a-ff46-5f20-b254-4eaa0615d555\"> </a><a name=\"hcff2b5d6a-ff46-5f20-b254-4eaa0615d555\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-analyzer-device.html\">OpenELIS Analyzer Device</a></p></div><p><b>Analyzer last activated</b>: 2026-09-01 07:30:00+1000</p><blockquote><p><b>Analyzer test units</b></p><ul><li>testUnitId: 36</li><li>testUnitId: 41</li></ul></blockquote><p><b>Analyzer operational status</b>: ACTIVE</p><p><b>identifier</b>: <a href=\"NamingSystem-oe-ns-analyzer-uuid.html\" title=\"UUID of the OpenELIS analyzer. Carried on Device.\">OEAnalyzerUUID</a>/ff2b5d6a-ff46-5f20-b254-4eaa0615d555 (use: usual, ), <a href=\"NamingSystem-oe-ns-analyzer-bridge-connection.html\" title=\"Connection id of the analyzer in the OpenELIS analyzer bridge. On import OpenELIS accepts any system ending in /analyzer_bridge_connection.\">OEAnalyzerBridgeConnection</a>/chem-01 (use: usual, )</p><p><b>status</b>: Active</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Chemistry Analyzer 1</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:\">astm-chemistry-generic</span></p><p><b>owner</b>: Identifier: <a href=\"NamingSystem-oe-ns-facility-id.html\" title=\"Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.\">OEFacilityId</a>/EDH-LAB (use: official, )</p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-09-01T07:30:00+10:00"^^xsd:dateTime ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "testUnitId" ] ;
+       fhir:Extension.valueString [ fhir:value "36" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "testUnitId" ] ;
+       fhir:Extension.valueString [ fhir:value "41" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-test-units" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "ACTIVE" ]
+  ] ;
+  fhir:Device.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/analyzer_uuid" ] ;
+     fhir:Identifier.value [ fhir:value "ff2b5d6a-ff46-5f20-b254-4eaa0615d555" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Identifier.use [ fhir:value "usual" ] ;
+     fhir:Identifier.system [ fhir:value "http://openelis-global.org/analyzer_bridge_connection" ] ;
+     fhir:Identifier.value [ fhir:value "chem-01" ]
+  ] ;
+  fhir:Device.status [ fhir:value "active"] ;
+  fhir:Device.deviceName [
+     fhir:index -1 ;
+     fhir:Device.deviceName.name [ fhir:value "Chemistry Analyzer 1" ] ;
+     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+  ] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.text [ fhir:value "astm-chemistry-generic" ]
+  ] ;
+  fhir:Device.owner [
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "http://openelis-global.org/facility_id" ] ;
+       fhir:Identifier.value [ fhir:value "EDH-LAB" ] ;
+       fhir:Identifier.assigner [
+         fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/a845f2db-10e5-5117-ac75-553f615e301a> ;
+         fhir:Reference.reference [ fhir:value "Organization/a845f2db-10e5-5117-ac75-553f615e301a" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Device/ff2b5d6a-ff46-5f20-b254-4eaa0615d555.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

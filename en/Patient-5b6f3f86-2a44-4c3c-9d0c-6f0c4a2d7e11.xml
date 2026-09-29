@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient 5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11</b></p><a name="5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"> </a><a name="hc5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-patient.html">OpenELIS Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><a href="NamingSystem-oe-ns-pat-uuid.html" title="OpenELIS internal UUID of the patient. Equals Patient.id.">OEPatientUUID</a>/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (use: usual, )</li><li><a href="NamingSystem-oe-ns-pat-subject-number.html" title="Subject (study or programme) number entered in OpenELIS.">OEPatientSubjectNumber</a>/RHC-2026-00417 (use: usual, )</li><li><a href="NamingSystem-oe-ns-pat-national-id.html" title="National identifier entered in OpenELIS. Sent with Identifier.use = official.">OEPatientNationalId</a>/NID-000-123-456 (use: official, )</li><li><a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB (use: official, )</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="tel:+0005550199">+000 555 0199</a></li><li>Plot 7, Hill Street commune: Riverside North Riverside XX </li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/pat_uuid"/>
+    <value value="5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/pat_subjectNumber"/>
+    <value value="RHC-2026-00417"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/pat_nationalId"/>
+    <value value="NID-000-123-456"/>
+  </identifier>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/pat_guid"/>
+    <value value="dd63810d-c44b-52b6-b70d-0d8e60533c6d"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+    <assigner>
+      <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+    </assigner>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Banda"/>
+    <given value="Grace"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+000 555 0199"/>
+    <use value="mobile"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1991-04"/>
+  <address>
+    <line value="Plot 7, Hill Street"/>
+    <line value="commune: Riverside North"/>
+    <city value="Riverside"/>
+    <country value="XX"/>
+  </address>
+</Patient>

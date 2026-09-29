@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="a845f2db-10e5-5117-ac75-553f615e301a"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization a845f2db-10e5-5117-ac75-553f615e301a</b></p><a name="a845f2db-10e5-5117-ac75-553f615e301a"> </a><a name="hca845f2db-10e5-5117-ac75-553f615e301a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-organization.html">OpenELIS Organization</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Example District Hospital Laboratory</p><p><b>address</b>: Riverside XX (work)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Example District Hospital Laboratory"/>
+  <address>
+    <use value="work"/>
+    <city value="Riverside"/>
+    <district value="Central District"/>
+    <country value="XX"/>
+  </address>
+</Organization>

@@ -1,168 +1,441 @@
 [{
-  "id" : "openelis",
+  "id" : "OpenELISFhirServer",
+  "type" : "CapabilityStatement",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer",
+  "version" : "0.2.0",
+  "name" : "OpenELISFhirServer"
+},
+{
+  "id" : "oe-analyzer-operational-status",
+  "type" : "CodeSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerOperationalStatus"
+},
+{
+  "id" : "org.openelisglobal.fhir",
   "type" : "ImplementationGuide",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/ImplementationGuide/openelis",
-  "version" : "0.1.0",
-  "name" : "OpenELISImplementationGuide"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir",
+  "version" : "0.2.0",
+  "name" : "OpenELISGlobalImplementationGuide"
 },
 {
-  "id" : "OpenELIPatientIdentifierSystem",
+  "id" : "oe-ns-analysis-result-uuid",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELIPatientIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELIPatientIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-analysis-result-uuid",
+  "version" : "0.2.0",
+  "name" : "OEAnalysisResultUUID"
 },
 {
-  "id" : "OpenELISDiagnosticReportIdentifierSystem",
+  "id" : "oe-ns-analysis-uuid",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISDiagnosticReportIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELISDiagnosticReportIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-analysis-uuid",
+  "version" : "0.2.0",
+  "name" : "OEAnalysisUUID"
 },
 {
-  "id" : "OpenELISObservationIdentifierSystem",
+  "id" : "oe-ns-analyzer-bridge-connection",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISObservationIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELISObservationIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-analyzer-bridge-connection",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerBridgeConnection"
 },
 {
-  "id" : "OpenELISOrgIdentifierSystem",
+  "id" : "oe-ns-analyzer-uuid",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISOrgIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELISOrgIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-analyzer-uuid",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerUUID"
 },
 {
-  "id" : "OpenELISServiceRequestIdentifierSystem",
+  "id" : "oe-ns-facility-id",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISServiceRequestIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELISServiceRequestIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-facility-id",
+  "version" : "0.2.0",
+  "name" : "OEFacilityId"
 },
 {
-  "id" : "OpenELISSpecimenIdentifierSystem",
+  "id" : "oe-ns-order-accession",
   "type" : "NamingSystem",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/NamingSystem/OpenELISSpecimenIdentifierSystem",
-  "version" : "0.1.0",
-  "name" : "OpenELISSpecimenIdentifierSystem"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-accession",
+  "version" : "0.2.0",
+  "name" : "OEOrderAccessionNumber"
 },
 {
-  "id" : "analyzer-communication-mode",
-  "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-communication-mode",
-  "version" : "0.1.0",
-  "name" : "AnalyzerCommunicationMode"
+  "id" : "oe-ns-order-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-order-uuid",
+  "version" : "0.2.0",
+  "name" : "OEOrderUUID"
 },
 {
-  "id" : "analyzer-identifier-pattern",
-  "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-identifier-pattern",
-  "version" : "0.1.0",
-  "name" : "AnalyzerIdentifierPattern"
+  "id" : "oe-ns-org-clianum",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-org-clianum",
+  "version" : "0.2.0",
+  "name" : "OEOrganizationCLIANumber"
+},
+{
+  "id" : "oe-ns-org-code",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-org-code",
+  "version" : "0.2.0",
+  "name" : "OEOrganizationCode"
+},
+{
+  "id" : "oe-ns-org-shortname",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-org-shortname",
+  "version" : "0.2.0",
+  "name" : "OEOrganizationShortName"
+},
+{
+  "id" : "oe-ns-org-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-org-uuid",
+  "version" : "0.2.0",
+  "name" : "OEOrganizationUUID"
+},
+{
+  "id" : "oe-ns-pat-guid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-pat-guid",
+  "version" : "0.2.0",
+  "name" : "OEPatientGUID"
+},
+{
+  "id" : "oe-ns-pat-national-id",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-pat-national-id",
+  "version" : "0.2.0",
+  "name" : "OEPatientNationalId"
+},
+{
+  "id" : "oe-ns-pat-st-number",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-pat-st-number",
+  "version" : "0.2.0",
+  "name" : "OEPatientSTNumber"
+},
+{
+  "id" : "oe-ns-pat-subject-number",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-pat-subject-number",
+  "version" : "0.2.0",
+  "name" : "OEPatientSubjectNumber"
+},
+{
+  "id" : "oe-ns-pat-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-pat-uuid",
+  "version" : "0.2.0",
+  "name" : "OEPatientUUID"
+},
+{
+  "id" : "oe-ns-provider-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-provider-uuid",
+  "version" : "0.2.0",
+  "name" : "OEProviderUUID"
+},
+{
+  "id" : "oe-ns-result-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-result-uuid",
+  "version" : "0.2.0",
+  "name" : "OEResultUUID"
+},
+{
+  "id" : "oe-ns-samp-labno",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-samp-labno",
+  "version" : "0.2.0",
+  "name" : "OESampleLabNumber"
+},
+{
+  "id" : "oe-ns-sampleitem-labno",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-sampleitem-labno",
+  "version" : "0.2.0",
+  "name" : "OESampleItemLabNumber"
+},
+{
+  "id" : "oe-ns-sampleitem-uuid",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-sampleitem-uuid",
+  "version" : "0.2.0",
+  "name" : "OESampleItemUUID"
+},
+{
+  "id" : "oe-ns-shipment-box-id",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-shipment-box-id",
+  "version" : "0.2.0",
+  "name" : "OEShipmentBoxId"
+},
+{
+  "id" : "oe-ns-storage-location-code",
+  "type" : "NamingSystem",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-storage-location-code",
+  "version" : "0.2.0",
+  "name" : "OEStorageLocationCode"
 },
 {
   "id" : "analyzer-last-activated",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-last-activated",
-  "version" : "0.1.0",
-  "name" : "AnalyzerLastActivated"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerLastActivated"
 },
 {
-  "id" : "analyzer-location",
+  "id" : "analyzer-operational-status",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-location",
-  "version" : "0.1.0",
-  "name" : "AnalyzerLocation"
-},
-{
-  "id" : "analyzer-protocol-version",
-  "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-protocol-version",
-  "version" : "0.1.0",
-  "name" : "AnalyzerProtocolVersion"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerOperationalStatusExt"
 },
 {
   "id" : "analyzer-test-units",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-test-units",
-  "version" : "0.1.0",
-  "name" : "AnalyzerTestUnits"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-test-units",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerTestUnits"
 },
 {
-  "id" : "analyzer-transport-details",
+  "id" : "collection-location-gps",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/analyzer-transport-details",
-  "version" : "0.1.0",
-  "name" : "AnalyzerTransportDetails"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/collection-location-gps",
+  "version" : "0.2.0",
+  "name" : "OECollectionLocationGPS"
 },
 {
-  "id" : "open-elis-device",
+  "id" : "device-communication-protocol",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-device",
-  "version" : "0.1.0",
-  "name" : "OpenELISDevice"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol",
+  "version" : "0.2.0",
+  "name" : "OEStorageDeviceProtocol"
 },
 {
-  "id" : "open-elis-location",
+  "id" : "device-ip-address",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-location",
-  "version" : "0.1.0",
-  "name" : "OpenELISLocation"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-ip-address",
+  "version" : "0.2.0",
+  "name" : "OEStorageDeviceIPAddress"
 },
 {
-  "id" : "open-elis-observation",
+  "id" : "device-port",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-observation",
-  "version" : "0.1.0",
-  "name" : "OpenELISObservation"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port",
+  "version" : "0.2.0",
+  "name" : "OEStorageDevicePort"
 },
 {
-  "id" : "open-elis-specimen",
+  "id" : "eqa-cycle",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elis-specimen",
-  "version" : "0.1.0",
-  "name" : "OpenElisSpecimen"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/eqa-cycle",
+  "version" : "0.2.0",
+  "name" : "OEEQACycle"
 },
 {
-  "id" : "open-elisorganisation",
+  "id" : "openelis-analyzer-device",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elisorganisation",
-  "version" : "0.1.0",
-  "name" : "OpenELISOrganisation"
-},
-{
-  "id" : "open-elispractitioner",
-  "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/open-elispractitioner",
-  "version" : "0.1.0",
-  "name" : "OpenELISPractitioner"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device",
+  "version" : "0.2.0",
+  "name" : "OpenELISAnalyzerDevice"
 },
 {
   "id" : "openelis-diagnostic-report",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-diagnostic-report",
-  "version" : "0.1.0",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report",
+  "version" : "0.2.0",
   "name" : "OpenELISDiagnosticReport"
+},
+{
+  "id" : "openelis-lab-order-request-service-request",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request",
+  "version" : "0.2.0",
+  "name" : "OpenELISLabOrderRequestServiceRequest"
+},
+{
+  "id" : "openelis-lab-order-request-task",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-task",
+  "version" : "0.2.0",
+  "name" : "OpenELISLabOrderRequestTask"
+},
+{
+  "id" : "openelis-observation",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation",
+  "version" : "0.2.0",
+  "name" : "OpenELISObservation"
+},
+{
+  "id" : "openelis-order-task",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-order-task",
+  "version" : "0.2.0",
+  "name" : "OpenELISOrderTask"
+},
+{
+  "id" : "openelis-organization",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization",
+  "version" : "0.2.0",
+  "name" : "OpenELISOrganization"
 },
 {
   "id" : "openelis-patient",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-patient",
-  "version" : "0.1.0",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient",
+  "version" : "0.2.0",
   "name" : "OpenELISPatient"
+},
+{
+  "id" : "openelis-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner",
+  "version" : "0.2.0",
+  "name" : "OpenELISPractitioner"
+},
+{
+  "id" : "openelis-referral-task",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-referral-task",
+  "version" : "0.2.0",
+  "name" : "OpenELISReferralTask"
 },
 {
   "id" : "openelis-service-request",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-service-request",
-  "version" : "0.1.0",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request",
+  "version" : "0.2.0",
   "name" : "OpenELISServiceRequest"
 },
 {
-  "id" : "openelis-task",
+  "id" : "openelis-shipment-box",
   "type" : "StructureDefinition",
-  "url" : "http://digi-uw.github.io/openelis-global-ig/StructureDefinition/openelis-task",
-  "version" : "0.1.0",
-  "name" : "OpenELISTask"
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box",
+  "version" : "0.2.0",
+  "name" : "OpenELISShipmentBox"
+},
+{
+  "id" : "openelis-specimen",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen",
+  "version" : "0.2.0",
+  "name" : "OpenELISSpecimen"
+},
+{
+  "id" : "openelis-storage-location",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-storage-location",
+  "version" : "0.2.0",
+  "name" : "OpenELISStorageLocation"
+},
+{
+  "id" : "position-occupancy",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/position-occupancy",
+  "version" : "0.2.0",
+  "name" : "OEPositionOccupancy"
+},
+{
+  "id" : "rack-grid-dimensions",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-grid-dimensions",
+  "version" : "0.2.0",
+  "name" : "OERackGridDimensions"
+},
+{
+  "id" : "rack-position-schema-hint",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-position-schema-hint",
+  "version" : "0.2.0",
+  "name" : "OERackPositionSchemaHint"
+},
+{
+  "id" : "shipment-capacity",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-capacity",
+  "version" : "0.2.0",
+  "name" : "OEShipmentCapacity"
+},
+{
+  "id" : "shipment-content-item",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-content-item",
+  "version" : "0.2.0",
+  "name" : "OEShipmentContentItem"
+},
+{
+  "id" : "shipment-destination-org",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-destination-org",
+  "version" : "0.2.0",
+  "name" : "OEShipmentDestinationOrg"
+},
+{
+  "id" : "shipment-non-conformity",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-non-conformity",
+  "version" : "0.2.0",
+  "name" : "OEShipmentNonConformity"
+},
+{
+  "id" : "shipment-notes",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-notes",
+  "version" : "0.2.0",
+  "name" : "OEShipmentNotes"
+},
+{
+  "id" : "shipment-source-org",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-source-org",
+  "version" : "0.2.0",
+  "name" : "OEShipmentSourceOrg"
+},
+{
+  "id" : "shipment-specimen",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen",
+  "version" : "0.2.0",
+  "name" : "OEShipmentSpecimen"
+},
+{
+  "id" : "shipment-specimen-type-summary",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen-type-summary",
+  "version" : "0.2.0",
+  "name" : "OEShipmentSpecimenTypeSummary"
+},
+{
+  "id" : "shipment-temperature",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-temperature",
+  "version" : "0.2.0",
+  "name" : "OEShipmentTemperature"
+},
+{
+  "id" : "storage-capacity",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-capacity",
+  "version" : "0.2.0",
+  "name" : "OEStorageCapacity"
+},
+{
+  "id" : "storage-temperature",
+  "type" : "StructureDefinition",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/storage-temperature",
+  "version" : "0.2.0",
+  "name" : "OEStorageTemperature"
+},
+{
+  "id" : "oe-analyzer-operational-status",
+  "type" : "ValueSet",
+  "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status",
+  "version" : "0.2.0",
+  "name" : "OEAnalyzerOperationalStatusVS"
 }]

@@ -1,0 +1,11 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21</b></p><a name=\"0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21\"> </a><a name=\"hc0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21\"> </a><p><b>name</b>: OpenELIS service user</p></div>"
+  },
+  "name" : [{
+    "text" : "OpenELIS service user"
+  }]
+}

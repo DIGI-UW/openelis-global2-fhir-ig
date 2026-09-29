@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="97b37d86-fd55-529b-bbd7-4766f3988fab"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen 97b37d86-fd55-529b-bbd7-4766f3988fab</b></p><a name="97b37d86-fd55-529b-bbd7-4766f3988fab"> </a><a name="hc97b37d86-fd55-529b-bbd7-4766f3988fab"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-specimen.html">OpenELIS Specimen</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-sampleitem-uuid.html" title="UUID of the OpenELIS sample item. Carried on Specimen.identifier.">OESampleItemUUID</a>/97b37d86-fd55-529b-bbd7-4766f3988fab (use: usual, ), <a href="NamingSystem-oe-ns-facility-id.html" title="Identifier of the OpenELIS site (org.openelisglobal.facility.id). Added to most resources OpenELIS produces with the site Organization as assigner.">OEFacilityId</a>/EDH-LAB (use: official, )</p><p><b>accessionIdentifier</b>: <a href="NamingSystem-oe-ns-sampleitem-labno.html" title="Accession number of the sample item: the order lab number followed by -{sortOrder}. Carried in Specimen.accessionIdentifier.">OESampleItemLabNumber</a>/EDH26000000417-1 (use: usual, )</p><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{http://openelis-global.org/sampleType Serum}, {http://snomed.info/sct 119364003}">Serum</span></p><p><b>subject</b>: <a href="Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.html">Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))</a></p><p><b>receivedTime</b>: 2026-09-28 09:30:00+1000</p><p><b>request</b>: </p><ul><li><a href="ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.html">ServiceRequest Glucose [Mass/volume] in Serum or Plasma</a></li><li><a href="ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.html">ServiceRequest Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay</a></li></ul><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Extension</b></td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td/><td>2026-09-28 08:40:00+1000</td><td><span title="Codes:">Venous blood</span></td></tr></table><h3>Containers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>SpecimenQuantity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 434711009}">Specimen container (physical object)</span></td><td>5 mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/sampleItem_uuid"/>
+    <value value="97b37d86-fd55-529b-bbd7-4766f3988fab"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="http://openelis-global.org/facility_id"/>
+    <value value="EDH-LAB"/>
+    <assigner>
+      <reference value="Organization/a845f2db-10e5-5117-ac75-553f615e301a"/>
+    </assigner>
+  </identifier>
+  <accessionIdentifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/sampleItem_labNo"/>
+    <value value="EDH26000000417-1"/>
+  </accessionIdentifier>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://openelis-global.org/sampleType"/>
+      <code value="Serum"/>
+      <display value="Serum"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="119364003"/>
+      <display value="Serum specimen"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"/>
+  </subject>
+  <receivedTime value="2026-09-28T09:30:00+10:00"/>
+  <request>
+    <reference value="ServiceRequest/48549f60-c400-5510-97da-2e2497627e81"/>
+  </request>
+  <request>
+    <reference value="ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4"/>
+  </request>
+  <collection>
+    <extension url="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/collection-location-gps">
+      <extension url="latitude">
+        <valueDecimal value="-9.4431"/>
+      </extension>
+      <extension url="longitude">
+        <valueDecimal value="147.1803"/>
+      </extension>
+      <extension url="accuracy">
+        <valueInteger value="12"/>
+      </extension>
+      <extension url="method">
+        <valueCode value="device"/>
+      </extension>
+      <extension url="captureTimestamp">
+        <valueDateTime value="2026-09-28T08:40:12+10:00"/>
+      </extension>
+    </extension>
+    <collectedDateTime value="2026-09-28T08:40:00+10:00"/>
+    <bodySite>
+      <text value="Venous blood"/>
+    </bodySite>
+  </collection>
+  <container>
+    <type>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="434711009"/>
+        <display value="Specimen container (physical object)"/>
+      </coding>
+    </type>
+    <specimenQuantity>
+      <value value="5"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mL"/>
+    </specimenQuantity>
+  </container>
+</Specimen>
