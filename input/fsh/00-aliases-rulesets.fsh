@@ -48,12 +48,3 @@ RuleSet: OEIdentifierNamingSystem(name, uri, description)
 * uniqueId[0].type = #uri
 * uniqueId[0].value = "{uri}"
 * uniqueId[0].preferred = true
-
-// A local, site-configured code system whose content is not published
-RuleSet: OELocalCodeSystem(uri, description)
-* ^url = "{uri}"
-* ^status = #active
-* ^experimental = false
-* ^content = #not-present
-* ^caseSensitive = true
-* ^description = "{description}"

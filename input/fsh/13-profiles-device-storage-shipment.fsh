@@ -7,8 +7,7 @@ Profile: OpenELISAnalyzerDevice
 Parent: Device
 Id: openelis-analyzer-device
 Title: "OpenELIS Analyzer Device"
-Description: "An analyzer as OpenELIS produces it (DeviceTransformServiceImpl), serves it from /fhir/Device, and includes it in result bundles when Observation.device references it. OpenELIS sends this profile's URL, http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device, in meta.profile, so the profile URL is pinned to it."
-* ^url = "http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device"
+Description: "An analyzer as OpenELIS produces it (DeviceTransformServiceImpl), serves it from /fhir/Device, and includes it in result bundles when Observation.device references it. OpenELIS currently declares meta.profile = http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device, which is not this profile's URL (see Known Issues)."
 * insert IdentifierSlicing
 * identifier 1..* MS
 * identifier contains
@@ -58,7 +57,7 @@ Title: "OpenELIS Global data model"
 Invariant: oe-storage-partof
 Description: "Every storage level except room has a parent (partOf)."
 Severity: #error
-Expression: "meta.tag.where(system = 'http://openelis.org/fhir/tag/storage-hierarchy').code = 'room' or partOf.exists()"
+Expression: "meta.tag.where(system = 'http://openelis.org/fhir/tag/storage-hierarchy' and code = 'room').exists() or partOf.exists()"
 
 Profile: OpenELISStorageLocation
 Parent: Location
@@ -75,7 +74,7 @@ Description: "A level of the OpenELIS sample storage hierarchy: room, storage de
 * meta.tag[level].system 1..1
 * meta.tag[level].system = "http://openelis.org/fhir/tag/storage-hierarchy"
 * meta.tag[level].code 1..1
-* meta.tag[level].code from OEStorageHierarchyVS (required)
+* meta.tag[level].code ^short = "room | device | shelf | rack | box"
 * meta.profile ^comment = "OpenELIS sends http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location, which does not resolve to the published IHE mCSD profile (see Known Issues)."
 * insert IdentifierSlicing
 * identifier 1..* MS
@@ -92,7 +91,7 @@ Description: "A level of the OpenELIS sample storage hierarchy: room, storage de
 * physicalType 1..1 MS
 * physicalType ^comment = "Room = ro. Device = ve (Vehicle). Shelf, rack and box = co (Corridor in FHIR, displayed by OpenELIS as Container). See Known Issues. physicalType.text names the level and is used on import when the tag is missing."
 * type MS
-* type ^comment = "Device: the device type from http://openelis.org/fhir/CodeSystem/storage-device-type. Box: the free-text box type with system http://openelis.org/fhir/CodeSystem/storage-box-type."
+* type ^comment = "Device: the device type, system http://openelis.org/fhir/CodeSystem/storage-device-type, code freezer / refrigerator / cabinet / other. Box: the free-text box type with system http://openelis.org/fhir/CodeSystem/storage-box-type."
 * partOf MS
 * partOf only Reference(OpenELISStorageLocation)
 * partOf ^comment = "Device -> room, shelf -> device, rack -> shelf, box -> rack."

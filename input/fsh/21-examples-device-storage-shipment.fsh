@@ -6,7 +6,6 @@ Usage: #example
 Title: "Analyzer Device"
 Description: "A chemistry analyzer connected through the OpenELIS analyzer bridge."
 * id = "ff2b5d6a-ff46-5f20-b254-4eaa0615d555"
-* meta.profile = "http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device"
 * identifier[analyzerUuid].use = #usual
 * identifier[analyzerUuid].system = "http://openelis-global.org/analyzer_uuid"
 * identifier[analyzerUuid].value = "ff2b5d6a-ff46-5f20-b254-4eaa0615d555"

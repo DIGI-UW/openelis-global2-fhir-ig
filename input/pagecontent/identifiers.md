@@ -1,6 +1,6 @@
 This page lists every URL OpenELIS puts on the wire: identifier systems, local code systems, extension URLs,
 and `meta.profile` / `meta.tag` values. Each identifier system also has a
-[NamingSystem](artifacts.html#terminology-naming-systems) in this guide.
+NamingSystem (see [Artifacts](artifacts.html)) in this guide.
 
 `{base}` is the `org.openelisglobal.oe.fhir.system` property, `http://openelis-global.org` by default.
 
@@ -38,24 +38,24 @@ and `meta.profile` / `meta.tag` values. Each identifier system also has a
 | `http://loinc.org` | ServiceRequest.code, DiagnosticReport.code, Observation.code, Observation.valueCodeableConcept | Test and answer codes from the test catalog's terminology mappings |
 | `http://snomed.info/sct` | Specimen.type, Specimen.container.type, SupplyDelivery | Sample type mappings, container type (434711009), shipment non-conformities |
 | `https://openconceptlab.org/orgs/CIEL/sources/CIEL`, `https://openconceptlab.org` | Test codings | CIEL and OCL mappings |
-| `{base}/sampleType` | Specimen.type (always first) | [Local sample types](CodeSystem-oe-sample-type.html) |
-| `{base}/dictionary_entry` | Observation.valueCodeableConcept | [Local coded result values](CodeSystem-oe-dictionary-entry.html) |
-| `{base}/test_result_component` | Observation.code | [Components of multi-component tests](CodeSystem-oe-test-result-component.html) |
-| `{base}/samp_domain` | ServiceRequest.category | [Order domain](CodeSystem-oe-sample-domain.html) |
-| `{base}/sample_program` | ServiceRequest.category | [Programme](CodeSystem-oe-sample-program.html) |
-| `{base}/sample_condition` | Specimen condition | [Sample condition](CodeSystem-oe-sample-condition.html) |
-| `{base}/orgType` | Organization.type | [Organization types](CodeSystem-oe-organization-type.html) |
-| `{base}/task_output` | Referral Task.output.type | [Task output type](CodeSystem-oe-task-output.html) |
-| `{base}/refer_reason` | Referral Task.reasonCode | [Referral reason](CodeSystem-oe-refer-reason.html) |
-| `{base}/genIdType` | Identifier.type | [Identifier type](CodeSystem-oe-gen-id-type.html) |
-| `http://openelis.org/fhir/tag/storage-hierarchy` | Location.meta.tag | [Storage level](CodeSystem-oe-storage-hierarchy.html) |
-| `http://openelis.org/fhir/CodeSystem/storage-device-type` | Location.type (device) | [Storage device type](CodeSystem-oe-storage-device-type.html) |
+| `{base}/sampleType` | Specimen.type (always first) | Site sample types. Code = local abbreviation, display = localized name. |
+| `{base}/dictionary_entry` | Observation.valueCodeableConcept | Site dictionary (coded result) entries |
+| `{base}/test_result_component` | Observation.code | Result components of multi-component tests (non-primary components only) |
+| `{base}/samp_domain` | ServiceRequest.category | Order domain (clinical / environmental / vector) |
+| `{base}/sample_program` | ServiceRequest.category | Programme the order was entered under |
+| `{base}/sample_condition` | Specimen condition | Sample condition on receipt |
+| `{base}/orgType` | Organization.type | Site organization types (read back on import) |
+| `{base}/task_output` | Referral Task.output.type | `DiagnosticReport` |
+| `{base}/refer_reason` | Referral Task.reasonCode | Referral reason (currently sent with no code) |
+| `{base}/genIdType` | Identifier.type | `externalId`: an identifier assigned by an external system |
+| `http://openelis.org/fhir/tag/storage-hierarchy` | Location.meta.tag | `room`, `device`, `shelf`, `rack`, `box` |
+| `http://openelis.org/fhir/CodeSystem/storage-device-type` | Location.type (device) | `freezer`, `refrigerator`, `cabinet`, `other` |
 | `http://openelis.org/fhir/CodeSystem/storage-box-type` | Location.type (box) | Free-text box type |
 {:.grid}
 
 ### Extensions
 
-| URL | Context | Definition |
+| URL OpenELIS sends | Context | Definition in this guide |
 |---|---|---|
 | `http://openelis-global.org/fhir/StructureDefinition/collection-location-gps` | Specimen.collection | [Collection location (GPS)](StructureDefinition-collection-location-gps.html) |
 | `http://openelis.org/fhir/StructureDefinition/analyzer-last-activated` | Device | [Analyzer last activated](StructureDefinition-analyzer-last-activated.html) |
@@ -85,9 +85,9 @@ and `meta.profile` / `meta.tag` values. Each identifier system also has a
 
 | Value | Where | Resolves to |
 |---|---|---|
-| `meta.profile` = `http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device` | Device | [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.html) |
+| `meta.profile` = `http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device` | Device | Nothing. The matching profile in this guide is [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.html). |
 | `meta.profile` = `http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location` | Storage Location | Nothing (see [Known Issues](known-issues.html)) |
-| `meta.tag` system `http://openelis.org/fhir/tag/storage-hierarchy` | Storage Location | [Storage level](CodeSystem-oe-storage-hierarchy.html) |
+| `meta.tag` system `http://openelis.org/fhir/tag/storage-hierarchy` | Storage Location | Codes `room`, `device`, `shelf`, `rack`, `box` |
 {:.grid}
 
 ### Three URL bases
@@ -99,5 +99,8 @@ OpenELIS currently uses three different bases for its own URLs:
 * `https://openelis-global.org/fhir/...` for the inbound analyzer-bridge result contract, which this guide does not
   yet profile
 
-None of them is the canonical base of this guide. The extension and profile URLs above are pinned to the URLs OpenELIS
-sends, so that real messages validate. Converging on a single base is tracked on [Known Issues](known-issues.html).
+None of them is the canonical base of this guide, and none of them resolves. The extensions and profiles in this guide
+are defined under the guide's canonical, `https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}`.
+The tables above map each URL OpenELIS sends to its definition here. The guide is intended as an API reference. A
+validator checking live OpenELIS messages against this guide will report the extension URLs above as unknown until
+OpenELIS adopts the canonical URLs ([Known Issues](known-issues.html)).

@@ -1,7 +1,6 @@
-// Every extension below has its ^url pinned to the exact URL OpenELIS puts on
-// the wire today, so that real OpenELIS messages validate against this IG.
-// These URLs do not follow the IG canonical and use two different bases
-// (see known-issues.html).
+// Extensions OpenELIS puts on the wire. Definitions use the IG canonical.
+// Each Description names the URL OpenELIS sends today, which does not yet
+// match the canonical (see known-issues.html and identifiers.html).
 
 // ===========================================================================
 // Specimen
@@ -10,9 +9,8 @@
 Extension: OECollectionLocationGPS
 Id: collection-location-gps
 Title: "Collection location (GPS)"
-Description: "Where the specimen was collected, as captured on the device used at collection. Added to Specimen.collection when the order has GPS coordinates (SpecimenTransformServiceImpl.createGpsExtension)."
+Description: "Where the specimen was collected, as captured on the device used at collection. Added to Specimen.collection when the order has GPS coordinates (SpecimenTransformServiceImpl.createGpsExtension). OpenELIS currently sends this extension with url http://openelis-global.org/fhir/StructureDefinition/collection-location-gps (see Known Issues)."
 Context: Specimen.collection
-* ^url = "http://openelis-global.org/fhir/StructureDefinition/collection-location-gps"
 * ^status = #active
 * ^experimental = false
 * extension contains
@@ -39,9 +37,8 @@ Context: Specimen.collection
 Extension: OEAnalyzerLastActivated
 Id: analyzer-last-activated
 Title: "Analyzer last activated"
-Description: "When the analyzer was last activated in OpenELIS."
+Description: "When the analyzer was last activated in OpenELIS. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-last-activated (see Known Issues)."
 Context: Device
-* ^url = "http://openelis.org/fhir/StructureDefinition/analyzer-last-activated"
 * ^status = #active
 * ^experimental = false
 * value[x] only dateTime
@@ -49,9 +46,8 @@ Context: Device
 Extension: OEAnalyzerTestUnits
 Id: analyzer-test-units
 Title: "Analyzer test units"
-Description: "The OpenELIS test units (lab sections) the analyzer serves."
+Description: "The OpenELIS test units (lab sections) the analyzer serves. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-test-units (see Known Issues)."
 Context: Device
-* ^url = "http://openelis.org/fhir/StructureDefinition/analyzer-test-units"
 * ^status = #active
 * ^experimental = false
 * extension contains testUnitId 0..*
@@ -61,9 +57,8 @@ Context: Device
 Extension: OEAnalyzerOperationalStatusExt
 Id: analyzer-operational-status
 Title: "Analyzer operational status"
-Description: "OpenELIS's own analyzer lifecycle status, unmapped. Device.status carries the mapped FHIR value. Ignored on import."
+Description: "OpenELIS's own analyzer lifecycle status, unmapped. Device.status carries the mapped FHIR value. Ignored on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-operational-status (see Known Issues)."
 Context: Device
-* ^url = "http://openelis.org/fhir/StructureDefinition/analyzer-operational-status"
 * ^status = #active
 * ^experimental = false
 * value[x] only code
@@ -76,9 +71,8 @@ Context: Device
 Extension: OEStorageTemperature
 Id: storage-temperature
 Title: "Storage temperature"
-Description: "Temperature setting of a storage device. The unit is not carried on the wire (see Known Issues)."
+Description: "Temperature setting of a storage device. The unit is not carried on the wire (see Known Issues). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/storage-temperature (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/storage-temperature"
 * ^status = #active
 * ^experimental = false
 * value[x] only decimal
@@ -86,9 +80,8 @@ Context: Location
 Extension: OEStorageCapacity
 Id: storage-capacity
 Title: "Storage capacity"
-Description: "Capacity of the location: the capacity limit of a device or shelf. On a box it is rows x columns and is only sent with rack-grid-dimensions."
+Description: "Capacity of the location: the capacity limit of a device or shelf. On a box it is rows x columns and is only sent with rack-grid-dimensions. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/storage-capacity (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/storage-capacity"
 * ^status = #active
 * ^experimental = false
 * value[x] only integer
@@ -96,9 +89,8 @@ Context: Location
 Extension: OERackGridDimensions
 Id: rack-grid-dimensions
 Title: "Grid dimensions"
-Description: "Grid of a storage box as the string \"{rows} × {columns}\" (U+00D7 multiplication sign, with spaces), for example \"9 × 9\". Parsed on import."
+Description: "Grid of a storage box as the string \"{rows} × {columns}\" (U+00D7 multiplication sign, with spaces), for example \"9 × 9\". Parsed on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-grid-dimensions (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/rack-grid-dimensions"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -106,9 +98,8 @@ Context: Location
 Extension: OERackPositionSchemaHint
 Id: rack-position-schema-hint
 Title: "Position schema hint"
-Description: "How positions in the box are labelled (for example letter-number). Free text."
+Description: "How positions in the box are labelled (for example letter-number). Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-position-schema-hint (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/rack-position-schema-hint"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -116,9 +107,8 @@ Context: Location
 Extension: OEPositionOccupancy
 Id: position-occupancy
 Title: "Position occupancy"
-Description: "Whether any position in the storage box is occupied. Always sent on box-level Locations."
+Description: "Whether any position in the storage box is occupied. Always sent on box-level Locations. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/position-occupancy (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/position-occupancy"
 * ^status = #active
 * ^experimental = false
 * value[x] only boolean
@@ -126,9 +116,8 @@ Context: Location
 Extension: OEStorageDeviceIPAddress
 Id: device-ip-address
 Title: "Storage device IP address"
-Description: "Network address of a connected storage device (for example a monitored freezer)."
+Description: "Network address of a connected storage device (for example a monitored freezer). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-ip-address (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/device-ip-address"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -136,9 +125,8 @@ Context: Location
 Extension: OEStorageDevicePort
 Id: device-port
 Title: "Storage device port"
-Description: "Network port of a connected storage device."
+Description: "Network port of a connected storage device. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-port (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/device-port"
 * ^status = #active
 * ^experimental = false
 * value[x] only integer
@@ -146,9 +134,8 @@ Context: Location
 Extension: OEStorageDeviceProtocol
 Id: device-communication-protocol
 Title: "Storage device communication protocol"
-Description: "Protocol used to talk to a connected storage device. Free text."
+Description: "Protocol used to talk to a connected storage device. Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-communication-protocol (see Known Issues)."
 Context: Location
-* ^url = "http://openelis.org/fhir/extension/device-communication-protocol"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -160,9 +147,8 @@ Context: Location
 Extension: OEShipmentDestinationOrg
 Id: shipment-destination-org
 Title: "Shipment destination organization id"
-Description: "UUID of the destination Organization. Kept for receivers that do not read the contained destination Location."
+Description: "UUID of the destination Organization. Kept for receivers that do not read the contained destination Location. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-destination-org (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-destination-org"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -170,9 +156,8 @@ Context: SupplyDelivery
 Extension: OEShipmentSourceOrg
 Id: shipment-source-org
 Title: "Shipment source laboratory"
-Description: "Name of the sending OpenELIS site (its configuration name)."
+Description: "Name of the sending OpenELIS site (its configuration name). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-source-org (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-source-org"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -180,9 +165,8 @@ Context: SupplyDelivery
 Extension: OEShipmentTemperature
 Id: shipment-temperature
 Title: "Shipment temperature requirement"
-Description: "Temperature the box must be kept at in transit. Free text (for example 2-8 °C)."
+Description: "Temperature the box must be kept at in transit. Free text (for example 2-8 °C). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-temperature (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-temperature"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -190,9 +174,8 @@ Context: SupplyDelivery
 Extension: OEShipmentCapacity
 Id: shipment-capacity
 Title: "Shipment box capacity"
-Description: "Number of specimens the box can hold."
+Description: "Number of specimens the box can hold. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-capacity (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-capacity"
 * ^status = #active
 * ^experimental = false
 * value[x] only integer
@@ -200,9 +183,8 @@ Context: SupplyDelivery
 Extension: OEShipmentNotes
 Id: shipment-notes
 Title: "Shipment notes"
-Description: "Free-text notes on the box."
+Description: "Free-text notes on the box. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-notes (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-notes"
 * ^status = #active
 * ^experimental = false
 * value[x] only string
@@ -210,9 +192,8 @@ Context: SupplyDelivery
 Extension: OEShipmentContentItem
 Id: shipment-content-item
 Title: "Shipment content item"
-Description: "One row of the box manifest. Repeats once per item in the box."
+Description: "One row of the box manifest. Repeats once per item in the box. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-content-item (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-content-item"
 * ^status = #active
 * ^experimental = false
 * extension contains
@@ -226,9 +207,8 @@ Context: SupplyDelivery
 Extension: OEShipmentNonConformity
 Id: shipment-non-conformity
 Title: "Shipment non-conformity"
-Description: "A problem recorded when the box was received (damaged, leaked, missing, rejected). SNOMED CT by default. Codes can be overridden per site. Only sent after reception."
+Description: "A problem recorded when the box was received (damaged, leaked, missing, rejected). SNOMED CT by default. Codes can be overridden per site. Only sent after reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-non-conformity (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-non-conformity"
 * ^status = #active
 * ^experimental = false
 * value[x] only CodeableConcept
@@ -236,9 +216,8 @@ Context: SupplyDelivery
 Extension: OEShipmentSpecimen
 Id: shipment-specimen
 Title: "Shipped specimen"
-Description: "A Specimen in the box. Repeats once per sample item with a FHIR id. The receiving site uses these references at reception."
+Description: "A Specimen in the box. Repeats once per sample item with a FHIR id. The receiving site uses these references at reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-specimen"
 * ^status = #active
 * ^experimental = false
 * value[x] only Reference(OpenELISSpecimen)
@@ -246,9 +225,8 @@ Context: SupplyDelivery
 Extension: OEShipmentSpecimenTypeSummary
 Id: shipment-specimen-type-summary
 Title: "Shipment specimen type summary"
-Description: "Count of items in the box per sample type. One repetition per distinct type, in no guaranteed order."
+Description: "Count of items in the box per sample type. One repetition per distinct type, in no guaranteed order. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen-type-summary (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/shipment-specimen-type-summary"
 * ^status = #active
 * ^experimental = false
 * extension contains
@@ -262,9 +240,8 @@ Context: SupplyDelivery
 Extension: OEEQACycle
 Id: eqa-cycle
 Title: "EQA cycle"
-Description: "External quality assessment cycle the consignment belongs to. Only sent for EQA boxes."
+Description: "External quality assessment cycle the consignment belongs to. Only sent for EQA boxes. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/eqa-cycle (see Known Issues)."
 Context: SupplyDelivery
-* ^url = "http://openelis.org/fhir/extension/eqa-cycle"
 * ^status = #active
 * ^experimental = false
 * extension contains

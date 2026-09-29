@@ -14,9 +14,9 @@ Description: "A patient as OpenELIS produces it (PatientTransformServiceImpl.tra
     uuid 1..1 MS and
     nationalId 0..1 MS and
     subjectNumber 0..1 MS and
-    stNumber 0..1 and
-    guid 0..1 and
-    facility 0..1
+    stNumber 0..1 MS and
+    guid 0..1 MS and
+    facility 0..1 MS
 * identifier[uuid] ^short = "OpenELIS patient UUID (equals Patient.id)"
 * identifier[uuid].system = "http://openelis-global.org/pat_uuid"
 * identifier[uuid].value 1..1
@@ -82,7 +82,7 @@ Description: "A requesting provider as OpenELIS produces it (PractitionerTransfo
 * identifier MS
 * identifier contains
     uuid 0..1 MS and
-    facility 0..1
+    facility 0..1 MS
 * identifier[uuid] ^short = "OpenELIS provider UUID"
 * identifier[uuid].system = "http://openelis-global.org/provider_uuid"
 * identifier[uuid].value 1..1
@@ -124,9 +124,9 @@ Description: "An organization as OpenELIS produces it (OrganizationTransformServ
 * identifier contains
     uuid 0..1 MS and
     code 0..1 MS and
-    shortName 0..1 and
-    cliaNum 0..1 and
-    facility 0..1
+    shortName 0..1 MS and
+    cliaNum 0..1 MS and
+    facility 0..1 MS
 * identifier[uuid] ^short = "OpenELIS organization UUID"
 * identifier[uuid] ^comment = "Currently only sent when the organization has a code (see Known Issues)."
 * identifier[uuid].system = "http://openelis-global.org/org_uuid"

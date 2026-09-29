@@ -28,20 +28,18 @@ A full revision, aligning the guide with OpenELIS Global 3.x (`develop` at commi
   * Order Task and Referral Task
   * Storage Location
   * Shipment Box (SupplyDelivery)
-* The Device profile now matches the analyzer Device OpenELIS sends. Its URL is pinned to the `meta.profile` value
-  OpenELIS uses. The unused communication-mode, protocol-version, transport, location and identifier-pattern
+* The Device profile now matches the analyzer Device OpenELIS sends. The unused communication-mode, protocol-version, transport, location and identifier-pattern
   extensions were removed.
 * The Location "facility" profile, which OpenELIS never produced, was replaced by the Storage Location profile.
 
 **Extensions, terminology and identifiers**
 
-* Added the 22 extensions OpenELIS sends, with their URLs pinned to the wire: collection GPS, analyzer, storage and
-  shipment.
+* Added definitions for the 22 extensions OpenELIS sends (collection GPS, analyzer, storage and shipment). Each one
+  names the URL OpenELIS currently uses. The Identifiers & URLs page maps wire URLs to definitions.
 * Replaced the grouped NamingSystems with one NamingSystem per identifier system. Added the missing systems:
   `order_uuid`, `order_accessionNumber`, `provider_uuid`, `facility_id`, `analyzer_uuid`, `analyzer_bridge_connection`,
   `storage-location-code` and `shipment/box-id`.
-* Added CodeSystems for the storage hierarchy, storage device types, analyzer operational status and OpenELIS's local
-  code systems.
+* Documented OpenELIS's local code systems and added a CodeSystem for the analyzer operational status.
 
 **Pages and examples**
 

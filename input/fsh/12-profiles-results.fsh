@@ -12,7 +12,7 @@ Description: "One result value as OpenELIS produces it (ObservationTransformServ
 * identifier 1..* MS
 * identifier contains
     resultUuid 1..1 MS and
-    facility 0..1
+    facility 0..1 MS
 * identifier[resultUuid] ^short = "OpenELIS result UUID (equals Observation.id)"
 * identifier[resultUuid].system = "http://openelis-global.org/result_uuid"
 * identifier[resultUuid].value 1..1
@@ -38,6 +38,7 @@ Description: "One result value as OpenELIS produces it (ObservationTransformServ
 * value[x] only Quantity or CodeableConcept or string
 * value[x] MS
 * value[x] ^comment = "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with a LOINC answer coding when mapped plus an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded."
+* valueQuantity MS
 * valueQuantity.unit MS
 * specimen MS
 * specimen only Reference(OpenELISSpecimen)
@@ -76,7 +77,7 @@ Description: "The report for one ordered test, grouping its results (DiagnosticR
 * identifier 1..* MS
 * identifier contains
     analysisResultUuid 1..1 MS and
-    facility 0..1
+    facility 0..1 MS
 * identifier[analysisResultUuid] ^short = "Analysis UUID (equals DiagnosticReport.id and ServiceRequest.id)"
 * identifier[analysisResultUuid].system = "http://openelis-global.org/analysisResult_uuid"
 * identifier[analysisResultUuid].value 1..1

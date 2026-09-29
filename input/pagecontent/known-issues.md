@@ -49,7 +49,7 @@ These make some OpenELIS resources fail validation against base R4.
 
 | # | Issue | Where | Suggested fix |
 |---|---|---|---|
-| 27 | OpenELIS uses three URL bases for its own definitions (`http://openelis-global.org`, `http://openelis.org`, `https://openelis-global.org/fhir`), and none of them resolves. This guide pins its extension URLs to the ones on the wire. | Various | Move every extension and profile URL to this guide's canonical (`https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}`) and keep accepting the old URLs on import. |
+| 27 | OpenELIS uses three URL bases for its own definitions (`http://openelis-global.org`, `http://openelis.org`, `https://openelis-global.org/fhir`), and none of them resolves. This guide defines the extensions under its own canonical, so live messages do not match its definitions until the code changes. | Various | Move every extension and profile URL to this guide's canonical (`https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}`) and keep accepting the old URLs on import. |
 | 28 | Some code ignores `org.openelisglobal.oe.fhir.system` and hard-codes `http://openelis-global.org/pat_*`. | `PatientTransformServiceImpl.transformToOpenElisPatientSearchResults`, `PatientSearchRestController` | Use `FhirConfig.getOeFhirSystem()`. |
 | 29 | Analyzer `Device.id` falls back to the numeric database id when the analyzer has no UUID. `Device.owner` is an identifier-only reference. | `DeviceTransformServiceImpl` | Always assign a UUID. Add `owner.reference` to the site Organization. |
 {:.grid}

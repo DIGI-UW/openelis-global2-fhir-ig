@@ -125,6 +125,14 @@ Description: "A patient as OpenELIS publishes it. A patient received with an EMR
 // ---------------------------------------------------------------------------
 // 1. The EMR's order (what OpenELIS polls for)
 // ---------------------------------------------------------------------------
+Instance: ExampleOpenELISServiceUser
+InstanceOf: Practitioner
+Usage: #example
+Title: "EMR service user representing OpenELIS"
+Description: "The Practitioner in the EMR that stands for OpenELIS. Its reference is the value of org.openelisglobal.remote.source.identifier (Practitioner/0f1c6d3a-...) and the owner of every Task OpenELIS should pick up."
+* id = "0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21"
+* name.text = "OpenELIS service user"
+
 Instance: ExampleEmrOrderTask
 InstanceOf: OpenELISLabOrderRequestTask
 Usage: #example
@@ -133,7 +141,7 @@ Description: "Written by the EMR to the shared FHIR server. OpenELIS finds it wi
 * id = "07ed1bd1-1bdf-58ae-a661-ee0703fcab70"
 * status = #requested
 * intent = #order
-* owner.reference = "Practitioner/0f1c6d3a-6b6e-4a55-9a77-5b1b1b0b3e21"
+* owner = Reference(ExampleOpenELISServiceUser)
 * owner.display = "OpenELIS service user"
 * basedOn[0] = Reference(ExampleEmrServiceRequestGlucose)
 * basedOn[1] = Reference(ExampleEmrServiceRequestHBsAg)
@@ -156,7 +164,7 @@ Description: "The EMR's test order. OpenELIS matches the test by the LOINC codin
 * code.coding[1].system = "https://openconceptlab.org/orgs/CIEL/sources/CIEL"
 * code.coding[1].code = #887
 * subject.reference = "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"
-* requester.reference = "Practitioner/9a0e2a52-0f8f-4d1f-8f7e-2d3b0a6c5e44"
+* requester.display = "Dr Kofi Mensah (EMR practitioner record)"
 
 Instance: ExampleEmrServiceRequestHBsAg
 InstanceOf: OpenELISLabOrderRequestServiceRequest
@@ -171,7 +179,7 @@ Description: "The EMR's test order. OpenELIS matches the test by the LOINC codin
 * priority = #routine
 * code.coding[loinc] = $LOINC#5196-1 "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
 * subject.reference = "Patient/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11"
-* requester.reference = "Practitioner/9a0e2a52-0f8f-4d1f-8f7e-2d3b0a6c5e44"
+* requester.display = "Dr Kofi Mensah (EMR practitioner record)"
 
 // ---------------------------------------------------------------------------
 // 2. What OpenELIS produces
@@ -217,8 +225,6 @@ Description: "One ordered test. The id is the Analysis UUID."
 * requisition.use = #usual
 * requisition.system = "http://openelis-global.org/samp_labNo"
 * requisition.value = "EDH26000000417"
-* basedOn.reference = "ServiceRequest/ORD-88213"
-* basedOn.display = "External order number (see Known Issues)"
 * status = #completed
 * intent = #order
 * category.coding.system = "http://openelis-global.org/samp_domain"
@@ -230,8 +236,6 @@ Description: "One ordered test. The id is the Analysis UUID."
 * subject = Reference(ExamplePatient)
 * authoredOn = "2026-09-28T11:40:00+10:00"
 * requester = Reference(ExamplePractitioner)
-* locationReference.reference = "Location/d3619aef-5abf-5b4f-a76c-06f378deca13"
-* locationReference.display = "Riverside Health Centre (Organization UUID)"
 * specimen = Reference(ExampleSpecimen)
 
 Instance: ExampleServiceRequestHBsAg
@@ -250,8 +254,6 @@ Description: "One ordered test. The id is the Analysis UUID."
 * requisition.use = #usual
 * requisition.system = "http://openelis-global.org/samp_labNo"
 * requisition.value = "EDH26000000417"
-* basedOn.reference = "ServiceRequest/ORD-88213"
-* basedOn.display = "External order number (see Known Issues)"
 * status = #completed
 * intent = #order
 * category.coding.system = "http://openelis-global.org/samp_domain"

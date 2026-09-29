@@ -65,7 +65,7 @@ Description: "One ordered test (an OpenELIS Analysis) as OpenELIS produces it (S
 * identifier 1..* MS
 * identifier contains
     analysisUuid 1..1 MS and
-    facility 0..1
+    facility 0..1 MS
 * identifier[analysisUuid] ^short = "OpenELIS Analysis UUID (equals ServiceRequest.id)"
 * identifier[analysisUuid].system = "http://openelis-global.org/analysis_uuid"
 * identifier[analysisUuid].value 1..1
@@ -138,7 +138,7 @@ Description: "A sample item as OpenELIS produces it (SpecimenTransformServiceImp
 * identifier 1..* MS
 * identifier contains
     sampleItemUuid 1..1 MS and
-    facility 0..1
+    facility 0..1 MS
 * identifier[sampleItemUuid] ^short = "OpenELIS sample item UUID (equals Specimen.id)"
 * identifier[sampleItemUuid].system = "http://openelis-global.org/sampleItem_uuid"
 * identifier[sampleItemUuid].value 1..1
