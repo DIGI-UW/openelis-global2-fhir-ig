@@ -1,12 +1,12 @@
 {
-    "name": "openelis.fhir.template",
-    "version": "1.0.0",
-    "type": "fhir.template",
-    "license": "CC-BY-SA-4.0",
-    "description": "Local template extension for FHIR IG",
-    "author": "https://openelis-global.org",
-    "base":  "fhir.base.template",
-    "dependencies": {
-      "fhir.base.template": "current"
-    }
+  "name": "openelis.fhir.template",
+  "version": "1.1.0",
+  "type": "fhir.template",
+  "license": "CC-BY-SA-4.0",
+  "description": "OpenELIS Global branding (logo, header, colours) layered on the FHIR base template",
+  "author": "https://openelis-global.org",
+  "base": "fhir2.base.template",
+  "dependencies": {
+    "fhir2.base.template": "current"
   }
+}

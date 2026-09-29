@@ -8,6 +8,7 @@ fsh-generated
 # Working files #
 #################
 .index.json
+.index.db
 
 # Don't commit this because it's so large #
 ###########################################

@@ -1,21 +1,60 @@
-id: openelis
-canonical: http://digi-uw.github.io/openelis-global-ig
-version: 0.1.0
-name: OpenELISImplementationGuide
-title: OpenELIS GLOBAL2 Implementation Guide
+# SUSHI configuration for the OpenELIS Global FHIR Implementation Guide.
+# Profiles in this IG describe what OpenELIS Global 3.x (DIGI-UW/OpenELIS-Global-2,
+# develop branch) actually reads and writes. See input/pagecontent/index.md.
+id: org.openelisglobal.fhir
+canonical: https://digi-uw.github.io/openelis-global2-fhir-ig
+version: 0.2.0
+name: OpenELISGlobalImplementationGuide
+title: OpenELIS Global FHIR Implementation Guide
 status: draft
-publisher: DIGI-UW
-# contact:
-  # - name: DIGI-UW
-    # telecom:
-      # - system: url
-        # value:  https://digi-uw.github.io/openelis-global2-fhir-ig
-description: An Implementation Guide covering the OpenELIS GLOBAL2 implementation of FHIR
+experimental: false
+date: 2026-09-29
+publisher:
+  name: OpenELIS Global (Digital Initiatives Group, University of Washington)
+  url: https://openelis-global.org
+contact:
+  - name: OpenELIS Global community
+    telecom:
+      - system: url
+        value: https://uwdigi.atlassian.net/wiki/spaces/oeg/overview
+description: >-
+  Profiles, extensions, identifier systems and exchange workflows for the HL7 FHIR R4
+  interfaces of OpenELIS Global, an open-source laboratory information system:
+  lab orders and results with EMRs such as OpenMRS, lab-to-lab referral, specimen
+  shipment, sample storage, analyzers, and the OpenELIS FHIR REST API.
 license: CC-BY-SA-4.0
+copyrightYear: 2021+
+releaseLabel: ci-build
 fhirVersion: 4.0.1
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+
 parameters:
   apply-publisher: true
   apply-license: true
   apply-contact: true
-copyrightYear: 2021+
-releaseLabel: ci-build
+  apply-jurisdiction: true
+  apply-version: true
+  show-inherited-invariants: false
+
+pages:
+  index.md:
+    title: Home
+  workflows.md:
+    title: Exchange Workflows
+  api.md:
+    title: OpenELIS FHIR REST API
+  identifiers.md:
+    title: Identifiers, Code Systems and URLs
+  known-issues.md:
+    title: Known Issues
+  changes.md:
+    title: Change Log
+
+menu:
+  Home: index.html
+  Workflows: workflows.html
+  FHIR API: api.html
+  Identifiers & URLs: identifiers.html
+  Artifacts: artifacts.html
+  Known Issues: known-issues.html
+  Documentation: https://uwdigi.atlassian.net/wiki/spaces/oeg/pages/1683488769/FHIR+Implementation+Guide
