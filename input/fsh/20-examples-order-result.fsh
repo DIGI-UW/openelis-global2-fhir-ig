@@ -253,6 +253,8 @@ Description: "A test on a water sample whose sampling site has no organization: 
 * code.text = "pH"
 * subject = Reference(ExampleSampledWater)
 * authoredOn = "2026-10-12"
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>pH on a water sample (lab number EDH26000000418), requested 2026-10-12. The sampling site, Well 7, stands for no organization, so the subject is a contained Group (substance). Referring site: Riverside Health Centre.</p></div>"
 * locationReference = Reference(ExampleReferringSiteLocation)
 
 Instance: ExampleServiceRequestGlucose
