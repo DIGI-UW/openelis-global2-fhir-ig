@@ -1,3 +1,20 @@
+### 0.2.1 (October 2026)
+
+Known Issues 2, 3, 5, 6, 8 to 15, 22 and 28 are fixed in OpenELIS `develop` and removed. The remaining items keep
+their numbers.
+
+* ServiceRequest: `subject` is required. An order without a patient has its sampling site's Location or a contained
+  Group. `locationReference` and that subject point at the new **Site Location** profile (an organization's Location,
+  same id), which OpenELIS now writes to the FHIR store and serves. `authoredOn` is the request date, else the entry
+  date. `basedOn` names the incoming ServiceRequest by id.
+* Order Task: every status maps to a value, and `output.type` is `{base}/task_output#DiagnosticReport`.
+* Specimen: `collection.collector` carries the collector's name, and `container.specimenQuantity` sends a UCUM code
+  only when the unit has one.
+* Observation: `performer` is the validating user (display only), on finalized results.
+* Patient: `gender` maps O to other and anything unrecognised to unknown.
+* Identifiers are never sent without a value; the Organization `org_uuid` identifier is sent whenever the
+  organization has a UUID.
+
 ### 0.2.0 (September 2026)
 
 A full revision, aligning the guide with OpenELIS Global 3.x (`develop` at commit `889166b`).
