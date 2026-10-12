@@ -3,7 +3,7 @@
 # develop branch) actually reads and writes. See input/pagecontent/index.md.
 id: org.openelisglobal.fhir
 canonical: https://digi-uw.github.io/openelis-global2-fhir-ig
-version: 0.2.0
+version: 0.2.1
 name: OpenELISGlobalImplementationGuide
 title: OpenELIS Global FHIR Implementation Guide
 status: draft

@@ -33,8 +33,7 @@ Description: "One result value as OpenELIS produces it (ObservationTransformServ
 * issued MS
 * issued ^comment = "The release (validation) date."
 * performer MS
-* performer only Reference(OpenELISPractitioner)
-* performer ^comment = "Currently the ordering provider of the sample, not the analyst (see Known Issues)."
+* performer ^comment = "Finalized results only: the user who validated the result, as a display-only Reference. Omitted otherwise."
 * value[x] only Quantity or CodeableConcept or string
 * value[x] MS
 * value[x] ^comment = "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with a LOINC answer coding when mapped plus an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded."
@@ -60,7 +59,7 @@ Title: "OpenELIS Global data model"
 * subject -> "SampleHuman.patient"
 * effective[x] -> "Analysis.releasedDate (else Analysis.startedDate)"
 * issued -> "Analysis.releasedDate"
-* performer -> "SampleHuman.provider"
+* performer -> "History of the analysis status change to finalized (SystemUser)"
 * value[x] -> "Result.value (+ Dictionary for coded results, + unit of measure)"
 * specimen -> "Analysis.sampleItem"
 * device -> "Analysis.analyzerId"

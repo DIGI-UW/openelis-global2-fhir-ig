@@ -39,7 +39,7 @@ Description: "A patient as OpenELIS produces it (PatientTransformServiceImpl.tra
 * name.family MS
 * name.given MS
 * gender 1..1 MS
-* gender ^comment = "OpenELIS stores M / F. M maps to male. Any other stored value maps to female. A blank value maps to unknown (see Known Issues)."
+* gender ^comment = "Stored M = male, F = female, O = other. A blank or any other value = unknown."
 * birthDate MS
 * birthDate ^comment = "Partially known birth dates are sent at year or year-month precision."
 * telecom MS
@@ -128,7 +128,6 @@ Description: "An organization as OpenELIS produces it (OrganizationTransformServ
     cliaNum 0..1 MS and
     facility 0..1 MS
 * identifier[uuid] ^short = "OpenELIS organization UUID"
-* identifier[uuid] ^comment = "Currently only sent when the organization has a code (see Known Issues)."
 * identifier[uuid].system = "http://openelis-global.org/org_uuid"
 * identifier[uuid].value 1..1
 * identifier[code].system = "http://openelis-global.org/org_code"
@@ -172,3 +171,33 @@ Title: "OpenELIS Global data model"
 * address.state -> "Organization.state"
 * address.postalCode -> "Organization.zipCode"
 * partOf -> "Organization.organization (parent)"
+
+// ===========================================================================
+// Site Location of an organization
+// ===========================================================================
+Profile: OpenELISSiteLocation
+Parent: Location
+Id: openelis-site-location
+Title: "OpenELIS Site Location"
+Description: "The place an OpenELIS organization stands for (OrganizationTransformServiceImpl.transformToFhirLocation). It has the same id as the Organization. ServiceRequest.locationReference points at the referring site and department this way, and the subject of an order without a patient points at its sampling site. OpenELIS writes these Locations to the FHIR store together with the ServiceRequests that reference them and whenever the organization is saved, and serves them from /fhir/Location/{id} (read only)."
+* status 1..1 MS
+* status ^comment = "inactive when the organization is inactive, otherwise active."
+* name 1..1 MS
+* mode 1..1 MS
+* mode = #instance
+* physicalType 1..1 MS
+* physicalType.coding 1..1
+* physicalType.coding = $LocPhysType#si "Site"
+* managingOrganization 1..1 MS
+* managingOrganization only Reference(OpenELISOrganization)
+
+Mapping: OpenELISSiteLocationToOE
+Source: OpenELISSiteLocation
+Target: "https://github.com/DIGI-UW/OpenELIS-Global-2"
+Id: oe-data-model
+Title: "OpenELIS Global data model"
+* -> "Organization (OrganizationTransformServiceImpl.transformToFhirLocation)"
+* id -> "Organization.fhirUuid"
+* status -> "Organization.isActive (Y / N)"
+* name -> "Organization.organizationName"
+* managingOrganization -> "Organization.fhirUuid"

@@ -77,7 +77,9 @@ worked examples.
   Receivers should store or display it. On incoming profiles, Must Support marks elements OpenELIS reads.
 * **Resource ids** are the OpenELIS FHIR UUIDs of the underlying records. A ServiceRequest and the
   DiagnosticReport for the same test share one id, the Analysis UUID.
-* **Environmental and vector samples** have no patient. Resources for them omit `subject` / `for`.
+* **Environmental and vector samples** have no patient. Their ServiceRequest `subject` is the sampling site's
+  Location (or a contained Group when the site has no organization). Specimen, Observation, DiagnosticReport and the
+  order Task omit `subject` / `for`.
 * **Mappings.** Each profile has a mapping to the OpenELIS data model (the `Mappings` tab), naming the
   table or class each element comes from.
 

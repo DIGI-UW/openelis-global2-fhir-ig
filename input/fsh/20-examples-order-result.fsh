@@ -204,10 +204,56 @@ Description: "OpenELIS's Task for the order, once finished: one output per test.
 * basedOn[0] = Reference(ExampleServiceRequestGlucose)
 * basedOn[1] = Reference(ExampleServiceRequestHBsAg)
 * for = Reference(ExamplePatient)
-* output[0].type.coding.code = #reference
+* output[0].type.coding.system = "http://openelis-global.org/task_output"
+* output[0].type.coding.code = #DiagnosticReport
 * output[0].valueReference = Reference(ExampleDiagnosticReportGlucose)
-* output[1].type.coding.code = #reference
+* output[1].type.coding.system = "http://openelis-global.org/task_output"
+* output[1].type.coding.code = #DiagnosticReport
 * output[1].valueReference = Reference(ExampleDiagnosticReportHBsAg)
+
+Instance: ExampleReferringSiteLocation
+InstanceOf: OpenELISSiteLocation
+Usage: #example
+Title: "Site Location: Riverside Health Centre"
+Description: "The site Location of the referring clinic: same id as its Organization."
+* id = "d3619aef-5abf-5b4f-a76c-06f378deca13"
+* status = #active
+* name = "Riverside Health Centre"
+* mode = #instance
+* physicalType.coding = $LocPhysType#si "Site"
+* managingOrganization = Reference(ExampleReferringOrganization)
+
+Instance: ExampleSampledWater
+InstanceOf: Group
+Usage: #inline
+* id = "subject"
+* type = #substance
+* actual = false
+* name = "Well 7"
+
+Instance: ExampleServiceRequestEnvironmental
+InstanceOf: OpenELISServiceRequest
+Usage: #example
+Title: "OpenELIS ServiceRequest: environmental sample"
+Description: "A test on a water sample whose sampling site has no organization: the subject is a contained Group. When the site stands for an organization, the subject is that organization's site Location instead."
+* id = "6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"
+* contained[0] = ExampleSampledWater
+* identifier[analysisUuid].use = #usual
+* identifier[analysisUuid].system = "http://openelis-global.org/analysis_uuid"
+* identifier[analysisUuid].value = "6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"
+* requisition.use = #usual
+* requisition.system = "http://openelis-global.org/samp_labNo"
+* requisition.value = "EDH26000000418"
+* status = #active
+* intent = #original-order
+* category.coding.system = "http://openelis-global.org/samp_domain"
+* category.coding.code = #E
+* category.coding.display = "E"
+* priority = #routine
+* code.text = "pH"
+* subject = Reference(ExampleSampledWater)
+* authoredOn = "2026-10-12"
+* locationReference = Reference(ExampleReferringSiteLocation)
 
 Instance: ExampleServiceRequestGlucose
 InstanceOf: OpenELISServiceRequest
@@ -234,8 +280,9 @@ Description: "One ordered test. The id is the Analysis UUID."
 * code.coding[0] = $LOINC#2345-7 "Glucose [Mass/volume] in Serum or Plasma"
 * code.text = "Glucose"
 * subject = Reference(ExamplePatient)
-* authoredOn = "2026-09-28T11:40:00+10:00"
+* authoredOn = "2026-09-28"
 * requester = Reference(ExamplePractitioner)
+* locationReference = Reference(ExampleReferringSiteLocation)
 * specimen = Reference(ExampleSpecimen)
 
 Instance: ExampleServiceRequestHBsAg
@@ -263,8 +310,9 @@ Description: "One ordered test. The id is the Analysis UUID."
 * code.coding[0] = $LOINC#5196-1 "Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay"
 * code.text = "HBsAg"
 * subject = Reference(ExamplePatient)
-* authoredOn = "2026-09-28T11:40:00+10:00"
+* authoredOn = "2026-09-28"
 * requester = Reference(ExamplePractitioner)
+* locationReference = Reference(ExampleReferringSiteLocation)
 * specimen = Reference(ExampleSpecimen)
 
 Instance: ExampleSpecimen
@@ -327,7 +375,7 @@ Description: "A validated numeric result produced on an analyzer."
 * issued = "2026-09-28T13:05:00+10:00"
 * valueQuantity.value = 92
 * valueQuantity.unit = "mg/dL"
-* performer = Reference(ExamplePractitioner)
+* performer.display = "Laboratory validator"
 * device = Reference(ExampleAnalyzerDevice)
 
 Instance: ExampleObservationHBsAg

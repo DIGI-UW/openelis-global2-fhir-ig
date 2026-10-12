@@ -73,7 +73,7 @@ Description: "One ordered test (an OpenELIS Analysis) as OpenELIS produces it (S
 * basedOn MS
 * basedOn only Reference(ServiceRequest)
 * basedOn ^short = "The external order (FHIR electronic orders only)"
-* basedOn ^comment = "Written as ServiceRequest/{external order number}: the order number (the first identifier value of the incoming ServiceRequest), not the incoming ServiceRequest's id. All tests of the order carry the same value (see Known Issues)."
+* basedOn ^comment = "The incoming ServiceRequest by id, found through OpenELIS's local copy of it. When that copy cannot be read, a logical reference: type ServiceRequest with the order number (the incoming ServiceRequest's first identifier value) as identifier.value."
 * requisition 1..1 MS
 * requisition ^short = "Lab (accession) number of the order"
 * requisition.system 1..1
@@ -91,15 +91,16 @@ Description: "One ordered test (an OpenELIS Analysis) as OpenELIS produces it (S
 * code ^comment = "Codings from the test's active terminology mappings (LOINC / SNOMED CT / CIEL / OCL) for the specimen's sample type, grouped by system. A SAME_AS mapping wins within a system. The test's legacy LOINC is included. code.text is the test name."
 * code.coding MS
 * code.text MS
-* subject MS
-* subject only Reference(OpenELISPatient)
-* subject ^comment = "OpenELIS omits subject for environmental and vector samples, although R4 requires it (see Known Issues)."
+* subject 1..1 MS
+* subject only Reference(OpenELISPatient or OpenELISSiteLocation or Group)
+* subject ^comment = "The Patient. An order without a patient (environmental, vector, or clinical entered without one) has the sampling site's Location (the sample item's collection site, else the order's environmental or vector site) when the site stands for an organization, else a contained Group (#subject: type substance for environmental, animal for vector, person otherwise; actual false; name = the site name when known)."
 * authoredOn 1..1 MS
-* authoredOn ^comment = "Currently the time the resource was generated, not the order entry time (see Known Issues)."
+* authoredOn ^comment = "The order's request date (day precision) when recorded, else when the order was entered. The same order is published with the same value every time."
 * requester MS
 * requester only Reference(OpenELISPractitioner)
 * locationReference MS
-* locationReference ^comment = "Referring site and referring department. The reference id is the OpenELIS Organization UUID written as Location/{id} (see Known Issues)."
+* locationReference only Reference(OpenELISSiteLocation)
+* locationReference ^comment = "Referring site, then referring department: the site Location of each organization (same id as the Organization). OpenELIS writes those Locations to the FHIR store with the ServiceRequest and serves them from /fhir/Location/{id}."
 * specimen MS
 * specimen only Reference(OpenELISSpecimen)
 * specimen ^comment = "The sample item the test runs on. Absent for pool-level vector analyses."
@@ -120,7 +121,7 @@ Title: "OpenELIS Global data model"
 * category -> "ObservationHistory PROGRAM / Sample.domain"
 * priority -> "Sample.priority"
 * code -> "Analysis.test + TestTerminologyMapping"
-* subject -> "SampleHuman.patient"
+* subject -> "SampleHuman.patient, else ObservationHistory envSamplingSiteId / vecCollectionSiteId (VectorSamplingSite.organizationId)"
 * requester -> "SampleHuman.provider"
 * locationReference -> "Sample requester organizations (referring org / referring department)"
 * specimen -> "Analysis.sampleItem"
@@ -176,14 +177,14 @@ Description: "A sample item as OpenELIS produces it (SpecimenTransformServiceImp
 * collection.bodySite ^comment = "text only: the configured source of sample, or the free-text other source."
 * collection.method MS
 * collection.method ^comment = "text only: the collection conditions."
-* collection.collector ^comment = "Not populated by OpenELIS today (see Known Issues)."
+* collection.collector ^comment = "Display only: the collector's name as entered."
 * condition MS
 * condition ^comment = "On order entry: the sample's condition on receipt, coded with {oe}/sample_condition."
 * container 1..1 MS
 * container.type 1..1
 * container.type = $SCT#434711009 "Specimen container (physical object)"
 * container.specimenQuantity MS
-* container.specimenQuantity ^comment = "code is the OpenELIS unit-of-measure name with system UCUM. Not every OpenELIS unit name is a valid UCUM code (see Known Issues)."
+* container.specimenQuantity ^comment = "unit is the OpenELIS unit-of-measure name. system UCUM and code are sent only when the unit has a valid UCUM code (its configured UCUM code, else its name); otherwise unit alone."
 * note MS
 
 Mapping: OpenELISSpecimenToOE
@@ -233,7 +234,7 @@ Description: "The Task OpenELIS writes for each order (Sample) to track its stat
 * partOf only Reference(Task)
 * partOf ^short = "The EMR Task the order was received from"
 * status 1..1 MS
-* status ^comment = "Entered = ready. Started or technical acceptance = in-progress. Technical rejection = failed. Non-conforming or biologist rejected = rejected. Finished = completed."
+* status ^comment = "A cancelled order = cancelled. Entered = ready. Started or technical acceptance = in-progress. Technical rejection = failed. Non-conforming, biologist rejected or sample rejected = rejected. Sample cancelled = cancelled. Finished = completed. Any other status = in-progress."
 * intent MS
 * intent ^comment = "original-order when entered in OpenELIS. order when received from another system."
 * priority MS
@@ -243,8 +244,9 @@ Description: "The Task OpenELIS writes for each order (Sample) to track its stat
 * authoredOn 1..1 MS
 * output MS
 * output ^short = "One per test, once the order is finished"
-* output.type.coding.code = #reference
-* output.type ^comment = "Currently a bare code 'reference' with no system."
+* output.type.coding.system = "http://openelis-global.org/task_output"
+* output.type.coding.code = #DiagnosticReport
+* output.type ^comment = "{base}/task_output#DiagnosticReport, as on referral Tasks."
 * output.value[x] only Reference(OpenELISDiagnosticReport)
 
 Mapping: OpenELISOrderTaskToOE
