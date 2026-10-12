@@ -1,4 +1,4 @@
-# EMR ServiceRequest: HBsAg - OpenELIS Global FHIR Implementation Guide v0.2.0
+# EMR ServiceRequest: HBsAg - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example ServiceRequest: EMR ServiceRequest: HBsAg
 
@@ -14,7 +14,7 @@ Profile: [Lab Order Request ServiceRequest (EMR to OpenELIS)](StructureDefinitio
 
 **code**: Hepatitis B virus surface Ag [Presence] in Serum or Plasma by Immunoassay
 
-**subject**: [Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))](Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.md)
+**subject**: [Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_uuid#OEPatientUUID#5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (use: usual))](Patient-5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11.md)
 
 **requester**: Dr Kofi Mensah (EMR practitioner record)
 

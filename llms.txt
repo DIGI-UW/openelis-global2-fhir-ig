@@ -1,4 +1,4 @@
-# org.openelisglobal.fhir#0.2.0: OpenELIS Global FHIR Implementation Guide(en)
+# org.openelisglobal.fhir#0.2.1: OpenELIS Global FHIR Implementation Guide(en)
 
 ## Pages
 
@@ -34,6 +34,7 @@
 * [OpenELIS Referral Task](en/StructureDefinition-openelis-referral-task.md)
 * [OpenELIS ServiceRequest](en/StructureDefinition-openelis-service-request.md)
 * [OpenELIS Shipment Box](en/StructureDefinition-openelis-shipment-box.md)
+* [OpenELIS Site Location](en/StructureDefinition-openelis-site-location.md)
 * [OpenELIS Specimen](en/StructureDefinition-openelis-specimen.md)
 * [OpenELIS Storage Location](en/StructureDefinition-openelis-storage-location.md)
 
@@ -106,6 +107,7 @@
 * [Rack 2 (Location)](en/Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.md)
 * [B3 (Location)](en/Location-613ff118-ceeb-5472-9793-dc241d0d032c.md)
 * [Shelf 1 (Location)](en/Location-8264f454-03c2-597b-996d-b9ea0998f326.md)
+* [Riverside Health Centre (Location)](en/Location-d3619aef-5abf-5b4f-a76c-06f378deca13.md)
 * [8330c79d-ccd9-5ef4-876d-2b176e5e86a5 (Observation)](en/Observation-8330c79d-ccd9-5ef4-876d-2b176e5e86a5.md)
 * [b73bf11f-06ff-55ad-935d-476bc270350a (Observation)](en/Observation-b73bf11f-06ff-55ad-935d-476bc270350a.md)
 * [National Reference Laboratory (Organization)](en/Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.md)
@@ -118,6 +120,7 @@
 * [35acd1d2-f076-5434-9105-683254702ff1 (ServiceRequest)](en/ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1.md)
 * [3b2c3407-5430-5878-9c61-c4c9b9c013c4 (ServiceRequest)](en/ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.md)
 * [48549f60-c400-5510-97da-2e2497627e81 (ServiceRequest)](en/ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.md)
+* [6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a (ServiceRequest)](en/ServiceRequest-6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a.md)
 * [97b37d86-fd55-529b-bbd7-4766f3988fab (Specimen)](en/Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.md)
 * [0e8e2c05-d198-51b0-8fa2-ac80c118c73e (SupplyDelivery)](en/SupplyDelivery-0e8e2c05-d198-51b0-8fa2-ac80c118c73e.md)
 * [07ed1bd1-1bdf-58ae-a661-ee0703fcab70 (Task)](en/Task-07ed1bd1-1bdf-58ae-a661-ee0703fcab70.md)

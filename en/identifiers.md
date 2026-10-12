@@ -1,4 +1,4 @@
-# Identifiers, Code Systems and URLs - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Identifiers, Code Systems and URLs - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Identifiers, Code Systems and URLs
 
@@ -46,7 +46,7 @@ This page lists every URL OpenELIS puts on the wire: identifier systems, local c
 | `{base}/sample_program` | ServiceRequest.category | Programme the order was entered under |
 | `{base}/sample_condition` | Specimen condition | Sample condition on receipt |
 | `{base}/orgType` | Organization.type | Site organization types (read back on import) |
-| `{base}/task_output` | Referral Task.output.type | `DiagnosticReport` |
+| `{base}/task_output` | Order and Referral Task.output.type | `DiagnosticReport` |
 | `{base}/refer_reason` | Referral Task.reasonCode | Referral reason (currently sent with no code) |
 | `{base}/genIdType` | Identifier.type | `externalId`: an identifier assigned by an external system |
 | `http://openelis.org/fhir/tag/storage-hierarchy` | Location.meta.tag | `room`,`device`,`shelf`,`rack`,`box` |

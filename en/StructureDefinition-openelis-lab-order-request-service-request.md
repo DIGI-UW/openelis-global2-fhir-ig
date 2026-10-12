@@ -1,9 +1,6 @@
-# Lab Order Request ServiceRequest (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Lab Order Request ServiceRequest (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: Lab Order Request ServiceRequest (EMR to OpenELIS) 
-
- 
-A test ordered by an external system. OpenELIS matches the test or panel by the LOINC coding in ServiceRequest.code (TaskInterpreterImpl.createTestFromFHIR / createPanelFromFHIR). The OpenELIS test must be configured with the same LOINC code. 
 
 **Usages:**
 
@@ -29,11 +26,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-lab-orde
   "resourceType" : "StructureDefinition",
   "id" : "openelis-lab-order-request-service-request",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISLabOrderRequestServiceRequest",
   "title" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

@@ -1,8 +1,6 @@
-# Storage device port - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Storage device port - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Storage device port 
-
-Network port of a connected storage device. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-port (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-device-port.csv),
   "resourceType" : "StructureDefinition",
   "id" : "device-port",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-port",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEStorageDevicePort",
   "title" : "Storage device port",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

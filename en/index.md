@@ -1,4 +1,4 @@
-# Home - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Home - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Home
 
@@ -61,7 +61,7 @@ The [CapabilityStatement](CapabilityStatement-OpenELISFhirServer.md) describes t
 * **Identifier and code system base.** OpenELIS builds most identifier systems and local code systems as `{base}/{suffix}`, where `{base}` is the `org.openelisglobal.oe.fhir.system` property. It defaults to `http://openelis-global.org`. The profiles in this guide assume the default. A site that changes the property sends different system URLs, and those will not match the slices in these profiles.
 * **Must Support.** An element flagged Must Support is one OpenELIS populates whenever it holds the data. Receivers should store or display it. On incoming profiles, Must Support marks elements OpenELIS reads.
 * **Resource ids** are the OpenELIS FHIR UUIDs of the underlying records. A ServiceRequest and the DiagnosticReport for the same test share one id, the Analysis UUID.
-* **Environmental and vector samples** have no patient. Resources for them omit `subject` / `for`.
+* **Environmental and vector samples** have no patient. Their ServiceRequest `subject` is the sampling site's Location (or a contained Group when the site has no organization). Specimen, Observation, DiagnosticReport and the order Task omit `subject` / `for`.
 * **Mappings.** Each profile has a mapping to the OpenELIS data model (the `Mappings` tab), naming the table or class each element comes from.
 
 ### Contributing

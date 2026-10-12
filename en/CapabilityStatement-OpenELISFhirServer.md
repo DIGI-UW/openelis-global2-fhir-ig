@@ -1,9 +1,6 @@
-# OpenELIS Global FHIR REST server - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Global FHIR REST server - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## CapabilityStatement: OpenELIS Global FHIR REST server 
-
- 
-The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenELIS-Global/fhir. It reads from and writes to the OpenELIS database directly. It is not the co-resident HAPI FHIR store. See api.html. 
 
  [Raw OpenAPI-Swagger Definition file](../OpenELISFhirServer.openapi.json) | [Download](../OpenELISFhirServer.openapi.json) 
 
@@ -16,7 +13,7 @@ The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenELIS-Global/fhir
   "resourceType" : "CapabilityStatement",
   "id" : "OpenELISFhirServer",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISFhirServer",
   "title" : "OpenELIS Global FHIR REST server",
   "status" : "active",

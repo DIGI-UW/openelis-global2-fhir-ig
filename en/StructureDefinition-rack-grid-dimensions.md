@@ -1,8 +1,6 @@
-# Grid dimensions - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Grid dimensions - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Grid dimensions 
-
-Grid of a storage box as the string "{rows} × {columns}" (U+00D7 multiplication sign, with spaces), for example "9 × 9". Parsed on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-grid-dimensions (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-rack-grid-dimensi
   "resourceType" : "StructureDefinition",
   "id" : "rack-grid-dimensions",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/rack-grid-dimensions",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OERackGridDimensions",
   "title" : "Grid dimensions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

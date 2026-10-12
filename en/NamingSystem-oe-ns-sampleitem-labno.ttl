@@ -11,7 +11,7 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-sampleitem-labno</b></p><a name=\"oe-ns-sampleitem-labno\"> </a><a name=\"hcoe-ns-sampleitem-labno\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-sampleitem-labno</td></tr><tr><td>Version</td><td>0.2.0</td></tr><tr><td>Name</td><td>OESampleItemLabNumber</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Accession number of the sample item: the order lab number followed by -{sortOrder}. Carried in Specimen.accessionIdentifier.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/sampleItem_labNo</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-sampleitem-labno</b></p><a name=\"oe-ns-sampleitem-labno\"> </a><a name=\"hcoe-ns-sampleitem-labno\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-sampleitem-labno</td></tr><tr><td>Version</td><td>0.2.1</td></tr><tr><td>Name</td><td>OESampleItemLabNumber</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Accession number of the sample item: the order lab number followed by -{sortOrder}. Carried in Specimen.accessionIdentifier.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/sampleItem_labNo</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
@@ -20,7 +20,7 @@
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
-     fhir:Extension.valueString [ fhir:value "0.2.0" ]
+     fhir:Extension.valueString [ fhir:value "0.2.1" ]
   ] ;
   fhir:NamingSystem.name [ fhir:value "OESampleItemLabNumber"] ;
   fhir:NamingSystem.status [ fhir:value "active"] ;

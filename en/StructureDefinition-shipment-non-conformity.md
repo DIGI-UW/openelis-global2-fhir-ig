@@ -1,8 +1,6 @@
-# Shipment non-conformity - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipment non-conformity - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipment non-conformity 
-
-A problem recorded when the box was received (damaged, leaked, missing, rejected). SNOMED CT by default. Codes can be overridden per site. Only sent after reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-non-conformity (see Known Issues).
 
 **Context of Use**
 
@@ -31,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-non-conf
   "resourceType" : "StructureDefinition",
   "id" : "shipment-non-conformity",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-non-conformity",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentNonConformity",
   "title" : "Shipment non-conformity",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

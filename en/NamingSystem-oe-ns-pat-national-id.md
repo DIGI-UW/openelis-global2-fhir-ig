@@ -1,9 +1,6 @@
-# oe-ns-pat-national-id - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-pat-national-id - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-pat-national-id 
-
- 
-National identifier entered in OpenELIS. Sent with Identifier.use = official. 
 
 
 
@@ -19,7 +16,7 @@ National identifier entered in OpenELIS. Sent with Identifier.use = official.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEPatientNationalId",
   "status" : "active",

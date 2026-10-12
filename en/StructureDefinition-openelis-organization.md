@@ -1,13 +1,10 @@
-# OpenELIS Organization - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Organization - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Organization 
 
- 
-An organization as OpenELIS produces it (OrganizationTransformServiceImpl) and serves it from /fhir/Organization: referring sites, reference labs, and the site's own facility Organization (FhirFacilityOrganizationServiceImpl). 
-
 **Usages:**
 
-* Refer to this Profile: [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.md), [OpenELIS DiagnosticReport](StructureDefinition-openelis-diagnostic-report.md), [OpenELIS Observation](StructureDefinition-openelis-observation.md), [OpenELIS Organization](StructureDefinition-openelis-organization.md)... Show 6 more, [OpenELIS Patient](StructureDefinition-openelis-patient.md), [OpenELIS Practitioner](StructureDefinition-openelis-practitioner.md), [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md), [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md), [OpenELIS Shipment Box](StructureDefinition-openelis-shipment-box.md) and [OpenELIS Specimen](StructureDefinition-openelis-specimen.md)
+* Refer to this Profile: [OpenELIS Analyzer Device](StructureDefinition-openelis-analyzer-device.md), [OpenELIS DiagnosticReport](StructureDefinition-openelis-diagnostic-report.md), [OpenELIS Observation](StructureDefinition-openelis-observation.md), [OpenELIS Organization](StructureDefinition-openelis-organization.md)... Show 7 more, [OpenELIS Patient](StructureDefinition-openelis-patient.md), [OpenELIS Practitioner](StructureDefinition-openelis-practitioner.md), [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md), [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md), [OpenELIS Shipment Box](StructureDefinition-openelis-shipment-box.md), [OpenELIS Site Location](StructureDefinition-openelis-site-location.md) and [OpenELIS Specimen](StructureDefinition-openelis-specimen.md)
 * Examples for this Profile: [National Reference Laboratory](Organization-32a104cd-6337-5d1b-b1a9-6849e98b2200.md), [Example District Hospital Laboratory](Organization-a845f2db-10e5-5117-ac75-553f615e301a.md) and [Riverside Health Centre](Organization-d3619aef-5abf-5b4f-a76c-06f378deca13.md)
 * CapabilityStatements using this Profile: [OpenELIS Global FHIR REST server](CapabilityStatement-OpenELISFhirServer.md)
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-organiza
   "resourceType" : "StructureDefinition",
   "id" : "openelis-organization",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-organization",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISOrganization",
   "title" : "OpenELIS Organization",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -124,7 +121,6 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-organiza
       "path" : "Organization.identifier",
       "sliceName" : "uuid",
       "short" : "OpenELIS organization UUID",
-      "comment" : "Currently only sent when the organization has a code (see Known Issues).",
       "min" : 0,
       "max" : "1",
       "mustSupport" : true,

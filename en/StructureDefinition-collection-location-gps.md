@@ -1,8 +1,6 @@
-# Collection location (GPS) - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Collection location (GPS) - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Collection location (GPS) 
-
-Where the specimen was collected, as captured on the device used at collection. Added to Specimen.collection when the order has GPS coordinates (SpecimenTransformServiceImpl.createGpsExtension). OpenELIS currently sends this extension with url http://openelis-global.org/fhir/StructureDefinition/collection-location-gps (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-collection-locati
   "resourceType" : "StructureDefinition",
   "id" : "collection-location-gps",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/collection-location-gps",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OECollectionLocationGPS",
   "title" : "Collection location (GPS)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

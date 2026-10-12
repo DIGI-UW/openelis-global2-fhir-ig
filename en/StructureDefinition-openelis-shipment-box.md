@@ -1,9 +1,6 @@
-# OpenELIS Shipment Box - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Shipment Box - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Shipment Box 
-
- 
-A box of specimens shipped from one OpenELIS site to another (ShippingBoxFhirTransform). Written to the sender's FHIR store on creation and on every status change. The receiving OpenELIS polls each remote source for SupplyDelivery?status=in-progress (ShipmentFhirImportService). SupplyDelivery is not served from /fhir. 
 
 **Usages:**
 
@@ -28,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-shipment
   "resourceType" : "StructureDefinition",
   "id" : "openelis-shipment-box",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISShipmentBox",
   "title" : "OpenELIS Shipment Box",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

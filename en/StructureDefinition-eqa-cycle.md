@@ -1,8 +1,6 @@
-# EQA cycle - OpenELIS Global FHIR Implementation Guide v0.2.0
+# EQA cycle - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: EQA cycle 
-
-External quality assessment cycle the consignment belongs to. Only sent for EQA boxes. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/eqa-cycle (see Known Issues).
 
 **Context of Use**
 
@@ -31,12 +29,12 @@ Other representations of profile: [CSV](../StructureDefinition-eqa-cycle.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "eqa-cycle",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/eqa-cycle",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEEQACycle",
   "title" : "EQA cycle",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

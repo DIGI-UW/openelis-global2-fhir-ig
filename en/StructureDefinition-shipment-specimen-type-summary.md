@@ -1,8 +1,6 @@
-# Shipment specimen type summary - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipment specimen type summary - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipment specimen type summary 
-
-Count of items in the box per sample type. One repetition per distinct type, in no guaranteed order. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen-type-summary (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-specimen
   "resourceType" : "StructureDefinition",
   "id" : "shipment-specimen-type-summary",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen-type-summary",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentSpecimenTypeSummary",
   "title" : "Shipment specimen type summary",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

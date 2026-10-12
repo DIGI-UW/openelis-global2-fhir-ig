@@ -1,9 +1,6 @@
-# oe-ns-pat-st-number - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-pat-st-number - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-pat-st-number 
-
- 
-ST number entered in OpenELIS. 
 
 
 
@@ -19,7 +16,7 @@ ST number entered in OpenELIS.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEPatientSTNumber",
   "status" : "active",

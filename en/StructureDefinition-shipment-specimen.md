@@ -1,8 +1,6 @@
-# Shipped specimen - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipped specimen - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipped specimen 
-
-A Specimen in the box. Repeats once per sample item with a FHIR id. The receiving site uses these references at reception. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-specimen (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-specimen
   "resourceType" : "StructureDefinition",
   "id" : "shipment-specimen",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-specimen",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentSpecimen",
   "title" : "Shipped specimen",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

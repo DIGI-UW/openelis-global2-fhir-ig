@@ -1,9 +1,6 @@
-# OpenELIS Patient - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Patient - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Patient 
-
- 
-A patient as OpenELIS produces it (PatientTransformServiceImpl.transformToFhirPatient) and serves it from /fhir/Patient. Environmental and vector orders have no patient. 
 
 **Usages:**
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-patient.
   "resourceType" : "StructureDefinition",
   "id" : "openelis-patient",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISPatient",
   "title" : "OpenELIS Patient",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -330,7 +327,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-patient.
     {
       "id" : "Patient.gender",
       "path" : "Patient.gender",
-      "comment" : "OpenELIS stores M / F. M maps to male. Any other stored value maps to female. A blank value maps to unknown (see Known Issues).",
+      "comment" : "Stored M = male, F = female, O = other. A blank or any other value = unknown.",
       "min" : 1,
       "mustSupport" : true,
       "mapping" : [{

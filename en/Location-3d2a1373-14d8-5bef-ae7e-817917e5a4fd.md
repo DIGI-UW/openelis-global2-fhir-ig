@@ -1,4 +1,4 @@
-# Storage level: device (freezer) - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Storage level: device (freezer) - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Location: Storage level: device (freezer)
 
@@ -6,29 +6,21 @@ Profiles: [OpenELIS Storage Location](StructureDefinition-openelis-storage-locat
 
 Tag: 
 
-**Storage temperature**: -80
+Freezer 01 (-80) (Freezer) (http://openelis.org/storage-location-code#OEStorageLocationCode#MAIN-FRZ01)
 
-**Storage capacity**: 5
+-------
 
-**Storage device IP address**: 10.20.0.41
-
-**Storage device port**: 502
-
-**Storage device communication protocol**: Modbus TCP
-
-**identifier**: [OEStorageLocationCode](NamingSystem-oe-ns-storage-location-code.md)/MAIN-FRZ01
-
-**status**: Active
-
-**name**: Freezer 01 (-80)
-
-**mode**: Instance
-
-**type**: Freezer
-
-**physicalType**: Storage Equipment
-
-**partOf**: [Location Main laboratory storage](Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.md)
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Status: | Active | Mode: | Instance |
+| Form: | Storage Equipment | | |
+| Type: | Freezer | | |
+| Part Of: | [Main laboratory storage (http://openelis.org/storage-location-code#OEStorageLocationCode#MAIN)](Location-1fa151e6-afa2-531c-b70c-fd63b88c10f0.md) | | |
+| [Storage temperature](StructureDefinition-storage-temperature.md) | -80 | | |
+| [Storage device communication protocol](StructureDefinition-device-communication-protocol.md) | Modbus TCP | | |
+| [Storage device port](StructureDefinition-device-port.md) | 502 | | |
+| [Storage device IP address](StructureDefinition-device-ip-address.md) | 10.20.0.41 | | |
+| [Storage capacity](StructureDefinition-storage-capacity.md) | 5 | | |
 
 
 

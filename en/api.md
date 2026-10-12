@@ -1,4 +1,4 @@
-# OpenELIS FHIR REST API - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS FHIR REST API - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## OpenELIS FHIR REST API
 

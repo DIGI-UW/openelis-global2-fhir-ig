@@ -1,9 +1,6 @@
-# oe-ns-analyzer-bridge-connection - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-analyzer-bridge-connection - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-analyzer-bridge-connection 
-
- 
-Connection id of the analyzer in the OpenELIS analyzer bridge. On import OpenELIS accepts any system ending in /analyzer_bridge_connection. 
 
 
 
@@ -19,7 +16,7 @@ Connection id of the analyzer in the OpenELIS analyzer bridge. On import OpenELI
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEAnalyzerBridgeConnection",
   "status" : "active",

@@ -1,13 +1,10 @@
-# OpenELIS Practitioner - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Practitioner - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Practitioner 
 
- 
-A requesting provider as OpenELIS produces it (PractitionerTransformServiceImpl) and serves it from /fhir/Practitioner. 
-
 **Usages:**
 
-* Refer to this Profile: [OpenELIS Observation](StructureDefinition-openelis-observation.md), [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md) and [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md)
+* Refer to this Profile: [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md) and [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md)
 * Examples for this Profile: [Practitioner/cc90c222-c1fa-5cb0-bb01-a2b35ac26244](Practitioner-cc90c222-c1fa-5cb0-bb01-a2b35ac26244.md)
 * CapabilityStatements using this Profile: [OpenELIS Global FHIR REST server](CapabilityStatement-OpenELISFhirServer.md)
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-practiti
   "resourceType" : "StructureDefinition",
   "id" : "openelis-practitioner",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISPractitioner",
   "title" : "OpenELIS Practitioner",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

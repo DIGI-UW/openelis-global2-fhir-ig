@@ -1,9 +1,6 @@
-# OpenELIS Specimen - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Specimen - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Specimen 
-
- 
-A sample item as OpenELIS produces it (SpecimenTransformServiceImpl) and serves it from /fhir/Specimen. 
 
 **Usages:**
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-specimen
   "resourceType" : "StructureDefinition",
   "id" : "openelis-specimen",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISSpecimen",
   "title" : "OpenELIS Specimen",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -324,7 +321,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-specimen
     {
       "id" : "Specimen.collection.collector",
       "path" : "Specimen.collection.collector",
-      "comment" : "Not populated by OpenELIS today (see Known Issues)."
+      "comment" : "Display only: the collector's name as entered."
     },
     {
       "id" : "Specimen.collection.collected[x]",
@@ -380,7 +377,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-specimen
     {
       "id" : "Specimen.container.specimenQuantity",
       "path" : "Specimen.container.specimenQuantity",
-      "comment" : "code is the OpenELIS unit-of-measure name with system UCUM. Not every OpenELIS unit name is a valid UCUM code (see Known Issues).",
+      "comment" : "unit is the OpenELIS unit-of-measure name. system UCUM and code are sent only when the unit has a valid UCUM code (its configured UCUM code, else its name); otherwise unit alone.",
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "oe-data-model",

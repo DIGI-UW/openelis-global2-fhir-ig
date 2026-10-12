@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status",
-    "version" : "0.2.0",
+    "version" : "0.2.1",
     "status" : "active",
     "name" : "OEAnalyzerOperationalStatusVS",
     "title" : "OpenELIS Analyzer Operational Statuses",

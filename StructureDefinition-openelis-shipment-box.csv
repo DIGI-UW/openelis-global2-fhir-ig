@@ -134,7 +134,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "SupplyDelivery.suppliedItem.quantity","SupplyDelivery.suppliedItem.quantity","","","",1,1,"Y","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1]]} {[]}
 ","Amount dispensed","The amount of supply that has been dispensed. Includes unit of measure.","Number of items in the box, as {specimens} (UCUM).","","","","","","","","",,,,,"",,,,"SupplyDelivery.suppliedItem.quantity",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","count of BoxSampleItem",".quantity"
+sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}","count of BoxSampleItem",".quantity"
 "SupplyDelivery.suppliedItem.quantity.id","SupplyDelivery.suppliedItem.quantity.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "SupplyDelivery.suppliedItem.quantity.extension","SupplyDelivery.suppliedItem.quantity.extension","","extensions

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Known Issues - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+    <title>Known Issues - OpenELIS Global FHIR Implementation Guide v0.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,9 +20,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
@@ -114,7 +114,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
 
@@ -202,7 +202,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Known Issues</h2>
   
 
@@ -257,34 +257,10 @@ OpenELIS team can fix it. Class names refer to
       <td>Set <code class="language-plaintext highlighter-rouge">intent = order</code>.</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Order Task <code class="language-plaintext highlighter-rouge">status</code> is left empty when the order status has no mapping. R4 requires <code class="language-plaintext highlighter-rouge">status</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">TaskTransformServiceImpl.transformToTask</code></td>
-      <td>Map the remaining statuses, or fall back to <code class="language-plaintext highlighter-rouge">in-progress</code>.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>ServiceRequests for environmental and vector samples have no <code class="language-plaintext highlighter-rouge">subject</code>. R4 requires it.</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code></td>
-      <td>Use a Location (sampling site) or Group as the subject.</td>
-    </tr>
-    <tr>
       <td>4</td>
       <td><code class="language-plaintext highlighter-rouge">SupplyDelivery.type</code> uses <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/supply-item-type#medication</code> with display "Specimen Shipment". The element has a required binding to SupplyDeliveryType, the display does not match, and specimens are not medication.</td>
       <td><code class="language-plaintext highlighter-rouge">ShippingBoxFhirTransform</code></td>
       <td>Omit <code class="language-plaintext highlighter-rouge">type</code> (it is optional), or carry the shipment type in an extension.</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Identifiers can be sent with a system and no value when the record has no FHIR UUID, for example <code class="language-plaintext highlighter-rouge">Practitioner.identifier</code> with system <code class="language-plaintext highlighter-rouge">{base}/provider_uuid</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">Provider.getFhirUuidAsString</code>, <code class="language-plaintext highlighter-rouge">PractitionerTransformServiceImpl</code></td>
-      <td>Skip the identifier when there is no UUID.</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>When importing an EMR order, OpenELIS writes an extra Task that has only an id and <code class="language-plaintext highlighter-rouge">basedOn</code> (the remote Task URL), with no <code class="language-plaintext highlighter-rouge">status</code> or <code class="language-plaintext highlighter-rouge">intent</code>. Task is in the default subscription list, so subscribers receive it.</td>
-      <td><code class="language-plaintext highlighter-rouge">FhirApiWorkFlowServiceImpl.saveTaskBasedOnRemoteTask</code></td>
-      <td>Populate status and intent, or drop the extra Task.</td>
     </tr>
     <tr>
       <td>7</td>
@@ -307,54 +283,6 @@ OpenELIS team can fix it. Class names refer to
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>8</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.authoredOn</code> is the time the resource was generated, not the time the order was entered.</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code> (<code class="language-plaintext highlighter-rouge">new Date()</code>)</td>
-      <td>Use <code class="language-plaintext highlighter-rouge">Sample.enteredDate</code>.</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.locationReference</code> is written as <code class="language-plaintext highlighter-rouge">Location/{Organization UUID}</code> for the referring site and department. No such Location exists.</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code></td>
-      <td>Publish matching Location resources, or reference the Organization another way.</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td><code class="language-plaintext highlighter-rouge">Observation.performer</code> is the ordering provider, not the analyst or the validating biologist.</td>
-      <td><code class="language-plaintext highlighter-rouge">ObservationTransformServiceImpl</code></td>
-      <td>Reference the validating user, or omit it.</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.collection.collector</code> is never populated, although the collector is passed to the transform.</td>
-      <td><code class="language-plaintext highlighter-rouge">SpecimenTransformServiceImpl.transformToCollection</code></td>
-      <td>Populate it.</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td><code class="language-plaintext highlighter-rouge">Specimen.container.specimenQuantity</code> sends the OpenELIS unit name as a UCUM code. Not every OpenELIS unit name is valid UCUM.</td>
-      <td><code class="language-plaintext highlighter-rouge">SpecimenTransformServiceImpl</code></td>
-      <td>Send <code class="language-plaintext highlighter-rouge">system</code> only when the unit is a UCUM code. Otherwise use <code class="language-plaintext highlighter-rouge">unit</code> only.</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td><code class="language-plaintext highlighter-rouge">Patient.gender</code>: any stored value other than <code class="language-plaintext highlighter-rouge">M</code> is sent as <code class="language-plaintext highlighter-rouge">female</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">PatientTransformServiceImpl</code></td>
-      <td>Map F to female, blank to unknown, and anything else to other or unknown.</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>The <code class="language-plaintext highlighter-rouge">{base}/org_uuid</code> identifier is only sent when the organization has a code. The condition checks <code class="language-plaintext highlighter-rouge">code</code> instead of the UUID.</td>
-      <td><code class="language-plaintext highlighter-rouge">OrganizationTransformServiceImpl.setFhirOrganizationIdentifiers</code></td>
-      <td>Check the UUID.</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Order Task <code class="language-plaintext highlighter-rouge">output.type</code> is the code <code class="language-plaintext highlighter-rouge">reference</code> with no system. Referral Tasks use <code class="language-plaintext highlighter-rouge">{base}/task_output#DiagnosticReport</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">TaskTransformServiceImpl</code></td>
-      <td>Use the same coding in both.</td>
-    </tr>
     <tr>
       <td>16</td>
       <td>Referral Task <code class="language-plaintext highlighter-rouge">reasonCode</code> has a system (<code class="language-plaintext highlighter-rouge">{base}/refer_reason</code>) but no code.</td>
@@ -390,12 +318,6 @@ OpenELIS team can fix it. Class names refer to
       <td>Draft and ready-to-send boxes are written to the FHIR store as <code class="language-plaintext highlighter-rouge">in-progress</code>. A receiver imports any <code class="language-plaintext highlighter-rouge">in-progress</code> box as in transit, so it can receive a box that was never sent.</td>
       <td><code class="language-plaintext highlighter-rouge">ShippingBoxFhirTransform.mapBoxStateToFhirStatus</code>, <code class="language-plaintext highlighter-rouge">ShipmentFhirImportService</code></td>
       <td>Write the SupplyDelivery only once the box is sent, or map draft to a status receivers skip.</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.basedOn</code> is written as <code class="language-plaintext highlighter-rouge">ServiceRequest/{external order number}</code> (the incoming ServiceRequest's first identifier value), not the incoming ServiceRequest's id. It is one value per sample, so every test carries the same reference.</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequestTransformServiceImpl</code> (<code class="language-plaintext highlighter-rouge">sample.getReferringId()</code>)</td>
-      <td>Keep the incoming ServiceRequest id per analysis and reference it, or use a logical reference by identifier.</td>
     </tr>
     <tr>
       <td>23</td>
@@ -441,12 +363,6 @@ OpenELIS team can fix it. Class names refer to
       <td>OpenELIS uses three URL bases for its own definitions (<code class="language-plaintext highlighter-rouge">http://openelis-global.org</code>, <code class="language-plaintext highlighter-rouge">http://openelis.org</code>, <code class="language-plaintext highlighter-rouge">https://openelis-global.org/fhir</code>), and none of them resolves. This guide defines the extensions under its own canonical, so live messages do not match its definitions until the code changes.</td>
       <td>Various</td>
       <td>Move every extension and profile URL to this guide's canonical (<code class="language-plaintext highlighter-rouge">https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/{id}</code>) and keep accepting the old URLs on import.</td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>Some code ignores <code class="language-plaintext highlighter-rouge">org.openelisglobal.oe.fhir.system</code> and hard-codes <code class="language-plaintext highlighter-rouge">http://openelis-global.org/pat_*</code>.</td>
-      <td><code class="language-plaintext highlighter-rouge">PatientTransformServiceImpl.transformToOpenElisPatientSearchResults</code>, <code class="language-plaintext highlighter-rouge">PatientSearchRestController</code></td>
-      <td>Use <code class="language-plaintext highlighter-rouge">FhirConfig.getOeFhirSystem()</code>.</td>
     </tr>
     <tr>
       <td>29</td>
@@ -527,10 +443,10 @@ OpenELIS team can fix it. Class names refer to
 
 
           IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
-          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package org.openelisglobal.fhir#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-29 02:24:00 +0000">
-    2026-09-29
+  <span title="2026-10-12 15:07:00 +0000">
+    2026-10-12
   </span>
 
           <br/>

@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Storage level: box - OpenELIS Global FHIR Implementation Guide v0.2.0</title>
+    <title>Storage level: box - OpenELIS Global FHIR Implementation Guide v0.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,9 +21,9 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/liquid.css" rel="stylesheet" />
     <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
+  	<!-- Placeholder for child template CSS declarations -->
 <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/colors.css" rel="stylesheet"/>
 
@@ -93,8 +93,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.83"}
-    h3,h4,h5,h6{--heading-prefix:"7.83"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.86"}
+    h3,h4,h5,h6{--heading-prefix:"7.86"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -115,7 +115,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">OpenELIS Global FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
 
@@ -197,7 +197,7 @@
 
 <!-- layouts\layout-instance-base -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenELIS Global FHIR Implementation Guide - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://digi-uw.github.io/openelis-global2-fhir-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
   
@@ -259,7 +259,7 @@
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><a name="613ff118-ceeb-5472-9793-dc241d0d032c"> </a><a name="hc613ff118-ceeb-5472-9793-dc241d0d032c"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p><b>Grid dimensions</b>: 9 × 9</p><p><b>Storage capacity</b>: 81</p><p><b>Position schema hint</b>: letter-number</p><p><b>Position occupancy</b>: true</p><p><b>identifier</b>: <a href="NamingSystem-oe-ns-storage-location-code.html" title="Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens.">OEStorageLocationCode</a>/MAIN-FRZ01-Shelf 1-Rack 2-B3</p><p><b>status</b>: Active</p><p><b>name</b>: B3</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://openelis.org/fhir/CodeSystem/storage-box-type cryobox}">cryobox</span></p><p><b>physicalType</b>: <span title="Codes:">Storage Box</span></p><p><b>partOf</b>: <a href="Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.html">Location Rack 2</a></p></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="613ff118-ceeb-5472-9793-dc241d0d032c"> </a><a name="hc613ff118-ceeb-5472-9793-dc241d0d032c"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-openelis-storage-location.html">OpenELIS Storage Location</a>, <code>http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location</code></p><p style="margin-bottom: 0px">Tag: </p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">B3 (cryobox) (http://openelis.org/storage-location-code#OEStorageLocationCode#MAIN-FRZ01-Shelf 1-Rack 2-B3)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="The status of the location">Status:</td><td>Active</td><td style="background-color: #f3f5da" title="Whether this describes a specific location, or a class of locations">Mode:</td><td>Instance</td></tr><tr><td style="background-color: #f3f5da" title="The physical form of the location (e.g. building, room, vehicle, road)">Form:</td><td colspan="3"><span title="Codes:">Storage Box</span></td></tr><tr><td style="background-color: #f3f5da" title="The type of function performed at the location">Type:</td><td colspan="3"><span title="Codes:{http://openelis.org/fhir/CodeSystem/storage-box-type cryobox}">cryobox</span></td></tr><tr><td style="background-color: #f3f5da" title="Another location this one is physically a part of">Part Of:</td><td colspan="3"><a href="Location-5a9cc354-9495-5090-91d7-b67b0d2ef5dc.html">Rack 2 (http://openelis.org/storage-location-code#OEStorageLocationCode#MAIN-FRZ01-Shelf 1-Rack 2)</a></td></tr><tr><td style="background-color: #f3f5da" title="How positions in the box are labelled (for example letter-number). Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-position-schema-hint (see Known Issues)."><a href="StructureDefinition-rack-position-schema-hint.html">Position schema hint</a></td><td colspan="3">letter-number</td></tr><tr><td style="background-color: #f3f5da" title="Whether any position in the storage box is occupied. Always sent on box-level Locations. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/position-occupancy (see Known Issues)."><a href="StructureDefinition-position-occupancy.html">Position occupancy</a></td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Capacity of the location: the capacity limit of a device or shelf. On a box it is rows x columns and is only sent with rack-grid-dimensions. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/storage-capacity (see Known Issues)."><a href="StructureDefinition-storage-capacity.html">Storage capacity</a></td><td colspan="3">81</td></tr><tr><td style="background-color: #f3f5da" title="Grid of a storage box as the string &quot;{rows} × {columns}&quot; (U+00D7 multiplication sign, with spaces), for example &quot;9 × 9&quot;. Parsed on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/rack-grid-dimensions (see Known Issues)."><a href="StructureDefinition-rack-grid-dimensions.html">Grid dimensions</a></td><td colspan="3">9 × 9</td></tr></table></div>
 
   
 
@@ -291,10 +291,10 @@
 
 
           IG © 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://openelis-global.org">OpenELIS Global (Digital Initiatives Group, University of Washington)</a>.  
-          Package org.openelisglobal.fhir#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package org.openelisglobal.fhir#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-09-29 02:24:00 +0000">
-    2026-09-29
+  <span title="2026-10-12 15:07:00 +0000">
+    2026-10-12
   </span>
 
           <br/>

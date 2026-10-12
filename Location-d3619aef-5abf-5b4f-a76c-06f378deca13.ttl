@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/d3619aef-5abf-5b4f-a76c-06f378deca13> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "d3619aef-5abf-5b4f-a76c-06f378deca13"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-site-location" ;
+       fhir:index 0 ;
+       fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-site-location>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location d3619aef-5abf-5b4f-a76c-06f378deca13</b></p><a name=\"d3619aef-5abf-5b4f-a76c-06f378deca13\"> </a><a name=\"hcd3619aef-5abf-5b4f-a76c-06f378deca13\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-openelis-site-location.html\">OpenELIS Site Location</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Riverside Health Centre</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The status of the location\">Status:</td><td>Active</td><td style=\"background-color: #f3f5da\" title=\"Whether this describes a specific location, or a class of locations\">Mode:</td><td>Instance</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The physical form of the location (e.g. building, room, vehicle, road)\">Form:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type si}\">Site</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization responsible for the provisioning and upkeep of the location\">Managed By:</td><td colspan=\"3\"><a href=\"Organization-d3619aef-5abf-5b4f-a76c-06f378deca13.html\">Riverside Health Centre (Referring clinic) (http://openelis-global.org/org_code#OEOrganizationCode#RHC01)</a></td></tr></table></div>"
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Riverside Health Centre"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ] ;
+       fhir:Coding.code [ fhir:value "si" ] ;
+       fhir:Coding.display [ fhir:value "Site" ]
+     ]
+  ] ;
+  fhir:Location.managingOrganization [
+     fhir:link <https://digi-uw.github.io/openelis-global2-fhir-ig/Organization/d3619aef-5abf-5b4f-a76c-06f378deca13> ;
+     fhir:Reference.reference [ fhir:value "Organization/d3619aef-5abf-5b4f-a76c-06f378deca13" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://digi-uw.github.io/openelis-global2-fhir-ig/Location/d3619aef-5abf-5b4f-a76c-06f378deca13.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

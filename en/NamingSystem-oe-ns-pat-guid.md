@@ -1,9 +1,6 @@
-# oe-ns-pat-guid - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-pat-guid - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-pat-guid 
-
- 
-Patient GUID held in OpenELIS. On import OpenELIS reads this system as the external patient id. 
 
 
 
@@ -19,7 +16,7 @@ Patient GUID held in OpenELIS. On import OpenELIS reads this system as the exter
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEPatientGUID",
   "status" : "active",

@@ -1,18 +1,22 @@
-# Referring site: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Referring site: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Organization: Referring site: Riverside Health Centre
 
 Profile: [OpenELIS Organization](StructureDefinition-openelis-organization.md)
 
-**identifier**: [OEOrganizationCode](NamingSystem-oe-ns-org-code.md)/RHC01, [OEOrganizationShortName](NamingSystem-oe-ns-org-shortname.md)/Riverside HC, [OEOrganizationUUID](NamingSystem-oe-ns-org-uuid.md)/d3619aef-5abf-5b4f-a76c-06f378deca13, [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB
+Riverside Health Centre (Referring clinic) (http://openelis-global.org/org_code#OEOrganizationCode#RHC01)
 
-**active**: true
+-------
 
-**type**: Referring clinic
-
-**name**: Riverside Health Centre
-
-**address**: 12 Market Road Riverside 
+| | |
+| :--- | :--- |
+| Active: | true |
+| Type: | Referring clinic |
+| Other Ids: | * [OEOrganizationShortName](NamingSystem-oe-ns-org-shortname.md)/Riverside HC
+* [OEOrganizationUUID](NamingSystem-oe-ns-org-uuid.md)/d3619aef-5abf-5b4f-a76c-06f378deca13
+* [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB
+ |
+| Contact Detail | 12 Market Road Riverside |
 
 
 

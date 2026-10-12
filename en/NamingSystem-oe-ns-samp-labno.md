@@ -1,9 +1,6 @@
-# oe-ns-samp-labno - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-samp-labno - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-samp-labno 
-
- 
-Lab (accession) number of the order. Carried in ServiceRequest.requisition. 
 
 
 
@@ -19,7 +16,7 @@ Lab (accession) number of the order. Carried in ServiceRequest.requisition.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OESampleLabNumber",
   "status" : "active",

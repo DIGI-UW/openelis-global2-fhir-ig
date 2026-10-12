@@ -1,9 +1,6 @@
-# OpenELIS Order Task - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Order Task - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Order Task 
-
- 
-The Task OpenELIS writes for each order (Sample) to track its state (TaskTransformServiceImpl). When the order came from an EMR Task, partOf points at that Task. When the order is finished, one output per test references its DiagnosticReport. 
 
 **Usages:**
 
@@ -28,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-order-ta
   "resourceType" : "StructureDefinition",
   "id" : "openelis-order-task",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-order-task",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISOrderTask",
   "title" : "OpenELIS Order Task",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -193,7 +190,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-order-ta
     {
       "id" : "Task.status",
       "path" : "Task.status",
-      "comment" : "Entered = ready. Started or technical acceptance = in-progress. Technical rejection = failed. Non-conforming or biologist rejected = rejected. Finished = completed.",
+      "comment" : "A cancelled order = cancelled. Entered = ready. Started or technical acceptance = in-progress. Technical rejection = failed. Non-conforming, biologist rejected or sample rejected = rejected. Sample cancelled = cancelled. Finished = completed. Any other status = in-progress.",
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "oe-data-model",
@@ -252,12 +249,17 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-order-ta
     {
       "id" : "Task.output.type",
       "path" : "Task.output.type",
-      "comment" : "Currently a bare code 'reference' with no system."
+      "comment" : "{base}/task_output#DiagnosticReport, as on referral Tasks."
+    },
+    {
+      "id" : "Task.output.type.coding.system",
+      "path" : "Task.output.type.coding.system",
+      "patternUri" : "http://openelis-global.org/task_output"
     },
     {
       "id" : "Task.output.type.coding.code",
       "path" : "Task.output.type.coding.code",
-      "patternCode" : "reference"
+      "patternCode" : "DiagnosticReport"
     },
     {
       "id" : "Task.output.value[x]",

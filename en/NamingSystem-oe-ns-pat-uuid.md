@@ -1,9 +1,6 @@
-# oe-ns-pat-uuid - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-pat-uuid - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-pat-uuid 
-
- 
-OpenELIS internal UUID of the patient. Equals Patient.id. 
 
 
 
@@ -19,7 +16,7 @@ OpenELIS internal UUID of the patient. Equals Patient.id.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEPatientUUID",
   "status" : "active",

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"/>
+  <meta>
+    <profile value="https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest 6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a</b></p><a name="6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"> </a><a name="hc6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-openelis-service-request.html">OpenELIS ServiceRequest</a></p></div><p><b>identifier</b>: <a href="NamingSystem-oe-ns-analysis-uuid.html" title="UUID of the OpenELIS test request (Analysis). Carried on ServiceRequest.">OEAnalysisUUID</a>/6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a (use: usual)</p><p><b>requisition</b>: <a href="NamingSystem-oe-ns-samp-labno.html" title="Lab (accession) number of the order. Carried in ServiceRequest.requisition.">OESampleLabNumber</a>/EDH26000000418 (use: usual)</p><p><b>status</b>: Active</p><p><b>intent</b>: Original Order</p><p><b>category</b>: <span title="Codes:{http://openelis-global.org/samp_domain E}">E</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:">pH</span></p><p><b>subject</b>: <a href="#hc6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a/subject">Well 7</a></p><p><b>authoredOn</b>: 2026-10-12</p><p><b>locationReference</b>: <a href="Location-d3619aef-5abf-5b4f-a76c-06f378deca13.html">Riverside Health Centre</a></p><hr/><blockquote><p><b style="color: maroon">Exception parsing generated Narrative (see /tmp/liquid-7c0f7b3f-c5bc-42ba-a30a-46eb11128f49.html): Error in template: Root element is not 'div'</b></p></blockquote></div>
+  </text>
+  <contained>
+    <Group>
+      <id value="subject"/>
+      <type value="substance"/>
+      <actual value="false"/>
+      <name value="Well 7"/>
+    </Group>
+  </contained>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/analysis_uuid"/>
+    <value value="6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a"/>
+  </identifier>
+  <requisition>
+    <use value="usual"/>
+    <system value="http://openelis-global.org/samp_labNo"/>
+    <value value="EDH26000000418"/>
+  </requisition>
+  <status value="active"/>
+  <intent value="original-order"/>
+  <category>
+    <coding>
+      <system value="http://openelis-global.org/samp_domain"/>
+      <code value="E"/>
+      <display value="E"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <text value="pH"/>
+  </code>
+  <subject>
+    <reference value="#subject"/>
+  </subject>
+  <authoredOn value="2026-10-12"/>
+  <locationReference>
+    <reference value="Location/d3619aef-5abf-5b4f-a76c-06f378deca13"/>
+  </locationReference>
+</ServiceRequest>

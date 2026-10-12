@@ -1,9 +1,6 @@
-# oe-ns-org-shortname - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-org-shortname - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-org-shortname 
-
- 
-Organization short name configured in OpenELIS. 
 
 
 
@@ -19,7 +16,7 @@ Organization short name configured in OpenELIS.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEOrganizationShortName",
   "status" : "active",

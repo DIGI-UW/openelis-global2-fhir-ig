@@ -1,9 +1,6 @@
-# OpenELIS Referral Task - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Referral Task - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Referral Task 
-
- 
-The Task a referring OpenELIS writes when it refers a test to another laboratory (FhirReferralServiceImpl.createReferralTask). The reference lab polls for it with the same mechanism as EMR orders. When results are entered at the referring lab from a paper report, it publishes the Task as completed with an output referencing the DiagnosticReport. A referral marked lost sets the Task to cancelled. A referral rejected at the referring lab sets it to rejected. 
 
 **Usages:**
 
@@ -28,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-referral
   "resourceType" : "StructureDefinition",
   "id" : "openelis-referral-task",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-referral-task",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISReferralTask",
   "title" : "OpenELIS Referral Task",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

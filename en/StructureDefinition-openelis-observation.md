@@ -1,9 +1,6 @@
-# OpenELIS Observation - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Observation - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Observation 
-
- 
-One result value as OpenELIS produces it (ObservationTransformServiceImpl) and serves it from /fhir/Observation. A multi-component test produces one Observation per component. 
 
 **Usages:**
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-observat
   "resourceType" : "StructureDefinition",
   "id" : "openelis-observation",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISObservation",
   "title" : "OpenELIS Observation",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -268,15 +265,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-observat
     {
       "id" : "Observation.performer",
       "path" : "Observation.performer",
-      "comment" : "Currently the ordering provider of the sample, not the analyst (see Known Issues).",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-practitioner"]
-      }],
+      "comment" : "Finalized results only: the user who validated the result, as a display-only Reference. Omitted otherwise.",
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "oe-data-model",
-        "map" : "SampleHuman.provider"
+        "map" : "History of the analysis status change to finalized (SystemUser)"
       }]
     },
     {

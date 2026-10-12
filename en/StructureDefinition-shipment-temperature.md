@@ -1,8 +1,6 @@
-# Shipment temperature requirement - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipment temperature requirement - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipment temperature requirement 
-
-Temperature the box must be kept at in transit. Free text (for example 2-8 °C). OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-temperature (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-temperat
   "resourceType" : "StructureDefinition",
   "id" : "shipment-temperature",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-temperature",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentTemperature",
   "title" : "Shipment temperature requirement",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

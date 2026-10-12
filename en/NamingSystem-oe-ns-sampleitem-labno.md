@@ -1,9 +1,6 @@
-# oe-ns-sampleitem-labno - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-sampleitem-labno - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-sampleitem-labno 
-
- 
-Accession number of the sample item: the order lab number followed by -{sortOrder}. Carried in Specimen.accessionIdentifier. 
 
 
 
@@ -19,7 +16,7 @@ Accession number of the sample item: the order lab number followed by -{sortOrde
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OESampleItemLabNumber",
   "status" : "active",

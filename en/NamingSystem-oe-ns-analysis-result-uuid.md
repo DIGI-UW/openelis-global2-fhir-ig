@@ -1,9 +1,6 @@
-# oe-ns-analysis-result-uuid - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-analysis-result-uuid - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-analysis-result-uuid 
-
- 
-Identifier of a DiagnosticReport. The value is the Analysis UUID so it equals the matching ServiceRequest id. 
 
 
 
@@ -19,7 +16,7 @@ Identifier of a DiagnosticReport. The value is the Analysis UUID so it equals th
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEAnalysisResultUUID",
   "status" : "active",

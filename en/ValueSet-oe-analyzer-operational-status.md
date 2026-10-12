@@ -1,9 +1,6 @@
-# OpenELIS Analyzer Operational Statuses - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Analyzer Operational Statuses - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## ValueSet: OpenELIS Analyzer Operational Statuses 
-
- 
-All analyzer operational statuses. 
 
  **References** 
 
@@ -28,12 +25,12 @@ All analyzer operational statuses.
   "resourceType" : "ValueSet",
   "id" : "oe-analyzer-operational-status",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEAnalyzerOperationalStatusVS",
   "title" : "OpenELIS Analyzer Operational Statuses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

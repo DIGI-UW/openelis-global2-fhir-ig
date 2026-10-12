@@ -1,8 +1,6 @@
-# Shipment content item - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipment content item - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipment content item 
-
-One row of the box manifest. Repeats once per item in the box. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-content-item (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-content-
   "resourceType" : "StructureDefinition",
   "id" : "shipment-content-item",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-content-item",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentContentItem",
   "title" : "Shipment content item",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

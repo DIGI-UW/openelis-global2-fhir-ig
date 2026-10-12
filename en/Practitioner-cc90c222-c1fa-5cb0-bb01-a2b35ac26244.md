@@ -1,16 +1,18 @@
-# Requesting provider - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Requesting provider - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Practitioner: Requesting provider
 
 Profile: [OpenELIS Practitioner](StructureDefinition-openelis-practitioner.md)
 
-**identifier**: [OEProviderUUID](NamingSystem-oe-ns-provider-uuid.md)/cc90c222-c1fa-5cb0-bb01-a2b35ac26244 (use: usual, ), [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB (use: official, )
+Kofi Mensah (http://openelis-global.org/provider_uuid#OEProviderUUID#cc90c222-c1fa-5cb0-bb01-a2b35ac26244 (use: usual))
 
-**active**: true
+-------
 
-**name**: Kofi Mensah 
-
-**telecom**: [+000 555 0101](tel:+0005550101)
+| | |
+| :--- | :--- |
+| Active: | true |
+| Other Id: | [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB (use: official) |
+| Contact Detail | [+000 555 0101](tel:+0005550101) |
 
 
 

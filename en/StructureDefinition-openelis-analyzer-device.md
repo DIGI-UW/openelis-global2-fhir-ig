@@ -1,9 +1,6 @@
-# OpenELIS Analyzer Device - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS Analyzer Device - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS Analyzer Device 
-
- 
-An analyzer as OpenELIS produces it (DeviceTransformServiceImpl), serves it from /fhir/Device, and includes it in result bundles when Observation.device references it. OpenELIS currently declares meta.profile = http://openelis.org/fhir/StructureDefinition/openelis-analyzer-device, which is not this profile's URL (see Known Issues). 
 
 **Usages:**
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-analyzer
   "resourceType" : "StructureDefinition",
   "id" : "openelis-analyzer-device",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-analyzer-device",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISAnalyzerDevice",
   "title" : "OpenELIS Analyzer Device",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

@@ -1,9 +1,6 @@
-# OpenELIS DiagnosticReport - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS DiagnosticReport - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS DiagnosticReport 
-
- 
-The report for one ordered test, grouping its results (DiagnosticReportTransformServiceImpl), served from /fhir/DiagnosticReport (read, search and delete only). The id is the Analysis UUID, the same as the matching ServiceRequest id. 
 
 **Usages:**
 
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-diagnost
   "resourceType" : "StructureDefinition",
   "id" : "openelis-diagnostic-report",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISDiagnosticReport",
   "title" : "OpenELIS DiagnosticReport",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

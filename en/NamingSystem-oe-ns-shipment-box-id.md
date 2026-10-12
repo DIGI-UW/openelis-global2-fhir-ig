@@ -1,9 +1,6 @@
-# oe-ns-shipment-box-id - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-shipment-box-id - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-shipment-box-id 
-
- 
-Identifier of a shipping box. Carried on SupplyDelivery. 
 
 
 
@@ -19,7 +16,7 @@ Identifier of a shipping box. Carried on SupplyDelivery.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEShipmentBoxId",
   "status" : "active",

@@ -1,9 +1,6 @@
-# oe-ns-storage-location-code - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-storage-location-code - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-storage-location-code 
-
- 
-Hierarchical code of a storage location (room / equipment / shelf / rack / box) joined with hyphens. 
 
 
 
@@ -19,7 +16,7 @@ Hierarchical code of a storage location (room / equipment / shelf / rack / box) 
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEStorageLocationCode",
   "status" : "active",

@@ -1,14 +1,11 @@
-# OpenELIS ServiceRequest - OpenELIS Global FHIR Implementation Guide v0.2.0
+# OpenELIS ServiceRequest - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: OpenELIS ServiceRequest 
-
- 
-One ordered test (an OpenELIS Analysis) as OpenELIS produces it (ServiceRequestTransformServiceImpl) and serves it from /fhir/ServiceRequest. The id is the Analysis UUID. The DiagnosticReport for the same test has the same id. 
 
 **Usages:**
 
 * Refer to this Profile: [OpenELIS DiagnosticReport](StructureDefinition-openelis-diagnostic-report.md), [OpenELIS Observation](StructureDefinition-openelis-observation.md), [OpenELIS Order Task](StructureDefinition-openelis-order-task.md), [OpenELIS Referral Task](StructureDefinition-openelis-referral-task.md) and [OpenELIS Specimen](StructureDefinition-openelis-specimen.md)
-* Examples for this Profile: [ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4](ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.md) and [ServiceRequest/48549f60-c400-5510-97da-2e2497627e81](ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.md)
+* Examples for this Profile: [ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4](ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.md), [ServiceRequest/48549f60-c400-5510-97da-2e2497627e81](ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.md) and [ServiceRequest/6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a](ServiceRequest-6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a.md)
 * CapabilityStatements using this Profile: [OpenELIS Global FHIR REST server](CapabilityStatement-OpenELISFhirServer.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/org.openelisglobal.fhir|current/StructureDefinition/StructureDefinition-openelis-service-request.json)
@@ -30,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-service-
   "resourceType" : "StructureDefinition",
   "id" : "openelis-service-request",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-service-request",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISServiceRequest",
   "title" : "OpenELIS ServiceRequest",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -187,7 +184,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-service-
       "id" : "ServiceRequest.basedOn",
       "path" : "ServiceRequest.basedOn",
       "short" : "The external order (FHIR electronic orders only)",
-      "comment" : "Written as ServiceRequest/{external order number}: the order number (the first identifier value of the incoming ServiceRequest), not the incoming ServiceRequest's id. All tests of the order carry the same value (see Known Issues).",
+      "comment" : "The incoming ServiceRequest by id, found through OpenELIS's local copy of it. When that copy cannot be read, a logical reference: type ServiceRequest with the order number (the incoming ServiceRequest's first identifier value) as identifier.value.",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/ServiceRequest"]
@@ -285,21 +282,23 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-service-
     {
       "id" : "ServiceRequest.subject",
       "path" : "ServiceRequest.subject",
-      "comment" : "OpenELIS omits subject for environmental and vector samples, although R4 requires it (see Known Issues).",
+      "comment" : "The Patient. An order without a patient (environmental, vector, or clinical entered without one) has the sampling site's Location (the sample item's collection site, else the order's environmental or vector site) when the site stands for an organization, else a contained Group (#subject: type substance for environmental, animal for vector, person otherwise; actual false; name = the site name when known).",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient"]
+        "targetProfile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-patient",
+        "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-site-location",
+        "http://hl7.org/fhir/StructureDefinition/Group"]
       }],
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "oe-data-model",
-        "map" : "SampleHuman.patient"
+        "map" : "SampleHuman.patient, else ObservationHistory envSamplingSiteId / vecCollectionSiteId (VectorSamplingSite.organizationId)"
       }]
     },
     {
       "id" : "ServiceRequest.authoredOn",
       "path" : "ServiceRequest.authoredOn",
-      "comment" : "Currently the time the resource was generated, not the order entry time (see Known Issues).",
+      "comment" : "The order's request date (day precision) when recorded, else when the order was entered. The same order is published with the same value every time.",
       "min" : 1,
       "mustSupport" : true
     },
@@ -319,7 +318,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-service-
     {
       "id" : "ServiceRequest.locationReference",
       "path" : "ServiceRequest.locationReference",
-      "comment" : "Referring site and referring department. The reference id is the OpenELIS Organization UUID written as Location/{id} (see Known Issues).",
+      "comment" : "Referring site, then referring department: the site Location of each organization (same id as the Organization). OpenELIS writes those Locations to the FHIR store with the ServiceRequest and serves them from /fhir/Location/{id}.",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-site-location"]
+      }],
       "mustSupport" : true,
       "mapping" : [{
         "identity" : "oe-data-model",

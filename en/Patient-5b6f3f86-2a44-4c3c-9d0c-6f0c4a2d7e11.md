@@ -1,19 +1,19 @@
-# Patient - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Patient - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Patient: Patient
 
 Profile: [OpenELIS Patient](StructureDefinition-openelis-patient.md)
 
-Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_guid#OEPatientGUID#dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual, ))
+Grace Banda (official) Female, DoB: 1991-04 ( http://openelis-global.org/pat_uuid#OEPatientUUID#5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (use: usual))
 
 -------
 
 | | |
 | :--- | :--- |
-| Other Ids: | * [OEPatientUUID](NamingSystem-oe-ns-pat-uuid.md)/5b6f3f86-2a44-4c3c-9d0c-6f0c4a2d7e11 (use: usual, )
-* [OEPatientSubjectNumber](NamingSystem-oe-ns-pat-subject-number.md)/RHC-2026-00417 (use: usual, )
-* [OEPatientNationalId](NamingSystem-oe-ns-pat-national-id.md)/NID-000-123-456 (use: official, )
-* [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB (use: official, )
+| Other Ids: | * [OEPatientSubjectNumber](NamingSystem-oe-ns-pat-subject-number.md)/RHC-2026-00417 (use: usual)
+* [OEPatientNationalId](NamingSystem-oe-ns-pat-national-id.md)/NID-000-123-456 (use: official)
+* [OEPatientGUID](NamingSystem-oe-ns-pat-guid.md)/dd63810d-c44b-52b6-b70d-0d8e60533c6d (use: usual)
+* [OEFacilityId](NamingSystem-oe-ns-facility-id.md)/EDH-LAB (use: official)
  |
 | Contact Detail | * [+000 555 0199](tel:+0005550199)
 * Plot 7, Hill Street commune: Riverside North Riverside XX 

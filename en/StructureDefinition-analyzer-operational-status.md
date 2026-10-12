@@ -1,8 +1,6 @@
-# Analyzer operational status - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Analyzer operational status - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Analyzer operational status 
-
-OpenELIS's own analyzer lifecycle status, unmapped. Device.status carries the mapped FHIR value. Ignored on import. OpenELIS currently sends this extension with url http://openelis.org/fhir/StructureDefinition/analyzer-operational-status (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-analyzer-operatio
   "resourceType" : "StructureDefinition",
   "id" : "analyzer-operational-status",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-operational-status",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEAnalyzerOperationalStatusExt",
   "title" : "Analyzer operational status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

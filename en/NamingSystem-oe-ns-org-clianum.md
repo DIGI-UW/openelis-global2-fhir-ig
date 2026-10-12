@@ -1,9 +1,6 @@
-# oe-ns-org-clianum - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-org-clianum - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-org-clianum 
-
- 
-CLIA (or equivalent accreditation) number of the organization. 
 
 
 
@@ -19,7 +16,7 @@ CLIA (or equivalent accreditation) number of the organization.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEOrganizationCLIANumber",
   "status" : "active",

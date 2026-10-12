@@ -1,8 +1,6 @@
-# Shipment box capacity - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Shipment box capacity - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Shipment box capacity 
-
-Number of specimens the box can hold. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/shipment-capacity (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-capacity
   "resourceType" : "StructureDefinition",
   "id" : "shipment-capacity",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-capacity",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEShipmentCapacity",
   "title" : "Shipment box capacity",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

@@ -1,8 +1,10 @@
-# EMR service user representing OpenELIS - OpenELIS Global FHIR Implementation Guide v0.2.0
+# EMR service user representing OpenELIS - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Practitioner: EMR service user representing OpenELIS
 
-**name**: OpenELIS service user
+OpenELIS service user
+
+-------
 
 
 

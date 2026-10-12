@@ -1,4 +1,4 @@
-# Storage level: room - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Storage level: room - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Example Location: Storage level: room
 
@@ -6,17 +6,15 @@ Profiles: [OpenELIS Storage Location](StructureDefinition-openelis-storage-locat
 
 Tag: 
 
-**identifier**: [OEStorageLocationCode](NamingSystem-oe-ns-storage-location-code.md)/MAIN
+Main laboratory storage (http://openelis.org/storage-location-code#OEStorageLocationCode#MAIN)
 
-**status**: Active
+-------
 
-**name**: Main laboratory storage
-
-**description**: Ground floor, room 014
-
-**mode**: Instance
-
-**physicalType**: Storage Room
+| | | | |
+| :--- | :--- | :--- | :--- |
+| Status: | Active | Mode: | Instance |
+| Form: | Storage Room | | |
+| Description: | Ground floor, room 014 | | |
 
 
 

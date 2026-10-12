@@ -1,9 +1,6 @@
-# Lab Order Request Task (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Lab Order Request Task (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Resource Profile: Lab Order Request Task (EMR to OpenELIS) 
-
- 
-The Task an ordering system (for example OpenMRS with the Lab on FHIR module) writes to the shared FHIR server so OpenELIS picks the order up. OpenELIS polls each org.openelisglobal.remote.source.uri for Task?status=requested&owner={one of org.openelisglobal.remote.source.identifier} (FhirApiWorkFlowServiceImpl.beginTaskImportOrderPath). 
 
 **Usages:**
 
@@ -28,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-lab-orde
   "resourceType" : "StructureDefinition",
   "id" : "openelis-lab-order-request-task",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-task",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OpenELISLabOrderRequestTask",
   "title" : "Lab Order Request Task (EMR to OpenELIS)",
   "status" : "draft",
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

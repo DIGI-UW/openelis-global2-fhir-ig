@@ -1,9 +1,6 @@
-# oe-ns-org-uuid - OpenELIS Global FHIR Implementation Guide v0.2.0
+# oe-ns-org-uuid - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## NamingSystem: oe-ns-org-uuid 
-
- 
-UUID of the OpenELIS organization. 
 
 
 
@@ -19,7 +16,7 @@ UUID of the OpenELIS organization.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.0"
+    "valueString" : "0.2.1"
   }],
   "name" : "OEOrganizationUUID",
   "status" : "active",

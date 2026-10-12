@@ -1,8 +1,6 @@
-# Storage device communication protocol - OpenELIS Global FHIR Implementation Guide v0.2.0
+# Storage device communication protocol - OpenELIS Global FHIR Implementation Guide v0.2.1
 
 ## Extension: Storage device communication protocol 
-
-Protocol used to talk to a connected storage device. Free text. OpenELIS currently sends this extension with url http://openelis.org/fhir/extension/device-communication-protocol (see Known Issues).
 
 **Context of Use**
 
@@ -32,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-device-communicat
   "resourceType" : "StructureDefinition",
   "id" : "device-communication-protocol",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/device-communication-protocol",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "OEStorageDeviceProtocol",
   "title" : "Storage device communication protocol",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29T02:24:20+00:00",
+  "date" : "2026-10-12T15:07:11+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
