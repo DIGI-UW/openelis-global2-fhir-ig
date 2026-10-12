@@ -7,15 +7,15 @@
   "status" : "draft",
   "package-id" : "org.openelisglobal.fhir",
   "ig-ver" : "0.2.1",
-  "date" : "Mon, 12 Oct, 2026 15:07:11 +0000",
-  "dateISO8601" : "2026-10-12T15:07:11+00:00",
-  "errs" : 1,
-  "warnings" : 1252,
+  "date" : "Mon, 12 Oct, 2026 15:22:52 +0000",
+  "dateISO8601" : "2026-10-12T15:22:52+00:00",
+  "errs" : 0,
+  "warnings" : 32,
   "hints" : 70,
-  "broken-links" : 1,
+  "broken-links" : 0,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 1643257792
+  "maxMemory" : 1223718208
 }

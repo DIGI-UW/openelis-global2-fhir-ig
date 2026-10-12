@@ -2,31 +2,7 @@
 
 ## Example ServiceRequest: OpenELIS ServiceRequest: environmental sample
 
-Profile: [OpenELIS ServiceRequest](StructureDefinition-openelis-service-request.md)
-
-**identifier**: [OEAnalysisUUID](NamingSystem-oe-ns-analysis-uuid.md)/6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a (use: usual)
-
-**requisition**: [OESampleLabNumber](NamingSystem-oe-ns-samp-labno.md)/EDH26000000418 (use: usual)
-
-**status**: Active
-
-**intent**: Original Order
-
-**category**: E
-
-**priority**: Routine
-
-**code**: pH
-
-**subject**: [Well 7](#hc6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a/subject)
-
-**authoredOn**: 2026-10-12
-
-**locationReference**: [Riverside Health Centre](Location-d3619aef-5abf-5b4f-a76c-06f378deca13.md)
-
--------
-
-> **Exception parsing generated Narrative (see /tmp/liquid-7c0f7b3f-c5bc-42ba-a30a-46eb11128f49.html): Error in template: Root element is not 'div'**
+pH on a water sample (lab number EDH26000000418), requested 2026-10-12. The sampling site, Well 7, stands for no organization, so the subject is a contained Group (substance). Referring site: Riverside Health Centre.
 
 
 

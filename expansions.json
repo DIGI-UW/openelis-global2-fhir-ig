@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5597fef2-6376-4010-a961-910d7f12f538",
+  "id" : "0f35bfc5-c915-4284-870d-b71e57b70393",
   "meta" : {
-    "lastUpdated" : "2026-10-12T15:07:11.710+00:00"
+    "lastUpdated" : "2026-10-12T15:22:52.340+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "OpenELIS Analyzer Operational Statuses",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-10-12T15:07:11+00:00",
+      "date" : "2026-10-12T15:22:52+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:171cf30a-3d64-4a0d-a4d5-0e44814d2b4b",
-        "timestamp" : "2026-10-12T15:08:33+00:00",
+        "identifier" : "urn:uuid:d1346b5e-a068-46ee-abe7-5f81a34e8da6",
+        "timestamp" : "2026-10-12T15:24:04+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -99,7 +99,7 @@
       "title" : "OpenELIS Analyzer Operational Statuses",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-10-12T15:07:11+00:00",
+      "date" : "2026-10-12T15:22:52+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -108,8 +108,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:618142d2-7bab-48cf-83c2-961faadcb162",
-        "timestamp" : "2026-10-12T15:08:33+00:00",
+        "identifier" : "urn:uuid:a5af9c67-486f-485a-b83d-8e4ef67a0baa",
+        "timestamp" : "2026-10-12T15:24:04+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{

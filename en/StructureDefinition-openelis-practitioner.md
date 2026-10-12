@@ -31,7 +31,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-practiti
   "name" : "OpenELISPractitioner",
   "title" : "OpenELIS Practitioner",
   "status" : "draft",
-  "date" : "2026-10-12T15:07:11+00:00",
+  "date" : "2026-10-12T15:22:52+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

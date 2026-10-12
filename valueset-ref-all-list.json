@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.69"],
     "uses" : {
     },
-    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient"
+    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -26,8 +26,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.67"],
     "uses" : {
     },
-    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient"
+    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -56,10 +56,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen",
     "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
-    "StructureDefinition-openelis-observation.html" : "OpenELIS Observation"
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-observation.html" : "OpenELIS Observation",
+    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -129,8 +129,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.512"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
@@ -228,17 +228,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
     "StructureDefinition-openelis-shipment-box.html" : "OpenELIS Shipment Box",
-    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport",
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
     "StructureDefinition-openelis-analyzer-device.html" : "OpenELIS Analyzer Device",
     "StructureDefinition-openelis-order-task.html" : "OpenELIS Order Task",
-    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
     "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
-    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
     "StructureDefinition-openelis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport",
+    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
+    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -252,17 +252,17 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
     "StructureDefinition-openelis-shipment-box.html" : "OpenELIS Shipment Box",
-    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport",
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
     "StructureDefinition-openelis-analyzer-device.html" : "OpenELIS Analyzer Device",
     "StructureDefinition-openelis-order-task.html" : "OpenELIS Order Task",
-    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
     "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
-    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
     "StructureDefinition-openelis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport",
+    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
+    "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -276,21 +276,21 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-lab-order-request-task.html" : "Lab Order Request Task (EMR to OpenELIS)",
-    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
-    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
-    "StructureDefinition-openelis-observation.html" : "OpenELIS Observation",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
     "StructureDefinition-openelis-shipment-box.html" : "OpenELIS Shipment Box",
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
+    "StructureDefinition-openelis-observation.html" : "OpenELIS Observation",
+    "StructureDefinition-openelis-referral-task.html" : "OpenELIS Referral Task",
+    "StructureDefinition-openelis-practitioner.html" : "OpenELIS Practitioner",
+    "StructureDefinition-openelis-organization.html" : "OpenELIS Organization",
     "StructureDefinition-openelis-specimen.html" : "OpenELIS Specimen",
-    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport",
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-lab-order-request-task.html" : "Lab Order Request Task (EMR to OpenELIS)",
     "StructureDefinition-openelis-analyzer-device.html" : "OpenELIS Analyzer Device",
     "StructureDefinition-openelis-order-task.html" : "OpenELIS Order Task",
-    "StructureDefinition-openelis-referral-task.html" : "OpenELIS Referral Task",
-    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient"
+    "StructureDefinition-openelis-patient.html" : "OpenELIS Patient",
+    "StructureDefinition-openelis-diagnostic-report.html" : "OpenELIS DiagnosticReport"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -318,8 +318,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.330"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -333,8 +333,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.328"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -348,8 +348,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.332"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -378,8 +378,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.96"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -492,8 +492,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.152"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -537,8 +537,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.427"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
@@ -552,8 +552,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.432"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -625,8 +625,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.113"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -640,11 +640,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.115"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
     "StructureDefinition-openelis-lab-order-request-task.html" : "Lab Order Request Task (EMR to OpenELIS)",
     "StructureDefinition-openelis-order-task.html" : "OpenELIS Order Task",
-    "StructureDefinition-openelis-referral-task.html" : "OpenELIS Referral Task",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-referral-task.html" : "OpenELIS Referral Task"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -658,8 +658,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.111"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -705,8 +705,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.434"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
@@ -720,8 +720,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.435"],
     "uses" : {
     },
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
-    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)"
+    "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
@@ -896,8 +896,8 @@
     "sources" : ["2.16.840.1.113883.21.51"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
@@ -979,10 +979,10 @@
     "sources" : ["2.16.840.1.113883.1.11.17660"],
     "uses" : {
     },
-    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location",
-    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location",
     "StructureDefinition-openelis-lab-order-request-service-request.html" : "Lab Order Request ServiceRequest (EMR to OpenELIS)",
-    "StructureDefinition-openelis-storage-location.html" : "OpenELIS Storage Location"
+    "StructureDefinition-openelis-service-request.html" : "OpenELIS ServiceRequest",
+    "StructureDefinition-openelis-site-location.html" : "OpenELIS Site Location"
   },
   {
     "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ValueSet/oe-analyzer-operational-status",

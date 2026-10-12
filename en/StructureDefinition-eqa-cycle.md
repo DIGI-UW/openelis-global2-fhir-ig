@@ -34,7 +34,7 @@ Other representations of profile: [CSV](../StructureDefinition-eqa-cycle.csv), [
   "title" : "EQA cycle",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-12T15:07:11+00:00",
+  "date" : "2026-10-12T15:22:52+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
