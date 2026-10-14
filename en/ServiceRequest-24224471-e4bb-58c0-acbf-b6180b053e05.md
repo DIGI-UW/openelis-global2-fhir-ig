@@ -1,4 +1,4 @@
-# EMR ServiceRequest: HBsAg - OpenELIS Global FHIR Implementation Guide v0.2.1
+# EMR ServiceRequest: HBsAg - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example ServiceRequest: EMR ServiceRequest: HBsAg
 

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "oe-ns-result-uuid"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-result-uuid</b></p><a name=\"oe-ns-result-uuid\"> </a><a name=\"hcoe-ns-result-uuid\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-result-uuid</td></tr><tr><td>Version</td><td>0.2.1</td></tr><tr><td>Name</td><td>OEResultUUID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>UUID of the OpenELIS result. Carried on Observation.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/result_uuid</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-result-uuid</b></p><a name=\"oe-ns-result-uuid\"> </a><a name=\"hcoe-ns-result-uuid\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-result-uuid</td></tr><tr><td>Version</td><td>0.2.2</td></tr><tr><td>Name</td><td>OEResultUUID</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>UUID of the OpenELIS result. Carried on Observation.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis-global.org/result_uuid</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -19,7 +19,7 @@
   ], [
      fhir:index 1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
-     fhir:Extension.valueString [ fhir:value "0.2.1" ]
+     fhir:Extension.valueString [ fhir:value "0.2.2" ]
   ] ;
   fhir:NamingSystem.name [ fhir:value "OEResultUUID"] ;
   fhir:NamingSystem.status [ fhir:value "active"] ;

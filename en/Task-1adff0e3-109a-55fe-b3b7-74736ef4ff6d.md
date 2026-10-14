@@ -1,4 +1,4 @@
-# Referral Task (requested) - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Referral Task (requested) - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Task: Referral Task (requested)
 

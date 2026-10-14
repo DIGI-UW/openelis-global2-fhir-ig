@@ -1,4 +1,4 @@
-# Lab Order Request Task (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Lab Order Request Task (EMR to OpenELIS) - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Resource Profile: Lab Order Request Task (EMR to OpenELIS) 
 
@@ -25,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-lab-orde
   "resourceType" : "StructureDefinition",
   "id" : "openelis-lab-order-request-task",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-task",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISLabOrderRequestTask",
   "title" : "Lab Order Request Task (EMR to OpenELIS)",
   "status" : "draft",
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

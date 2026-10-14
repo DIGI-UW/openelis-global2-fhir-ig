@@ -1,4 +1,4 @@
-# EMR lab order Task - OpenELIS Global FHIR Implementation Guide v0.2.1
+# EMR lab order Task - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Task: EMR lab order Task
 

@@ -1,4 +1,4 @@
-# Analyzer last activated - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Analyzer last activated - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Extension: Analyzer last activated 
 
@@ -30,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-analyzer-last-act
   "resourceType" : "StructureDefinition",
   "id" : "analyzer-last-activated",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/analyzer-last-activated",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OEAnalyzerLastActivated",
   "title" : "Analyzer last activated",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

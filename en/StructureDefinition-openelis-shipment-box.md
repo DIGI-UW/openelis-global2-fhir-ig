@@ -1,4 +1,4 @@
-# OpenELIS Shipment Box - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Shipment Box - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Resource Profile: OpenELIS Shipment Box 
 
@@ -25,11 +25,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-shipment
   "resourceType" : "StructureDefinition",
   "id" : "openelis-shipment-box",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-shipment-box",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISShipmentBox",
   "title" : "OpenELIS Shipment Box",
   "status" : "draft",
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

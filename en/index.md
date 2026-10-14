@@ -1,4 +1,4 @@
-# Home - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Home - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Home
 
@@ -8,7 +8,7 @@ This Implementation Guide (IG) describes the HL7® FHIR® R4 interfaces of [Open
 
 It is written for teams connecting another system to OpenELIS: EMRs such as OpenMRS, national shared health records and lab data repositories, facility and client registries, other OpenELIS laboratories, and analyzer middleware.
 
-**What the profiles describe.** Every profile, extension and identifier system in this guide describes what OpenELIS Global 3.x reads and writes today. They were checked against the [OpenELIS-Global-2](https://github.com/DIGI-UW/OpenELIS-Global-2) `develop` branch at commit `889166b` (29 September 2026). Where OpenELIS does something that is not ideal FHIR, the guide documents the current behaviour and lists the gap on the [Known Issues](known-issues.md) page. It does not describe the behaviour we would like instead.
+**What the profiles describe.** Every profile, extension and identifier system in this guide describes what OpenELIS Global 3.x reads and writes today. They were checked against the [OpenELIS-Global-2](https://github.com/DIGI-UW/OpenELIS-Global-2) `develop` branch at commit `f863283` (14 October 2026). Where OpenELIS does something that is not ideal FHIR, the guide documents the current behaviour and lists the gap on the [Known Issues](known-issues.md) page. It does not describe the behaviour we would like instead.
 
 ### Where to find the rest of the documentation
 

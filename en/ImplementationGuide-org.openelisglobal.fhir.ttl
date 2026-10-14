@@ -14,12 +14,12 @@
      fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide org.openelisglobal.fhir</b></p><a name=\"org.openelisglobal.fhir\"> </a><a name=\"hcorg.openelisglobal.fhir\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>OpenELISGlobalImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir</pre><div><p>Profiles, extensions, identifier systems and exchange workflows for the HL7 FHIR R4 interfaces of OpenELIS Global, an open-source laboratory information system: lab orders and results with EMRs such as OpenMRS, lab-to-lab referral, specimen shipment, sample storage, analyzers, and the OpenELIS FHIR REST API.</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"] ;
-  fhir:ImplementationGuide.version [ fhir:value "0.2.1"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.2.2"] ;
   fhir:ImplementationGuide.name [ fhir:value "OpenELISGlobalImplementationGuide"] ;
   fhir:ImplementationGuide.title [ fhir:value "OpenELIS Global FHIR Implementation Guide"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-29"^^xsd:date] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-10-14"^^xsd:date] ;
   fhir:ImplementationGuide.publisher [ fhir:value "OpenELIS Global (Digital Initiatives Group, University of Washington)"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;

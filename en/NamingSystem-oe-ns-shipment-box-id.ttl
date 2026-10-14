@@ -11,7 +11,7 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-shipment-box-id</b></p><a name=\"oe-ns-shipment-box-id\"> </a><a name=\"hcoe-ns-shipment-box-id\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-shipment-box-id</td></tr><tr><td>Version</td><td>0.2.1</td></tr><tr><td>Name</td><td>OEShipmentBoxId</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier of a shipping box. Carried on SupplyDelivery.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis.org/shipment/box-id</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem oe-ns-shipment-box-id</b></p><a name=\"oe-ns-shipment-box-id\"> </a><a name=\"hcoe-ns-shipment-box-id\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://digi-uw.github.io/openelis-global2-fhir-ig/NamingSystem/oe-ns-shipment-box-id</td></tr><tr><td>Version</td><td>0.2.2</td></tr><tr><td>Name</td><td>OEShipmentBoxId</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifier of a shipping box. Carried on SupplyDelivery.</p>\n</div></td></tr><tr><td>Publisher</td><td>OpenELIS Global (Digital Initiatives Group, University of Washington)</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://openelis.org/shipment/box-id</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
@@ -20,7 +20,7 @@
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
-     fhir:Extension.valueString [ fhir:value "0.2.1" ]
+     fhir:Extension.valueString [ fhir:value "0.2.2" ]
   ] ;
   fhir:NamingSystem.name [ fhir:value "OEShipmentBoxId"] ;
   fhir:NamingSystem.status [ fhir:value "active"] ;

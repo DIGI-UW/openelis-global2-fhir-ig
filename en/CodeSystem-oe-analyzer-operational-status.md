@@ -1,4 +1,4 @@
-# OpenELIS Analyzer Operational Status - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Analyzer Operational Status - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## CodeSystem: OpenELIS Analyzer Operational Status 
 
@@ -19,12 +19,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "oe-analyzer-operational-status",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CodeSystem/oe-analyzer-operational-status",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OEAnalyzerOperationalStatus",
   "title" : "OpenELIS Analyzer Operational Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

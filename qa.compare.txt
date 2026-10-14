@@ -194,7 +194,7 @@ WARNING: Organization/d3619aef-5abf-5b4f-a76c-06f378deca13: Organization.type[0]
 == fsh-generated/resources/ServiceRequest-24224471-e4bb-58c0-acbf-b6180b053e05.json ==
 == fsh-generated/resources/ServiceRequest-35acd1d2-f076-5434-9105-683254702ff1.json ==
 WARNING: ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1: ServiceRequest.code.coding[1].system: A definition for the code system 'https://openconceptlab.org/orgs/CIEL/sources/CIEL' could not be found, so this coding was not checked. The CodeableConcept is still valid: another coding is in the value set
-INFORMATION: ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1: ServiceRequest.code.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: ServiceRequest/35acd1d2-f076-5434-9105-683254702ff1: ServiceRequest.code.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-lab-order-request-service-request|0.2.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/ServiceRequest-3b2c3407-5430-5878-9c61-c4c9b9c013c4.json ==
 WARNING: ServiceRequest/3b2c3407-5430-5878-9c61-c4c9b9c013c4: ServiceRequest.category[0].coding[0].system: A definition for CodeSystem 'http://openelis-global.org/samp_domain' could not be found, so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-48549f60-c400-5510-97da-2e2497627e81.json ==
@@ -203,7 +203,7 @@ WARNING: ServiceRequest/48549f60-c400-5510-97da-2e2497627e81: ServiceRequest.cat
 WARNING: ServiceRequest/6a1d0f52-1399-4c6e-9b2a-0e3f4d5c6b7a: ServiceRequest.category[0].coding[0].system: A definition for CodeSystem 'http://openelis-global.org/samp_domain' could not be found, so the code cannot be validated
 == fsh-generated/resources/Specimen-97b37d86-fd55-529b-bbd7-4766f3988fab.json ==
 WARNING: Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab: Specimen.type.coding[0].system: A definition for CodeSystem 'http://openelis-global.org/sampleType' could not be found, so the code cannot be validated
-INFORMATION: Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab: Specimen.type.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen|0.2.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Specimen/97b37d86-fd55-529b-bbd7-4766f3988fab: Specimen.type.coding[1]: This element does not match any known slice defined in the profile https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-specimen|0.2.2 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-analyzer-last-activated.json ==
 INFORMATION: Resource: The resource StructureDefinition/analyzer-last-activated could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 == fsh-generated/resources/StructureDefinition-analyzer-operational-status.json ==

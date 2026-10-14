@@ -1,6 +1,6 @@
 {
   "package": "org.openelisglobal.fhir",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [

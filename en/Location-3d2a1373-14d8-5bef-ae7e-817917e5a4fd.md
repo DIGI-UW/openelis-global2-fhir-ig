@@ -1,4 +1,4 @@
-# Storage level: device (freezer) - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Storage level: device (freezer) - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Location: Storage level: device (freezer)
 

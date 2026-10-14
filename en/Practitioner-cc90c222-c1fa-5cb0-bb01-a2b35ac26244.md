@@ -1,4 +1,4 @@
-# Requesting provider - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Requesting provider - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Practitioner: Requesting provider
 

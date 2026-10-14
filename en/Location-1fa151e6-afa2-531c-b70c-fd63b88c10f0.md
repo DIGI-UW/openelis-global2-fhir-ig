@@ -1,4 +1,4 @@
-# Storage level: room - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Storage level: room - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Location: Storage level: room
 

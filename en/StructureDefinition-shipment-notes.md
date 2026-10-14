@@ -1,4 +1,4 @@
-# Shipment notes - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Shipment notes - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Extension: Shipment notes 
 
@@ -30,12 +30,12 @@ Other representations of profile: [CSV](../StructureDefinition-shipment-notes.cs
   "resourceType" : "StructureDefinition",
   "id" : "shipment-notes",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/shipment-notes",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OEShipmentNotes",
   "title" : "Shipment notes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

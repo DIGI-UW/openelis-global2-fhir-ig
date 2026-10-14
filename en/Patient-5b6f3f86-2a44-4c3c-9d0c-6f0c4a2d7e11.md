@@ -1,4 +1,4 @@
-# Patient - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Patient - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Patient: Patient
 

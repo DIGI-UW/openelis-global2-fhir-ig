@@ -8,12 +8,12 @@
 </div></div>
   </text>
   <url value="https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"/>
-  <version value="0.2.1"/>
+  <version value="0.2.2"/>
   <name value="OpenELISGlobalImplementationGuide"/>
   <title value="OpenELIS Global FHIR Implementation Guide"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-09-29"/>
+  <date value="2026-10-14"/>
   <publisher value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>
   <contact>
     <name value="OpenELIS Global (Digital Initiatives Group, University of Washington)"/>

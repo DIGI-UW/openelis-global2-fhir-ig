@@ -1,4 +1,4 @@
-# OpenELIS DiagnosticReport - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS DiagnosticReport - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Resource Profile: OpenELIS DiagnosticReport 
 
@@ -27,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-diagnost
   "resourceType" : "StructureDefinition",
   "id" : "openelis-diagnostic-report",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-diagnostic-report",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISDiagnosticReport",
   "title" : "OpenELIS DiagnosticReport",
   "status" : "draft",
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

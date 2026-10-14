@@ -1,4 +1,4 @@
-# Referring site: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Referring site: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Organization: Referring site: Riverside Health Centre
 

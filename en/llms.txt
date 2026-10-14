@@ -1,4 +1,4 @@
-# org.openelisglobal.fhir#0.2.1: OpenELIS Global FHIR Implementation Guide(en)
+# org.openelisglobal.fhir#0.2.2: OpenELIS Global FHIR Implementation Guide(en)
 
 ## Pages
 

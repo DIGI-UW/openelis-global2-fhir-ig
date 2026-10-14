@@ -1,4 +1,4 @@
-# Site Location: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Site Location: Riverside Health Centre - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Location: Site Location: Riverside Health Centre
 

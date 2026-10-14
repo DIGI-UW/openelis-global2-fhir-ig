@@ -1,4 +1,4 @@
-# OpenELIS Global FHIR REST server - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Global FHIR REST server - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## CapabilityStatement: OpenELIS Global FHIR REST server 
 
@@ -13,12 +13,12 @@
   "resourceType" : "CapabilityStatement",
   "id" : "OpenELISFhirServer",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/CapabilityStatement/OpenELISFhirServer",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISFhirServer",
   "title" : "OpenELIS Global FHIR REST server",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-29",
+  "date" : "2026-10-14",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -45,14 +45,14 @@
   "kind" : "capability",
   "software" : {
     "name" : "OpenELIS Global",
-    "version" : "3.x (develop, 2026-09-29)"
+    "version" : "3.x (develop f863283, 2026-10-14)"
   },
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
   "implementationGuide" : ["https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"],
   "rest" : [{
     "mode" : "server",
-    "documentation" : "Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is accepted but ignored: results come back in database insertion order. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported.",
+    "documentation" : "Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is not supported. A search parameter the server cannot apply (unknown, _sort, chained, unsupported modifier, invalid value) is refused with 400 and an OperationOutcome; send Prefer: handling=lenient to have it dropped instead. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported.",
     "security" : {
       "cors" : false,
       "description" : "TLS is required. Send HTTP Basic credentials of an OpenELIS user account (Authorization: Basic), or use an authenticated OpenELIS browser session. Where the site enables them, OpenELIS also accepts client certificate and OAuth2 / OIDC login. Requests without credentials are redirected to the login page, including /metadata."
@@ -120,6 +120,34 @@
       },
       {
         "name" : "gender",
+        "type" : "token"
+      },
+      {
+        "name" : "address-city",
+        "type" : "string"
+      },
+      {
+        "name" : "address-state",
+        "type" : "string"
+      },
+      {
+        "name" : "address-postalcode",
+        "type" : "string"
+      },
+      {
+        "name" : "address-country",
+        "type" : "string"
+      },
+      {
+        "name" : "telecom",
+        "type" : "token"
+      },
+      {
+        "name" : "email",
+        "type" : "token"
+      },
+      {
+        "name" : "phone",
         "type" : "token"
       }]
     },

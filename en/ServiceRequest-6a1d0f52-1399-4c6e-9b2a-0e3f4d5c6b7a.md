@@ -1,4 +1,4 @@
-# OpenELIS ServiceRequest: environmental sample - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS ServiceRequest: environmental sample - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example ServiceRequest: OpenELIS ServiceRequest: environmental sample
 

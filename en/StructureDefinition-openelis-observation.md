@@ -1,4 +1,4 @@
-# OpenELIS Observation - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Observation - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Resource Profile: OpenELIS Observation 
 
@@ -27,11 +27,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-observat
   "resourceType" : "StructureDefinition",
   "id" : "openelis-observation",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-observation",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISObservation",
   "title" : "OpenELIS Observation",
   "status" : "draft",
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
@@ -283,7 +283,7 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-observat
         "ordered" : false,
         "rules" : "open"
       },
-      "comment" : "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with a LOINC answer coding when mapped plus an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded.",
+      "comment" : "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with one coding for each code the answer carries in its terminology mappings (LOINC, SNOMED CT, CIEL or OCL; SAME_AS codes first), then an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded.",
       "type" : [{
         "code" : "Quantity"
       },

@@ -1,4 +1,4 @@
-# OpenELIS Observation: HBsAg (coded) - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Observation: HBsAg (coded) - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Observation: OpenELIS Observation: HBsAg (coded)
 

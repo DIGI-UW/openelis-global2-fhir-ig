@@ -1,4 +1,4 @@
-# oe-ns-sampleitem-labno - OpenELIS Global FHIR Implementation Guide v0.2.1
+# oe-ns-sampleitem-labno - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## NamingSystem: oe-ns-sampleitem-labno 
 
@@ -16,7 +16,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "0.2.1"
+    "valueString" : "0.2.2"
   }],
   "name" : "OESampleItemLabNumber",
   "status" : "active",

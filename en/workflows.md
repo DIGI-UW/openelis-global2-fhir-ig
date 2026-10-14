@@ -1,4 +1,4 @@
-# Exchange Workflows - OpenELIS Global FHIR Implementation Guide v0.2.1
+# Exchange Workflows - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Exchange Workflows
 

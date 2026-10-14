@@ -1,4 +1,4 @@
-# OpenELIS Observation: glucose (numeric) - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Observation: glucose (numeric) - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Example Observation: OpenELIS Observation: glucose (numeric)
 

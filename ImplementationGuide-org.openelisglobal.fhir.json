@@ -7,12 +7,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide org.openelisglobal.fhir</b></p><a name=\"org.openelisglobal.fhir\"> </a><a name=\"hcorg.openelisglobal.fhir\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>OpenELISGlobalImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir</pre><div><p>Profiles, extensions, identifier systems and exchange workflows for the HL7 FHIR R4 interfaces of OpenELIS Global, an open-source laboratory information system: lab orders and results with EMRs such as OpenMRS, lab-to-lab referral, specimen shipment, sample storage, analyzers, and the OpenELIS FHIR REST API.</p>\n</div></div>"
   },
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISGlobalImplementationGuide",
   "title" : "OpenELIS Global FHIR Implementation Guide",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-29",
+  "date" : "2026-10-14",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

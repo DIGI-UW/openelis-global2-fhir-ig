@@ -1,4 +1,4 @@
-# OpenELIS Site Location - OpenELIS Global FHIR Implementation Guide v0.2.1
+# OpenELIS Site Location - OpenELIS Global FHIR Implementation Guide v0.2.2
 
 ## Resource Profile: OpenELIS Site Location 
 
@@ -26,11 +26,11 @@ Other representations of profile: [CSV](../StructureDefinition-openelis-site-loc
   "resourceType" : "StructureDefinition",
   "id" : "openelis-site-location",
   "url" : "https://digi-uw.github.io/openelis-global2-fhir-ig/StructureDefinition/openelis-site-location",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "OpenELISSiteLocation",
   "title" : "OpenELIS Site Location",
   "status" : "draft",
-  "date" : "2026-10-12T15:22:52+00:00",
+  "date" : "2026-10-14T21:19:09+00:00",
   "publisher" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",
   "contact" : [{
     "name" : "OpenELIS Global (Digital Initiatives Group, University of Washington)",

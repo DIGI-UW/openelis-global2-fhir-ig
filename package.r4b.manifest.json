@@ -1,6 +1,6 @@
 {
-  "version" : "0.2.1",
-  "date" : "20261012152252",
+  "version" : "0.2.2",
+  "date" : "20261014211909",
   "notForPublication" : true,
   "name" : "org.openelisglobal.fhir.r4b"
 }
