@@ -1,5 +1,5 @@
 // What OpenELIS's own FHIR REST server (/fhir) supports, from the resource
-// providers in org.openelisglobal.fhir.providers (develop, 2026-09-29).
+// providers in org.openelisglobal.fhir.providers (develop f863283, 2026-10-14).
 
 RuleSet: CommonSearchParams
 * searchParam[+].name = "_id"
@@ -34,17 +34,17 @@ Description: "The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenEL
 * title = "OpenELIS Global FHIR REST server"
 * status = #active
 * experimental = false
-* date = "2026-09-29"
+* date = "2026-10-14"
 * publisher = "OpenELIS Global"
 * kind = #capability
 * software.name = "OpenELIS Global"
-* software.version = "3.x (develop, 2026-09-29)"
+* software.version = "3.x (develop f863283, 2026-10-14)"
 * fhirVersion = #4.0.1
 * format[0] = #json
 * format[1] = #xml
 * implementationGuide = "https://digi-uw.github.io/openelis-global2-fhir-ig/ImplementationGuide/org.openelisglobal.fhir"
 * rest.mode = #server
-* rest.documentation = "Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is accepted but ignored: results come back in database insertion order. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported."
+* rest.documentation = "Base URL: https://{host}/api/OpenELIS-Global/fhir (through the bundled nginx proxy) or https://{host}:8443/api/OpenELIS-Global/fhir (direct to Tomcat). Resource ids are OpenELIS FHIR UUIDs. Every search supports _count and _offset paging (default page size 20) and returns Bundle.total. _sort is not supported. A search parameter the server cannot apply (unknown, _sort, chained, unsupported modifier, invalid value) is refused with 400 and an OperationOutcome; send Prefer: handling=lenient to have it dropped instead. String parameters match case-insensitive starts-with and support :exact and :contains. delete is a soft delete (cancel or deactivate): a later read still returns the resource. vread, history, patch, conditional operations, batch / transaction and operations are not supported."
 * rest.security.cors = false
 * rest.security.description = "TLS is required. Send HTTP Basic credentials of an OpenELIS user account (Authorization: Basic), or use an authenticated OpenELIS browser session. Where the site enables them, OpenELIS also accepts client certificate and OAuth2 / OIDC login. Requests without credentials are redirected to the login page, including /metadata."
 
@@ -73,6 +73,13 @@ Description: "The FHIR R4 REST API OpenELIS Global serves at {server}/api/OpenEL
 * rest.resource[=] insert SPplain(family, string)
 * rest.resource[=] insert SPplain(birthdate, date)
 * rest.resource[=] insert SPplain(gender, token)
+* rest.resource[=] insert SPplain(address-city, string)
+* rest.resource[=] insert SPplain(address-state, string)
+* rest.resource[=] insert SPplain(address-postalcode, string)
+* rest.resource[=] insert SPplain(address-country, string)
+* rest.resource[=] insert SPplain(telecom, token)
+* rest.resource[=] insert SPplain(email, token)
+* rest.resource[=] insert SPplain(phone, token)
 
 // --- ServiceRequest ---
 * rest.resource[+].type = #ServiceRequest

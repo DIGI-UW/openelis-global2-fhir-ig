@@ -1,3 +1,19 @@
+### 0.2.2 (October 2026)
+
+The remaining Known Issues were rechecked against OpenELIS `develop` at commit `f863283` (14 October 2026).
+
+* Known Issue 31 is removed: `_sort` is no longer silently ignored. The REST server now refuses any search parameter
+  it cannot apply with `400` and an OperationOutcome (see [REST API](api.html#search)); `Prefer: handling=lenient`
+  drops them instead. The other items are still true and keep their numbers.
+* Known Issues now link the OpenELIS Jira ticket for each item.
+* CapabilityStatement: Patient search adds `address-city`, `address-state`, `address-postalcode`, `address-country`,
+  `telecom`, `email` and `phone`.
+* REST API page: strict search, malformed ids (`400`), records without a UUID left out of searches, and how updates
+  behave.
+* Observation: a coded result carries one coding per code the answer has in any terminology (LOINC, SNOMED CT, CIEL,
+  OCL), then the OpenELIS dictionary entry.
+* Patient: blank telecom values are not sent.
+
 ### 0.2.1 (October 2026)
 
 Known Issues 2, 3, 5, 6, 8 to 15, 22 and 28 are fixed in OpenELIS `develop` and removed. The remaining items keep

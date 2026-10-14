@@ -43,7 +43,7 @@ Description: "A patient as OpenELIS produces it (PatientTransformServiceImpl.tra
 * birthDate MS
 * birthDate ^comment = "Partially known birth dates are sent at year or year-month precision."
 * telecom MS
-* telecom ^comment = "Primary phone (use = mobile), email and fax."
+* telecom ^comment = "Primary phone (use = mobile), email and fax. Blank values are not sent."
 * address MS
 * address ^comment = "One address built from the person's street, city, state and country. A commune, when recorded, is added as an extra line prefixed 'commune: '."
 
