@@ -36,7 +36,7 @@ Description: "One result value as OpenELIS produces it (ObservationTransformServ
 * performer ^comment = "Finalized results only: the user who validated the result, as a display-only Reference. Omitted otherwise."
 * value[x] only Quantity or CodeableConcept or string
 * value[x] MS
-* value[x] ^comment = "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with a LOINC answer coding when mapped plus an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded."
+* value[x] ^comment = "Numeric results: valueQuantity with unit (the test's unit of measure as text). Dictionary (coded) and multi-select results: valueCodeableConcept with one coding for each code the answer carries in its terminology mappings (LOINC, SNOMED CT, CIEL or OCL; SAME_AS codes first), then an {oe}/dictionary_entry coding. Text results: valueString. Absent while no value is recorded."
 * valueQuantity MS
 * valueQuantity.unit MS
 * specimen MS

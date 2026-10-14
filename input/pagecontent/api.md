@@ -50,7 +50,12 @@ operations.
   supported `_include` / `_revinclude` values, are listed per resource in the
   [CapabilityStatement](CapabilityStatement-OpenELISFhirServer.html).
 * Paging is by offset. The default page size is 20. `Bundle.total` is populated.
-* `_sort` is accepted but has no effect. Results are returned in database insertion order.
+* `_sort` is not supported. Results come back in a stable server order (database insertion order).
+* **Strict search.** A search parameter the server cannot apply is refused with `400 Bad Request` and an
+  OperationOutcome naming it, instead of being ignored. This covers unknown parameters, `_sort`, chained
+  parameters, unsupported modifiers (such as `:missing`), a code outside a required value set (for example
+  `gender`), a reference to the wrong resource type or with no id, and a negative `_count` or `_offset`. Empty
+  values are ignored. Send `Prefer: handling=lenient` to have such parameters dropped instead.
 * String parameters match case-insensitively from the start of the value. `:exact` and `:contains` are supported.
 * `patient` and `subject` are interchangeable on ServiceRequest, Specimen, Observation and DiagnosticReport.
 
@@ -68,11 +73,16 @@ GET {base}/Location?_tag=http://openelis.org/fhir/tag/storage-hierarchy|device&_
 ### Behaviour to know about
 
 * **Ids.** Ids are OpenELIS FHIR UUIDs. A ServiceRequest and the DiagnosticReport for the same test have the same
-  id. Some older records without a UUID are served with their numeric database id.
+  id. Older patients, samples, tests and results with no UUID are left out of searches. Analyzers with no UUID are
+  served with their numeric database id (Known Issue 29). A read, update or delete with a malformed id is refused
+  with `400`.
 * **Soft delete.** `DELETE` cancels or deactivates the record. A later `GET` still returns it (200, not 410), with
   the cancelled or inactive status.
 * **Creating a ServiceRequest** requires `subject` (an existing Patient), `code`, and `specimen` (an existing
   Specimen, which supplies the lab number and sample item).
+* **Updating.** A `PUT` of a resource exactly as it was read changes nothing. An edit changes only the fields it
+  touches. A ServiceRequest update cannot change the test (`422`), and an unknown code or requester, or a location
+  that is not a referring site, is refused with `422`.
 * **Deleting a Patient** leaves the OpenELIS patient unchanged. It only marks the copy in the FHIR store
   `active = false`.
 * **Organization addresses** are limited by legacy columns (line and city 30 characters, state 2, postal code 10).
